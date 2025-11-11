@@ -1,0 +1,15 @@
+# Core NLP
+spacy
+spacy-transformers
+spacy-llm
+coreferee
+
+# Database drivers
+pymongo
+psycopg2-binary
+neo4j
+
+# Utilities
+dateparser
+python-dateutil
+tqdm
