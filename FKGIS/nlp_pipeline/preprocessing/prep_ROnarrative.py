@@ -7,19 +7,19 @@ from spacy.lang.en import English
 
 # Abbreviation dictionary
 ABBREVIATIONS = {
-    r'\bR/O\b': 'Reporting Officer',
-    r'\bR/Is\b': 'Reporting Investigators',
-    r'\bR/I\b': 'Reporting Investigator',
+    r'\bR\s*/\s*O\b': 'Reporting Officer',
+    r'\bR\s*/\s*Is\b': 'Reporting Investigators',
+    r'\bR\s*/\s*I\b': 'Reporting Investigator',
     r'\bCSU\b': 'Crime Scene Unit',
     r'\bETA\b': 'Estimated Time of Arrival'
 }
 
 # Regex patterns
-TIME_PATTERN = re.compile(r'\b\d{1,2}:\d{2}\s*(?:a\.m\.|p\.m\.)\b', re.IGNORECASE)
-ACTOR_PATTERN = re.compile(r'\b(R/O|R/I|Officer|Detective|Inspector|Deputy)\b', re.IGNORECASE)
+TIME_PATTERN = re.compile(r'\b\d{1,2}[:.]\d{2}\s*(?:a\.?\s*m\.?|p\.?\s*m\.?)\b', re.IGNORECASE)
+ACTOR_PATTERN = re.compile(r'\b(?:Reporting Officer|Reporting Investigator|Officer|Detective|Inspector|Deputy)s?\b', re.IGNORECASE)
 ENV_PATTERN = re.compile(r'\b(Weather|Temperature|Humidity)\b', re.IGNORECASE)
-SEGMENT_PATTERN = re.compile(r'(At \d{1,2}:\d{2} (?:a\.m\.|p\.m\.)|R/O \w+|Inspector \w+|Deputy \w+)', re.IGNORECASE)
-EVENT_VERBS = re.compile(r'\b(reported|arrived|observed|pronounced|called|responded|notified)\b', re.IGNORECASE)
+SEGMENT_PATTERN = re.compile(r'(At \d{1,2}:\d{2} (?:a\.m\.|p\.m\.)|Reporting Officer \w+|Reporting Investigator \w+|Inspector \w+|Deputy \w+)', re.IGNORECASE)
+EVENT_VERBS = re.compile(r'\b(reported|arrived|observed|pronounced|called|responded|notified|dispatched|assigned|proceeded)\b', re.IGNORECASE)
 
 def normalize_text(text):
     # Convert to UTF-8 (assuming input is string)
@@ -60,6 +60,27 @@ def segment_text(text):
         segments.append({'time': current_time, 'text': current_segment.strip()})
     return segments
 
+def merge_incomplete_sentences(sentences):
+    merged = []
+    i = 0
+    while i < len(sentences):
+        sent = sentences[i]
+        if len(sent['text'].split()) < 3 and not any(sent['text'].endswith(p) for p in ('.', '!', '?')) and i + 1 < len(sentences):
+            # Merge with next
+            next_sent = sentences[i+1]
+            merged_sent = {
+                'text': sent['text'] + ' ' + next_sent['text'],
+                'has_time': sent['has_time'] or next_sent['has_time'],
+                'has_actor': sent['has_actor'] or next_sent['has_actor'],
+                'has_env': sent['has_env'] or next_sent['has_env']
+            }
+            merged.append(merged_sent)
+            i += 2
+        else:
+            merged.append(sent)
+            i += 1
+    return merged
+
 def process_sentences(segment_text, nlp):
     doc = nlp(segment_text)
     sentences = []
@@ -74,6 +95,7 @@ def process_sentences(segment_text, nlp):
             'has_actor': has_actor,
             'has_env': has_env
         })
+    sentences = merge_incomplete_sentences(sentences)
     return sentences
 
 def extract_events(sentences):

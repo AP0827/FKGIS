@@ -1,0 +1,1724 @@
+{
+    "segments": [
+        {
+            "time": null,
+            "text": "RREPORTING OFFICER'S NARRATIVE (Brief narrative of the facts surrounding the offense and the arrest.)",
+            "sentences": [
+                {
+                    "text": "RREPORTING OFFICER'S NARRATIVE (Brief narrative of the facts surrounding the offense and the arrest.)",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "RREPORTING OFFICER'S NARRATIVE",
+                            "label": "WORK_OF_ART",
+                            "norm": "rreporting_officer_s_narrative"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": "11:06 a.m",
+            "text": "At 11:06 a.m., Dispatch received a 911 call regarding the discovery of a body at a residence located at 1592 Jackson Avenue. The caller identified herself as Cheryl Weston, a friend of the deceased. Unit #304 (",
+            "sentences": [
+                {
+                    "text": "At 11:06 a.m., Dispatch received a 911 call regarding the discovery of a body at a residence located at 1592 Jackson Avenue.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:06 a.m.",
+                            "label": "TIME",
+                            "norm": "11_06_a_m"
+                        },
+                        {
+                            "text": "Dispatch",
+                            "label": "ORG",
+                            "norm": "dispatch"
+                        },
+                        {
+                            "text": "911",
+                            "label": "CARDINAL",
+                            "norm": "911"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                },
+                {
+                    "text": "The caller identified herself as Cheryl Weston, a friend of the deceased.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Cheryl Weston",
+                            "label": "PERSON",
+                            "norm": "cheryl_weston"
+                        }
+                    ]
+                },
+                {
+                    "text": "Unit #304 (",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "#304",
+                            "label": "CARDINAL",
+                            "norm": "304"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "At 11:06 a.m., Dispatch received a 911 call regarding the discovery of a body at a residence located at 1592 Jackson Avenue.",
+                    "timestamp": "11:06 a.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Deputy Fred Willits) was immediately dispatched to the scene. Detectives Armstrong and Murphy were assigned and proceeded directly to the scene. Coroner's",
+            "sentences": [
+                {
+                    "text": "Deputy Fred Willits) was immediately dispatched to the scene.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Deputy",
+                            "label": "ROLE",
+                            "norm": "deputy"
+                        },
+                        {
+                            "text": "Fred Willits",
+                            "label": "PERSON",
+                            "norm": "fred_willits"
+                        }
+                    ]
+                },
+                {
+                    "text": "Detectives Armstrong and Murphy were assigned and proceeded directly to the scene.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Armstrong",
+                            "label": "PERSON",
+                            "norm": "armstrong"
+                        },
+                        {
+                            "text": "Murphy",
+                            "label": "PERSON",
+                            "norm": "murphy"
+                        }
+                    ]
+                },
+                {
+                    "text": "Coroner's",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": [
+                {
+                    "text": "Deputy Fred Willits) was immediately dispatched to the scene.",
+                    "timestamp": null,
+                    "category": "unknown"
+                },
+                {
+                    "text": "Detectives Armstrong and Murphy were assigned and proceeded directly to the scene.",
+                    "timestamp": null,
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Inspector Luwinda Johnson was notified at Reporting Investigator's request to respond to the scene. Reporting Officer (Reporting Officer) Willits arrived at the scene",
+            "sentences": [
+                {
+                    "text": "Inspector Luwinda Johnson was notified at Reporting Investigator's request to respond to the scene.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Luwinda Johnson",
+                            "label": "PERSON",
+                            "norm": "luwinda_johnson"
+                        },
+                        {
+                            "text": "Reporting Investigator",
+                            "label": "ROLE",
+                            "norm": "reporting_investigator"
+                        }
+                    ]
+                },
+                {
+                    "text": "Reporting Officer (Reporting Officer) Willits arrived at the scene",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "Inspector Luwinda Johnson was notified at Reporting Investigator's request to respond to the scene.",
+                    "timestamp": null,
+                    "category": "unknown"
+                },
+                {
+                    "text": "Reporting Officer (Reporting Officer) Willits arrived at the scene",
+                    "timestamp": null,
+                    "category": "arrival"
+                }
+            ]
+        },
+        {
+            "time": "11:13 a.m",
+            "text": "at 11:13 a.m. At Reporting Officer's request, Unit #224 (Officer Steve Harding) was dispatched to the scene to provide backup and assistance and arrived",
+            "sentences": [
+                {
+                    "text": "at 11:13 a.m. At Reporting Officer's request, Unit #224 (Officer Steve Harding) was dispatched to the scene to provide backup and assistance and arrived",
+                    "has_time": true,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:13 a.m.",
+                            "label": "TIME",
+                            "norm": "11_13_a_m"
+                        },
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Unit #224",
+                            "label": "ORG",
+                            "norm": "unit_224"
+                        },
+                        {
+                            "text": "Steve Harding",
+                            "label": "PERSON",
+                            "norm": "steve_harding"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 11:13 a.m. At Reporting Officer's request, Unit #224 (Officer Steve Harding) was dispatched to the scene to provide backup and assistance and arrived",
+                    "timestamp": "11:13 a.m",
+                    "category": "arrival"
+                }
+            ]
+        },
+        {
+            "time": "11:18 a.m",
+            "text": "at 11:18 a.m. Reporting Investigators (Reporting Investigators) arrived at the scene",
+            "sentences": [
+                {
+                    "text": "at 11:18 a.m. Reporting Investigators (Reporting Investigators) arrived at the scene",
+                    "has_time": true,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:18 a.m.",
+                            "label": "TIME",
+                            "norm": "11_18_a_m"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 11:18 a.m. Reporting Investigators (Reporting Investigators) arrived at the scene",
+                    "timestamp": "11:18 a.m",
+                    "category": "arrival"
+                }
+            ]
+        },
+        {
+            "time": "11:27 a.m",
+            "text": "at 11:27 a.m. and found R / Os Willits and Harding had secured the area. Environmental conditions at scene upon arrival are as follows: Weather: Clear; Ambient Exterior Temperature: 74° F / 23° C; Relative Exterior Humidity: 57%; Ambient Interior Temperature: 68° F / 20° C; Relative Interior Humidity: 53%.",
+            "sentences": [
+                {
+                    "text": "at 11:27 a.m. and found R / Os Willits and Harding had secured the area.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:27 a.m.",
+                            "label": "TIME",
+                            "norm": "11_27_a_m"
+                        },
+                        {
+                            "text": "R / Os Willits",
+                            "label": "PERSON",
+                            "norm": "r_os_willits"
+                        },
+                        {
+                            "text": "Harding",
+                            "label": "PERSON",
+                            "norm": "harding"
+                        }
+                    ]
+                },
+                {
+                    "text": "Environmental conditions at scene upon arrival are as follows: Weather: Clear; Ambient Exterior Temperature: 74° F / 23° C; Relative Exterior Humidity: 57%; Ambient Interior Temperature: 68° F / 20° C; Relative Interior Humidity: 53%.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": true,
+                    "entities": [
+                        {
+                            "text": "74° F / 23° C",
+                            "label": "QUANTITY",
+                            "norm": "74_f_23_c"
+                        },
+                        {
+                            "text": "57%",
+                            "label": "PERCENT",
+                            "norm": "57"
+                        },
+                        {
+                            "text": "68° F / 20° C",
+                            "label": "QUANTITY",
+                            "norm": "68_f_20_c"
+                        },
+                        {
+                            "text": "53%",
+                            "label": "PERCENT",
+                            "norm": "53"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 11:27 a.m. and found R / Os Willits and Harding had secured the area.",
+                    "timestamp": "11:27 a.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits made the following verbal report, which is stated in summary and not verbatim.",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits made the following verbal report, which is stated in summary and not verbatim.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits said he was met outside the residence on arrival at the incident address by two adult females, identified as Cheryl Weston and Rebecca Pace, and an adult male, identified as Jeremy Gladwell. The witnesses admitted",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits said he was met outside the residence on arrival at the incident address by two adult females, identified as Cheryl Weston and Rebecca Pace, and an adult male, identified as Jeremy Gladwell.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        },
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        },
+                        {
+                            "text": "two",
+                            "label": "CARDINAL",
+                            "norm": "two"
+                        },
+                        {
+                            "text": "Cheryl Weston",
+                            "label": "PERSON",
+                            "norm": "cheryl_weston"
+                        },
+                        {
+                            "text": "Rebecca Pace",
+                            "label": "PERSON",
+                            "norm": "rebecca_pace"
+                        },
+                        {
+                            "text": "Jeremy Gladwell",
+                            "label": "PERSON",
+                            "norm": "jeremy_gladwell"
+                        }
+                    ]
+                },
+                {
+                    "text": "The witnesses admitted",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits to the residence and directed",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits to the residence and directed",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        },
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer to the location of the body. After confirming the presence of the body,",
+            "sentences": [
+                {
+                    "text": "Reporting Officer to the location of the body.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "After confirming the presence of the body,",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits secured the scene, called for backup, and detained the witnesses.",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits secured the scene, called for backup, and detained the witnesses.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "Reporting Officer Willits secured the scene, called for backup, and detained the witnesses.",
+                    "timestamp": null,
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits observed a dog inhibiting access to the body, so he contacted Dispatch and requested that Yoknapatawpha County Animal Control respond to the scene to secure the animal. Animal Control arrived at the scene",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits observed a dog inhibiting access to the body, so he contacted Dispatch and requested that Yoknapatawpha County Animal Control respond to the scene to secure the animal.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        },
+                        {
+                            "text": "dog",
+                            "label": "EVIDENCE",
+                            "norm": "dog"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "Dispatch",
+                            "label": "ORG",
+                            "norm": "dispatch"
+                        },
+                        {
+                            "text": "Yoknapatawpha County",
+                            "label": "ORG",
+                            "norm": "yoknapatawpha_county"
+                        },
+                        {
+                            "text": "Animal Control",
+                            "label": "ORG",
+                            "norm": "animal_control"
+                        }
+                    ]
+                },
+                {
+                    "text": "Animal Control arrived at the scene",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Animal Control",
+                            "label": "ORG",
+                            "norm": "animal_control"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "Reporting Officer Willits observed a dog inhibiting access to the body, so he contacted Dispatch and requested that Yoknapatawpha County Animal Control respond to the scene to secure the animal.",
+                    "timestamp": null,
+                    "category": "observation"
+                },
+                {
+                    "text": "Animal Control arrived at the scene",
+                    "timestamp": null,
+                    "category": "arrival"
+                }
+            ]
+        },
+        {
+            "time": "11:24 a.m",
+            "text": "at 11:24 a.m. and was in the process of securing the dog for removal from the scene.",
+            "sentences": [
+                {
+                    "text": "at 11:24 a.m. and was in the process of securing the dog for removal from the scene.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:24 a.m.",
+                            "label": "TIME",
+                            "norm": "11_24_a_m"
+                        },
+                        {
+                            "text": "dog",
+                            "label": "EVIDENCE",
+                            "norm": "dog"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 11:24 a.m. and was in the process of securing the dog for removal from the scene.",
+                    "timestamp": "11:24 a.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits said that, to the best of his knowledge, the following persons have had occasion to enter the crime scene area and must be documented by Crime Scene Unit personnel:",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits said that, to the best of his knowledge, the following persons have had occasion to enter the crime scene area and must be documented by Crime Scene Unit personnel:",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        },
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Harding, Animal Control Officer Joanne Lukens, Animal Control Officer Jaime Sanchez, Rebecca Pace, Cheryl Weston, Jeremy Gladwell, and himself. After receiving the report from",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Harding, Animal Control Officer Joanne Lukens, Animal Control Officer Jaime Sanchez, Rebecca Pace, Cheryl Weston, Jeremy Gladwell, and himself.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Harding",
+                            "label": "PERSON",
+                            "norm": "harding"
+                        },
+                        {
+                            "text": "Animal Control",
+                            "label": "ORG",
+                            "norm": "animal_control"
+                        },
+                        {
+                            "text": "Joanne Lukens",
+                            "label": "PERSON",
+                            "norm": "joanne_lukens"
+                        },
+                        {
+                            "text": "Animal Control",
+                            "label": "ORG",
+                            "norm": "animal_control"
+                        },
+                        {
+                            "text": "Jaime Sanchez",
+                            "label": "PERSON",
+                            "norm": "jaime_sanchez"
+                        },
+                        {
+                            "text": "Rebecca Pace",
+                            "label": "PERSON",
+                            "norm": "rebecca_pace"
+                        },
+                        {
+                            "text": "Cheryl Weston",
+                            "label": "PERSON",
+                            "norm": "cheryl_weston"
+                        },
+                        {
+                            "text": "Jeremy Gladwell",
+                            "label": "PERSON",
+                            "norm": "jeremy_gladwell"
+                        }
+                    ]
+                },
+                {
+                    "text": "After receiving the report from",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Officer Willits,",
+            "sentences": [
+                {
+                    "text": "Reporting Officer Willits,",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Officer",
+                            "label": "ROLE",
+                            "norm": "reporting_officer"
+                        },
+                        {
+                            "text": "Willits",
+                            "label": "PERSON",
+                            "norm": "willits"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Reporting Investigator Murphy contacted Dispatch regarding the status of the Coroner's",
+            "sentences": [
+                {
+                    "text": "Reporting Investigator Murphy contacted Dispatch regarding the status of the Coroner's",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Investigator",
+                            "label": "ROLE",
+                            "norm": "reporting_investigator"
+                        },
+                        {
+                            "text": "Murphy",
+                            "label": "PERSON",
+                            "norm": "murphy"
+                        },
+                        {
+                            "text": "Dispatch",
+                            "label": "ORG",
+                            "norm": "dispatch"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Inspector and the Crime Scene Unit. Dispatch indicated the Inspector's Estimated Time of Arrival was approximately 15 minutes and Crime Scene Unit's Estimated Time of Arrival was approximately 10 minutes. Reporting Investigators conducted a preliminary inspection of the exterior of the residence and found no signs of forced entry on the front or rear doors or any of the windows. Reporting Investigators then entered the residence through the front door and observed a lighted, wall-mounted lamp opposite the front door, adjacent to the entrance to the kitchen. In the living room area to the left of the front door, Reporting Investigators observed a set of keys on the coffee table and a briefcase with the contents partially removed on the floor. Visual inspection of the briefcase revealed what appeared to be a laptop computer inside. The television and stereo system in the living room area were off. In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off. Visual inspection of the remainder of the main floor of the residence, including the bathroom, rear screened porch, and kitchen revealed nothing that immediately appeared out of the ordinary. No signs of struggle or other disturbance were observed, with the possible exception of the briefcase. All lights other than the wall-mounted lamp opposite the front door were off.",
+            "sentences": [
+                {
+                    "text": "Inspector and the Crime Scene Unit.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        }
+                    ]
+                },
+                {
+                    "text": "Dispatch indicated the Inspector's Estimated Time of Arrival was approximately 15 minutes and Crime Scene Unit's Estimated Time of Arrival was approximately 10 minutes.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Dispatch",
+                            "label": "ORG",
+                            "norm": "dispatch"
+                        },
+                        {
+                            "text": "approximately 15 minutes",
+                            "label": "TIME",
+                            "norm": "approximately_15_minutes"
+                        },
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        },
+                        {
+                            "text": "approximately 10 minutes",
+                            "label": "TIME",
+                            "norm": "approximately_10_minutes"
+                        }
+                    ]
+                },
+                {
+                    "text": "Reporting Investigators conducted a preliminary inspection of the exterior of the residence and found no signs of forced entry on the front or rear doors or any of the windows.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                },
+                {
+                    "text": "Reporting Investigators then entered the residence through the front door and observed a lighted, wall-mounted lamp opposite the front door, adjacent to the entrance to the kitchen.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                },
+                {
+                    "text": "In the living room area to the left of the front door, Reporting Investigators observed a set of keys on the coffee table and a briefcase with the contents partially removed on the floor.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "briefcase",
+                            "label": "EVIDENCE",
+                            "norm": "briefcase"
+                        }
+                    ]
+                },
+                {
+                    "text": "Visual inspection of the briefcase revealed what appeared to be a laptop computer inside.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "briefcase",
+                            "label": "EVIDENCE",
+                            "norm": "briefcase"
+                        }
+                    ]
+                },
+                {
+                    "text": "The television and stereo system in the living room area were off.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "handbag",
+                            "label": "EVIDENCE",
+                            "norm": "handbag"
+                        }
+                    ]
+                },
+                {
+                    "text": "Visual inspection of the remainder of the main floor of the residence, including the bathroom, rear screened porch, and kitchen revealed nothing that immediately appeared out of the ordinary.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                },
+                {
+                    "text": "No signs of struggle or other disturbance were observed, with the possible exception of the briefcase.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "briefcase",
+                            "label": "EVIDENCE",
+                            "norm": "briefcase"
+                        }
+                    ]
+                },
+                {
+                    "text": "All lights other than the wall-mounted lamp opposite the front door were off.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": [
+                {
+                    "text": "Reporting Investigators then entered the residence through the front door and observed a lighted, wall-mounted lamp opposite the front door, adjacent to the entrance to the kitchen.",
+                    "timestamp": null,
+                    "category": "observation"
+                },
+                {
+                    "text": "In the living room area to the left of the front door, Reporting Investigators observed a set of keys on the coffee table and a briefcase with the contents partially removed on the floor.",
+                    "timestamp": null,
+                    "category": "observation"
+                },
+                {
+                    "text": "In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off.",
+                    "timestamp": null,
+                    "category": "observation"
+                },
+                {
+                    "text": "No signs of struggle or other disturbance were observed, with the possible exception of the briefcase.",
+                    "timestamp": null,
+                    "category": "observation"
+                }
+            ]
+        },
+        {
+            "time": "11:42 a.m",
+            "text": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear. Officer Sanchez said the body had not been disturbed by their removal of the dog. Reporting Investigators then proceeded to the basement of the residence where they observed a lifeless human body, apparently a female in her mid-thirties, at the bottom of the staircase. Visual inspection indicated the victim was wearing a red long-sleeved shirt, khaki trousers, and one black shoe. The body lay face up with the right arm at an approximate 45° angle to the body. The left arm was raised over the head and bent at the elbow over the top of the head. The left knee was bent at an approximate 30° angle to the body, and the right knee was bent at an approximate 115° angle to the body. Both legs were resting on the bottom step of the staircase. The head of the body faced in an easterly direction and the feet in a westerly direction. Visual inspection revealed no apparent signs of trauma or injury. Coroner's",
+            "sentences": [
+                {
+                    "text": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear.",
+                    "has_time": true,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:42 a.m.",
+                            "label": "TIME",
+                            "norm": "11_42_a_m"
+                        },
+                        {
+                            "text": "Animal Control",
+                            "label": "ORG",
+                            "norm": "animal_control"
+                        },
+                        {
+                            "text": "Sanchez",
+                            "label": "PERSON",
+                            "norm": "sanchez"
+                        },
+                        {
+                            "text": "Reporting Investigators",
+                            "label": "ORG",
+                            "norm": "reporting_investigators"
+                        },
+                        {
+                            "text": "dog",
+                            "label": "EVIDENCE",
+                            "norm": "dog"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "Officer Sanchez said the body had not been disturbed by their removal of the dog.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Sanchez",
+                            "label": "PERSON",
+                            "norm": "sanchez"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "dog",
+                            "label": "EVIDENCE",
+                            "norm": "dog"
+                        }
+                    ]
+                },
+                {
+                    "text": "Reporting Investigators then proceeded to the basement of the residence where they observed a lifeless human body, apparently a female in her mid-thirties, at the bottom of the staircase.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "mid",
+                            "label": "DATE",
+                            "norm": "mid"
+                        },
+                        {
+                            "text": "-",
+                            "label": "DATE",
+                            "norm": ""
+                        },
+                        {
+                            "text": "thirties",
+                            "label": "DATE",
+                            "norm": "thirties"
+                        }
+                    ]
+                },
+                {
+                    "text": "Visual inspection indicated the victim was wearing a red long-sleeved shirt, khaki trousers, and one black shoe.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "victim",
+                            "label": "PERSON",
+                            "norm": "victim"
+                        },
+                        {
+                            "text": "one",
+                            "label": "CARDINAL",
+                            "norm": "one"
+                        }
+                    ]
+                },
+                {
+                    "text": "The body lay face up with the right arm at an approximate 45° angle to the body.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "45°",
+                            "label": "QUANTITY",
+                            "norm": "45"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "The left arm was raised over the head and bent at the elbow over the top of the head.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "The left knee was bent at an approximate 30° angle to the body, and the right knee was bent at an approximate 115° angle to the body.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "30°",
+                            "label": "QUANTITY",
+                            "norm": "30"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "115°",
+                            "label": "QUANTITY",
+                            "norm": "115"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "Both legs were resting on the bottom step of the staircase.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "The head of the body faced in an easterly direction and the feet in a westerly direction.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "Visual inspection revealed no apparent signs of trauma or injury.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "Coroner's",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": [
+                {
+                    "text": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear.",
+                    "timestamp": "11:42 a.m",
+                    "category": "report"
+                },
+                {
+                    "text": "Reporting Investigators then proceeded to the basement of the residence where they observed a lifeless human body, apparently a female in her mid-thirties, at the bottom of the staircase.",
+                    "timestamp": null,
+                    "category": "observation"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
+                    "has_time": true,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "approximately 11:45 a.m.",
+                            "label": "TIME",
+                            "norm": "approximately_11_45_a_m"
+                        },
+                        {
+                            "text": "Reporting Investigators",
+                            "label": "ORG",
+                            "norm": "reporting_investigators"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
+                    "timestamp": "11:45 a.m",
+                    "category": "arrival"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson pronounced the victim deceased",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson pronounced the victim deceased",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "victim",
+                            "label": "PERSON",
+                            "norm": "victim"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "Inspector Johnson pronounced the victim deceased",
+                    "timestamp": null,
+                    "category": "pronouncement"
+                }
+            ]
+        },
+        {
+            "time": "11:48 a.m",
+            "text": "at 11:48 a.m. by visual observation that the victim was not breathing and by tactile observation that the victim did not have a palpable carotid pulse.",
+            "sentences": [
+                {
+                    "text": "at 11:48 a.m. by visual observation that the victim was not breathing and by tactile observation that the victim did not have a palpable carotid pulse.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "11:48 a.m.",
+                            "label": "TIME",
+                            "norm": "11_48_a_m"
+                        },
+                        {
+                            "text": "victim",
+                            "label": "PERSON",
+                            "norm": "victim"
+                        },
+                        {
+                            "text": "victim",
+                            "label": "PERSON",
+                            "norm": "victim"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 11:48 a.m. by visual observation that the victim was not breathing and by tactile observation that the victim did not have a palpable carotid pulse.",
+                    "timestamp": "11:48 a.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson noted that rigor mortis appeared to be well established throughout the body.",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson noted that rigor mortis appeared to be well established throughout the body.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck. While she withheld an official estimate pending an autopsy,",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "While she withheld an official estimate pending an autopsy,",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": [
+                {
+                    "text": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck.",
+                    "timestamp": null,
+                    "category": "observation"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson speculated the victim had been dead approximately 10 to 12 hours, and the apparent cause of death was blunt force trauma.",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson speculated the victim had been dead approximately 10 to 12 hours, and the apparent cause of death was blunt force trauma.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "victim",
+                            "label": "PERSON",
+                            "norm": "victim"
+                        },
+                        {
+                            "text": "approximately 10 to 12 hours",
+                            "label": "TIME",
+                            "norm": "approximately_10_to_12_hours"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson indicated that further details would be available in the official autopsy report. After",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson indicated that further details would be available in the official autopsy report.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        }
+                    ]
+                },
+                {
+                    "text": "After",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Inspector Johnson completed her initial inspection of the body, she stayed with the Crime Scene Unit team to ensure the integrity of the body, while the team took photographs of the scene and performed preliminary analyses, until the body could be removed from the scene without destroying other evidence. A preliminary search of the residence for the weapon(s) causing the injury to the deceased met with negative results. Crime Scene Unit will conduct a more intensive search and report their findings. The body of the deceased remanded into the custody of Coroner's",
+            "sentences": [
+                {
+                    "text": "Inspector Johnson completed her initial inspection of the body, she stayed with the Crime Scene Unit team to ensure the integrity of the body, while the team took photographs of the scene and performed preliminary analyses, until the body could be removed from the scene without destroying other evidence.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Johnson",
+                            "label": "PERSON",
+                            "norm": "johnson"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        }
+                    ]
+                },
+                {
+                    "text": "A preliminary search of the residence for the weapon(s) causing the injury to the deceased met with negative results.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "residence",
+                            "label": "LOC",
+                            "norm": "residence"
+                        }
+                    ]
+                },
+                {
+                    "text": "Crime Scene Unit will conduct a more intensive search and report their findings.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        }
+                    ]
+                },
+                {
+                    "text": "The body of the deceased remanded into the custody of Coroner's",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body"
+                        },
+                        {
+                            "text": "Coroner's",
+                            "label": "ORG",
+                            "norm": "coroner_s"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Inspector Luwinda Johnson. Deceased was removed from the scene",
+            "sentences": [
+                {
+                    "text": "Inspector Luwinda Johnson.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Luwinda Johnson",
+                            "label": "PERSON",
+                            "norm": "luwinda_johnson"
+                        }
+                    ]
+                },
+                {
+                    "text": "Deceased was removed from the scene",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": "12:53 p.m",
+            "text": "at 12:53 p.m. and transported to the coroner's office for autopsy. A preliminary autopsy report is expected within fourteen days of this report. Following preliminary inspection of the scene, Reporting Investigators interviewed witnesses Rebecca Pace, Cheryl Weston, and Jeremy Gladwell at the scene. Interview transcripts are attached to this report. Reporting Investigators left the scene",
+            "sentences": [
+                {
+                    "text": "at 12:53 p.m. and transported to the coroner's office for autopsy.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "12:53 p.m.",
+                            "label": "TIME",
+                            "norm": "12_53_p_m"
+                        }
+                    ]
+                },
+                {
+                    "text": "A preliminary autopsy report is expected within fourteen days of this report.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "fourteen days",
+                            "label": "DATE",
+                            "norm": "fourteen_days"
+                        }
+                    ]
+                },
+                {
+                    "text": "Following preliminary inspection of the scene, Reporting Investigators interviewed witnesses Rebecca Pace, Cheryl Weston, and Jeremy Gladwell at the scene.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Investigators",
+                            "label": "ORG",
+                            "norm": "reporting_investigators"
+                        },
+                        {
+                            "text": "Rebecca Pace",
+                            "label": "PERSON",
+                            "norm": "rebecca_pace"
+                        },
+                        {
+                            "text": "Cheryl Weston",
+                            "label": "PERSON",
+                            "norm": "cheryl_weston"
+                        },
+                        {
+                            "text": "Jeremy Gladwell",
+                            "label": "PERSON",
+                            "norm": "jeremy_gladwell"
+                        }
+                    ]
+                },
+                {
+                    "text": "Interview transcripts are attached to this report.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "Reporting Investigators left the scene",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 12:53 p.m. and transported to the coroner's office for autopsy.",
+                    "timestamp": "12:53 p.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": "4:35 p.m",
+            "text": "at 4:35 p.m. Before leaving,",
+            "sentences": [
+                {
+                    "text": "at 4:35 p.m. Before leaving,",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "4:35 p.m.",
+                            "label": "TIME",
+                            "norm": "4_35_p_m"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "text": "at 4:35 p.m. Before leaving,",
+                    "timestamp": "4:35 p.m",
+                    "category": "unknown"
+                }
+            ]
+        },
+        {
+            "time": null,
+            "text": "Reporting Investigator Murphy instructed Crime Scene Unit to seal the scene upon completion or end of day suspension of processing. Crime Scene Unit to notify Reporting Investigators of progress by the end of this date. As of this filing, Crime Scene Unit is still actively processing at the scene. Evidence remanded into the custody of Forensics Officer T. R. Douglas for transport to the state crime lab for routine analysis. Crime Scene Unit is expected to submit an inventory of items taken into evidence within fourteen days of this report, with detailed report(s) of their findings to follow at a later date.",
+            "sentences": [
+                {
+                    "text": "Reporting Investigator Murphy instructed Crime Scene Unit to seal the scene upon completion or end of day suspension of processing.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Reporting Investigator",
+                            "label": "ROLE",
+                            "norm": "reporting_investigator"
+                        },
+                        {
+                            "text": "Murphy",
+                            "label": "PERSON",
+                            "norm": "murphy"
+                        },
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        },
+                        {
+                            "text": "day",
+                            "label": "DATE",
+                            "norm": "day"
+                        }
+                    ]
+                },
+                {
+                    "text": "Crime Scene Unit to notify Reporting Investigators of progress by the end of this date.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        },
+                        {
+                            "text": "the end of this date",
+                            "label": "DATE",
+                            "norm": "the_end_of_this_date"
+                        }
+                    ]
+                },
+                {
+                    "text": "As of this filing, Crime Scene Unit is still actively processing at the scene.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        }
+                    ]
+                },
+                {
+                    "text": "Evidence remanded into the custody of Forensics Officer T. R. Douglas for transport to the state crime lab for routine analysis.",
+                    "has_time": false,
+                    "has_actor": true,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "T. R. Douglas",
+                            "label": "PERSON",
+                            "norm": "t_r_douglas"
+                        }
+                    ]
+                },
+                {
+                    "text": "Crime Scene Unit is expected to submit an inventory of items taken into evidence within fourteen days of this report, with detailed report(s) of their findings to follow at a later date.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Crime Scene Unit",
+                            "label": "ORG",
+                            "norm": "crime_scene_unit"
+                        },
+                        {
+                            "text": "fourteen days",
+                            "label": "DATE",
+                            "norm": "fourteen_days"
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        }
+    ]
+}
