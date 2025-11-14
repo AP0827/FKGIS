@@ -1,0 +1,4 @@
+sentence extraction : 
+python3 FKGIS/nlp_pipeline/preprocessing/prep_ROnarrative.py FKGIS/nlp_pipeline/sample.txt 
+ner extraction :
+python3 FKGIS/nlp_pipeline/ner_and_dependency_parsing/ner_module.py --input /home/aayush/Desktop/Projects/FKGIS/FKGIS/nlp_pipeline/sample_ROnarrative_processed.json

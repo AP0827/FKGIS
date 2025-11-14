@@ -1,115 +1,69 @@
-import psycopg2
-from collections import namedtuple
+from sqlalchemy import Column, Integer, String, Text, TIMESTAMP, ForeignKey, ARRAY
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.sql import func
 
-# Named tuples for data structures
-Case = namedtuple('Case', ['case_id', 'title', 'reporting_officer', 'investigating_officer', 'status'])
-RawFile = namedtuple('RawFile', ['id', 'case_id', 'filename'])
-Entity = namedtuple('Entity', ['id', 'case_id', 'entity_type', 'entity_name', 'normalized_name'])
-Event = namedtuple('Event', ['id', 'case_id', 'description', 'timestamp', 'location', 'entities_involved'])
-Relation = namedtuple('Relation', ['id', 'case_id', 'subject_id', 'predicate', 'object_id'])
+Base = declarative_base()
 
-def get_connection(dbname='your_db', user='your_user', password='your_pass', host='localhost', port='5432'):
-    return psycopg2.connect(dbname=dbname, user=user, password=password, host=host, port=port)
+class Case(Base):
+    __tablename__ = 'cases'
+    case_id = Column(String(50), primary_key=True)
+    title = Column(Text, nullable=False)
+    reporting_officer = Column(Text)
+    investigating_officer = Column(Text)
+    status = Column(String(50), default='Open')
+    created_at = Column(TIMESTAMP, server_default=func.now())
+    updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
 
-class CaseModel:
-    @staticmethod
-    def get_all(conn):
-        with conn.cursor() as cur:
-            cur.execute("SELECT case_id, title, reporting_officer, investigating_officer, status FROM cases")
-            rows = cur.fetchall()
-            return [Case(*row) for row in rows]
+class RawFile(Base):
+    __tablename__ = 'rawfiles'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    filename = Column(Text)
+    file_desc = Column(Text)
 
-    @staticmethod
-    def get_by_id(conn, case_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT case_id, title, reporting_officer, investigating_officer, status FROM cases WHERE case_id = %s", (case_id,))
-            row = cur.fetchone()
-            return Case(*row) if row else None
+class Narrative(Base):
+    __tablename__ = 'narratives'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    type = Column(String(50))
+    text = Column(Text)
 
-class RawFileModel:
-    @staticmethod
-    def get_all(conn):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, filename FROM rawfiles")
-            rows = cur.fetchall()
-            return [RawFile(*row) for row in rows]
+class VictimBiography(Base):
+    __tablename__ = 'victim_biographies'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    victim_name = Column(Text)
+    biography = Column(Text)
 
-    @staticmethod
-    def get_by_id(conn, rawfile_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, filename FROM rawfiles WHERE id = %s", (rawfile_id,))
-            row = cur.fetchone()
-            return RawFile(*row) if row else None
+class SuspectInterview(Base):
+    __tablename__ = 'suspect_interviews'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    suspect_name = Column(Text)
+    interview_text = Column(Text)
+    interview_date = Column(TIMESTAMP)
 
-    @staticmethod
-    def get_by_case_id(conn, case_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, filename FROM rawfiles WHERE case_id = %s", (case_id,))
-            rows = cur.fetchall()
-            return [RawFile(*row) for row in rows]
+class Entity(Base):
+    __tablename__ = 'entities'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    entity_type = Column(String(50))
+    entity_name = Column(Text)
+    normalized_name = Column(Text)
 
-class EntityModel:
-    @staticmethod
-    def get_all(conn):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, entity_type, entity_name, normalized_name FROM entities")
-            rows = cur.fetchall()
-            return [Entity(*row) for row in rows]
+class Event(Base):
+    __tablename__ = 'events'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    description = Column(Text)
+    timestamp = Column(TIMESTAMP)
+    location = Column(Text)
+    entities_involved = Column(ARRAY(Integer))
 
-    @staticmethod
-    def get_by_id(conn, entity_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, entity_type, entity_name, normalized_name FROM entities WHERE id = %s", (entity_id,))
-            row = cur.fetchone()
-            return Entity(*row) if row else None
-
-    @staticmethod
-    def get_by_case_id(conn, case_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, entity_type, entity_name, normalized_name FROM entities WHERE case_id = %s", (case_id,))
-            rows = cur.fetchall()
-            return [Entity(*row) for row in rows]
-
-class EventModel:
-    @staticmethod
-    def get_all(conn):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, description, timestamp, location, entities_involved FROM events")
-            rows = cur.fetchall()
-            return [Event(*row) for row in rows]
-
-    @staticmethod
-    def get_by_id(conn, event_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, description, timestamp, location, entities_involved FROM events WHERE id = %s", (event_id,))
-            row = cur.fetchone()
-            return Event(*row) if row else None
-
-    @staticmethod
-    def get_by_case_id(conn, case_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, description, timestamp, location, entities_involved FROM events WHERE case_id = %s", (case_id,))
-            rows = cur.fetchall()
-            return [Event(*row) for row in rows]
-
-class RelationModel:
-    @staticmethod
-    def get_all(conn):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, subject_id, predicate, object_id FROM relations")
-            rows = cur.fetchall()
-            return [Relation(*row) for row in rows]
-
-    @staticmethod
-    def get_by_id(conn, relation_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, subject_id, predicate, object_id FROM relations WHERE id = %s", (relation_id,))
-            row = cur.fetchone()
-            return Relation(*row) if row else None
-
-    @staticmethod
-    def get_by_case_id(conn, case_id):
-        with conn.cursor() as cur:
-            cur.execute("SELECT id, case_id, subject_id, predicate, object_id FROM relations WHERE case_id = %s", (case_id,))
-            rows = cur.fetchall()
-            return [Relation(*row) for row in rows]
+class Relation(Base):
+    __tablename__ = 'relations'
+    id = Column(Integer, primary_key=True)
+    case_id = Column(String(50), ForeignKey('cases.case_id', ondelete='CASCADE'))
+    subject_id = Column(Integer, ForeignKey('entities.id', ondelete='CASCADE'))
+    predicate = Column(String(100))
+    object_id = Column(Integer, ForeignKey('entities.id', ondelete='CASCADE'))

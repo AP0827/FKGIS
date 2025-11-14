@@ -6,8 +6,11 @@ coreferee
 
 # Database drivers
 pymongo
+mongoengine
 psycopg2-binary
+sqlalchemy
 neo4j
+neomodel
 
 # Utilities
 dateparser
