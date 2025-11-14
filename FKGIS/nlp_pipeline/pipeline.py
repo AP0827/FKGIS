@@ -20,7 +20,14 @@ from .ner_and_dependency_parsing.ner_module import (
     setup_nlp_pipeline,
     process_json_file as run_ner_on_json,
 )
-from .coreference.coref_global_pool import process_ner_json as build_global_entities
+from .coreference.coref_global_pool import (
+    process_ner_json as build_global_entities,
+    create_coref_pipeline,
+    run_coref_on_document,
+)
+from .mention_unification.mention_unifier import unify_mentions
+from .relation_extraction.basic_rel_extractor import extract_relations
+from .event_construction.event_builder import build_events
 
 
 def run_preprocessing(input_txt_path: str) -> str:
@@ -80,7 +87,16 @@ def run_coreference(case_id: str, ner_json_path: str, output_dir: Optional[str] 
 
 
 def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[str] = None) -> Dict[str, str]:
-    """Run the full narrative pipeline from raw text to global entities.
+    """Run the full narrative pipeline from raw text to enriched events.
+
+    Steps:
+        1) Preprocessing (sentence & event segmentation) -> processed_doc JSON
+        2) NER -> entities attached per sentence + flattened processed_doc["entities"]
+        3) Coreference / global entity pool (file-level, legacy)
+        4) Document-level coref to add processed_doc["coref_entities"]
+        5) Pronoun substitution + mention unification -> processed_doc["unified_sentences"]
+        6) Basic relation extraction -> processed_doc["relations"]
+        7) Event construction -> processed_doc["events"]
 
     Args:
         case_id: Identifier for the case.
@@ -90,8 +106,11 @@ def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[st
             alongside the input.
 
     Returns:
-        Dict with keys: "preprocessed", "ner", "global_entities"
-        mapping to their respective file paths.
+        Dict with keys:
+            "preprocessed"    -> *_ROnarrative_processed.json
+            "ner"             -> *_ROnarrative_processed_ner.json
+            "global_entities" -> {case_id}_global_entities.json
+            "enriched"        -> *_ROnarrative_processed_ner_events.json
     """
     input_txt = Path(input_txt_path)
 
@@ -116,10 +135,48 @@ def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[st
 
         global_entities_path = run_coreference(case_id, ner_path, output_dir=str(output_dir_path))
 
+    # ------------------------------------------------------------------
+    # Post-coreference document-level enrichment:
+    #   coref_entities, unified_sentences, relations, events
+    # ------------------------------------------------------------------
+    import json
+
+    with open(ner_path, "r", encoding="utf-8") as f:
+        processed_doc = json.load(f)
+
+    # Ensure we have a sentence_id on each original sentence for downstream mapping
+    sentences = processed_doc.get("sentences") or []
+    for idx, sent in enumerate(sentences):
+        sent.setdefault("sentence_id", idx)
+
+    # Document-level coreference: populate processed_doc["coref_entities"]
+    coref_nlp = create_coref_pipeline()
+    doc_type = processed_doc.get("doc_type", "narrative")
+    processed_doc = run_coref_on_document(coref_nlp, processed_doc, doc_type=doc_type)
+
+    # Optional convenience alias so downstream code can refer to "coref"
+    if "coref_entities" in processed_doc:
+        processed_doc.setdefault("coref", processed_doc["coref_entities"])
+
+    # 4) Pronoun substitution + mention unification
+    processed_doc = unify_mentions(processed_doc)
+
+    # 5) Basic relation extraction (rule-based)
+    processed_doc = extract_relations(processed_doc)
+
+    # 6) Event construction from relations (+ optional time)
+    processed_doc = build_events(processed_doc)
+
+    # Persist enriched document
+    enriched_path = ner_path.replace(".json", "_events.json")
+    with open(enriched_path, "w", encoding="utf-8") as f:
+        json.dump(processed_doc, f, indent=4, ensure_ascii=False)
+
     return {
         "preprocessed": preprocessed_path,
         "ner": ner_path,
         "global_entities": global_entities_path,
+        "enriched": enriched_path,
     }
 
 

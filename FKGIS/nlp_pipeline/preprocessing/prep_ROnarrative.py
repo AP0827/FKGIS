@@ -121,6 +121,20 @@ def extract_events(sentences):
     return events
 
 def process_file(input_path):
+    """Preprocess a narrative text file into a uniform processed_doc JSON.
+
+    Output shape:
+
+        {
+          "raw_text": "...",          # normalized narrative text
+          "segments": [...],          # list of segment dicts with sentences/events
+          "sentences": [...],         # flat list of sentence dicts
+          "meta": {
+              "source_path": "...",   # original file path
+          },
+          "doc_type": "narrative"
+        }
+    """
     with open(input_path, 'r', encoding='utf-8') as f:
         text = f.read()
 
@@ -138,6 +152,8 @@ def process_file(input_path):
     nlp.add_pipe('sentencizer')
 
     processed_segments = []
+    all_sentences = []
+
     for seg in segments:
         # Step 4: Sentence Segmentation
         sentences = process_sentences(seg['text'], nlp)
@@ -145,17 +161,29 @@ def process_file(input_path):
         # Step 5: Event Candidate Extraction
         events = extract_events(sentences)
 
-        processed_segments.append({
+        segment_obj = {
             'time': seg['time'],
             'text': seg['text'],
             'sentences': sentences,
-            'events': events
-        })
+            'events': events,
+        }
+        processed_segments.append(segment_obj)
+        all_sentences.extend(sentences)
+
+    processed_doc = {
+        'raw_text': text,
+        'segments': processed_segments,
+        'sentences': all_sentences,
+        'meta': {
+            'source_path': input_path,
+        },
+        'doc_type': 'narrative',
+    }
 
     # Output JSON
     output_path = input_path.replace('.txt', '_ROnarrative_processed.json')
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump({'segments': processed_segments}, f, indent=4, ensure_ascii=False)
+        json.dump(processed_doc, f, indent=4, ensure_ascii=False)
 
     return output_path
 

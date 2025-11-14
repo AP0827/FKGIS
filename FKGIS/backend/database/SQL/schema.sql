@@ -72,21 +72,28 @@ CREATE TABLE relations (
     object_id INT REFERENCES entities(id) ON DELETE CASCADE
 );
 
+-- Global entity pool and unified case knowledge graph
+-- For each case_id, the combination of:
+--   - entities (local mentions)
+--   - global_entities (canonical nodes)
+--   - relations (edges)
+--   - events (timeline)
+-- together form ONE unified knowledge graph for that case.
+ 
 CREATE TABLE global_entities (
     global_id SERIAL PRIMARY KEY,
     case_id VARCHAR(50) REFERENCES cases(case_id) ON DELETE CASCADE,
     canonical_name TEXT NOT NULL,
     entity_type VARCHAR(50),
-    gender VARCHAR(10),
     source_docs TEXT[]
 );
-
+ 
 ALTER TABLE entities
 ADD COLUMN global_id INT REFERENCES global_entities(global_id) ON DELETE SET NULL;
-
+ 
 ALTER TABLE relations
 ADD COLUMN subject_global_id INT REFERENCES global_entities(global_id),
 ADD COLUMN object_global_id INT REFERENCES global_entities(global_id);
-
+ 
 ALTER TABLE events
 ADD COLUMN actor_global_id INT REFERENCES global_entities(global_id);
