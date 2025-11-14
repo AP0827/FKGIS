@@ -2,6 +2,19 @@ import json
 import argparse
 import spacy
 from typing import Dict, List, Any
+import re
+
+# Simple normalization and pronoun lists
+PRONOUNS_MALE = {"he", "him", "his"}
+PRONOUNS_FEMALE = {"she", "her", "hers"}
+PRONOUNS_NEUTRAL = {"they", "them", "their", "theirs"}
+
+def normalize_text(text: str) -> str:
+    """Create a deterministic normalization key for mentions."""
+    t = text.strip().lower()
+    t = re.sub(r"[^a-z0-9 ]", "", t)
+    t = re.sub(r"\s+", " ", t)
+    return t.replace(" ", "_")
 
 # Updated SQL Schema as strings
 CREATE_GLOBAL_ENTITIES = """
@@ -33,15 +46,16 @@ ADD COLUMN actor_global_id INT REFERENCES global_entities(global_id);
 
 def create_coref_pipeline():
     """
-    Create spaCy pipeline with NER, EntityRuler, and LLM coreference loaded from config.
-    """
-    import os
-    from spacy.util import load_model_from_config
-    config_path = os.path.join(os.path.dirname(__file__), "..", "config.cfg")
-    config = spacy.util.load_config(config_path)
-    nlp = load_model_from_config(config)
+    Create spaCy pipeline with NER and EntityRuler for basic processing.
 
-    # EntityRuler patterns (add if not in config)
+    Uses the transformer model `en_core_web_trf`, which you have installed.
+    If needed, this can later be swapped for a dedicated coref model, but the
+    rest of this module already includes a heuristic pronoun resolver and can
+    operate without `doc._.coref_clusters`.
+    """
+    nlp = spacy.load("en_core_web_trf")
+
+    # EntityRuler patterns
     patterns = [
         {"label": "ROLE", "pattern": "Reporting Officer"},
         {"label": "ROLE", "pattern": "Reporting Investigator"},
@@ -56,9 +70,8 @@ def create_coref_pipeline():
         {"label": "LOC", "pattern": "Scene"}
     ]
 
-    if "entity_ruler" not in nlp.pipe_names:
-        ruler = nlp.add_pipe("entity_ruler", before="ner")
-        ruler.add_patterns(patterns)
+    ruler = nlp.add_pipe("entity_ruler", before="ner")
+    ruler.add_patterns(patterns)
 
     return nlp
 
@@ -88,6 +101,54 @@ class GlobalEntityPool:
                 "source_docs": [doc_name]
             }
             self.global_counter += 1
+
+    def infer_gender_from_mention(self, mention_text: str) -> str:
+        """Simple heuristic to infer gender from mention text (titles/pronouns)."""
+        t = mention_text.lower()
+        if any(p in t for p in ["mr ", "mr.", "sir", "him", "his"]):
+            return "male"
+        if any(p in t for p in ["ms ", "mrs", "ms.", "miss", "ma'am", "her", "she"]):
+            return "female"
+        return "unknown"
+
+    def resolve_pronouns_in_doc(self, doc, doc_name: str):
+        """Resolve simple pronouns by linking them to the nearest preceding entity.
+
+        This is a lightweight heuristic fallback when a full coref component is
+        not available in the pipeline.
+        """
+        # Build list of candidate entities (token index -> normalized key)
+        candidates = []  # list of tuples (end_token_idx, norm)
+        for ent in doc.ents:
+            norm = normalize_text(ent.text)
+            candidates.append((ent.end, norm, ent.label_))
+            # Ensure the pool includes this entity
+            self.add_mention(doc_name, ent.text, ent.label_, norm)
+
+        # Iterate tokens, look for pronouns
+        for i, token in enumerate(doc):
+            if token.pos_ == "PRON":
+                low = token.lower_
+                if low in PRONOUNS_MALE | PRONOUNS_FEMALE | PRONOUNS_NEUTRAL:
+                    # find nearest candidate with end <= token.i
+                    chosen = None
+                    for end_idx, norm, label in reversed(candidates):
+                        if end_idx - 1 <= token.i - 1:
+                            chosen = (norm, label)
+                            break
+                    if chosen:
+                        norm, label = chosen
+                        self.add_mention(doc_name, token.text, label or "PRON", norm)
+                        # try to set gender if unknown
+                        g = None
+                        if low in PRONOUNS_MALE:
+                            g = "male"
+                        elif low in PRONOUNS_FEMALE:
+                            g = "female"
+                        elif low in PRONOUNS_NEUTRAL:
+                            g = "unknown"
+                        if g and self.pool.get(norm) and (not self.pool[norm]["gender"] or self.pool[norm]["gender"] == "unknown"):
+                            self.pool[norm]["gender"] = g
 
     def merge_entities(self, norm_a: str, norm_b: str):
         """
@@ -164,18 +225,22 @@ def process_ner_json(case_id: str, ner_json_path: str, doc_name: str = "narrativ
     # Extract full text from segments
     full_text = " ".join(seg['text'] for seg in data['segments'])
     doc = nlp(full_text)
-    pool.integrate_coref_clusters(doc, doc_name)
-    
-    # Integrate NER entities
+    # Integrate NER entities first so basic mentions exist in the pool
     for seg in data['segments']:
         for sent in seg['sentences']:
             if 'entities' in sent:
                 for ent in sent['entities']:
-                    norm = ent['norm']
-                    label = ent['label']
-                    mention = ent['text']
+                    norm = ent.get('norm') or normalize_text(ent.get('text', ''))
+                    label = ent.get('label', 'UNKNOWN')
+                    mention = ent.get('text', '')
                     pool.add_mention(doc_name, mention, label, norm)
-    
+
+    # Integrate any coref clusters from the doc (if pipeline provides them)
+    pool.integrate_coref_clusters(doc, doc_name)
+
+    # Attempt lightweight pronoun resolution to link pronouns to nearby entities
+    pool.resolve_pronouns_in_doc(doc, doc_name)
+
     pool.apply_constraints()
     return pool.export()
 

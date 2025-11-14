@@ -1,4 +1,33 @@
-sentence extraction : 
-python3 FKGIS/nlp_pipeline/preprocessing/prep_ROnarrative.py FKGIS/nlp_pipeline/sample.txt 
-ner extraction :
-python3 FKGIS/nlp_pipeline/ner_and_dependency_parsing/ner_module.py --input /home/aayush/Desktop/Projects/FKGIS/FKGIS/nlp_pipeline/sample_ROnarrative_processed.json
+# NLP pipeline runnable commands (from project root)
+
+# 1) Preprocessing / sentence & event extraction
+# Input: raw narrative text file
+# Output: sample_ROnarrative_processed.json
+sentence extraction:
+python3 FKGIS/nlp_pipeline/preprocessing/prep_ROnarrative.py FKGIS/nlp_pipeline/sample.txt
+
+# 2) NER over preprocessed JSON
+# Input: *ROnarrative_processed.json
+# Output: *ROnarrative_processed_ner.json
+ner extraction:
+python3 FKGIS/nlp_pipeline/ner_and_dependency_parsing/ner_module.py --input FKGIS/nlp_pipeline/sample_ROnarrative_processed.json
+
+# 3) Coreference / global entity pool over NER JSON
+# Input: *ROnarrative_processed_ner.json
+# Output: {CASE_ID}_global_entities.json
+coreference (global entities):
+python3 FKGIS/nlp_pipeline/coreference/coref_global_pool.py --case CASE123 --ner_json FKGIS/nlp_pipeline/sample_ROnarrative_processed_ner.json
+
+# 4) Run via high-level pipeline module (step-by-step or full)
+
+# 4a) Only preprocessing via pipeline
+python3 -m FKGIS.nlp_pipeline.pipeline --input FKGIS/nlp_pipeline/sample.txt --step preprocess
+
+# 4b) Only NER via pipeline (assumes preprocessed JSON already exists)
+python3 -m FKGIS.nlp_pipeline.pipeline --input FKGIS/nlp_pipeline/sample_ROnarrative_processed.json --step ner
+
+# 4c) Only coreference via pipeline (assumes NER JSON already exists)
+python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline/sample_ROnarrative_processed_ner.json --step coref
+
+# 4d) Full pipeline: text → preprocessed JSON → NER JSON → global entities
+python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline/sample.txt --step full

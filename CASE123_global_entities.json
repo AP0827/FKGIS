@@ -1,0 +1,924 @@
+[
+    {
+        "global_id": 1,
+        "canonical_name": "rreporting_officer_s_narrative",
+        "mentions": [
+            "RREPORTING OFFICER'S NARRATIVE"
+        ],
+        "entity_type": "WORK_OF_ART",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 2,
+        "canonical_name": "11_06_a_m",
+        "mentions": [
+            "11:06 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 3,
+        "canonical_name": "dispatch",
+        "mentions": [
+            "Dispatch"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 4,
+        "canonical_name": "911",
+        "mentions": [
+            "911"
+        ],
+        "entity_type": "CARDINAL",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 5,
+        "canonical_name": "body",
+        "mentions": [
+            "body",
+            "victim"
+        ],
+        "entity_type": "EVIDENCE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 6,
+        "canonical_name": "residence",
+        "mentions": [
+            "residence"
+        ],
+        "entity_type": "LOC",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 7,
+        "canonical_name": "cheryl_weston",
+        "mentions": [
+            "Cheryl Weston"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 8,
+        "canonical_name": "304",
+        "mentions": [
+            "#304"
+        ],
+        "entity_type": "CARDINAL",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 9,
+        "canonical_name": "deputy",
+        "mentions": [
+            "Deputy"
+        ],
+        "entity_type": "ROLE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 10,
+        "canonical_name": "fred_willits",
+        "mentions": [
+            "Fred Willits"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 11,
+        "canonical_name": "armstrong",
+        "mentions": [
+            "Armstrong"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 12,
+        "canonical_name": "murphy",
+        "mentions": [
+            "Murphy"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 13,
+        "canonical_name": "luwinda_johnson",
+        "mentions": [
+            "Luwinda Johnson"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 14,
+        "canonical_name": "reporting_investigator",
+        "mentions": [
+            "Reporting Investigator"
+        ],
+        "entity_type": "ROLE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 15,
+        "canonical_name": "reporting_officer",
+        "mentions": [
+            "Reporting Officer"
+        ],
+        "entity_type": "ROLE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 16,
+        "canonical_name": "willits",
+        "mentions": [
+            "Willits",
+            "he",
+            "his"
+        ],
+        "entity_type": "PERSON",
+        "gender": "male",
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 17,
+        "canonical_name": "11_13_a_m",
+        "mentions": [
+            "11:13 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 18,
+        "canonical_name": "unit_224",
+        "mentions": [
+            "Unit #224"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 19,
+        "canonical_name": "steve_harding",
+        "mentions": [
+            "Steve Harding"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 20,
+        "canonical_name": "11_18_a_m",
+        "mentions": [
+            "11:18 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 21,
+        "canonical_name": "11_27_a_m",
+        "mentions": [
+            "11:27 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 22,
+        "canonical_name": "r_os_willits",
+        "mentions": [
+            "R / Os Willits"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 23,
+        "canonical_name": "harding",
+        "mentions": [
+            "Harding"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 24,
+        "canonical_name": "74_f_23_c",
+        "mentions": [
+            "74° F / 23° C"
+        ],
+        "entity_type": "QUANTITY",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 25,
+        "canonical_name": "57",
+        "mentions": [
+            "57%"
+        ],
+        "entity_type": "PERCENT",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 26,
+        "canonical_name": "68_f_20_c",
+        "mentions": [
+            "68° F / 20° C"
+        ],
+        "entity_type": "QUANTITY",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 27,
+        "canonical_name": "53",
+        "mentions": [
+            "53%"
+        ],
+        "entity_type": "PERCENT",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 28,
+        "canonical_name": "two",
+        "mentions": [
+            "two"
+        ],
+        "entity_type": "CARDINAL",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 29,
+        "canonical_name": "rebecca_pace",
+        "mentions": [
+            "Rebecca Pace"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 30,
+        "canonical_name": "jeremy_gladwell",
+        "mentions": [
+            "Jeremy Gladwell"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 31,
+        "canonical_name": "dog",
+        "mentions": [
+            "dog"
+        ],
+        "entity_type": "EVIDENCE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 32,
+        "canonical_name": "yoknapatawpha_county",
+        "mentions": [
+            "Yoknapatawpha County"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 33,
+        "canonical_name": "animal_control",
+        "mentions": [
+            "Animal Control"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 34,
+        "canonical_name": "11_24_a_m",
+        "mentions": [
+            "11:24 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 35,
+        "canonical_name": "crime_scene_unit",
+        "mentions": [
+            "Crime Scene Unit",
+            "their"
+        ],
+        "entity_type": "ORG",
+        "gender": "unknown",
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 36,
+        "canonical_name": "joanne_lukens",
+        "mentions": [
+            "Joanne Lukens"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 37,
+        "canonical_name": "jaime_sanchez",
+        "mentions": [
+            "Jaime Sanchez"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 38,
+        "canonical_name": "approximately_15_minutes",
+        "mentions": [
+            "approximately 15 minutes"
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 39,
+        "canonical_name": "approximately_10_minutes",
+        "mentions": [
+            "approximately 10 minutes"
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 40,
+        "canonical_name": "briefcase",
+        "mentions": [
+            "briefcase"
+        ],
+        "entity_type": "EVIDENCE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 41,
+        "canonical_name": "handbag",
+        "mentions": [
+            "handbag"
+        ],
+        "entity_type": "EVIDENCE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 42,
+        "canonical_name": "11_42_a_m",
+        "mentions": [
+            "11:42 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 43,
+        "canonical_name": "sanchez",
+        "mentions": [
+            "Sanchez",
+            "their",
+            "they",
+            "her"
+        ],
+        "entity_type": "PERSON",
+        "gender": "female",
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 44,
+        "canonical_name": "reporting_investigators",
+        "mentions": [
+            "Reporting Investigators"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 45,
+        "canonical_name": "mid",
+        "mentions": [
+            "mid"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 46,
+        "canonical_name": "",
+        "mentions": [
+            "-"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 47,
+        "canonical_name": "thirties",
+        "mentions": [
+            "thirties"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 49,
+        "canonical_name": "one",
+        "mentions": [
+            "one"
+        ],
+        "entity_type": "CARDINAL",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 50,
+        "canonical_name": "45",
+        "mentions": [
+            "45°"
+        ],
+        "entity_type": "QUANTITY",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 51,
+        "canonical_name": "30",
+        "mentions": [
+            "30°"
+        ],
+        "entity_type": "QUANTITY",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 52,
+        "canonical_name": "115",
+        "mentions": [
+            "115°"
+        ],
+        "entity_type": "QUANTITY",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 53,
+        "canonical_name": "johnson",
+        "mentions": [
+            "Johnson",
+            "she",
+            "her"
+        ],
+        "entity_type": "PERSON",
+        "gender": "female",
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 54,
+        "canonical_name": "approximately_11_45_a_m",
+        "mentions": [
+            "approximately 11:45 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 55,
+        "canonical_name": "11_48_a_m",
+        "mentions": [
+            "11:48 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 56,
+        "canonical_name": "approximately_10_to_12_hours",
+        "mentions": [
+            "approximately 10 to 12 hours"
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 57,
+        "canonical_name": "coroner_s",
+        "mentions": [
+            "Coroner's"
+        ],
+        "entity_type": "ORG",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 58,
+        "canonical_name": "12_53_p_m",
+        "mentions": [
+            "12:53 p.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 59,
+        "canonical_name": "fourteen_days",
+        "mentions": [
+            "fourteen days",
+            "their"
+        ],
+        "entity_type": "DATE",
+        "gender": "unknown",
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 60,
+        "canonical_name": "4_35_p_m",
+        "mentions": [
+            "4:35 p.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 61,
+        "canonical_name": "day",
+        "mentions": [
+            "day"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 62,
+        "canonical_name": "the_end_of_this_date",
+        "mentions": [
+            "the end of this date"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 63,
+        "canonical_name": "t_r_douglas",
+        "mentions": [
+            "T. R. Douglas"
+        ],
+        "entity_type": "PERSON",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 64,
+        "canonical_name": "1106_am",
+        "mentions": [
+            "11:06 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 65,
+        "canonical_name": "coroners_inspector",
+        "mentions": [
+            "Coroner's Inspector"
+        ],
+        "entity_type": "ROLE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 66,
+        "canonical_name": "1113_am",
+        "mentions": [
+            "11:13 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 67,
+        "canonical_name": "224",
+        "mentions": [
+            "#224"
+        ],
+        "entity_type": "CARDINAL",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 68,
+        "canonical_name": "1118_am",
+        "mentions": [
+            "11:18 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 69,
+        "canonical_name": "1127_am",
+        "mentions": [
+            "11:27 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 70,
+        "canonical_name": "1124_am",
+        "mentions": [
+            "11:24 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 71,
+        "canonical_name": "1142_am",
+        "mentions": [
+            "11:42 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 72,
+        "canonical_name": "midthirties",
+        "mentions": [
+            "mid-thirties"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 73,
+        "canonical_name": "approximately_1145_am",
+        "mentions": [
+            "approximately 11:45 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 74,
+        "canonical_name": "1148_am",
+        "mentions": [
+            "11:48 a.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 75,
+        "canonical_name": "1253_pm",
+        "mentions": [
+            "12:53 p.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 76,
+        "canonical_name": "435_pm",
+        "mentions": [
+            "4:35 p.m."
+        ],
+        "entity_type": "TIME",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    },
+    {
+        "global_id": 77,
+        "canonical_name": "end_of_day",
+        "mentions": [
+            "end of day"
+        ],
+        "entity_type": "DATE",
+        "gender": null,
+        "source_docs": [
+            "narrative"
+        ]
+    }
+]
