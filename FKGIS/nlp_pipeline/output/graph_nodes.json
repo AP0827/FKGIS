@@ -1,0 +1,2485 @@
+[
+    {
+        "id": "ENT_kimberly_pace",
+        "type": "Entity",
+        "text": "Kimberly Pace",
+        "norm": "kimberly_pace",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_valerie",
+        "type": "Entity",
+        "text": "Valerie",
+        "norm": "valerie",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_robert_pace",
+        "type": "Entity",
+        "text": "Robert Pace",
+        "norm": "robert_pace",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_june_24_1987",
+        "type": "Entity",
+        "text": "June 24, 1987",
+        "norm": "june_24_1987",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_oxford",
+        "type": "Entity",
+        "text": "Oxford",
+        "norm": "oxford",
+        "label": "GPE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_mississippi",
+        "type": "Entity",
+        "text": "Mississippi",
+        "norm": "mississippi",
+        "label": "GPE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_robert",
+        "type": "Entity",
+        "text": "Robert",
+        "norm": "robert",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_yokanapatawpha_high_school",
+        "type": "Entity",
+        "text": "Yokanapatawpha High School",
+        "norm": "yokanapatawpha_high_school",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_university_elementary_school",
+        "type": "Entity",
+        "text": "University Elementary school",
+        "norm": "university_elementary_school",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_rebecca",
+        "type": "Entity",
+        "text": "Rebecca",
+        "norm": "rebecca",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_six_years_later",
+        "type": "Entity",
+        "text": "six years later",
+        "norm": "six_years_later",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kimberly",
+        "type": "Entity",
+        "text": "Kimberly",
+        "norm": "kimberly",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_becky",
+        "type": "Entity",
+        "text": "Becky",
+        "norm": "becky",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_junior_year",
+        "type": "Entity",
+        "text": "junior year",
+        "norm": "junior_year",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_next_year",
+        "type": "Entity",
+        "text": "the next year",
+        "norm": "the_next_year",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_english",
+        "type": "Entity",
+        "text": "English",
+        "norm": "english",
+        "label": "LANGUAGE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_university_of_mississippi",
+        "type": "Entity",
+        "text": "the University of Mississippi",
+        "norm": "the_university_of_mississippi",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_ole_miss",
+        "type": "Entity",
+        "text": "Ole Miss",
+        "norm": "ole_miss",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_june_2009",
+        "type": "Entity",
+        "text": "June 2009",
+        "norm": "june_2009",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_four_years",
+        "type": "Entity",
+        "text": "four years",
+        "norm": "four_years",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_ph_d",
+        "type": "Entity",
+        "text": "Ph.D.",
+        "norm": "ph_d",
+        "label": "WORK_OF_ART",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_her_college_years",
+        "type": "Entity",
+        "text": "her college years",
+        "norm": "her_college_years",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_lucky_caf",
+        "type": "Entity",
+        "text": "The Lucky Café",
+        "norm": "the_lucky_caf",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston",
+        "type": "Entity",
+        "text": "Cheryl Weston",
+        "norm": "cheryl_weston",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_one",
+        "type": "Entity",
+        "text": "one",
+        "norm": "one",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_three",
+        "type": "Entity",
+        "text": "three",
+        "norm": "three",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_sunday",
+        "type": "Entity",
+        "text": "Sunday",
+        "norm": "sunday",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_every_other_week",
+        "type": "Entity",
+        "text": "every other week",
+        "norm": "every_other_week",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl",
+        "type": "Entity",
+        "text": "Cheryl",
+        "norm": "cheryl",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_library",
+        "type": "Entity",
+        "text": "The Library",
+        "norm": "the_library",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_downtown_grill",
+        "type": "Entity",
+        "text": "the Downtown Grill",
+        "norm": "the_downtown_grill",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_paul_evans",
+        "type": "Entity",
+        "text": "Paul Evans",
+        "norm": "paul_evans",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_2019",
+        "type": "Entity",
+        "text": "2019",
+        "norm": "2019",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_county_arts_and_crafts_fair",
+        "type": "Entity",
+        "text": "County Arts and Crafts Fair",
+        "norm": "county_arts_and_crafts_fair",
+        "label": "EVENT",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_paul",
+        "type": "Entity",
+        "text": "Paul",
+        "norm": "paul",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_six_months_later",
+        "type": "Entity",
+        "text": "About six months later",
+        "norm": "about_six_months_later",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_few_years_earlier",
+        "type": "Entity",
+        "text": "a few years earlier",
+        "norm": "a_few_years_earlier",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_lane_properties",
+        "type": "Entity",
+        "text": "Lane Properties",
+        "norm": "lane_properties",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_body",
+        "type": "Entity",
+        "text": "body",
+        "norm": "body",
+        "label": "EVIDENCE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell",
+        "type": "Entity",
+        "text": "Jeremy Gladwell",
+        "norm": "jeremy_gladwell",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_rreporting_officer_s_narrative",
+        "type": "Entity",
+        "text": "RREPORTING OFFICER'S NARRATIVE",
+        "norm": "rreporting_officer_s_narrative",
+        "label": "WORK_OF_ART",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_06_a_m",
+        "type": "Entity",
+        "text": "11:06 a.m.",
+        "norm": "11_06_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_dispatch",
+        "type": "Entity",
+        "text": "Dispatch",
+        "norm": "dispatch",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_911",
+        "type": "Entity",
+        "text": "911",
+        "norm": "911",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_residence",
+        "type": "Entity",
+        "text": "residence",
+        "norm": "residence",
+        "label": "LOC",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_304",
+        "type": "Entity",
+        "text": "#304",
+        "norm": "304",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_deputy",
+        "type": "Entity",
+        "text": "Deputy",
+        "norm": "deputy",
+        "label": "ROLE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_fred_willits",
+        "type": "Entity",
+        "text": "Fred Willits",
+        "norm": "fred_willits",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_armstrong",
+        "type": "Entity",
+        "text": "Armstrong",
+        "norm": "armstrong",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_murphy",
+        "type": "Entity",
+        "text": "Murphy",
+        "norm": "murphy",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_luwinda_johnson",
+        "type": "Entity",
+        "text": "Luwinda Johnson",
+        "norm": "luwinda_johnson",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_investigator",
+        "type": "Entity",
+        "text": "Reporting Investigator",
+        "norm": "reporting_investigator",
+        "label": "ROLE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_officer",
+        "type": "Entity",
+        "text": "Reporting Officer",
+        "norm": "reporting_officer",
+        "label": "ROLE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_willits",
+        "type": "Entity",
+        "text": "Willits",
+        "norm": "willits",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_13_a_m",
+        "type": "Entity",
+        "text": "11:13 a.m.",
+        "norm": "11_13_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_unit_224",
+        "type": "Entity",
+        "text": "Unit #224",
+        "norm": "unit_224",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_steve_harding",
+        "type": "Entity",
+        "text": "Steve Harding",
+        "norm": "steve_harding",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_18_a_m",
+        "type": "Entity",
+        "text": "11:18 a.m.",
+        "norm": "11_18_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_27_a_m",
+        "type": "Entity",
+        "text": "11:27 a.m.",
+        "norm": "11_27_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_r_os_willits",
+        "type": "Entity",
+        "text": "R / Os Willits",
+        "norm": "r_os_willits",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_harding",
+        "type": "Entity",
+        "text": "Harding",
+        "norm": "harding",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_74_f_23_c",
+        "type": "Entity",
+        "text": "74° F / 23° C",
+        "norm": "74_f_23_c",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_57",
+        "type": "Entity",
+        "text": "57%",
+        "norm": "57",
+        "label": "PERCENT",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_68_f_20_c",
+        "type": "Entity",
+        "text": "68° F / 20° C",
+        "norm": "68_f_20_c",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_53",
+        "type": "Entity",
+        "text": "53%",
+        "norm": "53",
+        "label": "PERCENT",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_two",
+        "type": "Entity",
+        "text": "two",
+        "norm": "two",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_rebecca_pace",
+        "type": "Entity",
+        "text": "Rebecca Pace",
+        "norm": "rebecca_pace",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_dog",
+        "type": "Entity",
+        "text": "dog",
+        "norm": "dog",
+        "label": "EVIDENCE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_yoknapatawpha_county",
+        "type": "Entity",
+        "text": "Yoknapatawpha County",
+        "norm": "yoknapatawpha_county",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_animal_control",
+        "type": "Entity",
+        "text": "Animal Control",
+        "norm": "animal_control",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_24_a_m",
+        "type": "Entity",
+        "text": "11:24 a.m.",
+        "norm": "11_24_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_crime_scene_unit",
+        "type": "Entity",
+        "text": "Crime Scene Unit",
+        "norm": "crime_scene_unit",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_joanne_lukens",
+        "type": "Entity",
+        "text": "Joanne Lukens",
+        "norm": "joanne_lukens",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jaime_sanchez",
+        "type": "Entity",
+        "text": "Jaime Sanchez",
+        "norm": "jaime_sanchez",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_approximately_15_minutes",
+        "type": "Entity",
+        "text": "approximately 15 minutes",
+        "norm": "approximately_15_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_approximately_10_minutes",
+        "type": "Entity",
+        "text": "approximately 10 minutes",
+        "norm": "approximately_10_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_briefcase",
+        "type": "Entity",
+        "text": "briefcase",
+        "norm": "briefcase",
+        "label": "EVIDENCE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_handbag",
+        "type": "Entity",
+        "text": "handbag",
+        "norm": "handbag",
+        "label": "EVIDENCE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_42_a_m",
+        "type": "Entity",
+        "text": "11:42 a.m.",
+        "norm": "11_42_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_sanchez",
+        "type": "Entity",
+        "text": "Sanchez",
+        "norm": "sanchez",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_investigators",
+        "type": "Entity",
+        "text": "Reporting Investigators",
+        "norm": "reporting_investigators",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_mid",
+        "type": "Entity",
+        "text": "mid",
+        "norm": "mid",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_-",
+        "type": "Entity",
+        "text": "-",
+        "norm": "-",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_thirties",
+        "type": "Entity",
+        "text": "thirties",
+        "norm": "thirties",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_victim",
+        "type": "Entity",
+        "text": "victim",
+        "norm": "victim",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_45",
+        "type": "Entity",
+        "text": "45°",
+        "norm": "45",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_30",
+        "type": "Entity",
+        "text": "30°",
+        "norm": "30",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_115",
+        "type": "Entity",
+        "text": "115°",
+        "norm": "115",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_johnson",
+        "type": "Entity",
+        "text": "Johnson",
+        "norm": "johnson",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_approximately_11_45_a_m",
+        "type": "Entity",
+        "text": "approximately 11:45 a.m.",
+        "norm": "approximately_11_45_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_48_a_m",
+        "type": "Entity",
+        "text": "11:48 a.m.",
+        "norm": "11_48_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_approximately_10_to_12_hours",
+        "type": "Entity",
+        "text": "approximately 10 to 12 hours",
+        "norm": "approximately_10_to_12_hours",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_coroner_s",
+        "type": "Entity",
+        "text": "Coroner's",
+        "norm": "coroner_s",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_12_53_p_m",
+        "type": "Entity",
+        "text": "12:53 p.m.",
+        "norm": "12_53_p_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_fourteen_days",
+        "type": "Entity",
+        "text": "fourteen days",
+        "norm": "fourteen_days",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_4_35_p_m",
+        "type": "Entity",
+        "text": "4:35 p.m.",
+        "norm": "4_35_p_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_day",
+        "type": "Entity",
+        "text": "day",
+        "norm": "day",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_end_of_this_date",
+        "type": "Entity",
+        "text": "the end of this date",
+        "norm": "the_end_of_this_date",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_t_r_douglas",
+        "type": "Entity",
+        "text": "T. R. Douglas",
+        "norm": "t_r_douglas",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_unit_#224",
+        "type": "Entity",
+        "text": "Unit #224",
+        "norm": "unit #224",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_coroner's",
+        "type": "Entity",
+        "text": "Coroner's",
+        "norm": "coroner's",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_t_armstrong",
+        "type": "Entity",
+        "text": "T. Armstrong",
+        "norm": "t_armstrong",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_s_murphy",
+        "type": "Entity",
+        "text": "S. Murphy",
+        "norm": "s_murphy",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_weston",
+        "type": "Entity",
+        "text": "Weston",
+        "norm": "weston",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_many_years",
+        "type": "Entity",
+        "text": "many years",
+        "norm": "many_years",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_15_years_ago",
+        "type": "Entity",
+        "text": "about 15 years ago",
+        "norm": "about_15_years_ago",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_pace",
+        "type": "Entity",
+        "text": "Pace",
+        "norm": "pace",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_highway_6",
+        "type": "Entity",
+        "text": "Highway 6",
+        "norm": "highway_6",
+        "label": "FAC",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_yesterday",
+        "type": "Entity",
+        "text": "yesterday",
+        "norm": "yesterday",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_annie",
+        "type": "Entity",
+        "text": "Annie",
+        "norm": "annie",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kim",
+        "type": "Entity",
+        "text": "Kim",
+        "norm": "kim",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_just_before_11_00_a_m",
+        "type": "Entity",
+        "text": "just before 11:00 a.m.",
+        "norm": "just_before_11_00_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_a_quarter",
+        "type": "Entity",
+        "text": "about a quarter",
+        "norm": "about_a_quarter",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_twenty",
+        "type": "Entity",
+        "text": "twenty",
+        "norm": "twenty",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy",
+        "type": "Entity",
+        "text": "Jeremy",
+        "norm": "jeremy",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_few_minutes_before_11_00_a_m",
+        "type": "Entity",
+        "text": "a few minutes before 11:00 a.m.",
+        "norm": "a_few_minutes_before_11_00_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_big_bad_breakfast",
+        "type": "Entity",
+        "text": "Big Bad Breakfast",
+        "norm": "big_bad_breakfast",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_first",
+        "type": "Entity",
+        "text": "first",
+        "norm": "first",
+        "label": "ORDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_thoreau",
+        "type": "Entity",
+        "text": "Thoreau",
+        "norm": "thoreau",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_maybe_ten_minutes",
+        "type": "Entity",
+        "text": "maybe ten minutes",
+        "norm": "maybe_ten_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_arthur_beck",
+        "type": "Entity",
+        "text": "Arthur Beck.",
+        "norm": "arthur_beck",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_couple_years",
+        "type": "Entity",
+        "text": "a couple years",
+        "norm": "a_couple_years",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_few_weeks_ago",
+        "type": "Entity",
+        "text": "a few weeks ago",
+        "norm": "a_few_weeks_ago",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_miguel_ochoa",
+        "type": "Entity",
+        "text": "Miguel Ochoa",
+        "norm": "miguel_ochoa",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_abbeville",
+        "type": "Entity",
+        "text": "Abbeville",
+        "norm": "abbeville",
+        "label": "GPE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_friday",
+        "type": "Entity",
+        "text": "Friday",
+        "norm": "friday",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_night",
+        "type": "Entity",
+        "text": "night",
+        "norm": "night",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_ajax_diner",
+        "type": "Entity",
+        "text": "Ajax Diner",
+        "norm": "ajax_diner",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_c_est_belle_gallery",
+        "type": "Entity",
+        "text": "the C'est Belle Gallery",
+        "norm": "the_c_est_belle_gallery",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_saturday",
+        "type": "Entity",
+        "text": "Saturday",
+        "norm": "saturday",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_couple_days_ago",
+        "type": "Entity",
+        "text": "a couple days ago",
+        "norm": "a_couple_days_ago",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_gladwell",
+        "type": "Entity",
+        "text": "Gladwell",
+        "norm": "gladwell",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_three_years",
+        "type": "Entity",
+        "text": "about three years",
+        "norm": "about_three_years",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_any_welcome_wagon",
+        "type": "Entity",
+        "text": "any Welcome Wagon",
+        "norm": "any_welcome_wagon",
+        "label": "PRODUCT",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11_00_a_m",
+        "type": "Entity",
+        "text": "11:00 a.m.",
+        "norm": "11_00_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_minute_or_two",
+        "type": "Entity",
+        "text": "a minute or two",
+        "norm": "a_minute_or_two",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_last_night",
+        "type": "Entity",
+        "text": "last night",
+        "norm": "last_night",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_this_morning",
+        "type": "Entity",
+        "text": "This morning",
+        "norm": "this_morning",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_clapton",
+        "type": "Entity",
+        "text": "Clapton",
+        "norm": "clapton",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_few_minutes",
+        "type": "Entity",
+        "text": "A few minutes",
+        "norm": "a_few_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_arthur",
+        "type": "Entity",
+        "text": "Arthur",
+        "norm": "arthur",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_miguel",
+        "type": "Entity",
+        "text": "Miguel",
+        "norm": "miguel",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_morning",
+        "type": "Entity",
+        "text": "morning",
+        "norm": "morning",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_a_half_hour",
+        "type": "Entity",
+        "text": "about a half-hour",
+        "norm": "about_a_half_hour",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_tupelo",
+        "type": "Entity",
+        "text": "Tupelo",
+        "norm": "tupelo",
+        "label": "GPE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_this_weekend",
+        "type": "Entity",
+        "text": "this weekend",
+        "norm": "this_weekend",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_that_day",
+        "type": "Entity",
+        "text": "that day",
+        "norm": "that_day",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_about_a_year_ago",
+        "type": "Entity",
+        "text": "about a year ago",
+        "norm": "about_a_year_ago",
+        "label": "DATE",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_02_p_m",
+        "type": "Entity",
+        "text": "02 p.m.",
+        "norm": "02_p_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_becky_pace",
+        "type": "Entity",
+        "text": "Becky Pace",
+        "norm": "becky_pace",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_5th",
+        "type": "Entity",
+        "text": "5th",
+        "norm": "5th",
+        "label": "FAC",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kimberly_pace_s",
+        "type": "Entity",
+        "text": "Kimberly Pace's",
+        "norm": "kimberly_pace_s",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_close_to_11_00_a_m",
+        "type": "Entity",
+        "text": "close to 11:00 a.m.",
+        "norm": "close_to_11_00_a_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_s",
+        "type": "Entity",
+        "text": "Jeremy's",
+        "norm": "jeremy_s",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_four",
+        "type": "Entity",
+        "text": "four",
+        "norm": "four",
+        "label": "CARDINAL",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_90_pounds",
+        "type": "Entity",
+        "text": "90 pounds",
+        "norm": "90_pounds",
+        "label": "QUANTITY",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_just_a_few_minutes",
+        "type": "Entity",
+        "text": "Just a few minutes",
+        "norm": "just_a_few_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_maybe_five_or_six_minutes",
+        "type": "Entity",
+        "text": "maybe five or six minutes",
+        "norm": "maybe_five_or_six_minutes",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_beck",
+        "type": "Entity",
+        "text": "Beck",
+        "norm": "beck",
+        "label": "PERSON",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_c_est_belle",
+        "type": "Entity",
+        "text": "C'est Belle",
+        "norm": "c_est_belle",
+        "label": "ORG",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_9_30_p_m",
+        "type": "Entity",
+        "text": "9:30 p.m.",
+        "norm": "9_30_p_m",
+        "label": "TIME",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kimberly_pace_bio_kimberly_pace",
+        "type": "Entity",
+        "text": "Kimberly Pace bio Kimberly Pace",
+        "norm": "kimberly pace bio kimberly pace",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_valerie_and_robert_pace",
+        "type": "Entity",
+        "text": "Valerie and Robert Pace",
+        "norm": "valerie and robert pace",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_mississippi_father",
+        "type": "Entity",
+        "text": "Mississippi father",
+        "norm": "mississippi father",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kimberly_'s_junior_year_in_high_school",
+        "type": "Entity",
+        "text": "Kimberly 's junior year in high school",
+        "norm": "kimberly 's junior year in high school",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_school",
+        "type": "Entity",
+        "text": "school",
+        "norm": "school",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_owner_,_cheryl_weston_,",
+        "type": "Entity",
+        "text": "The owner , Cheryl Weston ,",
+        "norm": "the owner , cheryl weston ,",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_true_friend_and_confidante",
+        "type": "Entity",
+        "text": "a true friend and confidante",
+        "norm": "a true friend and confidante",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_2019_county_arts_and_crafts_fair_,_where_paul_exhibited_junior_year_wood_sculptures",
+        "type": "Entity",
+        "text": "the 2019 County Arts and Crafts Fair , where Paul exhibited junior year wood sculptures",
+        "norm": "the 2019 county arts and crafts fair , where paul exhibited junior year wood sculptures",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_house_kimberly_had_purchased_a_few_years_earlier",
+        "type": "Entity",
+        "text": "the house Kimberly had purchased a few years earlier",
+        "norm": "the house kimberly had purchased a few years earlier",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_support_kimberly_needed_to_make_critical_decisions_about_mississippi_mother_'s_care",
+        "type": "Entity",
+        "text": "the support Kimberly needed to make critical decisions about Mississippi mother 's care",
+        "norm": "the support kimberly needed to make critical decisions about mississippi mother 's care",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_,_becky_,_and_friend_jeremy_gladwell",
+        "type": "Entity",
+        "text": "Cheryl , Becky , and friend Jeremy Gladwell",
+        "norm": "cheryl , becky , and friend jeremy gladwell",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_deputy_fred_willits_)",
+        "type": "Entity",
+        "text": "Deputy Fred Willits )",
+        "norm": "deputy fred willits )",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_scene",
+        "type": "Entity",
+        "text": "the scene",
+        "norm": "the scene",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_inspector_luwinda_johnson",
+        "type": "Entity",
+        "text": "Inspector Luwinda Johnson",
+        "norm": "inspector luwinda johnson",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_investigator_'s_request",
+        "type": "Entity",
+        "text": "Reporting Investigator 's request",
+        "norm": "reporting investigator 's request",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_officer_(_reporting_officer_)_willits",
+        "type": "Entity",
+        "text": "Reporting Officer ( Reporting Officer ) Willits",
+        "norm": "reporting officer ( reporting officer ) willits",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_unit_#_224_(_officer_steve_harding_)",
+        "type": "Entity",
+        "text": "Unit # 224 ( Officer Steve Harding )",
+        "norm": "unit # 224 ( officer steve harding )",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_officer_'s_request",
+        "type": "Entity",
+        "text": "Reporting Officer 's request",
+        "norm": "reporting officer 's request",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_investigators_(_reporting_investigators_)",
+        "type": "Entity",
+        "text": "Reporting Investigators ( Reporting Investigators )",
+        "norm": "reporting investigators ( reporting investigators )",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11:18_a.m.",
+        "type": "Entity",
+        "text": "11:18 a.m.",
+        "norm": "11:18 a.m.",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_officer_willits",
+        "type": "Entity",
+        "text": "Reporting Officer Willits",
+        "norm": "reporting officer willits",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_following_verbal_report_,_which_is_stated_in_summary_and_not_verbatim",
+        "type": "Entity",
+        "text": "the following verbal report , which is stated in summary and not verbatim",
+        "norm": "the following verbal report , which is stated in summary and not verbatim",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reporting_investigator_murphy",
+        "type": "Entity",
+        "text": "Reporting Investigator Murphy",
+        "norm": "reporting investigator murphy",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_woman_'s_handbag",
+        "type": "Entity",
+        "text": "a woman 's handbag",
+        "norm": "a woman 's handbag",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_no_signs_of_struggle_or_other_disturbance",
+        "type": "Entity",
+        "text": "No signs of struggle or other disturbance",
+        "norm": "no signs of struggle or other disturbance",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_possible_exception_of_the_briefcase",
+        "type": "Entity",
+        "text": "the possible exception of the briefcase",
+        "norm": "the possible exception of the briefcase",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_animal_control_officer_sanchez",
+        "type": "Entity",
+        "text": "Animal Control Officer Sanchez",
+        "norm": "animal control officer sanchez",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_11:42_a.m.",
+        "type": "Entity",
+        "text": "11:42 a.m.",
+        "norm": "11:42 a.m.",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_body",
+        "type": "Entity",
+        "text": "The body",
+        "norm": "the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_an_approximate_45_°_angle_to_the_body",
+        "type": "Entity",
+        "text": "an approximate 45 ° angle to the body",
+        "norm": "an approximate 45 ° angle to the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_left_knee",
+        "type": "Entity",
+        "text": "The left knee",
+        "norm": "the left knee",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_an_approximate_30_°_angle_to_the_body",
+        "type": "Entity",
+        "text": "an approximate 30 ° angle to the body",
+        "norm": "an approximate 30 ° angle to the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_head_of_the_body",
+        "type": "Entity",
+        "text": "The head of the body",
+        "norm": "the head of the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_an_easterly_direction",
+        "type": "Entity",
+        "text": "an easterly direction",
+        "norm": "an easterly direction",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_inspector_johnson",
+        "type": "Entity",
+        "text": "Inspector Johnson",
+        "norm": "inspector johnson",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_underside_of_the_body",
+        "type": "Entity",
+        "text": "the underside of the body",
+        "norm": "the underside of the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_an_official_estimate",
+        "type": "Entity",
+        "text": "an official estimate",
+        "norm": "an official estimate",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_crime_scene_unit_team",
+        "type": "Entity",
+        "text": "the Crime Scene Unit team",
+        "norm": "the crime scene unit team",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_body_of_the_deceased",
+        "type": "Entity",
+        "text": "The body of the deceased",
+        "norm": "the body of the deceased",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_custody_of_coroner_'s",
+        "type": "Entity",
+        "text": "the custody of Coroner 's",
+        "norm": "the custody of coroner 's",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_deceased",
+        "type": "Entity",
+        "text": "Deceased",
+        "norm": "deceased",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_witnesses_rebecca_pace_,_cheryl_weston_,_and_jeremy_gladwell",
+        "type": "Entity",
+        "text": "witnesses Rebecca Pace , Cheryl Weston , and Jeremy Gladwell",
+        "norm": "witnesses rebecca pace , cheryl weston , and jeremy gladwell",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_one_of_the_three_people_who_discovered_the_body",
+        "type": "Entity",
+        "text": "one of the three people who discovered the body",
+        "norm": "one of the three people who discovered the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_detectives_armstrong_and_murphy",
+        "type": "Entity",
+        "text": "Detectives Armstrong and Murphy",
+        "norm": "detectives armstrong and murphy",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_my_name",
+        "type": "Entity",
+        "text": "My name",
+        "norm": "my name",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_i",
+        "type": "Entity",
+        "text": "I",
+        "norm": "i",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston_:",
+        "type": "Entity",
+        "text": "Cheryl Weston :",
+        "norm": "cheryl weston :",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_omelets_cheryl_weston_:_make",
+        "type": "Entity",
+        "text": "the omelets Cheryl Weston : make",
+        "norm": "the omelets cheryl weston : make",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston_:_key",
+        "type": "Entity",
+        "text": "Cheryl Weston : key",
+        "norm": "cheryl weston : key",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_we",
+        "type": "Entity",
+        "text": "We",
+        "norm": "we",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_any_of_you",
+        "type": "Entity",
+        "text": "any of you",
+        "norm": "any of you",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_neighbor_next_door",
+        "type": "Entity",
+        "text": "The neighbor next door",
+        "norm": "the neighbor next door",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston_:_bushes",
+        "type": "Entity",
+        "text": "Cheryl Weston : bushes",
+        "norm": "cheryl weston : bushes",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_you",
+        "type": "Entity",
+        "text": "you",
+        "norm": "you",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston_:_name_?",
+        "type": "Entity",
+        "text": "Cheryl Weston : name ?",
+        "norm": "cheryl weston : name ?",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_cheryl_weston_:_friend_miguel_ochoa",
+        "type": "Entity",
+        "text": "Cheryl Weston : friend Miguel Ochoa",
+        "norm": "cheryl weston : friend miguel ochoa",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_that",
+        "type": "Entity",
+        "text": "that",
+        "norm": "that",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_this_student",
+        "type": "Entity",
+        "text": "this student",
+        "norm": "this student",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_one_of_three_people_who_discovered_the_body",
+        "type": "Entity",
+        "text": "one of three people who discovered the body",
+        "norm": "one of three people who discovered the body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_key",
+        "type": "Entity",
+        "text": "Jeremy Gladwell key",
+        "norm": "jeremy gladwell key",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_it",
+        "type": "Entity",
+        "text": "it",
+        "norm": "it",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_car",
+        "type": "Entity",
+        "text": "Jeremy Gladwell car",
+        "norm": "jeremy gladwell car",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_movies",
+        "type": "Entity",
+        "text": "movies",
+        "norm": "movies",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_bedroom",
+        "type": "Entity",
+        "text": "Jeremy Gladwell bedroom",
+        "norm": "jeremy gladwell bedroom",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_china_doll_broken_at_the_bottom_of_the_stairs",
+        "type": "Entity",
+        "text": "a china doll broken at the bottom of the stairs",
+        "norm": "a china doll broken at the bottom of the stairs",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_arms",
+        "type": "Entity",
+        "text": "Jeremy Gladwell arms",
+        "norm": "jeremy gladwell arms",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_son",
+        "type": "Entity",
+        "text": "Jeremy Gladwell son",
+        "norm": "jeremy gladwell son",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_none_of_you",
+        "type": "Entity",
+        "text": "none of you",
+        "norm": "none of you",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_us",
+        "type": "Entity",
+        "text": "us",
+        "norm": "us",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_behavior",
+        "type": "Entity",
+        "text": "Jeremy Gladwell behavior",
+        "norm": "jeremy gladwell behavior",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_it_all",
+        "type": "Entity",
+        "text": "it all",
+        "norm": "it all",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_mistress",
+        "type": "Entity",
+        "text": "Jeremy Gladwell mistress",
+        "norm": "jeremy gladwell mistress",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_me",
+        "type": "Entity",
+        "text": "me",
+        "norm": "me",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_friend_miguel",
+        "type": "Entity",
+        "text": "Jeremy Gladwell friend Miguel",
+        "norm": "jeremy gladwell friend miguel",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kimberly_and_paul",
+        "type": "Entity",
+        "text": "Kimberly and Paul",
+        "norm": "kimberly and paul",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_timeouts",
+        "type": "Entity",
+        "text": "timeouts",
+        "norm": "timeouts",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_those_stairs",
+        "type": "Entity",
+        "text": "those stairs",
+        "norm": "those stairs",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_reason_to_believe_someone_wanted_to_harm_jeremy_gladwell",
+        "type": "Entity",
+        "text": "reason to believe someone wanted to harm Jeremy Gladwell",
+        "norm": "reason to believe someone wanted to harm jeremy gladwell",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_a_crazy_jealous_boyfriend_and_some_student_who_was_following_jeremy_gladwell",
+        "type": "Entity",
+        "text": "a crazy jealous boyfriend and some student who was following Jeremy Gladwell",
+        "norm": "a crazy jealous boyfriend and some student who was following jeremy gladwell",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_someone",
+        "type": "Entity",
+        "text": "Someone",
+        "norm": "someone",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_jeremy_gladwell_dog_—_jeremy_gladwell_first_dog_,_emerson_—",
+        "type": "Entity",
+        "text": "Jeremy Gladwell dog — Jeremy Gladwell first dog , Emerson —",
+        "norm": "jeremy gladwell dog — jeremy gladwell first dog , emerson —",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_the_name_of_this_student_who_was_following_jeremy_gladwell",
+        "type": "Entity",
+        "text": "the name of this student who was following Jeremy Gladwell",
+        "norm": "the name of this student who was following jeremy gladwell",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_one_of_three_people_who_discovered_becky_pace_:_sister_'s_body",
+        "type": "Entity",
+        "text": "one of three people who discovered Becky Pace : sister 's body",
+        "norm": "one of three people who discovered becky pace : sister 's body",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_becky_pace_:_friend_miguel",
+        "type": "Entity",
+        "text": "Becky Pace : friend Miguel",
+        "norm": "becky pace : friend miguel",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_even_thoreau",
+        "type": "Entity",
+        "text": "Even Thoreau",
+        "norm": "even thoreau",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_any_commotion",
+        "type": "Entity",
+        "text": "any commotion",
+        "norm": "any commotion",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_kim_becky_pace",
+        "type": "Entity",
+        "text": "Kim Becky Pace",
+        "norm": "kim becky pace",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_that_dog",
+        "type": "Entity",
+        "text": "that dog",
+        "norm": "that dog",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_noise",
+        "type": "Entity",
+        "text": "noise",
+        "norm": "noise",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_what",
+        "type": "Entity",
+        "text": "What",
+        "norm": "what",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_becky_pace_:_face",
+        "type": "Entity",
+        "text": "Becky Pace : face",
+        "norm": "becky pace : face",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "ENT_becky_pace_:_last_at_the_gallery",
+        "type": "Entity",
+        "text": "Becky Pace : last at the gallery",
+        "norm": "becky pace : last at the gallery",
+        "label": null,
+        "case_id": "CASE123"
+    },
+    {
+        "id": "EV1",
+        "type": "Event",
+        "description": "Kimberly Pace bio Kimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi.",
+        "subject": "Kimberly Pace bio Kimberly Pace",
+        "predicate": "bear",
+        "object": "Valerie and Robert Pace",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV2",
+        "type": "Event",
+        "description": "During Kimberly's junior year in high school, her father became ill with heart problems.",
+        "subject": "Mississippi father",
+        "predicate": "become",
+        "object": "Kimberly 's junior year in high school",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV3",
+        "type": "Event",
+        "description": "Kimberly loved school and found getting good grades fulfilling as well as prudent.",
+        "subject": "Kimberly",
+        "predicate": "love",
+        "object": "school",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV4",
+        "type": "Event",
+        "description": "The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week.",
+        "subject": "The owner , Cheryl Weston ,",
+        "predicate": "become",
+        "object": "a true friend and confidante",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV5",
+        "type": "Event",
+        "description": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
+        "subject": "University Elementary school",
+        "predicate": "meet",
+        "object": "the 2019 County Arts and Crafts Fair , where Paul exhibited junior year wood sculptures",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV6",
+        "type": "Event",
+        "description": "About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.",
+        "subject": "Paul",
+        "predicate": "move",
+        "object": "the house Kimberly had purchased a few years earlier",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV7",
+        "type": "Event",
+        "description": "When Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care.",
+        "subject": "Paul",
+        "predicate": "be",
+        "object": "the support Kimberly needed to make critical decisions about Mississippi mother 's care",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV8",
+        "type": "Event",
+        "description": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
+        "subject": "Cheryl , Becky , and friend Jeremy Gladwell",
+        "predicate": "find",
+        "object": "Kimberly",
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV9",
+        "type": "Event",
+        "description": "Animal Control arrived at the scene",
+        "subject": "Animal Control",
+        "predicate": "arrive",
+        "object": "the scene",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV10",
+        "type": "Event",
+        "description": "Reporting Investigator Murphy contacted Dispatch regarding the status of the Coroner's",
+        "subject": "Reporting Investigator Murphy",
+        "predicate": "contact",
+        "object": "Dispatch",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV11",
+        "type": "Event",
+        "description": "In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off.",
+        "subject": "Reporting Investigators",
+        "predicate": "observe",
+        "object": "a woman 's handbag",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV12",
+        "type": "Event",
+        "description": "No signs of struggle or other disturbance were observed, with the possible exception of the briefcase.",
+        "subject": "No signs of struggle or other disturbance",
+        "predicate": "observe",
+        "object": "the possible exception of the briefcase",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV13",
+        "type": "Event",
+        "description": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear.",
+        "subject": "Animal Control Officer Sanchez",
+        "predicate": "report",
+        "object": "11:42 a.m.",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:42 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "EV14",
+        "type": "Event",
+        "description": "The body lay face up with the right arm at an approximate 45° angle to the body.",
+        "subject": "The body",
+        "predicate": "lie",
+        "object": "an approximate 45 ° angle to the body",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:42 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "EV15",
+        "type": "Event",
+        "description": "The left knee was bent at an approximate 30° angle to the body, and the right knee was bent at an approximate 115° angle to the body.",
+        "subject": "The left knee",
+        "predicate": "bend",
+        "object": "an approximate 30 ° angle to the body",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:42 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "EV16",
+        "type": "Event",
+        "description": "The head of the body faced in an easterly direction and the feet in a westerly direction.",
+        "subject": "The head of the body",
+        "predicate": "face",
+        "object": "an easterly direction",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:42 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "EV17",
+        "type": "Event",
+        "description": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
+        "subject": "Inspector Johnson",
+        "predicate": "arrive",
+        "object": "the scene",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV18",
+        "type": "Event",
+        "description": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck.",
+        "subject": "Inspector Johnson",
+        "predicate": "examine",
+        "object": "the underside of the body",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV19",
+        "type": "Event",
+        "description": "While she withheld an official estimate pending an autopsy,",
+        "subject": "Johnson",
+        "predicate": "withhold",
+        "object": "an official estimate",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV20",
+        "type": "Event",
+        "description": "Inspector Johnson completed her initial inspection of the body, she stayed with the Crime Scene Unit team to ensure the integrity of the body, while the team took photographs of the scene and performed preliminary analyses, until the body could be removed from the scene without destroying other evidence.",
+        "subject": "Johnson",
+        "predicate": "stay",
+        "object": "the Crime Scene Unit team",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV21",
+        "type": "Event",
+        "description": "The body of the deceased remanded into the custody of Coroner's",
+        "subject": "The body of the deceased",
+        "predicate": "remand",
+        "object": "the custody of Coroner 's",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV22",
+        "type": "Event",
+        "description": "Deceased was removed from the scene",
+        "subject": "Deceased",
+        "predicate": "remove",
+        "object": "the scene",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV23",
+        "type": "Event",
+        "description": "Following preliminary inspection of the scene, Reporting Investigators interviewed witnesses Rebecca Pace, Cheryl Weston, and Jeremy Gladwell at the scene.",
+        "subject": "Reporting Investigators",
+        "predicate": "interview",
+        "object": "witnesses Rebecca Pace , Cheryl Weston , and Jeremy Gladwell",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "12:53 p.m",
+        "time_resolved": null
+    },
+    {
+        "id": "EV24",
+        "type": "Event",
+        "description": "Reporting Investigator Murphy instructed Crime Scene Unit to seal the scene upon completion or end of day suspension of processing.",
+        "subject": "Reporting Investigator Murphy",
+        "predicate": "instruct",
+        "object": "Crime Scene Unit",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "EV25",
+        "type": "Event",
+        "description": "I mean, Kimberly didn't just fall down those stairs.",
+        "subject": "Kimberly",
+        "predicate": "fall",
+        "object": "those stairs",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV26",
+        "type": "Event",
+        "description": "Do you have reason to believe someone wanted to harm her?",
+        "subject": "you",
+        "predicate": "have",
+        "object": "reason to believe someone wanted to harm Jeremy Gladwell",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV27",
+        "type": "Event",
+        "description": "Well, she had a crazy jealous boyfriend and some student who was following her.",
+        "subject": "Jeremy Gladwell",
+        "predicate": "have",
+        "object": "a crazy jealous boyfriend and some student who was following Jeremy Gladwell",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV28",
+        "type": "Event",
+        "description": "Someone killed her dog — her first dog, Emerson — about a year ago.",
+        "subject": "Someone",
+        "predicate": "kill",
+        "object": "Jeremy Gladwell dog — Jeremy Gladwell first dog , Emerson —",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV29",
+        "type": "Event",
+        "description": "Do you know the name of this student who was following her?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "the name of this student who was following Jeremy Gladwell",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV30",
+        "type": "Event",
+        "description": "They must have known about it.",
+        "subject": "Jeremy Gladwell",
+        "predicate": "know",
+        "object": "it",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "EV31",
+        "type": "Event",
+        "description": "You call me anytime, day or night.",
+        "subject": "You",
+        "predicate": "call",
+        "object": "me",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "LOC_house",
+        "type": "Location",
+        "text": "house",
+        "norm": "house",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_basement",
+        "type": "Location",
+        "text": "basement",
+        "norm": "basement",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_home",
+        "type": "Location",
+        "text": "home",
+        "norm": "home",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_bedroom",
+        "type": "Location",
+        "text": "bedroom",
+        "norm": "bedroom",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_kitchen",
+        "type": "Location",
+        "text": "kitchen",
+        "norm": "kitchen",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_porch",
+        "type": "Location",
+        "text": "porch",
+        "norm": "porch",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_stairs",
+        "type": "Location",
+        "text": "stairs",
+        "norm": "stairs",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_gallery",
+        "type": "Location",
+        "text": "gallery",
+        "norm": "gallery",
+        "case_id": "CASE123"
+    }
+]
