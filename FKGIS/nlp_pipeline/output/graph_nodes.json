@@ -1802,17 +1802,17 @@
         "time_resolved": null
     },
     {
-        "id": "LOC_home",
-        "type": "Location",
-        "text": "home",
-        "norm": "home",
-        "case_id": "CASE123"
-    },
-    {
         "id": "LOC_basement",
         "type": "Location",
         "text": "basement",
         "norm": "basement",
+        "case_id": "CASE123"
+    },
+    {
+        "id": "LOC_home",
+        "type": "Location",
+        "text": "home",
+        "norm": "home",
         "case_id": "CASE123"
     },
     {

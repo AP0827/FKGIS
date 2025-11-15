@@ -55,13 +55,13 @@
     },
     {
         "source": "unknown_doc_EV5",
-        "target": "LOC_home",
+        "target": "LOC_basement",
         "edge_type": "LOCATED_AT",
         "case_id": "CASE123"
     },
     {
         "source": "unknown_doc_EV5",
-        "target": "LOC_basement",
+        "target": "LOC_home",
         "edge_type": "LOCATED_AT",
         "case_id": "CASE123"
     },
