@@ -1,0 +1,40 @@
+{
+  "case_id": "CASE_1029",
+  "global_entities": [
+    {
+      "global_id": 1,
+      "canonical_name": "cheryl_weston",
+      "entity_type": "PERSON",
+      "mentions": ["Cheryl Weston", "the caller", "she"],
+      "source_docs": ["narrative", "dispatch_log"]
+    },
+    {
+      "global_id": 2,
+      "canonical_name": "officer_willits",
+      "entity_type": "ROLE",
+      "mentions": ["R/O Willits", "the officer", "he"],
+      "source_docs": ["narrative"]
+    },
+    {
+      "global_id": 3,
+      "canonical_name": "the_scene",
+      "entity_type": "LOC",
+      "mentions": ["the scene", "residence", "123 Maple Street"],
+      "source_docs": ["narrative", "dispatch_log"]
+    }
+  ],
+  "documents": {
+    "narrative": {
+      "sentences": [
+        {
+          "text": "At 11:06 a.m., Dispatch received a 911 call from Cheryl Weston, who reported a disturbance at 123 Maple Street.",
+          "timestamp": "11:06 a.m."
+        },
+        {
+          "text": "Officer Willits was dispatched to the scene.",
+          "timestamp": null
+        }
+      ]
+    }
+  }
+}
