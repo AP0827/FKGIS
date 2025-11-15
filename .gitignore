@@ -1,1 +1,34 @@
 fkgis/
+
+# Common Python virtualenv and environment files
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+
+# Virtualenv named folders (project-specific)
+fkgis/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# Environment variables file
+.env
+
+# mypy
+.mypy_cache/
+
+# IDE/editor directories
+.vscode/
+.idea/
