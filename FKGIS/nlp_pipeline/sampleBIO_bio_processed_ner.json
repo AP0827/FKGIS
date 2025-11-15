@@ -1,0 +1,1583 @@
+{
+    "raw_text": "Kimberly Pace bio\nKimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi. Her parents were schoolteachers: Robert at Yokanapatawpha High School and Valerie at University Elementary school. They were a close family and were delighted when Rebecca was born six years later.\n\nKimberly was a great big sister, and she and Becky got along well most of the time. Whenever the girls squabbled, their parents always let them settle their differences among themselves. The girls were close growing up and remained so into adulthood.\n\nDuring Kimberly's junior year in high school, her father became ill with heart problems. At his urging, she kept up her schoolwork and extracurricular activities, despite his deteriorating health. After her father died the next year, she studied even harder.\n\nKimberly loved school and found getting good grades fulfilling as well as prudent. Though Robert had long saved for her education, she knew money for college was tight. Her English teacher helped her get a partial scholarship to the University of Mississippi, and Kimberly lived at home to save money. She graduated from Ole Miss in June 2009 after four years of going to school year-round. She then went on to earn graduate degrees culminating in a Ph.D.\n\nDuring her college years, she worked at The Lucky Café. The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week. Even after being hired as an Instructor and later an Assistant Professor at Ole Miss, Kimberly continued working for Cheryl whenever she could though she no longer needed the income.\n\nAlways popular with her students, Kimberly was an enthusiastic, creative teacher who took a personal interest in her students. She even came under scrutiny and criticism because she was often seen socializing with sophomore and junior students at The Library and the Downtown Grill when some of the students were drinking. Some Ole Miss professors considered it unprofessional and embarrassing to the university and her fellow faculty members.\n\nHer association with her students has recently caused trouble with her longtime live-in boyfriend, Paul Evans, as well. They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures. They discovered a mutual love for hand-worked art and began dating. About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.\n\nWhen Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care. He was loving and considerate not only of her but also of Becky and was patient and understanding of their mother's problems. Kimberly came to depend on him emotionally, but lately, her focus on her students' well-being and the amount of time she spent with them outside of school was taking its toll on their relationship.\n\nAfter Paul heard rumors at his job at Lane Properties that Kimberly's relationship with some of her students was more than just friendly, he moved out, saying nobody would play him for a fool. Kimberly was hurt that Paul would believe unsubstantiated gossip, so she didn't try to persuade him to stay. But privately, she was torn between telling him to get lost or cutting back on time spent with her students to appease him. However, the night before her body was found, she went to his opening at the art gallery to be supportive after all he'd done for her during her mother's illness.\n\nCheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
+    "segments": [
+        {
+            "time": null,
+            "text": "Kimberly Pace bio Kimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi. Her parents were schoolteachers: Robert at Yokanapatawpha High School and Valerie at University Elementary school. They were a close family and were delighted when Rebecca was born six years later.",
+            "sentences": [
+                {
+                    "text": "Kimberly Pace bio Kimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi.",
+                    "has_time": true,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly Pace",
+                            "label": "PERSON",
+                            "norm": "kimberly_pace",
+                            "start": 0,
+                            "end": 13
+                        },
+                        {
+                            "text": "Kimberly Pace",
+                            "label": "PERSON",
+                            "norm": "kimberly_pace",
+                            "start": 18,
+                            "end": 31
+                        },
+                        {
+                            "text": "Valerie",
+                            "label": "PERSON",
+                            "norm": "valerie",
+                            "start": 44,
+                            "end": 51
+                        },
+                        {
+                            "text": "Robert Pace",
+                            "label": "PERSON",
+                            "norm": "robert_pace",
+                            "start": 56,
+                            "end": 67
+                        },
+                        {
+                            "text": "June 24, 1987",
+                            "label": "DATE",
+                            "norm": "june_24_1987",
+                            "start": 71,
+                            "end": 84
+                        },
+                        {
+                            "text": "Oxford",
+                            "label": "GPE",
+                            "norm": "oxford",
+                            "start": 89,
+                            "end": 95
+                        },
+                        {
+                            "text": "Mississippi",
+                            "label": "GPE",
+                            "norm": "mississippi",
+                            "start": 97,
+                            "end": 108
+                        }
+                    ]
+                },
+                {
+                    "text": "Her parents were schoolteachers: Robert at Yokanapatawpha High School and Valerie at University Elementary school.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Robert",
+                            "label": "PERSON",
+                            "norm": "robert",
+                            "start": 33,
+                            "end": 39
+                        },
+                        {
+                            "text": "Yokanapatawpha High School",
+                            "label": "ORG",
+                            "norm": "yokanapatawpha_high_school",
+                            "start": 43,
+                            "end": 69
+                        },
+                        {
+                            "text": "Valerie",
+                            "label": "PERSON",
+                            "norm": "valerie",
+                            "start": 74,
+                            "end": 81
+                        },
+                        {
+                            "text": "University Elementary school",
+                            "label": "ORG",
+                            "norm": "university_elementary_school",
+                            "start": 85,
+                            "end": 113
+                        }
+                    ]
+                },
+                {
+                    "text": "They were a close family and were delighted when Rebecca was born six years later.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Rebecca",
+                            "label": "PERSON",
+                            "norm": "rebecca",
+                            "start": 49,
+                            "end": 56
+                        },
+                        {
+                            "text": "six years later",
+                            "label": "DATE",
+                            "norm": "six_years_later",
+                            "start": 66,
+                            "end": 81
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Kimberly was a great big sister, and she and Becky got along well most of the time. Whenever the girls squabbled, their parents always let them settle their differences among themselves. The girls were close growing up and remained so into adulthood.",
+            "sentences": [
+                {
+                    "text": "Kimberly was a great big sister, and she and Becky got along well most of the time.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 0,
+                            "end": 8
+                        },
+                        {
+                            "text": "Becky",
+                            "label": "PERSON",
+                            "norm": "becky",
+                            "start": 45,
+                            "end": 50
+                        }
+                    ]
+                },
+                {
+                    "text": "Whenever the girls squabbled, their parents always let them settle their differences among themselves.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "The girls were close growing up and remained so into adulthood.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "During Kimberly's junior year in high school, her father became ill with heart problems. At his urging, she kept up her schoolwork and extracurricular activities, despite his deteriorating health. After her father died the next year, she studied even harder.",
+            "sentences": [
+                {
+                    "text": "During Kimberly's junior year in high school, her father became ill with heart problems.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 7,
+                            "end": 15
+                        },
+                        {
+                            "text": "junior year",
+                            "label": "DATE",
+                            "norm": "junior_year",
+                            "start": 18,
+                            "end": 29
+                        }
+                    ]
+                },
+                {
+                    "text": "At his urging, she kept up her schoolwork and extracurricular activities, despite his deteriorating health.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "After her father died the next year, she studied even harder.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "the next year",
+                            "label": "DATE",
+                            "norm": "the_next_year",
+                            "start": 22,
+                            "end": 35
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Kimberly loved school and found getting good grades fulfilling as well as prudent. Though Robert had long saved for her education, she knew money for college was tight. Her English teacher helped her get a partial scholarship to the University of Mississippi, and Kimberly lived at home to save money. She graduated from Ole Miss in June 2009 after four years of going to school year-round. She then went on to earn graduate degrees culminating in a Ph.D.",
+            "sentences": [
+                {
+                    "text": "Kimberly loved school and found getting good grades fulfilling as well as prudent.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 0,
+                            "end": 8
+                        }
+                    ]
+                },
+                {
+                    "text": "Though Robert had long saved for her education, she knew money for college was tight.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Robert",
+                            "label": "PERSON",
+                            "norm": "robert",
+                            "start": 7,
+                            "end": 13
+                        }
+                    ]
+                },
+                {
+                    "text": "Her English teacher helped her get a partial scholarship to the University of Mississippi, and Kimberly lived at home to save money.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "English",
+                            "label": "LANGUAGE",
+                            "norm": "english",
+                            "start": 4,
+                            "end": 11
+                        },
+                        {
+                            "text": "the University of Mississippi",
+                            "label": "ORG",
+                            "norm": "the_university_of_mississippi",
+                            "start": 60,
+                            "end": 89
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 95,
+                            "end": 103
+                        }
+                    ]
+                },
+                {
+                    "text": "She graduated from Ole Miss in June 2009 after four years of going to school year-round.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Ole Miss",
+                            "label": "ORG",
+                            "norm": "ole_miss",
+                            "start": 19,
+                            "end": 27
+                        },
+                        {
+                            "text": "June 2009",
+                            "label": "DATE",
+                            "norm": "june_2009",
+                            "start": 31,
+                            "end": 40
+                        },
+                        {
+                            "text": "four years",
+                            "label": "DATE",
+                            "norm": "four_years",
+                            "start": 47,
+                            "end": 57
+                        }
+                    ]
+                },
+                {
+                    "text": "She then went on to earn graduate degrees culminating in a Ph.D.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Ph.D.",
+                            "label": "WORK_OF_ART",
+                            "norm": "ph_d",
+                            "start": 59,
+                            "end": 64
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "During her college years, she worked at The Lucky Café. The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week. Even after being hired as an Instructor and later an Assistant Professor at Ole Miss, Kimberly continued working for Cheryl whenever she could though she no longer needed the income.",
+            "sentences": [
+                {
+                    "text": "During her college years, she worked at The Lucky Café.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "her college years",
+                            "label": "DATE",
+                            "norm": "her_college_years",
+                            "start": 7,
+                            "end": 24
+                        },
+                        {
+                            "text": "The Lucky Café",
+                            "label": "ORG",
+                            "norm": "the_lucky_caf",
+                            "start": 40,
+                            "end": 54
+                        }
+                    ]
+                },
+                {
+                    "text": "The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Cheryl Weston",
+                            "label": "PERSON",
+                            "norm": "cheryl_weston",
+                            "start": 11,
+                            "end": 24
+                        },
+                        {
+                            "text": "one",
+                            "label": "CARDINAL",
+                            "norm": "one",
+                            "start": 70,
+                            "end": 73
+                        },
+                        {
+                            "text": "three",
+                            "label": "CARDINAL",
+                            "norm": "three",
+                            "start": 81,
+                            "end": 86
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 94,
+                            "end": 102
+                        },
+                        {
+                            "text": "Sunday",
+                            "label": "DATE",
+                            "norm": "sunday",
+                            "start": 107,
+                            "end": 113
+                        },
+                        {
+                            "text": "every other week",
+                            "label": "DATE",
+                            "norm": "every_other_week",
+                            "start": 126,
+                            "end": 142
+                        }
+                    ]
+                },
+                {
+                    "text": "Even after being hired as an Instructor and later an Assistant Professor at Ole Miss, Kimberly continued working for Cheryl whenever she could though she no longer needed the income.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Ole Miss",
+                            "label": "ORG",
+                            "norm": "ole_miss",
+                            "start": 76,
+                            "end": 84
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 86,
+                            "end": 94
+                        },
+                        {
+                            "text": "Cheryl",
+                            "label": "PERSON",
+                            "norm": "cheryl",
+                            "start": 117,
+                            "end": 123
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Always popular with her students, Kimberly was an enthusiastic, creative teacher who took a personal interest in her students. She even came under scrutiny and criticism because she was often seen socializing with sophomore and junior students at The Library and the Downtown Grill when some of the students were drinking. Some Ole Miss professors considered it unprofessional and embarrassing to the university and her fellow faculty members.",
+            "sentences": [
+                {
+                    "text": "Always popular with her students, Kimberly was an enthusiastic, creative teacher who took a personal interest in her students.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 34,
+                            "end": 42
+                        }
+                    ]
+                },
+                {
+                    "text": "She even came under scrutiny and criticism because she was often seen socializing with sophomore and junior students at The Library and the Downtown Grill when some of the students were drinking.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "The Library",
+                            "label": "ORG",
+                            "norm": "the_library",
+                            "start": 120,
+                            "end": 131
+                        },
+                        {
+                            "text": "the Downtown Grill",
+                            "label": "ORG",
+                            "norm": "the_downtown_grill",
+                            "start": 136,
+                            "end": 154
+                        }
+                    ]
+                },
+                {
+                    "text": "Some Ole Miss professors considered it unprofessional and embarrassing to the university and her fellow faculty members.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Ole Miss",
+                            "label": "ORG",
+                            "norm": "ole_miss",
+                            "start": 5,
+                            "end": 13
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Her association with her students has recently caused trouble with her longtime live-in boyfriend, Paul Evans, as well. They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures. They discovered a mutual love for hand-worked art and began dating. About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.",
+            "sentences": [
+                {
+                    "text": "Her association with her students has recently caused trouble with her longtime live-in boyfriend, Paul Evans, as well.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Paul Evans",
+                            "label": "PERSON",
+                            "norm": "paul_evans",
+                            "start": 99,
+                            "end": 109
+                        }
+                    ]
+                },
+                {
+                    "text": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "2019",
+                            "label": "DATE",
+                            "norm": "2019",
+                            "start": 16,
+                            "end": 20
+                        },
+                        {
+                            "text": "County Arts and Crafts Fair",
+                            "label": "EVENT",
+                            "norm": "county_arts_and_crafts_fair",
+                            "start": 21,
+                            "end": 48
+                        },
+                        {
+                            "text": "Paul",
+                            "label": "PERSON",
+                            "norm": "paul",
+                            "start": 56,
+                            "end": 60
+                        }
+                    ]
+                },
+                {
+                    "text": "They discovered a mutual love for hand-worked art and began dating.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "About six months later",
+                            "label": "DATE",
+                            "norm": "about_six_months_later",
+                            "start": 0,
+                            "end": 22
+                        },
+                        {
+                            "text": "Paul",
+                            "label": "PERSON",
+                            "norm": "paul",
+                            "start": 24,
+                            "end": 28
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 50,
+                            "end": 58
+                        },
+                        {
+                            "text": "a few years earlier",
+                            "label": "DATE",
+                            "norm": "a_few_years_earlier",
+                            "start": 73,
+                            "end": 92
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "When Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care. He was loving and considerate not only of her but also of Becky and was patient and understanding of their mother's problems. Kimberly came to depend on him emotionally, but lately, her focus on her students' well-being and the amount of time she spent with them outside of school was taking its toll on their relationship.",
+            "sentences": [
+                {
+                    "text": "When Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 5,
+                            "end": 13
+                        },
+                        {
+                            "text": "Valerie",
+                            "label": "PERSON",
+                            "norm": "valerie",
+                            "start": 24,
+                            "end": 31
+                        },
+                        {
+                            "text": "Paul",
+                            "label": "PERSON",
+                            "norm": "paul",
+                            "start": 115,
+                            "end": 119
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 136,
+                            "end": 144
+                        }
+                    ]
+                },
+                {
+                    "text": "He was loving and considerate not only of her but also of Becky and was patient and understanding of their mother's problems.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Becky",
+                            "label": "PERSON",
+                            "norm": "becky",
+                            "start": 58,
+                            "end": 63
+                        }
+                    ]
+                },
+                {
+                    "text": "Kimberly came to depend on him emotionally, but lately, her focus on her students' well-being and the amount of time she spent with them outside of school was taking its toll on their relationship.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 0,
+                            "end": 8
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "After Paul heard rumors at his job at Lane Properties that Kimberly's relationship with some of her students was more than just friendly, he moved out, saying nobody would play him for a fool. Kimberly was hurt that Paul would believe unsubstantiated gossip, so she didn't try to persuade him to stay. But privately, she was torn between telling him to get lost or cutting back on time spent with her students to appease him. However, the night before her body was found, she went to his opening at the art gallery to be supportive after all he'd done for her during her mother's illness.",
+            "sentences": [
+                {
+                    "text": "After Paul heard rumors at his job at Lane Properties that Kimberly's relationship with some of her students was more than just friendly, he moved out, saying nobody would play him for a fool.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Paul",
+                            "label": "PERSON",
+                            "norm": "paul",
+                            "start": 6,
+                            "end": 10
+                        },
+                        {
+                            "text": "Lane Properties",
+                            "label": "ORG",
+                            "norm": "lane_properties",
+                            "start": 38,
+                            "end": 53
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 59,
+                            "end": 67
+                        }
+                    ]
+                },
+                {
+                    "text": "Kimberly was hurt that Paul would believe unsubstantiated gossip, so she didn't try to persuade him to stay.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 0,
+                            "end": 8
+                        },
+                        {
+                            "text": "Paul",
+                            "label": "PERSON",
+                            "norm": "paul",
+                            "start": 23,
+                            "end": 27
+                        }
+                    ]
+                },
+                {
+                    "text": "But privately, she was torn between telling him to get lost or cutting back on time spent with her students to appease him.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": []
+                },
+                {
+                    "text": "However, the night before her body was found, she went to his opening at the art gallery to be supportive after all he'd done for her during her mother's illness.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "body",
+                            "label": "EVIDENCE",
+                            "norm": "body",
+                            "start": 30,
+                            "end": 34
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        },
+        {
+            "time": null,
+            "text": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
+            "sentences": [
+                {
+                    "text": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
+                    "has_time": false,
+                    "has_actor": false,
+                    "has_env": false,
+                    "entities": [
+                        {
+                            "text": "Cheryl",
+                            "label": "PERSON",
+                            "norm": "cheryl",
+                            "start": 0,
+                            "end": 6
+                        },
+                        {
+                            "text": "Becky",
+                            "label": "PERSON",
+                            "norm": "becky",
+                            "start": 8,
+                            "end": 13
+                        },
+                        {
+                            "text": "Jeremy Gladwell",
+                            "label": "PERSON",
+                            "norm": "jeremy_gladwell",
+                            "start": 26,
+                            "end": 41
+                        },
+                        {
+                            "text": "Kimberly",
+                            "label": "PERSON",
+                            "norm": "kimberly",
+                            "start": 48,
+                            "end": 56
+                        }
+                    ]
+                }
+            ],
+            "events": []
+        }
+    ],
+    "sentences": [
+        {
+            "text": "Kimberly Pace bio Kimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi.",
+            "has_time": true,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Her parents were schoolteachers: Robert at Yokanapatawpha High School and Valerie at University Elementary school.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "They were a close family and were delighted when Rebecca was born six years later.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Kimberly was a great big sister, and she and Becky got along well most of the time.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Whenever the girls squabbled, their parents always let them settle their differences among themselves.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "The girls were close growing up and remained so into adulthood.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "During Kimberly's junior year in high school, her father became ill with heart problems.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "At his urging, she kept up her schoolwork and extracurricular activities, despite his deteriorating health.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "After her father died the next year, she studied even harder.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Kimberly loved school and found getting good grades fulfilling as well as prudent.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Though Robert had long saved for her education, she knew money for college was tight.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Her English teacher helped her get a partial scholarship to the University of Mississippi, and Kimberly lived at home to save money.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "She graduated from Ole Miss in June 2009 after four years of going to school year-round.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "She then went on to earn graduate degrees culminating in a Ph.D.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "During her college years, she worked at The Lucky Café.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Even after being hired as an Instructor and later an Assistant Professor at Ole Miss, Kimberly continued working for Cheryl whenever she could though she no longer needed the income.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Always popular with her students, Kimberly was an enthusiastic, creative teacher who took a personal interest in her students.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "She even came under scrutiny and criticism because she was often seen socializing with sophomore and junior students at The Library and the Downtown Grill when some of the students were drinking.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Some Ole Miss professors considered it unprofessional and embarrassing to the university and her fellow faculty members.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Her association with her students has recently caused trouble with her longtime live-in boyfriend, Paul Evans, as well.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "They discovered a mutual love for hand-worked art and began dating.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "When Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "He was loving and considerate not only of her but also of Becky and was patient and understanding of their mother's problems.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Kimberly came to depend on him emotionally, but lately, her focus on her students' well-being and the amount of time she spent with them outside of school was taking its toll on their relationship.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "After Paul heard rumors at his job at Lane Properties that Kimberly's relationship with some of her students was more than just friendly, he moved out, saying nobody would play him for a fool.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Kimberly was hurt that Paul would believe unsubstantiated gossip, so she didn't try to persuade him to stay.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "But privately, she was torn between telling him to get lost or cutting back on time spent with her students to appease him.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "However, the night before her body was found, she went to his opening at the art gallery to be supportive after all he'd done for her during her mother's illness.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        },
+        {
+            "text": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
+            "has_time": false,
+            "has_actor": false,
+            "has_env": false
+        }
+    ],
+    "meta": {
+        "source_path": "FKGIS/nlp_pipeline/sampleBIO.txt",
+        "doc_title": "Kimberly Pace bio"
+    },
+    "doc_type": "biography",
+    "entities": [
+        {
+            "text": "Kimberly Pace",
+            "label": "PERSON",
+            "norm": "kimberly_pace",
+            "start": 0,
+            "end": 13,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly Pace",
+            "label": "PERSON",
+            "norm": "kimberly_pace",
+            "start": 18,
+            "end": 31,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Valerie",
+            "label": "PERSON",
+            "norm": "valerie",
+            "start": 44,
+            "end": 51,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Robert Pace",
+            "label": "PERSON",
+            "norm": "robert_pace",
+            "start": 56,
+            "end": 67,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "June 24, 1987",
+            "label": "DATE",
+            "norm": "june_24_1987",
+            "start": 71,
+            "end": 84,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Oxford",
+            "label": "GPE",
+            "norm": "oxford",
+            "start": 89,
+            "end": 95,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Mississippi",
+            "label": "GPE",
+            "norm": "mississippi",
+            "start": 97,
+            "end": 108,
+            "segment_index": 0,
+            "sentence_index": 0
+        },
+        {
+            "text": "Robert",
+            "label": "PERSON",
+            "norm": "robert",
+            "start": 33,
+            "end": 39,
+            "segment_index": 0,
+            "sentence_index": 1
+        },
+        {
+            "text": "Yokanapatawpha High School",
+            "label": "ORG",
+            "norm": "yokanapatawpha_high_school",
+            "start": 43,
+            "end": 69,
+            "segment_index": 0,
+            "sentence_index": 1
+        },
+        {
+            "text": "Valerie",
+            "label": "PERSON",
+            "norm": "valerie",
+            "start": 74,
+            "end": 81,
+            "segment_index": 0,
+            "sentence_index": 1
+        },
+        {
+            "text": "University Elementary school",
+            "label": "ORG",
+            "norm": "university_elementary_school",
+            "start": 85,
+            "end": 113,
+            "segment_index": 0,
+            "sentence_index": 1
+        },
+        {
+            "text": "Rebecca",
+            "label": "PERSON",
+            "norm": "rebecca",
+            "start": 49,
+            "end": 56,
+            "segment_index": 0,
+            "sentence_index": 2
+        },
+        {
+            "text": "six years later",
+            "label": "DATE",
+            "norm": "six_years_later",
+            "start": 66,
+            "end": 81,
+            "segment_index": 0,
+            "sentence_index": 2
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 0,
+            "end": 8,
+            "segment_index": 1,
+            "sentence_index": 0
+        },
+        {
+            "text": "Becky",
+            "label": "PERSON",
+            "norm": "becky",
+            "start": 45,
+            "end": 50,
+            "segment_index": 1,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 7,
+            "end": 15,
+            "segment_index": 2,
+            "sentence_index": 0
+        },
+        {
+            "text": "junior year",
+            "label": "DATE",
+            "norm": "junior_year",
+            "start": 18,
+            "end": 29,
+            "segment_index": 2,
+            "sentence_index": 0
+        },
+        {
+            "text": "the next year",
+            "label": "DATE",
+            "norm": "the_next_year",
+            "start": 22,
+            "end": 35,
+            "segment_index": 2,
+            "sentence_index": 2
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 0,
+            "end": 8,
+            "segment_index": 3,
+            "sentence_index": 0
+        },
+        {
+            "text": "Robert",
+            "label": "PERSON",
+            "norm": "robert",
+            "start": 7,
+            "end": 13,
+            "segment_index": 3,
+            "sentence_index": 1
+        },
+        {
+            "text": "English",
+            "label": "LANGUAGE",
+            "norm": "english",
+            "start": 4,
+            "end": 11,
+            "segment_index": 3,
+            "sentence_index": 2
+        },
+        {
+            "text": "the University of Mississippi",
+            "label": "ORG",
+            "norm": "the_university_of_mississippi",
+            "start": 60,
+            "end": 89,
+            "segment_index": 3,
+            "sentence_index": 2
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 95,
+            "end": 103,
+            "segment_index": 3,
+            "sentence_index": 2
+        },
+        {
+            "text": "Ole Miss",
+            "label": "ORG",
+            "norm": "ole_miss",
+            "start": 19,
+            "end": 27,
+            "segment_index": 3,
+            "sentence_index": 3
+        },
+        {
+            "text": "June 2009",
+            "label": "DATE",
+            "norm": "june_2009",
+            "start": 31,
+            "end": 40,
+            "segment_index": 3,
+            "sentence_index": 3
+        },
+        {
+            "text": "four years",
+            "label": "DATE",
+            "norm": "four_years",
+            "start": 47,
+            "end": 57,
+            "segment_index": 3,
+            "sentence_index": 3
+        },
+        {
+            "text": "Ph.D.",
+            "label": "WORK_OF_ART",
+            "norm": "ph_d",
+            "start": 59,
+            "end": 64,
+            "segment_index": 3,
+            "sentence_index": 4
+        },
+        {
+            "text": "her college years",
+            "label": "DATE",
+            "norm": "her_college_years",
+            "start": 7,
+            "end": 24,
+            "segment_index": 4,
+            "sentence_index": 0
+        },
+        {
+            "text": "The Lucky Café",
+            "label": "ORG",
+            "norm": "the_lucky_caf",
+            "start": 40,
+            "end": 54,
+            "segment_index": 4,
+            "sentence_index": 0
+        },
+        {
+            "text": "Cheryl Weston",
+            "label": "PERSON",
+            "norm": "cheryl_weston",
+            "start": 11,
+            "end": 24,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "one",
+            "label": "CARDINAL",
+            "norm": "one",
+            "start": 70,
+            "end": 73,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "three",
+            "label": "CARDINAL",
+            "norm": "three",
+            "start": 81,
+            "end": 86,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 94,
+            "end": 102,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "Sunday",
+            "label": "DATE",
+            "norm": "sunday",
+            "start": 107,
+            "end": 113,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "every other week",
+            "label": "DATE",
+            "norm": "every_other_week",
+            "start": 126,
+            "end": 142,
+            "segment_index": 4,
+            "sentence_index": 1
+        },
+        {
+            "text": "Ole Miss",
+            "label": "ORG",
+            "norm": "ole_miss",
+            "start": 76,
+            "end": 84,
+            "segment_index": 4,
+            "sentence_index": 2
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 86,
+            "end": 94,
+            "segment_index": 4,
+            "sentence_index": 2
+        },
+        {
+            "text": "Cheryl",
+            "label": "PERSON",
+            "norm": "cheryl",
+            "start": 117,
+            "end": 123,
+            "segment_index": 4,
+            "sentence_index": 2
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 34,
+            "end": 42,
+            "segment_index": 5,
+            "sentence_index": 0
+        },
+        {
+            "text": "The Library",
+            "label": "ORG",
+            "norm": "the_library",
+            "start": 120,
+            "end": 131,
+            "segment_index": 5,
+            "sentence_index": 1
+        },
+        {
+            "text": "the Downtown Grill",
+            "label": "ORG",
+            "norm": "the_downtown_grill",
+            "start": 136,
+            "end": 154,
+            "segment_index": 5,
+            "sentence_index": 1
+        },
+        {
+            "text": "Ole Miss",
+            "label": "ORG",
+            "norm": "ole_miss",
+            "start": 5,
+            "end": 13,
+            "segment_index": 5,
+            "sentence_index": 2
+        },
+        {
+            "text": "Paul Evans",
+            "label": "PERSON",
+            "norm": "paul_evans",
+            "start": 99,
+            "end": 109,
+            "segment_index": 6,
+            "sentence_index": 0
+        },
+        {
+            "text": "2019",
+            "label": "DATE",
+            "norm": "2019",
+            "start": 16,
+            "end": 20,
+            "segment_index": 6,
+            "sentence_index": 1
+        },
+        {
+            "text": "County Arts and Crafts Fair",
+            "label": "EVENT",
+            "norm": "county_arts_and_crafts_fair",
+            "start": 21,
+            "end": 48,
+            "segment_index": 6,
+            "sentence_index": 1
+        },
+        {
+            "text": "Paul",
+            "label": "PERSON",
+            "norm": "paul",
+            "start": 56,
+            "end": 60,
+            "segment_index": 6,
+            "sentence_index": 1
+        },
+        {
+            "text": "About six months later",
+            "label": "DATE",
+            "norm": "about_six_months_later",
+            "start": 0,
+            "end": 22,
+            "segment_index": 6,
+            "sentence_index": 3
+        },
+        {
+            "text": "Paul",
+            "label": "PERSON",
+            "norm": "paul",
+            "start": 24,
+            "end": 28,
+            "segment_index": 6,
+            "sentence_index": 3
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 50,
+            "end": 58,
+            "segment_index": 6,
+            "sentence_index": 3
+        },
+        {
+            "text": "a few years earlier",
+            "label": "DATE",
+            "norm": "a_few_years_earlier",
+            "start": 73,
+            "end": 92,
+            "segment_index": 6,
+            "sentence_index": 3
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 5,
+            "end": 13,
+            "segment_index": 7,
+            "sentence_index": 0
+        },
+        {
+            "text": "Valerie",
+            "label": "PERSON",
+            "norm": "valerie",
+            "start": 24,
+            "end": 31,
+            "segment_index": 7,
+            "sentence_index": 0
+        },
+        {
+            "text": "Paul",
+            "label": "PERSON",
+            "norm": "paul",
+            "start": 115,
+            "end": 119,
+            "segment_index": 7,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 136,
+            "end": 144,
+            "segment_index": 7,
+            "sentence_index": 0
+        },
+        {
+            "text": "Becky",
+            "label": "PERSON",
+            "norm": "becky",
+            "start": 58,
+            "end": 63,
+            "segment_index": 7,
+            "sentence_index": 1
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 0,
+            "end": 8,
+            "segment_index": 7,
+            "sentence_index": 2
+        },
+        {
+            "text": "Paul",
+            "label": "PERSON",
+            "norm": "paul",
+            "start": 6,
+            "end": 10,
+            "segment_index": 8,
+            "sentence_index": 0
+        },
+        {
+            "text": "Lane Properties",
+            "label": "ORG",
+            "norm": "lane_properties",
+            "start": 38,
+            "end": 53,
+            "segment_index": 8,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 59,
+            "end": 67,
+            "segment_index": 8,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 0,
+            "end": 8,
+            "segment_index": 8,
+            "sentence_index": 1
+        },
+        {
+            "text": "Paul",
+            "label": "PERSON",
+            "norm": "paul",
+            "start": 23,
+            "end": 27,
+            "segment_index": 8,
+            "sentence_index": 1
+        },
+        {
+            "text": "body",
+            "label": "EVIDENCE",
+            "norm": "body",
+            "start": 30,
+            "end": 34,
+            "segment_index": 8,
+            "sentence_index": 3
+        },
+        {
+            "text": "Cheryl",
+            "label": "PERSON",
+            "norm": "cheryl",
+            "start": 0,
+            "end": 6,
+            "segment_index": 9,
+            "sentence_index": 0
+        },
+        {
+            "text": "Becky",
+            "label": "PERSON",
+            "norm": "becky",
+            "start": 8,
+            "end": 13,
+            "segment_index": 9,
+            "sentence_index": 0
+        },
+        {
+            "text": "Jeremy Gladwell",
+            "label": "PERSON",
+            "norm": "jeremy_gladwell",
+            "start": 26,
+            "end": 41,
+            "segment_index": 9,
+            "sentence_index": 0
+        },
+        {
+            "text": "Kimberly",
+            "label": "PERSON",
+            "norm": "kimberly",
+            "start": 48,
+            "end": 56,
+            "segment_index": 9,
+            "sentence_index": 0
+        }
+    ]
+}

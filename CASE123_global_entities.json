@@ -259,7 +259,7 @@
         "global_id": 24,
         "canonical_name": "74_f_23_c",
         "mentions": [
-            "74° F / 23° C"
+            "74\u00b0 F / 23\u00b0 C"
         ],
         "entity_type": "QUANTITY",
         "source_docs": [
@@ -281,7 +281,7 @@
         "global_id": 26,
         "canonical_name": "68_f_20_c",
         "mentions": [
-            "68° F / 20° C"
+            "68\u00b0 F / 20\u00b0 C"
         ],
         "entity_type": "QUANTITY",
         "source_docs": [
@@ -538,7 +538,7 @@
         "global_id": 49,
         "canonical_name": "45",
         "mentions": [
-            "45°"
+            "45\u00b0"
         ],
         "entity_type": "QUANTITY",
         "source_docs": [
@@ -549,7 +549,7 @@
         "global_id": 50,
         "canonical_name": "30",
         "mentions": [
-            "30°"
+            "30\u00b0"
         ],
         "entity_type": "QUANTITY",
         "source_docs": [
@@ -560,7 +560,7 @@
         "global_id": 51,
         "canonical_name": "115",
         "mentions": [
-            "115°"
+            "115\u00b0"
         ],
         "entity_type": "QUANTITY",
         "source_docs": [
