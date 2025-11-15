@@ -1,0 +1,922 @@
+[
+  {
+    "source": "ENT_kimberly",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV10",
+    "target": "LOC_stairs",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl",
+    "target": "EV11",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV14",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_thoreau",
+    "target": "EV15",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV19",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_thoreau",
+    "target": "EV19",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_miguel",
+    "target": "EV22",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_paul",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV25",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV25",
+    "target": "LOC_stairs",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dog",
+    "target": "EV28",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky_pace",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_armstrong",
+    "target": "EV2",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_murphy",
+    "target": "EV2",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_rebecca_pace",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_miguel",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_thoreau",
+    "target": "EV5",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kim",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dog",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV15",
+    "target": "LOC_stairs",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kim",
+    "target": "EV16",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV18",
+    "target": "LOC_gallery",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV19",
+    "target": "LOC_home",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_university_elementary_school",
+    "target": "ENT_the_2019_county_arts_and_crafts_fair_,_where_paul_exhibited_junior_year_wood_sculptures",
+    "edge_type": "MET",
+    "case_id": "CASE123",
+    "doc_name": "BIO_Kimberley_Pace",
+    "doc_type": "biography"
+  },
+  {
+    "source": "ENT_paul",
+    "target": "ENT_the_house_kimberly_had_purchased_a_few_years_earlier",
+    "edge_type": "OWNS",
+    "case_id": "CASE123",
+    "doc_name": "BIO_Kimberley_Pace",
+    "doc_type": "biography"
+  },
+  {
+    "source": "ENT_deputy_fred_willits_)",
+    "target": "ENT_the_scene",
+    "edge_type": "DISPATCHED_TO",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_reporting_officer_(_reporting_officer_)_willits",
+    "target": "ENT_the_scene",
+    "edge_type": "ARRIVED_AT",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_unit_#_224_(_officer_steve_harding_)",
+    "target": "ENT_reporting_officer_'s_request",
+    "edge_type": "DISPATCHED_TO",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_reporting_investigators_(_reporting_investigators_)",
+    "target": "ENT_11:18_a.m.",
+    "edge_type": "ARRIVED_AT",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_reporting_officer_willits",
+    "target": "ENT_the_scene",
+    "edge_type": "SECURED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_animal_control",
+    "target": "ENT_the_scene",
+    "edge_type": "ARRIVED_AT",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_reporting_investigators",
+    "target": "ENT_a_woman_'s_handbag",
+    "edge_type": "OBSERVED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_no_signs_of_struggle_or_other_disturbance",
+    "target": "ENT_the_possible_exception_of_the_briefcase",
+    "edge_type": "OBSERVED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_animal_control_officer_sanchez",
+    "target": "ENT_11:42_a.m.",
+    "edge_type": "REPORTED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_inspector_johnson",
+    "target": "ENT_the_scene",
+    "edge_type": "ARRIVED_AT",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_inspector_johnson",
+    "target": "ENT_the_underside_of_the_body",
+    "edge_type": "EXAMINED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_deceased",
+    "target": "ENT_the_scene",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_reporting_investigators",
+    "target": "ENT_witnesses_rebecca_pace_,_cheryl_weston_,_and_jeremy_gladwell",
+    "edge_type": "INTERVIEWED",
+    "case_id": "CASE123",
+    "doc_name": "IncidentReport_RO",
+    "doc_type": "narrative"
+  },
+  {
+    "source": "ENT_detectives_armstrong_and_murphy",
+    "target": "ENT_cheryl_weston",
+    "edge_type": "INTERVIEWED",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Friend",
+    "doc_type": "interview"
+  },
+  {
+    "source": "ENT_we",
+    "target": "ENT_kimberly",
+    "edge_type": "DISPATCHED_TO",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Friend",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_i",
+    "target": "ENT_911",
+    "edge_type": "CALLED",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Friend",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_detectives_armstrong_and_murphy",
+    "target": "ENT_jeremy_gladwell",
+    "edge_type": "INTERVIEWED",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Neighbor",
+    "doc_type": "interview"
+  },
+  {
+    "source": "ENT_cheryl",
+    "target": "ENT_911",
+    "edge_type": "CALLED",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Neighbor",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_jeremy_gladwell_behavior",
+    "target": "ENT_it_all",
+    "edge_type": "DESCRIBED_AS",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Neighbor",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_someone",
+    "target": "ENT_jeremy_gladwell_dog_\u2014_jeremy_gladwell_first_dog_,_emerson_\u2014",
+    "edge_type": "OWNS",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Neighbor",
+    "doc_type": "interview"
+  },
+  {
+    "source": "ENT_you",
+    "target": "ENT_me",
+    "edge_type": "DISPATCHED_TO",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Neighbor",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_detectives_armstrong_and_murphy",
+    "target": "ENT_becky_pace",
+    "edge_type": "INTERVIEWED",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Sister",
+    "doc_type": "interview"
+  },
+  {
+    "source": "ENT_becky_pace",
+    "target": "ENT_that_dog",
+    "edge_type": "OWNS",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Sister",
+    "doc_type": "interview"
+  },
+  {
+    "source": "ENT_i",
+    "target": "ENT_becky_pace",
+    "edge_type": "SAW",
+    "case_id": "CASE123",
+    "doc_name": "Interview_Kimberley_Sister",
+    "doc_type": "interview",
+    "refinement_notes": "Relationship Type Standardization"
+  },
+  {
+    "source": "ENT_kimberly_pace",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_valerie",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_robert_pace",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV2",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl_weston",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_paul",
+    "target": "EV5",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_paul",
+    "target": "EV6",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV6",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV6",
+    "target": "LOC_house",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_valerie",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_paul",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_jeremy_gladwell",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kimberly",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV8",
+    "target": "LOC_basement",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV8",
+    "target": "LOC_home",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_deputy",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_fred_willits",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_luwinda_johnson",
+    "target": "EV2",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigator",
+    "target": "EV2",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_officer",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_willits",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_officer",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_unit_#224",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_steve_harding",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_officer",
+    "target": "EV6",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_willits",
+    "target": "EV6",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_officer",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_willits",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_officer",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_willits",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dog",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dispatch",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_yoknapatawpha_county",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_animal_control",
+    "target": "EV8",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_animal_control",
+    "target": "EV9",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigator",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_murphy",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dispatch",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_handbag",
+    "target": "EV11",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV11",
+    "target": "LOC_bedroom",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_briefcase",
+    "target": "EV12",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_animal_control",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_sanchez",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigators",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_dog",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV14",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV15",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV16",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_johnson",
+    "target": "EV17",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigators",
+    "target": "EV17",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV17",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_johnson",
+    "target": "EV18",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV18",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_johnson",
+    "target": "EV20",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV20",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_crime_scene_unit",
+    "target": "EV20",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_body",
+    "target": "EV21",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_coroner's",
+    "target": "EV21",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigators",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_rebecca_pace",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl_weston",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_jeremy_gladwell",
+    "target": "EV23",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_reporting_investigator",
+    "target": "EV24",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_murphy",
+    "target": "EV24",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_crime_scene_unit",
+    "target": "EV24",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl_weston",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl_weston",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV4",
+    "target": "LOC_home",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky",
+    "target": "EV7",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_paul_evans",
+    "target": "EV13",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_miguel_ochoa",
+    "target": "EV14",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_jeremy_gladwell",
+    "target": "EV1",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_jeremy_gladwell",
+    "target": "EV3",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky",
+    "target": "EV4",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV5",
+    "target": "LOC_home",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_cheryl",
+    "target": "EV9",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_becky",
+    "target": "EV9",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_kim",
+    "target": "EV9",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_thoreau",
+    "target": "EV9",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV9",
+    "target": "LOC_kitchen",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV9",
+    "target": "LOC_porch",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "EV9",
+    "target": "LOC_bedroom",
+    "edge_type": "LOCATED_AT",
+    "case_id": "CASE123"
+  },
+  {
+    "source": "ENT_thoreau",
+    "target": "EV10",
+    "edge_type": "PARTICIPATED_IN",
+    "case_id": "CASE123"
+  }
+]
