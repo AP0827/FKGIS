@@ -9,6 +9,7 @@ pymongo
 mongoengine
 psycopg2-binary
 sqlalchemy
+supabase
 neo4j
 neomodel
 
