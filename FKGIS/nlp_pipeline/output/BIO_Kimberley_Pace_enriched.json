@@ -14418,25 +14418,15 @@
             "subject": "Kimberly Pace bio Kimberly Pace",
             "predicate": "bear",
             "object": "Valerie and Robert Pace",
-            "sentence_id": 0
+            "sentence_id": 0,
+            "relation_type": "HAS_PARENT"
         },
         {
-            "subject": "Mississippi father",
-            "predicate": "become",
-            "object": "Kimberly 's junior year in high school",
-            "sentence_id": 6
-        },
-        {
-            "subject": "Kimberly",
-            "predicate": "love",
-            "object": "school",
-            "sentence_id": 9
-        },
-        {
-            "subject": "The owner , Cheryl Weston ,",
-            "predicate": "become",
-            "object": "a true friend and confidante",
-            "sentence_id": 15
+            "subject": "Robert",
+            "predicate": "graduate",
+            "object": "Ole Miss",
+            "sentence_id": 12,
+            "relation_type": "STUDIES_AT"
         },
         {
             "subject": "University Elementary school",
@@ -14446,22 +14436,30 @@
             "relation_type": "MET"
         },
         {
-            "subject": "Paul",
-            "predicate": "move",
-            "object": "the house Kimberly had purchased a few years earlier",
-            "sentence_id": 23
-        },
-        {
-            "subject": "Paul",
-            "predicate": "be",
-            "object": "the support Kimberly needed to make critical decisions about Mississippi mother 's care",
-            "sentence_id": 24
+            "subject": "University Elementary school",
+            "predicate": "discover",
+            "object": "a mutual love for hand - worked art",
+            "sentence_id": 22,
+            "relation_type": "DISCOVERED"
         },
         {
             "subject": "Cheryl , Becky , and friend Jeremy Gladwell",
             "predicate": "find",
             "object": "Kimberly",
-            "sentence_id": 31
+            "sentence_id": 31,
+            "relation_type": "DISCOVERED"
+        },
+        {
+            "subject": "Valerie",
+            "predicate": "has child",
+            "object": "Pace",
+            "relation_type": "HAS_CHILD"
+        },
+        {
+            "subject": "Pace",
+            "predicate": "born",
+            "object": "Valerie",
+            "relation_type": "HAS_PARENT"
         }
     ],
     "events": [
@@ -14479,50 +14477,21 @@
                 "Robert Pace"
             ],
             "locations": [],
-            "event_id": "EV1"
+            "event_id": "unknown_doc_EV1"
         },
         {
-            "description": "During Kimberly's junior year in high school, her father became ill with heart problems.",
-            "subject": "Mississippi father",
-            "predicate": "become",
-            "object": "Kimberly 's junior year in high school",
-            "sentence_id": 6,
+            "description": "She graduated from Ole Miss in June 2009 after four years of going to school year-round.",
+            "subject": "Robert",
+            "predicate": "graduate",
+            "object": "Ole Miss",
+            "sentence_id": 12,
             "time_raw": null,
             "time_resolved": null,
             "participants": [
-                "Kimberly"
+                "Ole Miss"
             ],
             "locations": [],
-            "event_id": "EV2"
-        },
-        {
-            "description": "Kimberly loved school and found getting good grades fulfilling as well as prudent.",
-            "subject": "Kimberly",
-            "predicate": "love",
-            "object": "school",
-            "sentence_id": 9,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "Kimberly"
-            ],
-            "locations": [],
-            "event_id": "EV3"
-        },
-        {
-            "description": "The owner, Cheryl Weston, became a true friend and confidante and was one of the three people Kimberly had Sunday brunch with every other week.",
-            "subject": "The owner , Cheryl Weston ,",
-            "predicate": "become",
-            "object": "a true friend and confidante",
-            "sentence_id": 15,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "Cheryl Weston",
-                "Kimberly"
-            ],
-            "locations": [],
-            "event_id": "EV4"
+            "event_id": "unknown_doc_EV2"
         },
         {
             "description": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
@@ -14536,40 +14505,19 @@
                 "Paul"
             ],
             "locations": [],
-            "event_id": "EV5"
+            "event_id": "unknown_doc_EV3"
         },
         {
-            "description": "About six months later, Paul moved into the house Kimberly had purchased a few years earlier and helped her with some of the carpentry projects.",
-            "subject": "Paul",
-            "predicate": "move",
-            "object": "the house Kimberly had purchased a few years earlier",
-            "sentence_id": 23,
+            "description": "They discovered a mutual love for hand-worked art and began dating.",
+            "subject": "University Elementary school",
+            "predicate": "discover",
+            "object": "a mutual love for hand - worked art",
+            "sentence_id": 22,
             "time_raw": null,
             "time_resolved": null,
-            "participants": [
-                "Paul",
-                "Kimberly"
-            ],
-            "locations": [
-                "house"
-            ],
-            "event_id": "EV6"
-        },
-        {
-            "description": "When Kimberly's mother, Valerie, began showing signs of memory loss and eventually was diagnosed with Alzheimer's, Paul was the support Kimberly needed to make critical decisions about her mother's care.",
-            "subject": "Paul",
-            "predicate": "be",
-            "object": "the support Kimberly needed to make critical decisions about Mississippi mother 's care",
-            "sentence_id": 24,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "Kimberly",
-                "Valerie",
-                "Paul"
-            ],
+            "participants": [],
             "locations": [],
-            "event_id": "EV7"
+            "event_id": "unknown_doc_EV4"
         },
         {
             "description": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
@@ -14586,10 +14534,10 @@
                 "Kimberly"
             ],
             "locations": [
-                "basement",
-                "home"
+                "home",
+                "basement"
             ],
-            "event_id": "EV8"
+            "event_id": "unknown_doc_EV5"
         }
     ]
 }

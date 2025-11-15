@@ -19,6 +19,47 @@ EDGE_TYPE_CLAIMED = "CLAIMED"
 EDGE_TYPE_OBSERVED = "OBSERVED"
 EDGE_TYPE_OWNS = "OWNS"
 
+# New Edge Types for richer relations
+EDGE_TYPE_HAS_PARENT = "HAS_PARENT"
+EDGE_TYPE_HAS_CHILD = "HAS_CHILD"
+EDGE_TYPE_HAS_SIBLING = "HAS_SIBLING"
+EDGE_TYPE_PARTNER_OF = "PARTNER_OF"
+EDGE_TYPE_MARRIED_TO = "MARRIED_TO"
+EDGE_TYPE_WORKS_AT = "WORKS_AT"
+EDGE_TYPE_STUDIES_AT = "STUDIES_AT"
+EDGE_TYPE_OWNS_BUSINESS = "OWNS_BUSINESS"
+EDGE_TYPE_REPORTED_TO = "REPORTED_TO"
+EDGE_TYPE_CONTACTED_ABOUT = "CONTACTED_ABOUT"
+EDGE_TYPE_NOTIFIED_ABOUT = "NOTIFIED_ABOUT"
+EDGE_TYPE_LIVES_AT = "LIVES_AT"
+EDGE_TYPE_FREQUENTS = "FREQUENTS"
+EDGE_TYPE_DISCOVERED = "DISCOVERED"
+EDGE_TYPE_HEARD = "HEARD"
+EDGE_TYPE_STATED = "STATED"
+EDGE_TYPE_ASKED = "ASKED"
+EDGE_TYPE_BELIEVED = "BELIEVED"
+EDGE_TYPE_KNEW = "KNEW"
+EDGE_TYPE_WITNESSED = "WITNESSED"
+EDGE_TYPE_LOCATED = "LOCATED"
+EDGE_TYPE_TOOK = "TOOK"
+EDGE_TYPE_GAVE = "GAVE"
+EDGE_TYPE_RECEIVED = "RECEIVED"
+EDGE_TYPE_PROVIDED = "PROVIDED"
+EDGE_TYPE_REQUESTED = "REQUESTED"
+EDGE_TYPE_CONFIRMED = "CONFIRMED"
+EDGE_TYPE_DETERMINED = "DETERMINED"
+EDGE_TYPE_INVESTIGATED = "INVESTIGATED"
+EDGE_TYPE_DOCUMENTED = "DOCUMENTED"
+EDGE_TYPE_COLLECTED = "COLLECTED"
+EDGE_TYPE_SEIZED = "SEIZED"
+EDGE_TYPE_TRANSPORTED = "TRANSPORTED"
+EDGE_TYPE_PROCESSED = "PROCESSED"
+EDGE_TYPE_REVIEWED = "REVIEWED"
+EDGE_TYPE_NOTED = "NOTED"
+EDGE_TYPE_DESCRIBED = "DESCRIBED"
+EDGE_TYPE_MENTIONED = "MENTIONED"
+
+
 # Mapping from high-level relation_type (produced by the case-specific
 # relation extractor) to concrete edge_type values in the KG.
 RELATION_TYPE_TO_EDGE = {
@@ -38,6 +79,45 @@ RELATION_TYPE_TO_EDGE = {
     "OBSERVED": EDGE_TYPE_OBSERVED,
     # REMOVED is modeled as an observation about evidence/scene state
     "REMOVED": EDGE_TYPE_OBSERVED,
+    # New relations
+    "HAS_PARENT": EDGE_TYPE_HAS_PARENT,
+    "HAS_CHILD": EDGE_TYPE_HAS_CHILD,
+    "HAS_SIBLING": EDGE_TYPE_HAS_SIBLING,
+    "PARTNER_OF": EDGE_TYPE_PARTNER_OF,
+    "MARRIED_TO": EDGE_TYPE_MARRIED_TO,
+    "WORKS_AT": EDGE_TYPE_WORKS_AT,
+    "STUDIES_AT": EDGE_TYPE_STUDIES_AT,
+    "OWNS_BUSINESS": EDGE_TYPE_OWNS_BUSINESS,
+    "REPORTED_TO": EDGE_TYPE_REPORTED_TO,
+    "CONTACTED_ABOUT": EDGE_TYPE_CONTACTED_ABOUT,
+    "NOTIFIED_ABOUT": EDGE_TYPE_NOTIFIED_ABOUT,
+    "LIVES_AT": EDGE_TYPE_LIVES_AT,
+    "FREQUENTS": EDGE_TYPE_FREQUENTS,
+    "DISCOVERED": EDGE_TYPE_DISCOVERED,
+    "HEARD": EDGE_TYPE_HEARD,
+    "STATED": EDGE_TYPE_STATED,
+    "ASKED": EDGE_TYPE_ASKED,
+    "BELIEVED": EDGE_TYPE_BELIEVED,
+    "KNEW": EDGE_TYPE_KNEW,
+    "WITNESSED": EDGE_TYPE_WITNESSED,
+    "LOCATED": EDGE_TYPE_LOCATED,
+    "TOOK": EDGE_TYPE_TOOK,
+    "GAVE": EDGE_TYPE_GAVE,
+    "RECEIVED": EDGE_TYPE_RECEIVED,
+    "PROVIDED": EDGE_TYPE_PROVIDED,
+    "REQUESTED": EDGE_TYPE_REQUESTED,
+    "CONFIRMED": EDGE_TYPE_CONFIRMED,
+    "DETERMINED": EDGE_TYPE_DETERMINED,
+    "INVESTIGATED": EDGE_TYPE_INVESTIGATED,
+    "DOCUMENTED": EDGE_TYPE_DOCUMENTED,
+    "COLLECTED": EDGE_TYPE_COLLECTED,
+    "SEIZED": EDGE_TYPE_SEIZED,
+    "TRANSPORTED": EDGE_TYPE_TRANSPORTED,
+    "PROCESSED": EDGE_TYPE_PROCESSED,
+    "REVIEWED": EDGE_TYPE_REVIEWED,
+    "NOTED": EDGE_TYPE_NOTED,
+    "DESCRIBED": EDGE_TYPE_DESCRIBED,
+    "MENTIONED": EDGE_TYPE_MENTIONED,
 }
 
 
@@ -233,6 +313,17 @@ def build_nodes_and_edges_for_case(
     # We rely on refined relations attached to each processed_doc (if present).
     # relation_type is produced by the case-specific extractor.
     KEY_OBJECT_OWNERSHIP = {"dog", "thoreau", "briefcase", "handbag", "residence", "house"}
+    CANONICAL_LOCATIONS = {
+        "the scene": "LOC_home",
+        "the residence": "LOC_home",
+        "the house": "LOC_home",
+        "the basement": "LOC_basement",
+        "the bedroom": "LOC_bedroom",
+        "the gallery": "LOC_gallery",
+        "the kitchen": "LOC_kitchen",
+        "the porch": "LOC_porch",
+        "the stairs": "LOC_stairs",
+    }
 
     for entry in case_docs:
         doc_name = entry.get("doc_name") or entry.get("name") or "unknown_doc"
@@ -252,27 +343,146 @@ def build_nodes_and_edges_for_case(
             subj_norm = _normalize_name(subj)
             obj_norm = _normalize_name(obj)
 
-            subj_id = _make_entity_id(subj_norm)
-            if subj_id not in entity_nodes:
-                entity_nodes[subj_id] = {
-                    "id": subj_id,
-                    "type": NODE_TYPE_ENTITY,
-                    "text": subj,
-                    "norm": subj_norm,
-                    "label": None,
-                    "case_id": case_id,
-                }
+            # --- Subject Node Creation/Normalization ---
+            # Attempt to find a canonical entity for the subject if it's a long phrase
+            canonical_subj_id = None
+            if subj_norm in CANONICAL_LOCATIONS:
+                canonical_subj_id = CANONICAL_LOCATIONS[subj_norm]
+            elif "reporting officer" in subj_norm or "reporting investigator" in subj_norm:
+                if "willits" in subj_norm:
+                    canonical_subj_id = _make_entity_id("fred willits")
+                elif "harding" in subj_norm:
+                    canonical_subj_id = _make_entity_id("steve harding")
+                elif "johnson" in subj_norm:
+                    canonical_subj_id = _make_entity_id("luwinda johnson")
+                elif "murphy" in subj_norm:
+                    canonical_subj_id = _make_entity_id("murphy")
+                elif "sanchez" in subj_norm:
+                    canonical_subj_id = _make_entity_id("jaime sanchez")
+                elif "armstrong" in subj_norm:
+                    canonical_subj_id = _make_entity_id("armstrong")
+                elif "douglas" in subj_norm:
+                    canonical_subj_id = _make_entity_id("t r douglas")
+            elif "kimberly pace" in subj_norm or "kimberly" in subj_norm:
+                canonical_subj_id = _make_entity_id("kimberly pace")
+            elif "becky pace" in subj_norm or "becky" in subj_norm:
+                canonical_subj_id = _make_entity_id("becky pace")
+            elif "cheryl weston" in subj_norm or "cheryl" in subj_norm:
+                canonical_subj_id = _make_entity_id("cheryl weston")
+            elif "jeremy gladwell" in subj_norm or "jeremy" in subj_norm:
+                canonical_subj_id = _make_entity_id("jeremy gladwell")
+            elif "paul evans" in subj_norm or "paul" in subj_norm:
+                canonical_subj_id = _make_entity_id("paul evans")
+            elif "miguel ochoa" in subj_norm or "miguel" in subj_norm:
+                canonical_subj_id = _make_entity_id("miguel ochoa")
+            elif "dog" in subj_norm or "thoreau" in subj_norm:
+                canonical_subj_id = _make_entity_id("thoreau") # Assuming Thoreau is the primary dog entity
 
-            obj_id = _make_entity_id(obj_norm)
-            if obj_id not in entity_nodes:
-                entity_nodes[obj_id] = {
-                    "id": obj_id,
-                    "type": NODE_TYPE_ENTITY,
-                    "text": obj,
-                    "norm": obj_norm,
-                    "label": None,
-                    "case_id": case_id,
-                }
+            if canonical_subj_id:
+                subj_id = canonical_subj_id
+                # Ensure the canonical entity node exists
+                if subj_id not in entity_nodes and subj_id.startswith("ENT_"):
+                    entity_nodes[subj_id] = {
+                        "id": subj_id,
+                        "type": NODE_TYPE_ENTITY,
+                        "text": subj, # Keep original text for display, but use canonical ID
+                        "norm": _normalize_name(subj),
+                        "label": None, # Label might be refined later
+                        "case_id": case_id,
+                    }
+                elif subj_id not in location_nodes and subj_id.startswith("LOC_"):
+                     location_nodes[subj_id] = {
+                        "id": subj_id,
+                        "type": NODE_TYPE_LOCATION,
+                        "text": subj,
+                        "norm": _normalize_name(subj),
+                        "case_id": case_id,
+                    }
+            else:
+                subj_id = _make_entity_id(subj_norm)
+                if subj_id not in entity_nodes:
+                    entity_nodes[subj_id] = {
+                        "id": subj_id,
+                        "type": NODE_TYPE_ENTITY,
+                        "text": subj,
+                        "norm": subj_norm,
+                        "label": None,
+                        "case_id": case_id,
+                    }
+
+            # --- Object Node Creation/Normalization ---
+            # Attempt to find a canonical entity for the object if it's a long phrase
+            canonical_obj_id = None
+            if obj_norm in CANONICAL_LOCATIONS:
+                canonical_obj_id = CANONICAL_LOCATIONS[obj_norm]
+            elif "reporting officer" in obj_norm or "reporting investigator" in obj_norm:
+                if "willits" in obj_norm:
+                    canonical_obj_id = _make_entity_id("fred willits")
+                elif "harding" in obj_norm:
+                    canonical_obj_id = _make_entity_id("steve harding")
+                elif "johnson" in obj_norm:
+                    canonical_obj_id = _make_entity_id("luwinda johnson")
+                elif "murphy" in obj_norm:
+                    canonical_obj_id = _make_entity_id("murphy")
+                elif "sanchez" in obj_norm:
+                    canonical_obj_id = _make_entity_id("jaime sanchez")
+                elif "armstrong" in obj_norm:
+                    canonical_obj_id = _make_entity_id("armstrong")
+                elif "douglas" in obj_norm:
+                    canonical_obj_id = _make_entity_id("t r douglas")
+            elif "kimberly pace" in obj_norm or "kimberly" in obj_norm:
+                canonical_obj_id = _make_entity_id("kimberly pace")
+            elif "becky pace" in obj_norm or "becky" in obj_norm:
+                canonical_obj_id = _make_entity_id("becky pace")
+            elif "cheryl weston" in obj_norm or "cheryl" in obj_norm:
+                canonical_obj_id = _make_entity_id("cheryl weston")
+            elif "jeremy gladwell" in obj_norm or "jeremy" in obj_norm:
+                canonical_obj_id = _make_entity_id("jeremy gladwell")
+            elif "paul evans" in obj_norm or "paul" in obj_norm:
+                canonical_obj_id = _make_entity_id("paul evans")
+            elif "miguel ochoa" in obj_norm or "miguel" in obj_norm:
+                canonical_obj_id = _make_entity_id("miguel ochoa")
+            elif "dog" in obj_norm or "thoreau" in obj_norm:
+                canonical_obj_id = _make_entity_id("thoreau") # Assuming Thoreau is the primary dog entity
+            elif "body" in obj_norm:
+                canonical_obj_id = _make_entity_id("body")
+            elif "handbag" in obj_norm:
+                canonical_obj_id = _make_entity_id("handbag")
+            elif "briefcase" in obj_norm:
+                canonical_obj_id = _make_entity_id("briefcase")
+
+
+            if canonical_obj_id:
+                obj_id = canonical_obj_id
+                # Ensure the canonical entity node exists
+                if obj_id not in entity_nodes and obj_id.startswith("ENT_"):
+                    entity_nodes[obj_id] = {
+                        "id": obj_id,
+                        "type": NODE_TYPE_ENTITY,
+                        "text": obj,
+                        "norm": _normalize_name(obj),
+                        "label": None,
+                        "case_id": case_id,
+                    }
+                elif obj_id not in location_nodes and obj_id.startswith("LOC_"):
+                     location_nodes[obj_id] = {
+                        "id": obj_id,
+                        "type": NODE_TYPE_LOCATION,
+                        "text": obj,
+                        "norm": _normalize_name(obj),
+                        "case_id": case_id,
+                    }
+            else:
+                obj_id = _make_entity_id(obj_norm)
+                if obj_id not in entity_nodes:
+                    entity_nodes[obj_id] = {
+                        "id": obj_id,
+                        "type": NODE_TYPE_ENTITY,
+                        "text": obj,
+                        "norm": obj_norm,
+                        "label": None,
+                        "case_id": case_id,
+                    }
 
             edge_type: str | None = None
 

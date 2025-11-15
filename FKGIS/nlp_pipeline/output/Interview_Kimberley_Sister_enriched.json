@@ -36852,12 +36852,6 @@
     ],
     "relations": [
         {
-            "subject": "Becky Pace",
-            "predicate": "be",
-            "object": "one of three people who discovered Becky Pace : sister 's body",
-            "sentence_id": 0
-        },
-        {
             "subject": "Detectives Armstrong and Murphy",
             "predicate": "interview",
             "object": "Becky Pace",
@@ -36865,64 +36859,46 @@
             "relation_type": "INTERVIEWED"
         },
         {
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Rebecca Pace",
-            "sentence_id": 4
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
+            "relation_type": "STATED"
         },
         {
-            "subject": "Becky Pace",
-            "predicate": "stay",
-            "object": "Becky Pace : friend Miguel",
-            "sentence_id": 56
+            "subject": "I",
+            "predicate": "live",
+            "object": "812 South 5th",
+            "sentence_id": 5,
+            "relation_type": "LIVES_AT"
         },
         {
-            "subject": "Even Thoreau",
-            "predicate": "make",
-            "object": "any commotion",
-            "sentence_id": 66
+            "subject": "Jeremy",
+            "predicate": "live",
+            "object": "the street",
+            "sentence_id": 24,
+            "relation_type": "LIVES_AT"
+        },
+        {
+            "subject": "We",
+            "predicate": "take",
+            "object": "turns",
+            "sentence_id": 28,
+            "relation_type": "TOOK"
         },
         {
             "subject": "I",
             "predicate": "tell",
             "object": "Kim Becky Pace",
-            "sentence_id": 70
+            "sentence_id": 70,
+            "relation_type": "STATED"
         },
         {
-            "subject": "Becky Pace",
-            "predicate": "put",
-            "object": "Becky Pace",
-            "sentence_id": 72
-        },
-        {
-            "subject": "That",
-            "predicate": "kill",
-            "object": "Kim",
-            "sentence_id": 73
-        },
-        {
-            "subject": "I",
-            "predicate": "adopt",
-            "object": "Becky Pace",
-            "sentence_id": 74
-        },
-        {
-            "subject": "Becky Pace",
-            "predicate": "love",
-            "object": "that dog",
-            "sentence_id": 81
-        },
-        {
-            "subject": "Becky Pace",
-            "predicate": "make",
-            "object": "noise",
-            "sentence_id": 83
-        },
-        {
-            "subject": "Becky Pace",
-            "predicate": "come",
-            "object": "Becky Pace",
-            "sentence_id": 87
+            "subject": "you",
+            "predicate": "find",
+            "object": "your sister , Ms. Pace",
+            "sentence_id": 88,
+            "relation_type": "DISCOVERED"
         },
         {
             "subject": "I",
@@ -36932,58 +36908,49 @@
             "relation_type": "DISPATCHED"
         },
         {
-            "subject": "Becky Pace",
-            "predicate": "do",
-            "object": "What",
-            "sentence_id": 105
-        },
-        {
-            "subject": "Becky Pace",
-            "predicate": "pull",
-            "object": "me",
-            "sentence_id": 113
-        },
-        {
-            "subject": "any of you",
-            "predicate": "touch",
-            "object": "Kim",
-            "sentence_id": 114
-        },
-        {
             "subject": "I",
             "predicate": "see",
             "object": "Becky Pace : face",
-            "sentence_id": 116
+            "sentence_id": 116,
+            "relation_type": "OBSERVED"
+        },
+        {
+            "subject": "you",
+            "predicate": "know",
+            "object": "Arthur 's last name",
+            "sentence_id": 130,
+            "relation_type": "KNEW"
         },
         {
             "subject": "you",
             "predicate": "see",
             "object": "Becky Pace : last at the gallery",
-            "sentence_id": 135
+            "sentence_id": 135,
+            "relation_type": "OBSERVED"
         },
         {
             "subject": "I",
             "predicate": "ask",
             "object": "Becky Pace",
-            "sentence_id": 137
+            "sentence_id": 137,
+            "relation_type": "ASKED"
+        },
+        {
+            "subject": "we",
+            "predicate": "contact",
+            "object": "you",
+            "sentence_id": 148,
+            "relation_type": "CONTACTED_ABOUT"
+        },
+        {
+            "subject": "We",
+            "predicate": "know",
+            "object": "anything",
+            "sentence_id": 152,
+            "relation_type": "KNEW"
         }
     ],
     "events": [
-        {
-            "description": "Becky Pace was one of three people who discovered her sister's body.",
-            "subject": "Becky Pace",
-            "predicate": "be",
-            "object": "one of three people who discovered Becky Pace : sister 's body",
-            "sentence_id": 0,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Becky Pace",
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV1"
-        },
         {
             "description": "Detectives Armstrong and Murphy interviewed her just outside the crime scene.",
             "subject": "Detectives Armstrong and Murphy",
@@ -36997,50 +36964,57 @@
                 "Murphy"
             ],
             "locations": [],
-            "event_id": "EV2"
+            "event_id": "unknown_doc_EV1"
         },
         {
-            "description": "My name is Rebecca Pace, but folks just call me Becky.",
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Rebecca Pace",
-            "sentence_id": 4,
+            "description": "For the record, could you please state your name and address?",
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
+            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV2"
+        },
+        {
+            "description": "I live at 812 South 5th.",
+            "subject": "I",
+            "predicate": "live",
+            "object": "812 South 5th",
+            "sentence_id": 5,
+            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV3"
+        },
+        {
+            "description": "Jeremy just lives across the street, so we got him first, then drove over here.",
+            "subject": "Jeremy",
+            "predicate": "live",
+            "object": "the street",
+            "sentence_id": 24,
             "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
             "time_resolved": null,
             "participants": [
-                "Rebecca Pace",
-                "Becky"
+                "Jeremy"
             ],
             "locations": [],
-            "event_id": "EV3"
+            "event_id": "unknown_doc_EV4"
         },
         {
-            "description": "Yeah, he's staying with his friend Miguel in Abbeville.",
-            "subject": "Becky Pace",
-            "predicate": "stay",
-            "object": "Becky Pace : friend Miguel",
-            "sentence_id": 56,
+            "description": "We took turns, and it was mine, so she knew we were coming.",
+            "subject": "We",
+            "predicate": "take",
+            "object": "turns",
+            "sentence_id": 28,
             "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
             "time_resolved": null,
-            "participants": [
-                "Miguel"
-            ],
+            "participants": [],
             "locations": [],
-            "event_id": "EV4"
-        },
-        {
-            "description": "Even Thoreau wasn't making any commotion.",
-            "subject": "Even Thoreau",
-            "predicate": "make",
-            "object": "any commotion",
-            "sentence_id": 66,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Thoreau"
-            ],
-            "locations": [],
-            "event_id": "EV5"
+            "event_id": "unknown_doc_EV5"
         },
         {
             "description": "I told them he wouldn't hurt nobody, but they said they had to take him down to have him checked and all.",
@@ -37052,83 +37026,21 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV6"
+            "event_id": "unknown_doc_EV6"
         },
         {
-            "description": "I mean, they won't put him to sleep or nothing?",
-            "subject": "Becky Pace",
-            "predicate": "put",
-            "object": "Becky Pace",
-            "sentence_id": 72,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV7"
-        },
-        {
-            "description": "That'd just kill Kim if she knew that.",
-            "subject": "That",
-            "predicate": "kill",
-            "object": "Kim",
-            "sentence_id": 73,
+            "description": "How did you find your sister, Ms. Pace?",
+            "subject": "you",
+            "predicate": "find",
+            "object": "your sister , Ms. Pace",
+            "sentence_id": 88,
             "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
             "time_resolved": null,
             "participants": [
-                "Kim"
+                "Pace"
             ],
             "locations": [],
-            "event_id": "EV8"
-        },
-        {
-            "description": "I'll adopt him.",
-            "subject": "I",
-            "predicate": "adopt",
-            "object": "Becky Pace",
-            "sentence_id": 74,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV9"
-        },
-        {
-            "description": "She loves that dog.",
-            "subject": "Becky Pace",
-            "predicate": "love",
-            "object": "that dog",
-            "sentence_id": 81,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "dog"
-            ],
-            "locations": [],
-            "event_id": "EV10"
-        },
-        {
-            "description": "Did he usually make noise, bark and so forth?",
-            "subject": "Becky Pace",
-            "predicate": "make",
-            "object": "noise",
-            "sentence_id": 83,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV11"
-        },
-        {
-            "description": "Anyway, no, he didn't come running out like he usually does when we come over.",
-            "subject": "Becky Pace",
-            "predicate": "come",
-            "object": "Becky Pace",
-            "sentence_id": 87,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV12"
+            "event_id": "unknown_doc_EV7"
         },
         {
             "description": "The light didn't work, so I called out to him.",
@@ -37140,47 +37052,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV13"
-        },
-        {
-            "description": "What did they do when you screamed?",
-            "subject": "Becky Pace",
-            "predicate": "do",
-            "object": "What",
-            "sentence_id": 105,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV14"
-        },
-        {
-            "description": "She pulled me back upstairs and told us we should all go out front and wait for y'all.",
-            "subject": "Becky Pace",
-            "predicate": "pull",
-            "object": "me",
-            "sentence_id": 113,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [
-                "stairs"
-            ],
-            "event_id": "EV15"
-        },
-        {
-            "description": "Did any of you touch Kim?",
-            "subject": "any of you",
-            "predicate": "touch",
-            "object": "Kim",
-            "sentence_id": 114,
-            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Kim"
-            ],
-            "locations": [],
-            "event_id": "EV16"
+            "event_id": "unknown_doc_EV8"
         },
         {
             "description": "No, sir, I saw her face.",
@@ -37192,7 +37064,21 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV17"
+            "event_id": "unknown_doc_EV9"
+        },
+        {
+            "description": "Do you know Arthur's last name?",
+            "subject": "you",
+            "predicate": "know",
+            "object": "Arthur 's last name",
+            "sentence_id": 130,
+            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+            "time_resolved": null,
+            "participants": [
+                "Arthur"
+            ],
+            "locations": [],
+            "event_id": "unknown_doc_EV10"
         },
         {
             "description": "So you saw her last at the gallery?",
@@ -37206,7 +37092,7 @@
             "locations": [
                 "gallery"
             ],
-            "event_id": "EV18"
+            "event_id": "unknown_doc_EV11"
         },
         {
             "description": "I asked her if she wanted to go get a drink or something after we left the opening, but she was tired, and she said she just wanted to go home.",
@@ -37220,7 +37106,31 @@
             "locations": [
                 "home"
             ],
-            "event_id": "EV19"
+            "event_id": "unknown_doc_EV12"
+        },
+        {
+            "description": "If we have any more questions, we'll contact you.",
+            "subject": "we",
+            "predicate": "contact",
+            "object": "you",
+            "sentence_id": 148,
+            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV13"
+        },
+        {
+            "description": "We really don't know anything for sure yet.",
+            "subject": "We",
+            "predicate": "know",
+            "object": "anything",
+            "sentence_id": 152,
+            "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV14"
         }
     ]
 }

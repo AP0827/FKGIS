@@ -35911,12 +35911,6 @@
     ],
     "relations": [
         {
-            "subject": "Cheryl Weston",
-            "predicate": "be",
-            "object": "one of the three people who discovered the body",
-            "sentence_id": 0
-        },
-        {
             "subject": "Detectives Armstrong and Murphy",
             "predicate": "interview",
             "object": "Cheryl Weston",
@@ -35924,34 +35918,39 @@
             "relation_type": "INTERVIEWED"
         },
         {
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Cheryl Weston",
-            "sentence_id": 4
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
+            "relation_type": "STATED"
+        },
+        {
+            "subject": "Ms. Pace",
+            "predicate": "work",
+            "object": "you",
+            "sentence_id": 8,
+            "relation_type": "WORKS_AT"
         },
         {
             "subject": "I",
-            "predicate": "help",
-            "object": "Cheryl Weston :",
-            "sentence_id": 19
+            "predicate": "own",
+            "object": "The Lucky Café out on Highway 6",
+            "sentence_id": 11,
+            "relation_type": "OWNS_BUSINESS"
         },
         {
             "subject": "I",
             "predicate": "believe",
             "object": "Cheryl Weston",
-            "sentence_id": 20
+            "sentence_id": 20,
+            "relation_type": "BELIEVED"
         },
         {
-            "subject": "Kimberly",
-            "predicate": "love",
-            "object": "the omelets Cheryl Weston : make",
-            "sentence_id": 37
-        },
-        {
-            "subject": "Becky",
-            "predicate": "use",
-            "object": "Cheryl Weston : key",
-            "sentence_id": 44
+            "subject": "you",
+            "predicate": "tell",
+            "object": "us",
+            "sentence_id": 30,
+            "relation_type": "STATED"
         },
         {
             "subject": "We",
@@ -35961,6 +35960,13 @@
             "relation_type": "DISPATCHED"
         },
         {
+            "subject": "It",
+            "predicate": "give",
+            "object": "me",
+            "sentence_id": 67,
+            "relation_type": "GAVE"
+        },
+        {
             "subject": "I",
             "predicate": "call",
             "object": "911",
@@ -35968,70 +35974,28 @@
             "relation_type": "DISPATCHED"
         },
         {
-            "subject": "any of you",
-            "predicate": "touch",
-            "object": "Kimberly",
-            "sentence_id": 107
-        },
-        {
-            "subject": "The neighbor next door",
-            "predicate": "prune",
-            "object": "Cheryl Weston : bushes",
-            "sentence_id": 115
-        },
-        {
             "subject": "you",
             "predicate": "know",
             "object": "Cheryl Weston : name ?",
-            "sentence_id": 118
+            "sentence_id": 118,
+            "relation_type": "KNEW"
         },
         {
-            "subject": "Cheryl Weston",
-            "predicate": "be",
-            "object": "Paul Evans",
-            "sentence_id": 127
+            "subject": "We",
+            "predicate": "know",
+            "object": "anything",
+            "sentence_id": 159,
+            "relation_type": "KNEW"
         },
         {
-            "subject": "Cheryl Weston",
-            "predicate": "stay",
-            "object": "Cheryl Weston : friend Miguel Ochoa",
-            "sentence_id": 129
-        },
-        {
-            "subject": "Cheryl Weston",
-            "predicate": "go",
-            "object": "that",
-            "sentence_id": 143
-        },
-        {
-            "subject": "Cheryl Weston",
-            "predicate": "confront",
-            "object": "this student",
-            "sentence_id": 151
-        },
-        {
-            "subject": "I",
-            "predicate": "answer",
-            "object": "Cheryl Weston",
-            "sentence_id": 156
+            "subject": "we",
+            "predicate": "contact",
+            "object": "you",
+            "sentence_id": 161,
+            "relation_type": "CONTACTED_ABOUT"
         }
     ],
     "events": [
-        {
-            "description": "Cheryl Weston was one of the three people who discovered the body.",
-            "subject": "Cheryl Weston",
-            "predicate": "be",
-            "object": "one of the three people who discovered the body",
-            "sentence_id": 0,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Cheryl Weston",
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV1"
-        },
         {
             "description": "Detectives Armstrong and Murphy interviewed her outside the crime scene.",
             "subject": "Detectives Armstrong and Murphy",
@@ -36045,35 +36009,49 @@
                 "Murphy"
             ],
             "locations": [],
-            "event_id": "EV2"
+            "event_id": "unknown_doc_EV1"
         },
         {
-            "description": "My name is Cheryl Weston.",
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Cheryl Weston",
-            "sentence_id": 4,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Cheryl Weston"
-            ],
-            "locations": [],
-            "event_id": "EV3"
-        },
-        {
-            "description": "I helped her when her mama went into the home a while back.",
-            "subject": "I",
-            "predicate": "help",
-            "object": "Cheryl Weston :",
-            "sentence_id": 19,
+            "description": "For the record, could you please state your name and address?",
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
             "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
             "time_resolved": null,
             "participants": [],
-            "locations": [
-                "home"
+            "locations": [],
+            "event_id": "unknown_doc_EV2"
+        },
+        {
+            "description": "Ms. Pace worked for you?",
+            "subject": "Ms. Pace",
+            "predicate": "work",
+            "object": "you",
+            "sentence_id": 8,
+            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+            "time_resolved": null,
+            "participants": [
+                "Pace"
             ],
-            "event_id": "EV4"
+            "locations": [],
+            "event_id": "unknown_doc_EV3"
+        },
+        {
+            "description": "I own The Lucky Café out on Highway 6.",
+            "subject": "I",
+            "predicate": "own",
+            "object": "The Lucky Café out on Highway 6",
+            "sentence_id": 11,
+            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+            "time_resolved": null,
+            "participants": [
+                "The Lucky Café"
+            ],
+            "locations": [
+                "The Lucky Café"
+            ],
+            "event_id": "unknown_doc_EV4"
         },
         {
             "description": "I can't believe she's gone.",
@@ -36085,35 +36063,19 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV5"
+            "event_id": "unknown_doc_EV5"
         },
         {
-            "description": "Kimberly loves the omelets they make.",
-            "subject": "Kimberly",
-            "predicate": "love",
-            "object": "the omelets Cheryl Weston : make",
-            "sentence_id": 37,
+            "description": "For the record, can you tell us the full names of the people you were with?",
+            "subject": "you",
+            "predicate": "tell",
+            "object": "us",
+            "sentence_id": 30,
             "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
             "time_resolved": null,
-            "participants": [
-                "Kimberly"
-            ],
+            "participants": [],
             "locations": [],
-            "event_id": "EV6"
-        },
-        {
-            "description": "Anyway, Becky used her key, and we went inside.",
-            "subject": "Becky",
-            "predicate": "use",
-            "object": "Cheryl Weston : key",
-            "sentence_id": 44,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Becky"
-            ],
-            "locations": [],
-            "event_id": "EV7"
+            "event_id": "unknown_doc_EV6"
         },
         {
             "description": "We called out to Kimberly, but she didn't answer.",
@@ -36127,7 +36089,19 @@
                 "Kimberly"
             ],
             "locations": [],
-            "event_id": "EV8"
+            "event_id": "unknown_doc_EV7"
+        },
+        {
+            "description": "It gave me a weird feeling.",
+            "subject": "It",
+            "predicate": "give",
+            "object": "me",
+            "sentence_id": 67,
+            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV8"
         },
         {
             "description": "I called 911, and y'all came.",
@@ -36139,33 +36113,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV9"
-        },
-        {
-            "description": "Did any of you touch Kimberly?",
-            "subject": "any of you",
-            "predicate": "touch",
-            "object": "Kimberly",
-            "sentence_id": 107,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Kimberly"
-            ],
-            "locations": [],
-            "event_id": "EV10"
-        },
-        {
-            "description": "The neighbor next door was pruning his bushes.",
-            "subject": "The neighbor next door",
-            "predicate": "prune",
-            "object": "Cheryl Weston : bushes",
-            "sentence_id": 115,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV11"
+            "event_id": "unknown_doc_EV9"
         },
         {
             "description": "Do you know his name?",
@@ -36177,71 +36125,31 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV12"
+            "event_id": "unknown_doc_EV10"
         },
         {
-            "description": "She's been with Paul Evans more often than not for a couple years now, but he moved out a few weeks ago.",
-            "subject": "Cheryl Weston",
-            "predicate": "be",
-            "object": "Paul Evans",
-            "sentence_id": 127,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Paul Evans"
-            ],
-            "locations": [],
-            "event_id": "EV13"
-        },
-        {
-            "description": "Yes, he's staying with his friend Miguel Ochoa out in Abbeville.",
-            "subject": "Cheryl Weston",
-            "predicate": "stay",
-            "object": "Cheryl Weston : friend Miguel Ochoa",
-            "sentence_id": 129,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Miguel Ochoa"
-            ],
-            "locations": [],
-            "event_id": "EV14"
-        },
-        {
-            "description": "But then, she always goes through that when they split up.",
-            "subject": "Cheryl Weston",
-            "predicate": "go",
-            "object": "that",
-            "sentence_id": 143,
+            "description": "We don't know anything for sure yet.",
+            "subject": "We",
+            "predicate": "know",
+            "object": "anything",
+            "sentence_id": 159,
             "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV15"
+            "event_id": "unknown_doc_EV11"
         },
         {
-            "description": "Did she confront this student?",
-            "subject": "Cheryl Weston",
-            "predicate": "confront",
-            "object": "this student",
-            "sentence_id": 151,
+            "description": "If we have any further questions, we'll contact you.",
+            "subject": "we",
+            "predicate": "contact",
+            "object": "you",
+            "sentence_id": 161,
             "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV16"
-        },
-        {
-            "description": "If you have more questions, I will surely answer them.",
-            "subject": "I",
-            "predicate": "answer",
-            "object": "Cheryl Weston",
-            "sentence_id": 156,
-            "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV17"
+            "event_id": "unknown_doc_EV12"
         }
     ]
 }

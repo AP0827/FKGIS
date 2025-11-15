@@ -33,10 +33,10 @@
         "passed": true,
         "checks": {
             "entities_non_empty": true,
-            "relations_count": 99,
+            "relations_count": 67,
             "relations_count_ok": true,
-            "events_count": 99,
-            "events_with_subject_and_predicate": 99,
+            "events_count": 65,
+            "events_with_subject_and_predicate": 65,
             "timeline_has_before_after": false,
             "graph_nodes_non_empty": true,
             "graph_edges_non_empty": true,

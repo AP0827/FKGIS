@@ -39789,12 +39789,6 @@
     ],
     "relations": [
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "be",
-            "object": "one of three people who discovered the body",
-            "sentence_id": 0
-        },
-        {
             "subject": "Detectives Armstrong and Murphy",
             "predicate": "interview",
             "object": "Jeremy Gladwell",
@@ -39802,52 +39796,32 @@
             "relation_type": "INTERVIEWED"
         },
         {
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 4
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
+            "relation_type": "STATED"
         },
         {
-            "subject": "Becky",
-            "predicate": "use",
-            "object": "Jeremy Gladwell key",
-            "sentence_id": 33
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "lock",
-            "object": "it",
-            "sentence_id": 36
+            "subject": "I",
+            "predicate": "live",
+            "object": "1589 Jackson Avenue , in Oxford",
+            "sentence_id": 5,
+            "relation_type": "LIVES_AT"
         },
         {
             "subject": "you",
             "predicate": "see",
             "object": "Jeremy Gladwell car",
-            "sentence_id": 46
+            "sentence_id": 46,
+            "relation_type": "OBSERVED"
         },
         {
             "subject": "I",
             "predicate": "see",
             "object": "Jeremy Gladwell car",
-            "sentence_id": 47
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "watch",
-            "object": "movies",
-            "sentence_id": 49
-        },
-        {
-            "subject": "Cheryl",
-            "predicate": "go",
-            "object": "Jeremy Gladwell bedroom",
-            "sentence_id": 67
-        },
-        {
-            "subject": "Kimberly",
-            "predicate": "move",
-            "object": "a china doll broken at the bottom of the stairs",
-            "sentence_id": 73
+            "sentence_id": 47,
+            "relation_type": "OBSERVED"
         },
         {
             "subject": "Cheryl",
@@ -39857,28 +39831,11 @@
             "relation_type": "DISPATCHED"
         },
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "put",
-            "object": "Jeremy Gladwell arms",
-            "sentence_id": 91
-        },
-        {
-            "subject": "I",
-            "predicate": "feel",
-            "object": "Jeremy Gladwell son",
-            "sentence_id": 92
-        },
-        {
-            "subject": "none of you",
-            "predicate": "touch",
-            "object": "Kimberly",
-            "sentence_id": 93
-        },
-        {
             "subject": "Thoreau",
             "predicate": "tell",
             "object": "us",
-            "sentence_id": 96
+            "sentence_id": 96,
+            "relation_type": "STATED"
         },
         {
             "subject": "Jeremy Gladwell behavior",
@@ -39888,88 +39845,53 @@
             "relation_type": "CLAIMED"
         },
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "protect",
-            "object": "Jeremy Gladwell mistress",
-            "sentence_id": 98
+            "subject": "you",
+            "predicate": "see",
+            "object": "anyone or anything",
+            "sentence_id": 105,
+            "relation_type": "OBSERVED"
         },
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "come",
-            "object": "me",
-            "sentence_id": 100
+            "subject": "you",
+            "predicate": "know",
+            "object": "the whereabouts of Ms. Pace 's boyfriend , Paul",
+            "sentence_id": 117,
+            "relation_type": "KNEW"
         },
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "be",
-            "object": "Kimberly",
-            "sentence_id": 111
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "like",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 113
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "look",
-            "object": "us",
-            "sentence_id": 115
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "stay",
-            "object": "Jeremy Gladwell friend Miguel",
-            "sentence_id": 118
+            "subject": "you",
+            "predicate": "know",
+            "object": "Miguel 's last name",
+            "sentence_id": 120,
+            "relation_type": "KNEW"
         },
         {
             "subject": "Kimberly and Paul",
             "predicate": "take",
             "object": "timeouts",
-            "sentence_id": 122
+            "sentence_id": 122,
+            "relation_type": "TOOK"
         },
         {
-            "subject": "Jeremy Gladwell",
-            "predicate": "talk",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 129
-        },
-        {
-            "subject": "Kimberly",
-            "predicate": "fall",
-            "object": "those stairs",
-            "sentence_id": 149
-        },
-        {
-            "subject": "you",
-            "predicate": "have",
-            "object": "reason to believe someone wanted to harm Jeremy Gladwell",
-            "sentence_id": 152
-        },
-        {
-            "subject": "Jeremy Gladwell",
-            "predicate": "have",
-            "object": "a crazy jealous boyfriend and some student who was following Jeremy Gladwell",
-            "sentence_id": 153
-        },
-        {
-            "subject": "Someone",
-            "predicate": "kill",
-            "object": "Jeremy Gladwell dog — Jeremy Gladwell first dog , Emerson —",
-            "sentence_id": 154
+            "subject": "I",
+            "predicate": "work",
+            "object": "home",
+            "sentence_id": 133,
+            "relation_type": "WORKS_AT"
         },
         {
             "subject": "you",
             "predicate": "know",
             "object": "the name of this student who was following Jeremy Gladwell",
-            "sentence_id": 156
+            "sentence_id": 156,
+            "relation_type": "KNEW"
         },
         {
             "subject": "Jeremy Gladwell",
             "predicate": "know",
             "object": "it",
-            "sentence_id": 158
+            "sentence_id": 158,
+            "relation_type": "KNEW"
         },
         {
             "subject": "You",
@@ -39980,21 +39902,6 @@
         }
     ],
     "events": [
-        {
-            "description": "Jeremy Gladwell was one of three people who discovered the body.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "be",
-            "object": "one of three people who discovered the body",
-            "sentence_id": 0,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Jeremy Gladwell",
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV1"
-        },
         {
             "description": "Detectives Armstrong and Murphy interviewed him at the crime scene.",
             "subject": "Detectives Armstrong and Murphy",
@@ -40008,49 +39915,31 @@
                 "Murphy"
             ],
             "locations": [],
-            "event_id": "EV2"
+            "event_id": "unknown_doc_EV1"
         },
         {
-            "description": "My name is Jeremy Gladwell.",
-            "subject": "My name",
-            "predicate": "be",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 4,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Jeremy Gladwell"
-            ],
-            "locations": [],
-            "event_id": "EV3"
-        },
-        {
-            "description": "The door was locked, so Becky used her key.",
-            "subject": "Becky",
-            "predicate": "use",
-            "object": "Jeremy Gladwell key",
-            "sentence_id": 33,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Becky"
-            ],
-            "locations": [],
-            "event_id": "EV4"
-        },
-        {
-            "description": "Sometimes she locked it, not usually when she was home, but maybe she'd gotten up late and forgot.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "lock",
-            "object": "it",
-            "sentence_id": 36,
+            "description": "For the record, could you please state your name and address?",
+            "subject": "you",
+            "predicate": "state",
+            "object": "your name and address",
+            "sentence_id": 3,
             "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
             "time_resolved": null,
             "participants": [],
-            "locations": [
-                "home"
-            ],
-            "event_id": "EV5"
+            "locations": [],
+            "event_id": "unknown_doc_EV2"
+        },
+        {
+            "description": "I live at 1589 Jackson Avenue, in Oxford.",
+            "subject": "I",
+            "predicate": "live",
+            "object": "1589 Jackson Avenue , in Oxford",
+            "sentence_id": 5,
+            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+            "time_resolved": null,
+            "participants": [],
+            "locations": [],
+            "event_id": "unknown_doc_EV3"
         },
         {
             "description": "Did you see his car or have any reason to think he was there at her house?",
@@ -40064,7 +39953,7 @@
             "locations": [
                 "house"
             ],
-            "event_id": "EV6"
+            "event_id": "unknown_doc_EV4"
         },
         {
             "description": "No, I didn't see his car, but it's always breaking down anyway, so it didn't surprise me.",
@@ -40076,57 +39965,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV7"
-        },
-        {
-            "description": "She could have been watching movies late or had students over for pizza or something.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "watch",
-            "object": "movies",
-            "sentence_id": 49,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV8"
-        },
-        {
-            "description": "Cheryl went toward her bedroom, Becky to the kitchen, and I went out to the back porch to see if Kim and Thoreau were in the backyard.",
-            "subject": "Cheryl",
-            "predicate": "go",
-            "object": "Jeremy Gladwell bedroom",
-            "sentence_id": 67,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Cheryl",
-                "Becky",
-                "Kim",
-                "Thoreau"
-            ],
-            "locations": [
-                "kitchen",
-                "porch",
-                "bedroom"
-            ],
-            "event_id": "EV9"
-        },
-        {
-            "description": "Thoreau was licking her face and whimpering, Kimberly wasn't moving at all… like a china doll broken at the bottom of the stairs.",
-            "subject": "Kimberly",
-            "predicate": "move",
-            "object": "a china doll broken at the bottom of the stairs",
-            "sentence_id": 73,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Thoreau",
-                "Kimberly"
-            ],
-            "locations": [
-                "stairs"
-            ],
-            "event_id": "EV10"
+            "event_id": "unknown_doc_EV5"
         },
         {
             "description": "Somewhere in there, Cheryl called 911, but I don't know when exactly.",
@@ -40140,45 +39979,7 @@
                 "Cheryl"
             ],
             "locations": [],
-            "event_id": "EV11"
-        },
-        {
-            "description": "She just put her arms around us and told us it would be all right.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "put",
-            "object": "Jeremy Gladwell arms",
-            "sentence_id": 91,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV12"
-        },
-        {
-            "description": "I felt like her son for a minute.",
-            "subject": "I",
-            "predicate": "feel",
-            "object": "Jeremy Gladwell son",
-            "sentence_id": 92,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV13"
-        },
-        {
-            "description": "So, as far as you know, none of you touched Kimberly?",
-            "subject": "none of you",
-            "predicate": "touch",
-            "object": "Kimberly",
-            "sentence_id": 93,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Kimberly"
-            ],
-            "locations": [],
-            "event_id": "EV14"
+            "event_id": "unknown_doc_EV6"
         },
         {
             "description": "Besides, Thoreau told us everything we needed to know.",
@@ -40192,7 +39993,7 @@
                 "Thoreau"
             ],
             "locations": [],
-            "event_id": "EV15"
+            "event_id": "unknown_doc_EV7"
         },
         {
             "description": "His behavior said it all.",
@@ -40204,84 +40005,48 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV16"
+            "event_id": "unknown_doc_EV8"
         },
         {
-            "description": "He was protecting his mistress and mourning her death.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "protect",
-            "object": "Jeremy Gladwell mistress",
-            "sentence_id": 98,
+            "description": "When you went outside, did you see anyone or anything while you waited for the police to come?",
+            "subject": "you",
+            "predicate": "see",
+            "object": "anyone or anything",
+            "sentence_id": 105,
             "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV17"
+            "event_id": "unknown_doc_EV9"
         },
         {
-            "description": "He wouldn't even come to me, and I train dogs.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "come",
-            "object": "me",
-            "sentence_id": 100,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV18"
-        },
-        {
-            "description": "He was always after Kimberly because he claimed that Thoreau messed with his garden.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "be",
-            "object": "Kimberly",
-            "sentence_id": 111,
+            "description": "Do you know the whereabouts of Ms. Pace's boyfriend, Paul?",
+            "subject": "you",
+            "predicate": "know",
+            "object": "the whereabouts of Ms. Pace 's boyfriend , Paul",
+            "sentence_id": 117,
             "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
             "time_resolved": null,
             "participants": [
-                "Kimberly",
-                "Thoreau"
+                "Pace",
+                "Paul"
             ],
             "locations": [],
-            "event_id": "EV19"
+            "event_id": "unknown_doc_EV10"
         },
         {
-            "description": "Of course, she didn't really like him either, so I guess I didn't expect him to do or say anything when he saw us.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "like",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 113,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV20"
-        },
-        {
-            "description": "Sure, he looked right at us.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "look",
-            "object": "us",
-            "sentence_id": 115,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV21"
-        },
-        {
-            "description": "Yeah, he's staying with his friend Miguel in Abbeville.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "stay",
-            "object": "Jeremy Gladwell friend Miguel",
-            "sentence_id": 118,
+            "description": "Do you know Miguel's last name?",
+            "subject": "you",
+            "predicate": "know",
+            "object": "Miguel 's last name",
+            "sentence_id": 120,
             "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
             "time_resolved": null,
             "participants": [
                 "Miguel"
             ],
             "locations": [],
-            "event_id": "EV22"
+            "event_id": "unknown_doc_EV11"
         },
         {
             "description": "Did Kimberly and Paul take timeouts frequently?",
@@ -40296,73 +40061,21 @@
                 "Paul"
             ],
             "locations": [],
-            "event_id": "EV23"
+            "event_id": "unknown_doc_EV12"
         },
         {
-            "description": "She would have talked to him face to face.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "talk",
-            "object": "Jeremy Gladwell",
-            "sentence_id": 129,
+            "description": "I work at home, and she often comes by, especially if she's out of coffee.",
+            "subject": "I",
+            "predicate": "work",
+            "object": "home",
+            "sentence_id": 133,
             "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
             "time_resolved": null,
             "participants": [],
-            "locations": [],
-            "event_id": "EV24"
-        },
-        {
-            "description": "I mean, Kimberly didn't just fall down those stairs.",
-            "subject": "Kimberly",
-            "predicate": "fall",
-            "object": "those stairs",
-            "sentence_id": 149,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "Kimberly"
-            ],
             "locations": [
-                "stairs"
+                "home"
             ],
-            "event_id": "EV25"
-        },
-        {
-            "description": "Do you have reason to believe someone wanted to harm her?",
-            "subject": "you",
-            "predicate": "have",
-            "object": "reason to believe someone wanted to harm Jeremy Gladwell",
-            "sentence_id": 152,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV26"
-        },
-        {
-            "description": "Well, she had a crazy jealous boyfriend and some student who was following her.",
-            "subject": "Jeremy Gladwell",
-            "predicate": "have",
-            "object": "a crazy jealous boyfriend and some student who was following Jeremy Gladwell",
-            "sentence_id": 153,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV27"
-        },
-        {
-            "description": "Someone killed her dog — her first dog, Emerson — about a year ago.",
-            "subject": "Someone",
-            "predicate": "kill",
-            "object": "Jeremy Gladwell dog — Jeremy Gladwell first dog , Emerson —",
-            "sentence_id": 154,
-            "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
-            "time_resolved": null,
-            "participants": [
-                "dog"
-            ],
-            "locations": [],
-            "event_id": "EV28"
+            "event_id": "unknown_doc_EV13"
         },
         {
             "description": "Do you know the name of this student who was following her?",
@@ -40374,7 +40087,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV29"
+            "event_id": "unknown_doc_EV14"
         },
         {
             "description": "They must have known about it.",
@@ -40386,7 +40099,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV30"
+            "event_id": "unknown_doc_EV15"
         },
         {
             "description": "You call me anytime, day or night.",
@@ -40398,7 +40111,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV31"
+            "event_id": "unknown_doc_EV16"
         }
     ]
 }

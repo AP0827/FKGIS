@@ -115,11 +115,14 @@ def _attach_participants_and_locations(
     return processed_doc
 
 
-def _assign_event_ids(processed_doc: Dict[str, Any]) -> Dict[str, Any]:
-    """Ensure each event has a stable 'event_id' field."""
+def _assign_event_ids(processed_doc: Dict[str, Any], doc_name: str) -> Dict[str, Any]:
+    """Ensure each event has a stable 'event_id' field, prefixed by doc_name.
+
+    This prevents event ID collisions across different documents in the case.
+    """
     events: List[Dict[str, Any]] = processed_doc.get("events") or []
     for idx, ev in enumerate(events):
-        ev.setdefault("event_id", f"EV{idx+1}")
+        ev.setdefault("event_id", f"{doc_name}_EV{idx+1}")
     return processed_doc
 
 
@@ -134,5 +137,7 @@ def build_events(processed_doc: Dict[str, Any]) -> Dict[str, Any]:
     """
     processed_doc = _base_build_events(processed_doc)
     processed_doc = _attach_participants_and_locations(processed_doc)
-    processed_doc = _assign_event_ids(processed_doc)
+    # Pass doc_name to ensure unique event IDs across documents
+    doc_name = processed_doc.get("doc_name", "unknown_doc")
+    processed_doc = _assign_event_ids(processed_doc, doc_name=doc_name)
     return processed_doc

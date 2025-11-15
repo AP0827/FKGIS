@@ -28628,7 +28628,8 @@
             "subject": "Inspector Luwinda Johnson",
             "predicate": "notify",
             "object": "Reporting Investigator 's request",
-            "sentence_id": 7
+            "sentence_id": 7,
+            "relation_type": "NOTIFIED_ABOUT"
         },
         {
             "subject": "Reporting Officer ( Reporting Officer ) Willits",
@@ -28653,12 +28654,6 @@
         },
         {
             "subject": "Reporting Officer Willits",
-            "predicate": "make",
-            "object": "the following verbal report , which is stated in summary and not verbatim",
-            "sentence_id": 13
-        },
-        {
-            "subject": "Reporting Officer Willits",
             "predicate": "secure",
             "object": "the scene",
             "sentence_id": 19,
@@ -28668,7 +28663,8 @@
             "subject": "Willits",
             "predicate": "contact",
             "object": "Dispatch",
-            "sentence_id": 20
+            "sentence_id": 20,
+            "relation_type": "CONTACTED_ABOUT"
         },
         {
             "subject": "Animal Control",
@@ -28681,7 +28677,8 @@
             "subject": "Reporting Investigator Murphy",
             "predicate": "contact",
             "object": "Dispatch",
-            "sentence_id": 27
+            "sentence_id": 27,
+            "relation_type": "CONTACTED_ABOUT"
         },
         {
             "subject": "Reporting Investigators",
@@ -28705,24 +28702,6 @@
             "relation_type": "CLAIMED"
         },
         {
-            "subject": "The body",
-            "predicate": "lie",
-            "object": "an approximate 45 ° angle to the body",
-            "sentence_id": 43
-        },
-        {
-            "subject": "The left knee",
-            "predicate": "bend",
-            "object": "an approximate 30 ° angle to the body",
-            "sentence_id": 45
-        },
-        {
-            "subject": "The head of the body",
-            "predicate": "face",
-            "object": "an easterly direction",
-            "sentence_id": 47
-        },
-        {
             "subject": "Inspector Johnson",
             "predicate": "arrive",
             "object": "the scene",
@@ -28735,24 +28714,6 @@
             "object": "the underside of the body",
             "sentence_id": 54,
             "relation_type": "EXAMINED"
-        },
-        {
-            "subject": "Johnson",
-            "predicate": "withhold",
-            "object": "an official estimate",
-            "sentence_id": 55
-        },
-        {
-            "subject": "Johnson",
-            "predicate": "stay",
-            "object": "the Crime Scene Unit team",
-            "sentence_id": 59
-        },
-        {
-            "subject": "The body of the deceased",
-            "predicate": "remand",
-            "object": "the custody of Coroner 's",
-            "sentence_id": 62
         },
         {
             "subject": "Deceased",
@@ -28769,10 +28730,18 @@
             "relation_type": "INTERVIEWED"
         },
         {
-            "subject": "Reporting Investigator Murphy",
-            "predicate": "instruct",
-            "object": "Crime Scene Unit",
-            "sentence_id": 71
+            "subject": "Crime Scene Unit",
+            "predicate": "notify",
+            "object": "Reporting Investigators",
+            "sentence_id": 72,
+            "relation_type": "NOTIFIED_ABOUT"
+        },
+        {
+            "subject": "Crime Scene Unit",
+            "predicate": "process",
+            "object": "the scene",
+            "sentence_id": 73,
+            "relation_type": "PROCESSED"
         }
     ],
     "events": [
@@ -28789,7 +28758,7 @@
                 "Fred Willits"
             ],
             "locations": [],
-            "event_id": "EV1"
+            "event_id": "unknown_doc_EV1"
         },
         {
             "description": "Inspector Luwinda Johnson was notified at Reporting Investigator's request to respond to the scene.",
@@ -28804,7 +28773,7 @@
                 "Reporting Investigator"
             ],
             "locations": [],
-            "event_id": "EV2"
+            "event_id": "unknown_doc_EV2"
         },
         {
             "description": "Reporting Officer (Reporting Officer) Willits arrived at the scene",
@@ -28819,7 +28788,7 @@
                 "Willits"
             ],
             "locations": [],
-            "event_id": "EV3"
+            "event_id": "unknown_doc_EV3"
         },
         {
             "description": "at 11:13 a.m. At Reporting Officer's request, Unit #224 (Officer Steve Harding) was dispatched to the scene to provide backup and assistance and arrived",
@@ -28835,7 +28804,7 @@
                 "Steve Harding"
             ],
             "locations": [],
-            "event_id": "EV4"
+            "event_id": "unknown_doc_EV4"
         },
         {
             "description": "at 11:18 a.m. Reporting Investigators (Reporting Investigators) arrived at the scene",
@@ -28847,22 +28816,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV5"
-        },
-        {
-            "description": "Reporting Officer Willits made the following verbal report, which is stated in summary and not verbatim.",
-            "subject": "Reporting Officer Willits",
-            "predicate": "make",
-            "object": "the following verbal report , which is stated in summary and not verbatim",
-            "sentence_id": 13,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "Reporting Officer",
-                "Willits"
-            ],
-            "locations": [],
-            "event_id": "EV6"
+            "event_id": "unknown_doc_EV5"
         },
         {
             "description": "Reporting Officer Willits secured the scene, called for backup, and detained the witnesses.",
@@ -28877,7 +28831,7 @@
                 "Willits"
             ],
             "locations": [],
-            "event_id": "EV7"
+            "event_id": "unknown_doc_EV6"
         },
         {
             "description": "Reporting Officer Willits observed a dog inhibiting access to the body, so he contacted Dispatch and requested that Yoknapatawpha County Animal Control respond to the scene to secure the animal.",
@@ -28897,7 +28851,7 @@
                 "Animal Control"
             ],
             "locations": [],
-            "event_id": "EV8"
+            "event_id": "unknown_doc_EV7"
         },
         {
             "description": "Animal Control arrived at the scene",
@@ -28911,7 +28865,7 @@
                 "Animal Control"
             ],
             "locations": [],
-            "event_id": "EV9"
+            "event_id": "unknown_doc_EV8"
         },
         {
             "description": "Reporting Investigator Murphy contacted Dispatch regarding the status of the Coroner's",
@@ -28927,7 +28881,7 @@
                 "Dispatch"
             ],
             "locations": [],
-            "event_id": "EV10"
+            "event_id": "unknown_doc_EV9"
         },
         {
             "description": "In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off.",
@@ -28943,7 +28897,7 @@
             "locations": [
                 "bedroom"
             ],
-            "event_id": "EV11"
+            "event_id": "unknown_doc_EV10"
         },
         {
             "description": "No signs of struggle or other disturbance were observed, with the possible exception of the briefcase.",
@@ -28957,7 +28911,7 @@
                 "briefcase"
             ],
             "locations": [],
-            "event_id": "EV12"
+            "event_id": "unknown_doc_EV11"
         },
         {
             "description": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear.",
@@ -28975,49 +28929,7 @@
                 "body"
             ],
             "locations": [],
-            "event_id": "EV13"
-        },
-        {
-            "description": "The body lay face up with the right arm at an approximate 45° angle to the body.",
-            "subject": "The body",
-            "predicate": "lie",
-            "object": "an approximate 45 ° angle to the body",
-            "sentence_id": 43,
-            "time_raw": "11:42 a.m",
-            "time_resolved": null,
-            "participants": [
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV14"
-        },
-        {
-            "description": "The left knee was bent at an approximate 30° angle to the body, and the right knee was bent at an approximate 115° angle to the body.",
-            "subject": "The left knee",
-            "predicate": "bend",
-            "object": "an approximate 30 ° angle to the body",
-            "sentence_id": 45,
-            "time_raw": "11:42 a.m",
-            "time_resolved": null,
-            "participants": [
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV15"
-        },
-        {
-            "description": "The head of the body faced in an easterly direction and the feet in a westerly direction.",
-            "subject": "The head of the body",
-            "predicate": "face",
-            "object": "an easterly direction",
-            "sentence_id": 47,
-            "time_raw": "11:42 a.m",
-            "time_resolved": null,
-            "participants": [
-                "body"
-            ],
-            "locations": [],
-            "event_id": "EV16"
+            "event_id": "unknown_doc_EV12"
         },
         {
             "description": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
@@ -29033,7 +28945,7 @@
                 "body"
             ],
             "locations": [],
-            "event_id": "EV17"
+            "event_id": "unknown_doc_EV13"
         },
         {
             "description": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck.",
@@ -29048,50 +28960,7 @@
                 "body"
             ],
             "locations": [],
-            "event_id": "EV18"
-        },
-        {
-            "description": "While she withheld an official estimate pending an autopsy,",
-            "subject": "Johnson",
-            "predicate": "withhold",
-            "object": "an official estimate",
-            "sentence_id": 55,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [],
-            "locations": [],
-            "event_id": "EV19"
-        },
-        {
-            "description": "Inspector Johnson completed her initial inspection of the body, she stayed with the Crime Scene Unit team to ensure the integrity of the body, while the team took photographs of the scene and performed preliminary analyses, until the body could be removed from the scene without destroying other evidence.",
-            "subject": "Johnson",
-            "predicate": "stay",
-            "object": "the Crime Scene Unit team",
-            "sentence_id": 59,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "Johnson",
-                "body",
-                "Crime Scene Unit"
-            ],
-            "locations": [],
-            "event_id": "EV20"
-        },
-        {
-            "description": "The body of the deceased remanded into the custody of Coroner's",
-            "subject": "The body of the deceased",
-            "predicate": "remand",
-            "object": "the custody of Coroner 's",
-            "sentence_id": 62,
-            "time_raw": null,
-            "time_resolved": null,
-            "participants": [
-                "body",
-                "Coroner's"
-            ],
-            "locations": [],
-            "event_id": "EV21"
+            "event_id": "unknown_doc_EV14"
         },
         {
             "description": "Deceased was removed from the scene",
@@ -29103,7 +28972,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "EV22"
+            "event_id": "unknown_doc_EV15"
         },
         {
             "description": "Following preliminary inspection of the scene, Reporting Investigators interviewed witnesses Rebecca Pace, Cheryl Weston, and Jeremy Gladwell at the scene.",
@@ -29120,23 +28989,35 @@
                 "Jeremy Gladwell"
             ],
             "locations": [],
-            "event_id": "EV23"
+            "event_id": "unknown_doc_EV16"
         },
         {
-            "description": "Reporting Investigator Murphy instructed Crime Scene Unit to seal the scene upon completion or end of day suspension of processing.",
-            "subject": "Reporting Investigator Murphy",
-            "predicate": "instruct",
-            "object": "Crime Scene Unit",
-            "sentence_id": 71,
+            "description": "Crime Scene Unit to notify Reporting Investigators of progress by the end of this date.",
+            "subject": "Crime Scene Unit",
+            "predicate": "notify",
+            "object": "Reporting Investigators",
+            "sentence_id": 72,
             "time_raw": null,
             "time_resolved": null,
             "participants": [
-                "Reporting Investigator",
-                "Murphy",
                 "Crime Scene Unit"
             ],
             "locations": [],
-            "event_id": "EV24"
+            "event_id": "unknown_doc_EV17"
+        },
+        {
+            "description": "As of this filing, Crime Scene Unit is still actively processing at the scene.",
+            "subject": "Crime Scene Unit",
+            "predicate": "process",
+            "object": "the scene",
+            "sentence_id": 73,
+            "time_raw": null,
+            "time_resolved": null,
+            "participants": [
+                "Crime Scene Unit"
+            ],
+            "locations": [],
+            "event_id": "unknown_doc_EV18"
         }
     ]
 }

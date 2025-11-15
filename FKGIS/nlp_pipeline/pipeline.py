@@ -151,7 +151,8 @@ def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[st
     processed_doc = unify_mentions(processed_doc)
 
     # Basic relation extraction (rule-based)
-    processed_doc = refine_case_relations(processed_doc)
+    # Need to pass the nlp object for matcher-based extraction
+    processed_doc = refine_case_relations(processed_doc, nlp=coref_nlp) # Using coref_nlp as it's already loaded
 
     # Event construction from relations (+ optional time)
     processed_doc = build_events(processed_doc)
@@ -244,7 +245,7 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
         processed_doc = unify_mentions(processed_doc)
 
         # Refined, case-specific relations
-        processed_doc = refine_case_relations(processed_doc)
+        processed_doc = refine_case_relations(processed_doc, nlp=ner_nlp)
 
         # Event extraction (participants, locations, event_ids)
         processed_doc = build_events(processed_doc)
