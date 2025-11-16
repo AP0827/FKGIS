@@ -33,7 +33,7 @@
         "passed": true,
         "checks": {
             "entities_non_empty": true,
-            "relations_count": 67,
+            "relations_count": 73,
             "relations_count_ok": true,
             "events_count": 65,
             "events_with_subject_and_predicate": 65,

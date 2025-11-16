@@ -3,6 +3,8 @@ from __future__ import annotations
 from typing import Dict, Any, List, Tuple, Set
 from pathlib import Path
 import json
+import networkx as nx # Import networkx
+import time
 
 
 # Node / edge types required by the spec
@@ -159,9 +161,13 @@ def build_nodes_and_edges_for_case(
         {
           "case_id": ...,
           "nodes": [...],
-          "edges": [...]
+          "edges": [...],
+          "timing": { ... }  # Timing information
         }
     """
+    kg_start_time = time.time()
+    timing_info = {}
+
     # Maps for deduplication
     entity_nodes: Dict[str, Dict[str, Any]] = {}
     time_nodes: Dict[str, Dict[str, Any]] = {}
@@ -514,10 +520,38 @@ def build_nodes_and_edges_for_case(
     nodes.extend(time_nodes.values())
     nodes.extend(location_nodes.values())
 
+    # Calculate PageRank scores for entities
+    pagerank_start = time.time()
+    G = nx.DiGraph()
+    for node in nodes:
+        if node["type"] == NODE_TYPE_ENTITY:
+            G.add_node(node["id"])
+
+    for edge in edges:
+        # Only consider edges between entities for PageRank calculation
+        # Or, if you want to include events/locations, you'd add them as nodes too
+        if edge["source"].startswith("ENT_") and edge["target"].startswith("ENT_"):
+            G.add_edge(edge["source"], edge["target"])
+        elif edge["source"].startswith("ENT_") and edge["target"].startswith("EV_"):
+            G.add_edge(edge["source"], edge["target"])
+        elif edge["source"].startswith("EV_") and edge["target"].startswith("LOC_"):
+            G.add_edge(edge["source"], edge["target"])
+        # Add other relevant edges for PageRank calculation
+
+    if G.nodes(): # Ensure graph is not empty
+        pagerank_scores = nx.pagerank(G)
+        for node in nodes:
+            if node["id"] in pagerank_scores:
+                node["pagerank_score"] = pagerank_scores[node["id"]]
+
+    timing_info["pagerank_calculation"] = time.time() - pagerank_start
+    timing_info["total_kg_creation"] = time.time() - kg_start_time
+
     return {
         "case_id": case_id,
         "nodes": nodes,
         "edges": edges,
+        "timing": timing_info,
     }
 
 

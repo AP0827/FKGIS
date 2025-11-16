@@ -35993,6 +35993,12 @@
             "object": "you",
             "sentence_id": 161,
             "relation_type": "CONTACTED_ABOUT"
+        },
+        {
+            "subject": "Becky",
+            "predicate": "said",
+            "object": "Becky said",
+            "relation_type": "STATED"
         }
     ],
     "events": [
@@ -36009,7 +36015,7 @@
                 "Murphy"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV1"
+            "event_id": "Interview_Kimberley_Friend_EV1"
         },
         {
             "description": "For the record, could you please state your name and address?",
@@ -36021,7 +36027,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV2"
+            "event_id": "Interview_Kimberley_Friend_EV2"
         },
         {
             "description": "Ms. Pace worked for you?",
@@ -36035,7 +36041,7 @@
                 "Pace"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV3"
+            "event_id": "Interview_Kimberley_Friend_EV3"
         },
         {
             "description": "I own The Lucky Café out on Highway 6.",
@@ -36051,7 +36057,7 @@
             "locations": [
                 "The Lucky Café"
             ],
-            "event_id": "unknown_doc_EV4"
+            "event_id": "Interview_Kimberley_Friend_EV4"
         },
         {
             "description": "I can't believe she's gone.",
@@ -36063,7 +36069,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV5"
+            "event_id": "Interview_Kimberley_Friend_EV5"
         },
         {
             "description": "For the record, can you tell us the full names of the people you were with?",
@@ -36075,7 +36081,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV6"
+            "event_id": "Interview_Kimberley_Friend_EV6"
         },
         {
             "description": "We called out to Kimberly, but she didn't answer.",
@@ -36089,7 +36095,7 @@
                 "Kimberly"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV7"
+            "event_id": "Interview_Kimberley_Friend_EV7"
         },
         {
             "description": "It gave me a weird feeling.",
@@ -36101,7 +36107,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV8"
+            "event_id": "Interview_Kimberley_Friend_EV8"
         },
         {
             "description": "I called 911, and y'all came.",
@@ -36113,7 +36119,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV9"
+            "event_id": "Interview_Kimberley_Friend_EV9"
         },
         {
             "description": "Do you know his name?",
@@ -36125,7 +36131,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV10"
+            "event_id": "Interview_Kimberley_Friend_EV10"
         },
         {
             "description": "We don't know anything for sure yet.",
@@ -36137,7 +36143,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV11"
+            "event_id": "Interview_Kimberley_Friend_EV11"
         },
         {
             "description": "If we have any further questions, we'll contact you.",
@@ -36149,7 +36155,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV12"
+            "event_id": "Interview_Kimberley_Friend_EV12"
         }
     ]
 }

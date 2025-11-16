@@ -39899,6 +39899,12 @@
             "object": "me",
             "sentence_id": 162,
             "relation_type": "DISPATCHED"
+        },
+        {
+            "subject": "Cheryl",
+            "predicate": "saying",
+            "object": "Cheryl saying",
+            "relation_type": "STATED"
         }
     ],
     "events": [
@@ -39915,7 +39921,7 @@
                 "Murphy"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV1"
+            "event_id": "Interview_Kimberley_Neighbor_EV1"
         },
         {
             "description": "For the record, could you please state your name and address?",
@@ -39927,7 +39933,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV2"
+            "event_id": "Interview_Kimberley_Neighbor_EV2"
         },
         {
             "description": "I live at 1589 Jackson Avenue, in Oxford.",
@@ -39939,7 +39945,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV3"
+            "event_id": "Interview_Kimberley_Neighbor_EV3"
         },
         {
             "description": "Did you see his car or have any reason to think he was there at her house?",
@@ -39953,7 +39959,7 @@
             "locations": [
                 "house"
             ],
-            "event_id": "unknown_doc_EV4"
+            "event_id": "Interview_Kimberley_Neighbor_EV4"
         },
         {
             "description": "No, I didn't see his car, but it's always breaking down anyway, so it didn't surprise me.",
@@ -39965,7 +39971,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV5"
+            "event_id": "Interview_Kimberley_Neighbor_EV5"
         },
         {
             "description": "Somewhere in there, Cheryl called 911, but I don't know when exactly.",
@@ -39979,7 +39985,7 @@
                 "Cheryl"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV6"
+            "event_id": "Interview_Kimberley_Neighbor_EV6"
         },
         {
             "description": "Besides, Thoreau told us everything we needed to know.",
@@ -39993,7 +39999,7 @@
                 "Thoreau"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV7"
+            "event_id": "Interview_Kimberley_Neighbor_EV7"
         },
         {
             "description": "His behavior said it all.",
@@ -40005,7 +40011,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV8"
+            "event_id": "Interview_Kimberley_Neighbor_EV8"
         },
         {
             "description": "When you went outside, did you see anyone or anything while you waited for the police to come?",
@@ -40017,7 +40023,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV9"
+            "event_id": "Interview_Kimberley_Neighbor_EV9"
         },
         {
             "description": "Do you know the whereabouts of Ms. Pace's boyfriend, Paul?",
@@ -40032,7 +40038,7 @@
                 "Paul"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV10"
+            "event_id": "Interview_Kimberley_Neighbor_EV10"
         },
         {
             "description": "Do you know Miguel's last name?",
@@ -40046,7 +40052,7 @@
                 "Miguel"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV11"
+            "event_id": "Interview_Kimberley_Neighbor_EV11"
         },
         {
             "description": "Did Kimberly and Paul take timeouts frequently?",
@@ -40061,7 +40067,7 @@
                 "Paul"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV12"
+            "event_id": "Interview_Kimberley_Neighbor_EV12"
         },
         {
             "description": "I work at home, and she often comes by, especially if she's out of coffee.",
@@ -40075,7 +40081,7 @@
             "locations": [
                 "home"
             ],
-            "event_id": "unknown_doc_EV13"
+            "event_id": "Interview_Kimberley_Neighbor_EV13"
         },
         {
             "description": "Do you know the name of this student who was following her?",
@@ -40087,7 +40093,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV14"
+            "event_id": "Interview_Kimberley_Neighbor_EV14"
         },
         {
             "description": "They must have known about it.",
@@ -40099,7 +40105,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV15"
+            "event_id": "Interview_Kimberley_Neighbor_EV15"
         },
         {
             "description": "You call me anytime, day or night.",
@@ -40111,7 +40117,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV16"
+            "event_id": "Interview_Kimberley_Neighbor_EV16"
         }
     ]
 }

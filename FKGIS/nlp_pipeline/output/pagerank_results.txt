@@ -1,299 +1,278 @@
 === PAGE RANK RESULTS ===
 
-Method: eigenvector centrality (normalized)
-Threshold: 0.041296
-Significant nodes: 4/287
+Method: standard pagerank
+Threshold: 0.004557
+Significant nodes: 44/270
 
 ALL NODES (sorted by importance):
 --------------------------------------------------------------------------------
-home [OTHER] → 1.000000 ***
-basement [OTHER] → 0.405709 ***
-stairs [OTHER] → 0.399612 ***
-house [OTHER] → 0.198778 ***
-bedroom [OTHER] → 0.014324
-kitchen [OTHER] → 0.010225
-porch [OTHER] → 0.010225
-EV1 [OTHER] → 0.008299
-EV3 [OTHER] → 0.006228
-EV23 [OTHER] → 0.006214
-EV8 [OTHER] → 0.004259
-EV4 [OTHER] → 0.004186
-that dog [None] → 0.004099
-gallery [OTHER] → 0.004099
-EV10 [OTHER] → 0.002129
-EV7 [OTHER] → 0.002129
-EV2 [OTHER] → 0.002115
-EV6 [OTHER] → 0.002100
-EV14 [OTHER] → 0.002086
-EV19 [OTHER] → 0.002071
-EV25 [OTHER] → 0.002057
-EV13 [OTHER] → 0.000087
-the scene [None] → 0.000087
-EV9 [OTHER] → 0.000073
-EV17 [OTHER] → 0.000044
-EV20 [OTHER] → 0.000044
-EV24 [OTHER] → 0.000044
-911 [CARDINAL] → 0.000029
-EV5 [OTHER] → 0.000029
-EV11 [OTHER] → 0.000029
-EV15 [OTHER] → 0.000029
-EV16 [OTHER] → 0.000029
-EV18 [OTHER] → 0.000029
-EV21 [OTHER] → 0.000029
-Becky Pace [PERSON] → 0.000029
-Kimberly [PERSON] → 0.000015
-Cheryl Weston [PERSON] → 0.000015
-Jeremy Gladwell [PERSON] → 0.000015
-witnesses Rebecca Pace , Cheryl Weston , and Jeremy Gladwell [None] → 0.000015
-it all [None] → 0.000015
-me [None] → 0.000015
-Jeremy Gladwell dog — Jeremy Gladwell first dog , Emerson — [None] → 0.000015
-EV12 [OTHER] → 0.000015
-EV22 [OTHER] → 0.000015
-EV28 [OTHER] → 0.000015
-the 2019 County Arts and Crafts Fair , where Paul exhibited junior year wood sculptures [None] → 0.000015
-the house Kimberly had purchased a few years earlier [None] → 0.000015
-Reporting Officer 's request [None] → 0.000015
-11:18 a.m. [None] → 0.000015
-a woman 's handbag [None] → 0.000015
-the possible exception of the briefcase [None] → 0.000015
-11:42 a.m. [None] → 0.000015
-the underside of the body [None] → 0.000015
-Kimberly Pace [PERSON] → 0.000000
-Valerie [PERSON] → 0.000000
-Robert Pace [PERSON] → 0.000000
-June 24, 1987 [DATE] → 0.000000
-Oxford [LOCATION] → 0.000000
-Mississippi [LOCATION] → 0.000000
-Robert [PERSON] → 0.000000
-Yokanapatawpha High School [ORGANIZATION] → 0.000000
-University Elementary school [ORGANIZATION] → 0.000000
-Rebecca [PERSON] → 0.000000
-six years later [DATE] → 0.000000
-Becky [PERSON] → 0.000000
-junior year [DATE] → 0.000000
-the next year [DATE] → 0.000000
-English [LANGUAGE] → 0.000000
-the University of Mississippi [ORGANIZATION] → 0.000000
-Ole Miss [ORGANIZATION] → 0.000000
-June 2009 [DATE] → 0.000000
-four years [DATE] → 0.000000
-Ph.D. [OTHER] → 0.000000
-her college years [DATE] → 0.000000
-The Lucky Café [ORGANIZATION] → 0.000000
-one [CARDINAL] → 0.000000
-three [CARDINAL] → 0.000000
-Sunday [DATE] → 0.000000
-every other week [DATE] → 0.000000
-Cheryl [PERSON] → 0.000000
-The Library [ORGANIZATION] → 0.000000
-the Downtown Grill [ORGANIZATION] → 0.000000
-Paul Evans [PERSON] → 0.000000
-2019 [DATE] → 0.000000
-County Arts and Crafts Fair [EVENT] → 0.000000
-Paul [PERSON] → 0.000000
-About six months later [DATE] → 0.000000
-a few years earlier [DATE] → 0.000000
-Lane Properties [ORGANIZATION] → 0.000000
-body [EVIDENCE] → 0.000000
-RREPORTING OFFICER'S NARRATIVE [WORK_OF_ART] → 0.000000
-11:06 a.m. [TIME] → 0.000000
-Dispatch [ORGANIZATION] → 0.000000
-residence [LOCATION] → 0.000000
-#304 [CARDINAL] → 0.000000
-Deputy [ROLE] → 0.000000
-Fred Willits [PERSON] → 0.000000
-Armstrong [PERSON] → 0.000000
-Murphy [PERSON] → 0.000000
-Luwinda Johnson [PERSON] → 0.000000
-Reporting Investigator [ROLE] → 0.000000
-Reporting Officer [ROLE] → 0.000000
-11:13 a.m. [TIME] → 0.000000
-Unit #224 [OTHER] → 0.000000
-Steve Harding [PERSON] → 0.000000
-11:18 a.m. [TIME] → 0.000000
-11:27 a.m. [TIME] → 0.000000
-R / Os Willits [PERSON] → 0.000000
-74° F / 23° C [QUANTITY] → 0.000000
-57% [PERCENT] → 0.000000
-68° F / 20° C [QUANTITY] → 0.000000
-53% [PERCENT] → 0.000000
-two [CARDINAL] → 0.000000
-Rebecca Pace [PERSON] → 0.000000
-dog [EVIDENCE] → 0.000000
-Yoknapatawpha County [LOCATION] → 0.000000
-Animal Control [ORGANIZATION] → 0.000000
-11:24 a.m. [TIME] → 0.000000
-Crime Scene Unit [ORGANIZATION] → 0.000000
-Joanne Lukens [PERSON] → 0.000000
-Jaime Sanchez [PERSON] → 0.000000
-approximately 15 minutes [TIME] → 0.000000
-approximately 10 minutes [TIME] → 0.000000
-briefcase [EVIDENCE] → 0.000000
-handbag [EVIDENCE] → 0.000000
-11:42 a.m. [TIME] → 0.000000
-Reporting Investigators [ORGANIZATION] → 0.000000
-mid [DATE] → 0.000000
-- [OTHER] → 0.000000
-thirties [DATE] → 0.000000
-victim [PERSON] → 0.000000
-45° [QUANTITY] → 0.000000
-30° [QUANTITY] → 0.000000
-115° [QUANTITY] → 0.000000
-approximately 11:45 a.m. [TIME] → 0.000000
-11:48 a.m. [TIME] → 0.000000
-approximately 10 to 12 hours [TIME] → 0.000000
-Coroner's [ORGANIZATION] → 0.000000
-12:53 p.m. [TIME] → 0.000000
-fourteen days [DATE] → 0.000000
-4:35 p.m. [TIME] → 0.000000
-day [DATE] → 0.000000
-the end of this date [DATE] → 0.000000
-T. R. Douglas [PERSON] → 0.000000
-the custody of Coroner 's [None] → 0.000000
-Deceased [None] → 0.000000
-one of the three people who discovered the body [None] → 0.000000
-Detectives Armstrong and Murphy [None] → 0.000000
-My name [None] → 0.000000
-I [None] → 0.000000
-Cheryl Weston : [None] → 0.000000
-the omelets Cheryl Weston : make [None] → 0.000000
-Cheryl Weston : key [None] → 0.000000
-We [None] → 0.000000
-any of you [None] → 0.000000
-The neighbor next door [None] → 0.000000
-Cheryl Weston : bushes [None] → 0.000000
-you [None] → 0.000000
-Cheryl Weston : name ? [None] → 0.000000
-Cheryl Weston : friend Miguel Ochoa [None] → 0.000000
-that [None] → 0.000000
-this student [None] → 0.000000
-one of three people who discovered the body [None] → 0.000000
-Jeremy Gladwell key [None] → 0.000000
-it [None] → 0.000000
-Jeremy Gladwell car [None] → 0.000000
-movies [None] → 0.000000
-Jeremy Gladwell bedroom [None] → 0.000000
-a china doll broken at the bottom of the stairs [None] → 0.000000
-Jeremy Gladwell arms [None] → 0.000000
-Jeremy Gladwell son [None] → 0.000000
-none of you [None] → 0.000000
-us [None] → 0.000000
-Jeremy Gladwell behavior [None] → 0.000000
-Jeremy Gladwell mistress [None] → 0.000000
-Jeremy Gladwell friend Miguel [None] → 0.000000
-Kimberly and Paul [None] → 0.000000
-timeouts [None] → 0.000000
-those stairs [None] → 0.000000
-reason to believe someone wanted to harm Jeremy Gladwell [None] → 0.000000
-a crazy jealous boyfriend and some student who was following Jeremy Gladwell [None] → 0.000000
-Someone [None] → 0.000000
-the name of this student who was following Jeremy Gladwell [None] → 0.000000
-one of three people who discovered Becky Pace : sister 's body [None] → 0.000000
-Becky Pace : friend Miguel [None] → 0.000000
-Even Thoreau [None] → 0.000000
-any commotion [None] → 0.000000
-Kim Becky Pace [None] → 0.000000
-noise [None] → 0.000000
-What [None] → 0.000000
-Becky Pace : face [None] → 0.000000
-Becky Pace : last at the gallery [None] → 0.000000
-EV26 [OTHER] → 0.000000
-EV27 [OTHER] → 0.000000
-EV29 [OTHER] → 0.000000
-EV30 [OTHER] → 0.000000
-EV31 [OTHER] → 0.000000
-Coroner's [None] → 0.000000
-T. Armstrong [PERSON] → 0.000000
-S. Murphy [PERSON] → 0.000000
-Weston [PERSON] → 0.000000
-many years [DATE] → 0.000000
-about 15 years ago [DATE] → 0.000000
-Pace [PERSON] → 0.000000
-Highway 6 [FAC] → 0.000000
-yesterday [DATE] → 0.000000
-Annie [PERSON] → 0.000000
-Kim [PERSON] → 0.000000
-just before 11:00 a.m. [TIME] → 0.000000
-about a quarter [CARDINAL] → 0.000000
-twenty [CARDINAL] → 0.000000
-Jeremy [PERSON] → 0.000000
-a few minutes before 11:00 a.m. [TIME] → 0.000000
-Big Bad Breakfast [ORG] → 0.000000
-first [ORDINAL] → 0.000000
-Thoreau [PERSON] → 0.000000
-maybe ten minutes [TIME] → 0.000000
-Arthur Beck. [PERSON] → 0.000000
-a couple years [DATE] → 0.000000
-a few weeks ago [DATE] → 0.000000
-Miguel Ochoa [PERSON] → 0.000000
-Abbeville [GPE] → 0.000000
-Friday [DATE] → 0.000000
-night [TIME] → 0.000000
-Ajax Diner [ORG] → 0.000000
-the C'est Belle Gallery [ORG] → 0.000000
-Saturday [DATE] → 0.000000
-a couple days ago [DATE] → 0.000000
-Gladwell [PERSON] → 0.000000
-about three years [DATE] → 0.000000
-any Welcome Wagon [PRODUCT] → 0.000000
-11:00 a.m. [TIME] → 0.000000
-a minute or two [TIME] → 0.000000
-last night [TIME] → 0.000000
-This morning [TIME] → 0.000000
-Clapton [PERSON] → 0.000000
-A few minutes [TIME] → 0.000000
-Arthur [PERSON] → 0.000000
-Miguel [PERSON] → 0.000000
-morning [TIME] → 0.000000
-about a half-hour [TIME] → 0.000000
-Tupelo [GPE] → 0.000000
-this weekend [DATE] → 0.000000
-that day [DATE] → 0.000000
-about a year ago [DATE] → 0.000000
-02 p.m. [TIME] → 0.000000
-5th [FAC] → 0.000000
-Kimberly Pace's [PERSON] → 0.000000
-close to 11:00 a.m. [TIME] → 0.000000
-Jeremy's [ORG] → 0.000000
-four [CARDINAL] → 0.000000
-90 pounds [QUANTITY] → 0.000000
-Just a few minutes [TIME] → 0.000000
-maybe five or six minutes [TIME] → 0.000000
-Beck [PERSON] → 0.000000
-C'est Belle [ORG] → 0.000000
-9:30 p.m. [TIME] → 0.000000
-Kimberly Pace bio Kimberly Pace [None] → 0.000000
-Valerie and Robert Pace [None] → 0.000000
-Mississippi father [None] → 0.000000
-Kimberly 's junior year in high school [None] → 0.000000
-school [None] → 0.000000
-The owner , Cheryl Weston , [None] → 0.000000
-a true friend and confidante [None] → 0.000000
-the support Kimberly needed to make critical decisions about Mississippi mother 's care [None] → 0.000000
-Cheryl , Becky , and friend Jeremy Gladwell [None] → 0.000000
-Deputy Fred Willits ) [None] → 0.000000
-Inspector Luwinda Johnson [None] → 0.000000
-Reporting Investigator 's request [None] → 0.000000
-Reporting Officer ( Reporting Officer ) Willits [None] → 0.000000
-Unit # 224 ( Officer Steve Harding ) [None] → 0.000000
-Reporting Investigators ( Reporting Investigators ) [None] → 0.000000
-Reporting Officer Willits [None] → 0.000000
-the following verbal report , which is stated in summary and not verbatim [None] → 0.000000
-Reporting Investigator Murphy [None] → 0.000000
-No signs of struggle or other disturbance [None] → 0.000000
-Animal Control Officer Sanchez [None] → 0.000000
-The body [None] → 0.000000
-an approximate 45 ° angle to the body [None] → 0.000000
-The left knee [None] → 0.000000
-an approximate 30 ° angle to the body [None] → 0.000000
-The head of the body [None] → 0.000000
-an easterly direction [None] → 0.000000
-Inspector Johnson [None] → 0.000000
-an official estimate [None] → 0.000000
-the Crime Scene Unit team [None] → 0.000000
-The body of the deceased [None] → 0.000000
-Unknown [Unknown] → 0.000000
-Unknown [Unknown] → 0.000000
-Unknown [Unknown] → 0.000000
-Unknown [Unknown] → 0.000000
+home [Unknown] → 0.020556 ***
+Unknown [Unknown] → 0.011190 ***
+Unknown [Unknown] → 0.009208 ***
+Unknown [Unknown] → 0.009010 ***
+Unknown [Unknown] → 0.008709 ***
+Unknown [Unknown] → 0.008437 ***
+bedroom [Unknown] → 0.008138 ***
+Becky Pace [PERSON] → 0.008033 ***
+Unknown [Unknown] → 0.007692 ***
+Unknown [Unknown] → 0.007692 ***
+The Lucky Café [Unknown] → 0.007692 ***
+Cheryl Weston [PERSON] → 0.007322 ***
+Unknown [Unknown] → 0.007265 ***
+Kimberly Pace [PERSON] → 0.007027 ***
+Unknown [Unknown] → 0.006803 ***
+Unknown [Unknown] → 0.006803 ***
+me [None] → 0.006678 ***
+basement [Unknown] → 0.006576 ***
+Unknown [Unknown] → 0.006472 ***
+you [None] → 0.006167 ***
+Unknown [Unknown] → 0.006056 ***
+Unknown [Unknown] → 0.005783 ***
+Ole Miss [ORG] → 0.005532 ***
+briefcase [EVIDENCE] → 0.005532 ***
+Reporting Investigator 's request [None] → 0.005532 ***
+Reporting Officer 's request [None] → 0.005532 ***
+11:18 a.m. [None] → 0.005532 ***
+11:42 a.m. [None] → 0.005532 ***
+Unknown [Unknown] → 0.005532 ***
+Unknown [Unknown] → 0.005532 ***
+Unknown [Unknown] → 0.005532 ***
+Unknown [Unknown] → 0.005532 ***
+house [Unknown] → 0.005532 ***
+gallery [Unknown] → 0.005532 ***
+911 [CARDINAL] → 0.005382 ***
+Unknown [Unknown] → 0.005166 ***
+Valerie and Robert Pace [None] → 0.004973 ***
+timeouts [None] → 0.004973 ***
+Unknown [Unknown] → 0.004832 ***
+Paul Evans [PERSON] → 0.004737 ***
+us [None] → 0.004737 ***
+Unknown [Unknown] → 0.004684 ***
+Pace [PERSON] → 0.004683 ***
+Jeremy Gladwell [PERSON] → 0.004632 ***
+Unknown [Unknown] → 0.004346
+Unknown [Unknown] → 0.004346
+Unknown [Unknown] → 0.004346
+body [EVIDENCE] → 0.004261
+a mutual love for hand - worked art [None] → 0.004261
+Unknown [Unknown] → 0.004261
+Unknown [Unknown] → 0.004261
+Unknown [Unknown] → 0.004134
+Unknown [Unknown] → 0.004134
+Dispatch [ORG] → 0.004007
+Valerie [PERSON] → 0.003985
+Unknown [Unknown] → 0.003985
+Unknown [Unknown] → 0.003985
+Sanchez reported [None] → 0.003837
+Sanchez said [None] → 0.003837
+Unknown [Unknown] → 0.003837
+Unknown [Unknown] → 0.003837
+It [None] → 0.003777
+it all [None] → 0.003777
+the street [None] → 0.003777
+Reporting Investigators [ORG] → 0.003625
+anything [None] → 0.003625
+turns [None] → 0.003625
+Unknown [Unknown] → 0.003625
+Unknown [Unknown] → 0.003625
+Unknown [Unknown] → 0.003625
+handbag [EVIDENCE] → 0.003606
+Willits said [None] → 0.003498
+Miguel Ochoa [PERSON] → 0.003467
+your name and address [None] → 0.003467
+anyone or anything [None] → 0.003467
+your sister , Ms. Pace [None] → 0.003467
+Arthur 's last name [None] → 0.003467
+The Lucky Café out on Highway 6 [None] → 0.003308
+1589 Jackson Avenue , in Oxford [None] → 0.003308
+home [None] → 0.003308
+812 South 5th [None] → 0.003308
+Robert Pace [PERSON] → 0.002990
+June 24, 1987 [DATE] → 0.002990
+Oxford [GPE] → 0.002990
+Mississippi [GPE] → 0.002990
+Robert [PERSON] → 0.002990
+Yokanapatawpha High School [ORG] → 0.002990
+University Elementary school [ORG] → 0.002990
+Rebecca [PERSON] → 0.002990
+six years later [DATE] → 0.002990
+Kimberly [PERSON] → 0.002990
+Becky [PERSON] → 0.002990
+junior year [DATE] → 0.002990
+the next year [DATE] → 0.002990
+English [LANGUAGE] → 0.002990
+the University of Mississippi [ORG] → 0.002990
+June 2009 [DATE] → 0.002990
+four years [DATE] → 0.002990
+Ph.D. [WORK_OF_ART] → 0.002990
+her college years [DATE] → 0.002990
+The Lucky Café [ORG] → 0.002990
+one [CARDINAL] → 0.002990
+three [CARDINAL] → 0.002990
+Sunday [DATE] → 0.002990
+every other week [DATE] → 0.002990
+Cheryl [PERSON] → 0.002990
+The Library [ORG] → 0.002990
+the Downtown Grill [ORG] → 0.002990
+2019 [DATE] → 0.002990
+County Arts and Crafts Fair [EVENT] → 0.002990
+Paul [PERSON] → 0.002990
+About six months later [DATE] → 0.002990
+a few years earlier [DATE] → 0.002990
+Lane Properties [ORG] → 0.002990
+RREPORTING OFFICER'S NARRATIVE [WORK_OF_ART] → 0.002990
+11:06 a.m. [TIME] → 0.002990
+residence [LOC] → 0.002990
+#304 [CARDINAL] → 0.002990
+Deputy [ROLE] → 0.002990
+Fred Willits [PERSON] → 0.002990
+Armstrong [PERSON] → 0.002990
+Murphy [PERSON] → 0.002990
+Luwinda Johnson [PERSON] → 0.002990
+Reporting Investigator [ROLE] → 0.002990
+Reporting Officer [ROLE] → 0.002990
+Willits [PERSON] → 0.002990
+11:13 a.m. [TIME] → 0.002990
+Unit #224 [ORG] → 0.002990
+Steve Harding [PERSON] → 0.002990
+11:18 a.m. [TIME] → 0.002990
+11:27 a.m. [TIME] → 0.002990
+R / Os Willits [PERSON] → 0.002990
+Harding [PERSON] → 0.002990
+74° F / 23° C [QUANTITY] → 0.002990
+57% [PERCENT] → 0.002990
+68° F / 20° C [QUANTITY] → 0.002990
+53% [PERCENT] → 0.002990
+two [CARDINAL] → 0.002990
+Rebecca Pace [PERSON] → 0.002990
+dog [EVIDENCE] → 0.002990
+Yoknapatawpha County [ORG] → 0.002990
+Animal Control [ORG] → 0.002990
+11:24 a.m. [TIME] → 0.002990
+Crime Scene Unit [ORG] → 0.002990
+Joanne Lukens [PERSON] → 0.002990
+Jaime Sanchez [PERSON] → 0.002990
+approximately 15 minutes [TIME] → 0.002990
+approximately 10 minutes [TIME] → 0.002990
+11:42 a.m. [TIME] → 0.002990
+Sanchez [PERSON] → 0.002990
+mid [DATE] → 0.002990
+- [DATE] → 0.002990
+thirties [DATE] → 0.002990
+victim [PERSON] → 0.002990
+45° [QUANTITY] → 0.002990
+30° [QUANTITY] → 0.002990
+115° [QUANTITY] → 0.002990
+Johnson [PERSON] → 0.002990
+approximately 11:45 a.m. [TIME] → 0.002990
+11:48 a.m. [TIME] → 0.002990
+approximately 10 to 12 hours [TIME] → 0.002990
+Coroner's [ORG] → 0.002990
+12:53 p.m. [TIME] → 0.002990
+fourteen days [DATE] → 0.002990
+4:35 p.m. [TIME] → 0.002990
+day [DATE] → 0.002990
+the end of this date [DATE] → 0.002990
+T. R. Douglas [PERSON] → 0.002990
+Unit #224 [None] → 0.002990
+T. Armstrong [PERSON] → 0.002990
+S. Murphy [PERSON] → 0.002990
+Weston [PERSON] → 0.002990
+many years [DATE] → 0.002990
+about 15 years ago [DATE] → 0.002990
+Highway 6 [FAC] → 0.002990
+yesterday [DATE] → 0.002990
+Annie [PERSON] → 0.002990
+Kim [PERSON] → 0.002990
+just before 11:00 a.m. [TIME] → 0.002990
+about a quarter [CARDINAL] → 0.002990
+twenty [CARDINAL] → 0.002990
+Jeremy [PERSON] → 0.002990
+a few minutes before 11:00 a.m. [TIME] → 0.002990
+Big Bad Breakfast [ORG] → 0.002990
+first [ORDINAL] → 0.002990
+Thoreau [PERSON] → 0.002990
+maybe ten minutes [TIME] → 0.002990
+Arthur Beck. [PERSON] → 0.002990
+a couple years [DATE] → 0.002990
+a few weeks ago [DATE] → 0.002990
+Abbeville [GPE] → 0.002990
+Friday [DATE] → 0.002990
+night [TIME] → 0.002990
+Ajax Diner [ORG] → 0.002990
+the C'est Belle Gallery [ORG] → 0.002990
+Saturday [DATE] → 0.002990
+a couple days ago [DATE] → 0.002990
+The Lucky Café [None] → 0.002990
+Gladwell [PERSON] → 0.002990
+about three years [DATE] → 0.002990
+any Welcome Wagon [PRODUCT] → 0.002990
+11:00 a.m. [TIME] → 0.002990
+a minute or two [TIME] → 0.002990
+last night [TIME] → 0.002990
+This morning [TIME] → 0.002990
+Clapton [PERSON] → 0.002990
+A few minutes [TIME] → 0.002990
+Arthur [PERSON] → 0.002990
+Miguel [PERSON] → 0.002990
+morning [TIME] → 0.002990
+about a half-hour [TIME] → 0.002990
+Tupelo [GPE] → 0.002990
+this weekend [DATE] → 0.002990
+that day [DATE] → 0.002990
+about a year ago [DATE] → 0.002990
+02 p.m. [TIME] → 0.002990
+5th [FAC] → 0.002990
+Kimberly Pace's [PERSON] → 0.002990
+close to 11:00 a.m. [TIME] → 0.002990
+Jeremy's [ORG] → 0.002990
+four [CARDINAL] → 0.002990
+90 pounds [QUANTITY] → 0.002990
+Just a few minutes [TIME] → 0.002990
+maybe five or six minutes [TIME] → 0.002990
+Beck [PERSON] → 0.002990
+C'est Belle [ORG] → 0.002990
+9:30 p.m. [TIME] → 0.002990
+Deputy Fred Willits ) [None] → 0.002990
+Inspector Luwinda Johnson [None] → 0.002990
+Unit # 224 ( Officer Steve Harding ) [None] → 0.002990
+Reporting Investigators ( Reporting Investigators ) [None] → 0.002990
+No signs of struggle or other disturbance [None] → 0.002990
+Animal Control Officer Sanchez [None] → 0.002990
+Inspector Johnson [None] → 0.002990
+Deceased [None] → 0.002990
+Detectives Armstrong and Murphy [None] → 0.002990
+Ms. Pace [None] → 0.002990
+I [None] → 0.002990
+We [None] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990
+Unknown [Unknown] → 0.002990

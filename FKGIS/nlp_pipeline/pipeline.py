@@ -14,6 +14,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Dict, Optional, List, Any
+import time
 
 from .preprocessing.prep_ROnarrative import process_file as preprocess_narrative
 from .preprocessing.prep_biography import process_file as preprocess_biography
@@ -155,7 +156,7 @@ def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[st
     processed_doc = refine_case_relations(processed_doc, nlp=coref_nlp) # Using coref_nlp as it's already loaded
 
     # Event construction from relations (+ optional time)
-    processed_doc = build_events(processed_doc)
+    processed_doc = build_events(processed_doc, doc_name=processed_doc.get("doc_name", "unknown_doc"))
 
     # Persist enriched document
     enriched_path = ner_path.replace(".json", "_events.json")
@@ -170,7 +171,7 @@ def run_full_pipeline(case_id: str, input_txt_path: str, output_dir: Optional[st
     }
 
 
-def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: Optional[str] = None) -> str:
+def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: Optional[str] = None) -> Dict[str, Any]:
     """Run the full multi-document case pipeline for the Kimberly Pace case.
 
     Order of operations:
@@ -187,8 +188,14 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
      11) output verification- sanity checks over entities/relations/events/timeline/KG
 
     The final summary is written to nlp_pipeline/output/case_output.json.
+
+    Returns:
+        Dict containing the output path and timing information.
     """
     import json as _json
+
+    pipeline_start_time = time.time()
+    timing_info = {}
 
     base_dir = Path(__file__).resolve().parent
     docs_base = Path(docs_dir) if docs_dir else (base_dir / "case_docs")
@@ -196,15 +203,21 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
     output_root.mkdir(parents=True, exist_ok=True)
 
     # 1) Discover case documents
+    discover_start = time.time()
     discovered = discover_case_docs(str(docs_base))
     if not discovered:
         raise RuntimeError(f"No case documents found under {docs_base}")
+    timing_info["document_discovery"] = time.time() - discover_start
 
     # 2–8) Per-document pipeline
+    setup_start = time.time()
     ner_nlp = setup_nlp_pipeline()
     coref_nlp = create_coref_pipeline()
+    timing_info["pipeline_setup"] = time.time() - setup_start
 
     case_docs_entries: List[Dict[str, Any]] = []
+    doc_processing_start = time.time()
+
     for d in discovered:
         raw_path = d.path
         doc_type = d.doc_type
@@ -248,7 +261,7 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
         processed_doc = refine_case_relations(processed_doc, nlp=ner_nlp)
 
         # Event extraction (participants, locations, event_ids)
-        processed_doc = build_events(processed_doc)
+        processed_doc = build_events(processed_doc, doc_name=doc_name)
 
         # Persist per-doc enriched JSON for inspection
         enriched_doc_path = output_root / f"{doc_name}_enriched.json"
@@ -263,14 +276,27 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
             }
         )
 
+    timing_info["document_processing"] = time.time() - doc_processing_start
+
     # 9) Timeline builder
+    timeline_start = time.time()
     timeline_info = build_timeline_for_case(case_id, case_docs_entries)
+    timing_info["timeline_building"] = time.time() - timeline_start
 
     # 10) KG builder (nodes + edges JSON)
+    kg_start = time.time()
     graph = build_nodes_and_edges_for_case(case_id, case_docs_entries, timeline_info)
     nodes_path, edges_path = save_graph_json(graph, base_dir=str(output_root))
+    kg_total_time = time.time() - kg_start
+
+    # Extract detailed KG timing if available
+    kg_timing = graph.get("timing", {})
+    timing_info["kg_creation"] = kg_total_time
+    timing_info["kg_pagerank_calculation"] = kg_timing.get("pagerank_calculation", 0)
+    timing_info["kg_total_internal"] = kg_timing.get("total_kg_creation", 0)
 
     # 11) Verification
+    verification_start = time.time()
     verification_report = verify_case_outputs(
         case_id,
         case_docs_entries,
@@ -279,6 +305,9 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
         graph_edges=graph.get("edges") or [],
         min_relations=5,
     )
+    timing_info["verification"] = time.time() - verification_start
+
+    timing_info["total_pipeline_time"] = time.time() - pipeline_start_time
 
     # Final case_output.json
     case_output = {
@@ -297,7 +326,11 @@ def run_case_pipeline(case_id: str, docs_dir: Optional[str] = None, output_dir: 
     with case_output_path.open("w", encoding="utf-8") as f:
         _json.dump(case_output, f, indent=4, ensure_ascii=False)
 
-    return str(case_output_path)
+    return {
+        "output_path": str(case_output_path),
+        "timing": timing_info,
+        "case_id": case_id
+    }
 
 
 def main() -> None:
@@ -347,8 +380,9 @@ def main() -> None:
         out = run_coreference(args.case_id, args.input, output_dir=args.output_dir)
         print(out)
     elif args.step == "case":
-        out = run_case_pipeline(args.case_id, output_dir=args.output_dir)
-        print(out)
+        result = run_case_pipeline(args.case_id, output_dir=args.output_dir)
+        print(f"Output: {result['output_path']}")
+        print(f"Total time: {result['timing']['total_pipeline_time']:.2f}s")
     else:  # full
         results = run_full_pipeline(args.case_id, args.input, output_dir=args.output_dir)
         for k, v in results.items():

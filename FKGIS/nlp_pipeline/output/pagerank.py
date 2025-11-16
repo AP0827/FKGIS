@@ -4,10 +4,10 @@ import statistics
 
 # ====== LOAD JSON ======
 print("Loading graph data...")
-with open("graph_nodes_refined.json") as f:
+with open("graph_nodes.json") as f:
     nodes = json.load(f)
 
-with open("graph_edges_refined.json") as f:
+with open("graph_edges.json") as f:
     edges = json.load(f)
 
 # ====== BUILD GRAPH ======
@@ -92,11 +92,13 @@ significant_nodes = []
 for node_id, score in sorted_nodes:
     if score >= threshold:
         node = id_to_node.get(node_id, {"text": "Unknown", "label": "Unknown"})
-        print(f"{node['text']} ({node['label']}) → {score:.6f}")
+        text = node.get('text', 'Unknown')
+        label = node.get('label', 'Unknown')
+        print(f"{text} ({label}) → {score:.6f}")
         significant_nodes.append({
             "id": node_id,
-            "text": node["text"],
-            "label": node.get("label", "Unknown"),
+            "text": text,
+            "label": label,
             "score": score
         })
 
@@ -108,7 +110,7 @@ for node_id, score in sorted_nodes:
     node = id_to_node.get(node_id, {"text": "Unknown", "label": "Unknown"})
     output_all.append({
         "id": node_id,
-        "text": node["text"],
+        "text": node.get("text", "Unknown"),
         "label": node.get("label", "Unknown"),
         "score": round(score, 6),
         "is_significant": score >= threshold

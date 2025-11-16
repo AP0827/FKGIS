@@ -5,7 +5,8 @@
         "text": "Kimberly Pace",
         "norm": "kimberly_pace",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.009895308940922349
     },
     {
         "id": "ENT_valerie",
@@ -13,7 +14,8 @@
         "text": "Valerie",
         "norm": "valerie",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.027698934076640917
     },
     {
         "id": "ENT_robert_pace",
@@ -21,7 +23,8 @@
         "text": "Robert Pace",
         "norm": "robert_pace",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_june_24_1987",
@@ -29,7 +32,8 @@
         "text": "June 24, 1987",
         "norm": "june_24_1987",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_oxford",
@@ -37,7 +41,8 @@
         "text": "Oxford",
         "norm": "oxford",
         "label": "GPE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_mississippi",
@@ -45,7 +50,8 @@
         "text": "Mississippi",
         "norm": "mississippi",
         "label": "GPE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_robert",
@@ -53,7 +59,8 @@
         "text": "Robert",
         "norm": "robert",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_yokanapatawpha_high_school",
@@ -61,7 +68,8 @@
         "text": "Yokanapatawpha High School",
         "norm": "yokanapatawpha_high_school",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_university_elementary_school",
@@ -69,7 +77,8 @@
         "text": "University Elementary school",
         "norm": "university_elementary_school",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_rebecca",
@@ -77,7 +86,8 @@
         "text": "Rebecca",
         "norm": "rebecca",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_six_years_later",
@@ -85,7 +95,8 @@
         "text": "six years later",
         "norm": "six_years_later",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_kimberly",
@@ -93,7 +104,8 @@
         "text": "Kimberly",
         "norm": "kimberly",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_becky",
@@ -101,7 +113,8 @@
         "text": "Becky",
         "norm": "becky",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_junior_year",
@@ -109,7 +122,8 @@
         "text": "junior year",
         "norm": "junior_year",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_next_year",
@@ -117,7 +131,8 @@
         "text": "the next year",
         "norm": "the_next_year",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_english",
@@ -125,7 +140,8 @@
         "text": "English",
         "norm": "english",
         "label": "LANGUAGE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_university_of_mississippi",
@@ -133,7 +149,8 @@
         "text": "the University of Mississippi",
         "norm": "the_university_of_mississippi",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_ole_miss",
@@ -141,7 +158,8 @@
         "text": "Ole Miss",
         "norm": "ole_miss",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_june_2009",
@@ -149,7 +167,8 @@
         "text": "June 2009",
         "norm": "june_2009",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_four_years",
@@ -157,7 +176,8 @@
         "text": "four years",
         "norm": "four_years",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_ph_d",
@@ -165,7 +185,8 @@
         "text": "Ph.D.",
         "norm": "ph_d",
         "label": "WORK_OF_ART",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_her_college_years",
@@ -173,7 +194,8 @@
         "text": "her college years",
         "norm": "her_college_years",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_lucky_caf",
@@ -181,7 +203,8 @@
         "text": "The Lucky Café",
         "norm": "the_lucky_caf",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_cheryl_weston",
@@ -189,7 +212,8 @@
         "text": "Cheryl Weston",
         "norm": "cheryl_weston",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.01704810743852305
     },
     {
         "id": "ENT_one",
@@ -197,7 +221,8 @@
         "text": "one",
         "norm": "one",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_three",
@@ -205,7 +230,8 @@
         "text": "three",
         "norm": "three",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_sunday",
@@ -213,7 +239,8 @@
         "text": "Sunday",
         "norm": "sunday",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_every_other_week",
@@ -221,7 +248,8 @@
         "text": "every other week",
         "norm": "every_other_week",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_cheryl",
@@ -229,7 +257,8 @@
         "text": "Cheryl",
         "norm": "cheryl",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_library",
@@ -237,7 +266,8 @@
         "text": "The Library",
         "norm": "the_library",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_downtown_grill",
@@ -245,7 +275,8 @@
         "text": "the Downtown Grill",
         "norm": "the_downtown_grill",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_paul_evans",
@@ -253,7 +284,8 @@
         "text": "Paul Evans",
         "norm": "paul_evans",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.006649928175618709
     },
     {
         "id": "ENT_2019",
@@ -261,7 +293,8 @@
         "text": "2019",
         "norm": "2019",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_county_arts_and_crafts_fair",
@@ -269,7 +302,8 @@
         "text": "County Arts and Crafts Fair",
         "norm": "county_arts_and_crafts_fair",
         "label": "EVENT",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_paul",
@@ -277,7 +311,8 @@
         "text": "Paul",
         "norm": "paul",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_six_months_later",
@@ -285,7 +320,8 @@
         "text": "About six months later",
         "norm": "about_six_months_later",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_few_years_earlier",
@@ -293,7 +329,8 @@
         "text": "a few years earlier",
         "norm": "a_few_years_earlier",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_lane_properties",
@@ -301,7 +338,8 @@
         "text": "Lane Properties",
         "norm": "lane_properties",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_body",
@@ -309,7 +347,8 @@
         "text": "body",
         "norm": "body",
         "label": "EVIDENCE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_jeremy_gladwell",
@@ -317,7 +356,8 @@
         "text": "Jeremy Gladwell",
         "norm": "jeremy_gladwell",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.006501269006433806
     },
     {
         "id": "ENT_rreporting_officer_s_narrative",
@@ -325,7 +365,8 @@
         "text": "RREPORTING OFFICER'S NARRATIVE",
         "norm": "rreporting_officer_s_narrative",
         "label": "WORK_OF_ART",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_06_a_m",
@@ -333,7 +374,8 @@
         "text": "11:06 a.m.",
         "norm": "11_06_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_dispatch",
@@ -341,7 +383,8 @@
         "text": "Dispatch",
         "norm": "dispatch",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.009548740584568357
     },
     {
         "id": "ENT_911",
@@ -349,7 +392,8 @@
         "text": "911",
         "norm": "911",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.011889410760964765
     },
     {
         "id": "ENT_residence",
@@ -357,7 +401,8 @@
         "text": "residence",
         "norm": "residence",
         "label": "LOC",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_304",
@@ -365,7 +410,8 @@
         "text": "#304",
         "norm": "304",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_deputy",
@@ -373,7 +419,8 @@
         "text": "Deputy",
         "norm": "deputy",
         "label": "ROLE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_fred_willits",
@@ -381,7 +428,8 @@
         "text": "Fred Willits",
         "norm": "fred_willits",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_armstrong",
@@ -389,7 +437,8 @@
         "text": "Armstrong",
         "norm": "armstrong",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_murphy",
@@ -397,7 +446,8 @@
         "text": "Murphy",
         "norm": "murphy",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_luwinda_johnson",
@@ -405,7 +455,8 @@
         "text": "Luwinda Johnson",
         "norm": "luwinda_johnson",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_reporting_investigator",
@@ -413,7 +464,8 @@
         "text": "Reporting Investigator",
         "norm": "reporting_investigator",
         "label": "ROLE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_reporting_officer",
@@ -421,7 +473,8 @@
         "text": "Reporting Officer",
         "norm": "reporting_officer",
         "label": "ROLE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_willits",
@@ -429,7 +482,8 @@
         "text": "Willits",
         "norm": "willits",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_13_a_m",
@@ -437,7 +491,8 @@
         "text": "11:13 a.m.",
         "norm": "11_13_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_unit_224",
@@ -445,7 +500,8 @@
         "text": "Unit #224",
         "norm": "unit_224",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_steve_harding",
@@ -453,7 +509,8 @@
         "text": "Steve Harding",
         "norm": "steve_harding",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_18_a_m",
@@ -461,7 +518,8 @@
         "text": "11:18 a.m.",
         "norm": "11_18_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_27_a_m",
@@ -469,7 +527,8 @@
         "text": "11:27 a.m.",
         "norm": "11_27_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_r_os_willits",
@@ -477,7 +536,8 @@
         "text": "R / Os Willits",
         "norm": "r_os_willits",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_harding",
@@ -485,7 +545,8 @@
         "text": "Harding",
         "norm": "harding",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_74_f_23_c",
@@ -493,7 +554,8 @@
         "text": "74° F / 23° C",
         "norm": "74_f_23_c",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_57",
@@ -501,7 +563,8 @@
         "text": "57%",
         "norm": "57",
         "label": "PERCENT",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_68_f_20_c",
@@ -509,7 +572,8 @@
         "text": "68° F / 20° C",
         "norm": "68_f_20_c",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_53",
@@ -517,7 +581,8 @@
         "text": "53%",
         "norm": "53",
         "label": "PERCENT",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_two",
@@ -525,7 +590,8 @@
         "text": "two",
         "norm": "two",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_rebecca_pace",
@@ -533,7 +599,8 @@
         "text": "Rebecca Pace",
         "norm": "rebecca_pace",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_dog",
@@ -541,7 +608,8 @@
         "text": "dog",
         "norm": "dog",
         "label": "EVIDENCE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_yoknapatawpha_county",
@@ -549,7 +617,8 @@
         "text": "Yoknapatawpha County",
         "norm": "yoknapatawpha_county",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_animal_control",
@@ -557,7 +626,8 @@
         "text": "Animal Control",
         "norm": "animal_control",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_24_a_m",
@@ -565,7 +635,8 @@
         "text": "11:24 a.m.",
         "norm": "11_24_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_crime_scene_unit",
@@ -573,7 +644,8 @@
         "text": "Crime Scene Unit",
         "norm": "crime_scene_unit",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_joanne_lukens",
@@ -581,7 +653,8 @@
         "text": "Joanne Lukens",
         "norm": "joanne_lukens",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_jaime_sanchez",
@@ -589,7 +662,8 @@
         "text": "Jaime Sanchez",
         "norm": "jaime_sanchez",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_approximately_15_minutes",
@@ -597,7 +671,8 @@
         "text": "approximately 15 minutes",
         "norm": "approximately_15_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_approximately_10_minutes",
@@ -605,7 +680,8 @@
         "text": "approximately 10 minutes",
         "norm": "approximately_10_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_briefcase",
@@ -613,7 +689,8 @@
         "text": "briefcase",
         "norm": "briefcase",
         "label": "EVIDENCE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_handbag",
@@ -621,7 +698,8 @@
         "text": "handbag",
         "norm": "handbag",
         "label": "EVIDENCE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007497426166502906
     },
     {
         "id": "ENT_11_42_a_m",
@@ -629,7 +707,8 @@
         "text": "11:42 a.m.",
         "norm": "11_42_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_sanchez",
@@ -637,7 +716,8 @@
         "text": "Sanchez",
         "norm": "sanchez",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_reporting_investigators",
@@ -645,7 +725,8 @@
         "text": "Reporting Investigators",
         "norm": "reporting_investigators",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_mid",
@@ -653,7 +734,8 @@
         "text": "mid",
         "norm": "mid",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_-",
@@ -661,7 +743,8 @@
         "text": "-",
         "norm": "-",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_thirties",
@@ -669,7 +752,8 @@
         "text": "thirties",
         "norm": "thirties",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_victim",
@@ -677,7 +761,8 @@
         "text": "victim",
         "norm": "victim",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_45",
@@ -685,7 +770,8 @@
         "text": "45°",
         "norm": "45",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_30",
@@ -693,7 +779,8 @@
         "text": "30°",
         "norm": "30",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_115",
@@ -701,7 +788,8 @@
         "text": "115°",
         "norm": "115",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_johnson",
@@ -709,7 +797,8 @@
         "text": "Johnson",
         "norm": "johnson",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_approximately_11_45_a_m",
@@ -717,7 +806,8 @@
         "text": "approximately 11:45 a.m.",
         "norm": "approximately_11_45_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_48_a_m",
@@ -725,7 +815,8 @@
         "text": "11:48 a.m.",
         "norm": "11_48_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_approximately_10_to_12_hours",
@@ -733,7 +824,8 @@
         "text": "approximately 10 to 12 hours",
         "norm": "approximately_10_to_12_hours",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_coroner_s",
@@ -741,7 +833,8 @@
         "text": "Coroner's",
         "norm": "coroner_s",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_12_53_p_m",
@@ -749,7 +842,8 @@
         "text": "12:53 p.m.",
         "norm": "12_53_p_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_fourteen_days",
@@ -757,7 +851,8 @@
         "text": "fourteen days",
         "norm": "fourteen_days",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_4_35_p_m",
@@ -765,7 +860,8 @@
         "text": "4:35 p.m.",
         "norm": "4_35_p_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_day",
@@ -773,7 +869,8 @@
         "text": "day",
         "norm": "day",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_end_of_this_date",
@@ -781,7 +878,8 @@
         "text": "the end of this date",
         "norm": "the_end_of_this_date",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_t_r_douglas",
@@ -789,7 +887,8 @@
         "text": "T. R. Douglas",
         "norm": "t_r_douglas",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_unit_#224",
@@ -797,7 +896,8 @@
         "text": "Unit #224",
         "norm": "unit #224",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_t_armstrong",
@@ -805,7 +905,8 @@
         "text": "T. Armstrong",
         "norm": "t_armstrong",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_s_murphy",
@@ -813,7 +914,8 @@
         "text": "S. Murphy",
         "norm": "s_murphy",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_weston",
@@ -821,7 +923,8 @@
         "text": "Weston",
         "norm": "weston",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_many_years",
@@ -829,7 +932,8 @@
         "text": "many years",
         "norm": "many_years",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_15_years_ago",
@@ -837,7 +941,8 @@
         "text": "about 15 years ago",
         "norm": "about_15_years_ago",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_pace",
@@ -845,7 +950,8 @@
         "text": "Pace",
         "norm": "pace",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.027698934076640917
     },
     {
         "id": "ENT_highway_6",
@@ -853,7 +959,8 @@
         "text": "Highway 6",
         "norm": "highway_6",
         "label": "FAC",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_yesterday",
@@ -861,7 +968,8 @@
         "text": "yesterday",
         "norm": "yesterday",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_annie",
@@ -869,7 +977,8 @@
         "text": "Annie",
         "norm": "annie",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_kim",
@@ -877,7 +986,8 @@
         "text": "Kim",
         "norm": "kim",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_just_before_11_00_a_m",
@@ -885,7 +995,8 @@
         "text": "just before 11:00 a.m.",
         "norm": "just_before_11_00_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_a_quarter",
@@ -893,7 +1004,8 @@
         "text": "about a quarter",
         "norm": "about_a_quarter",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_twenty",
@@ -901,7 +1013,8 @@
         "text": "twenty",
         "norm": "twenty",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_jeremy",
@@ -909,7 +1022,8 @@
         "text": "Jeremy",
         "norm": "jeremy",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_few_minutes_before_11_00_a_m",
@@ -917,7 +1031,8 @@
         "text": "a few minutes before 11:00 a.m.",
         "norm": "a_few_minutes_before_11_00_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_big_bad_breakfast",
@@ -925,7 +1040,8 @@
         "text": "Big Bad Breakfast",
         "norm": "big_bad_breakfast",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_first",
@@ -933,7 +1049,8 @@
         "text": "first",
         "norm": "first",
         "label": "ORDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_thoreau",
@@ -941,7 +1058,8 @@
         "text": "Thoreau",
         "norm": "thoreau",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_maybe_ten_minutes",
@@ -949,7 +1067,8 @@
         "text": "maybe ten minutes",
         "norm": "maybe_ten_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_arthur_beck",
@@ -957,7 +1076,8 @@
         "text": "Arthur Beck.",
         "norm": "arthur_beck",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_couple_years",
@@ -965,7 +1085,8 @@
         "text": "a couple years",
         "norm": "a_couple_years",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_few_weeks_ago",
@@ -973,7 +1094,8 @@
         "text": "a few weeks ago",
         "norm": "a_few_weeks_ago",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_miguel_ochoa",
@@ -981,7 +1103,8 @@
         "text": "Miguel Ochoa",
         "norm": "miguel_ochoa",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004866018145399876
     },
     {
         "id": "ENT_abbeville",
@@ -989,7 +1112,8 @@
         "text": "Abbeville",
         "norm": "abbeville",
         "label": "GPE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_friday",
@@ -997,7 +1121,8 @@
         "text": "Friday",
         "norm": "friday",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_night",
@@ -1005,7 +1130,8 @@
         "text": "night",
         "norm": "night",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_ajax_diner",
@@ -1013,7 +1139,8 @@
         "text": "Ajax Diner",
         "norm": "ajax_diner",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_c_est_belle_gallery",
@@ -1021,7 +1148,8 @@
         "text": "the C'est Belle Gallery",
         "norm": "the_c_est_belle_gallery",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_saturday",
@@ -1029,7 +1157,8 @@
         "text": "Saturday",
         "norm": "saturday",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_couple_days_ago",
@@ -1037,7 +1166,8 @@
         "text": "a couple days ago",
         "norm": "a_couple_days_ago",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_lucky_café",
@@ -1045,7 +1175,8 @@
         "text": "The Lucky Café",
         "norm": "the lucky café",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_gladwell",
@@ -1053,7 +1184,8 @@
         "text": "Gladwell",
         "norm": "gladwell",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_three_years",
@@ -1061,7 +1193,8 @@
         "text": "about three years",
         "norm": "about_three_years",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_any_welcome_wagon",
@@ -1069,7 +1202,8 @@
         "text": "any Welcome Wagon",
         "norm": "any_welcome_wagon",
         "label": "PRODUCT",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11_00_a_m",
@@ -1077,7 +1211,8 @@
         "text": "11:00 a.m.",
         "norm": "11_00_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_minute_or_two",
@@ -1085,7 +1220,8 @@
         "text": "a minute or two",
         "norm": "a_minute_or_two",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_last_night",
@@ -1093,7 +1229,8 @@
         "text": "last night",
         "norm": "last_night",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_this_morning",
@@ -1101,7 +1238,8 @@
         "text": "This morning",
         "norm": "this_morning",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_clapton",
@@ -1109,7 +1247,8 @@
         "text": "Clapton",
         "norm": "clapton",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_a_few_minutes",
@@ -1117,7 +1256,8 @@
         "text": "A few minutes",
         "norm": "a_few_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_arthur",
@@ -1125,7 +1265,8 @@
         "text": "Arthur",
         "norm": "arthur",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_miguel",
@@ -1133,7 +1274,8 @@
         "text": "Miguel",
         "norm": "miguel",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_morning",
@@ -1141,7 +1283,8 @@
         "text": "morning",
         "norm": "morning",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_a_half_hour",
@@ -1149,7 +1292,8 @@
         "text": "about a half-hour",
         "norm": "about_a_half_hour",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_tupelo",
@@ -1157,7 +1301,8 @@
         "text": "Tupelo",
         "norm": "tupelo",
         "label": "GPE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_this_weekend",
@@ -1165,7 +1310,8 @@
         "text": "this weekend",
         "norm": "this_weekend",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_that_day",
@@ -1173,7 +1319,8 @@
         "text": "that day",
         "norm": "that_day",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_about_a_year_ago",
@@ -1181,7 +1328,8 @@
         "text": "about a year ago",
         "norm": "about_a_year_ago",
         "label": "DATE",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_02_p_m",
@@ -1189,7 +1337,8 @@
         "text": "02 p.m.",
         "norm": "02_p_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_becky_pace",
@@ -1197,7 +1346,8 @@
         "text": "Becky Pace",
         "norm": "becky_pace",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.011307612438334882
     },
     {
         "id": "ENT_5th",
@@ -1205,7 +1355,8 @@
         "text": "5th",
         "norm": "5th",
         "label": "FAC",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_kimberly_pace_s",
@@ -1213,7 +1364,8 @@
         "text": "Kimberly Pace's",
         "norm": "kimberly_pace_s",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_close_to_11_00_a_m",
@@ -1221,7 +1373,8 @@
         "text": "close to 11:00 a.m.",
         "norm": "close_to_11_00_a_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_jeremy_s",
@@ -1229,7 +1382,8 @@
         "text": "Jeremy's",
         "norm": "jeremy_s",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_four",
@@ -1237,7 +1391,8 @@
         "text": "four",
         "norm": "four",
         "label": "CARDINAL",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_90_pounds",
@@ -1245,7 +1400,8 @@
         "text": "90 pounds",
         "norm": "90_pounds",
         "label": "QUANTITY",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_just_a_few_minutes",
@@ -1253,7 +1409,8 @@
         "text": "Just a few minutes",
         "norm": "just_a_few_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_maybe_five_or_six_minutes",
@@ -1261,7 +1418,8 @@
         "text": "maybe five or six minutes",
         "norm": "maybe_five_or_six_minutes",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_beck",
@@ -1269,7 +1427,8 @@
         "text": "Beck",
         "norm": "beck",
         "label": "PERSON",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_c_est_belle",
@@ -1277,7 +1436,8 @@
         "text": "C'est Belle",
         "norm": "c_est_belle",
         "label": "ORG",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_9_30_p_m",
@@ -1285,7 +1445,8 @@
         "text": "9:30 p.m.",
         "norm": "9_30_p_m",
         "label": "TIME",
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_valerie_and_robert_pace",
@@ -1293,7 +1454,8 @@
         "text": "Valerie and Robert Pace",
         "norm": "valerie and robert pace",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.008403049570065557
     },
     {
         "id": "ENT_a_mutual_love_for_hand_-_worked_art",
@@ -1301,7 +1463,8 @@
         "text": "a mutual love for hand - worked art",
         "norm": "a mutual love for hand - worked art",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.00598092052413069
     },
     {
         "id": "ENT_deputy_fred_willits_)",
@@ -1309,7 +1472,8 @@
         "text": "Deputy Fred Willits )",
         "norm": "deputy fred willits )",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_inspector_luwinda_johnson",
@@ -1317,7 +1481,8 @@
         "text": "Inspector Luwinda Johnson",
         "norm": "inspector luwinda johnson",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_reporting_investigator_'s_request",
@@ -1325,7 +1490,8 @@
         "text": "Reporting Investigator 's request",
         "norm": "reporting investigator 's request",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_unit_#_224_(_officer_steve_harding_)",
@@ -1333,7 +1499,8 @@
         "text": "Unit # 224 ( Officer Steve Harding )",
         "norm": "unit # 224 ( officer steve harding )",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_reporting_officer_'s_request",
@@ -1341,7 +1508,8 @@
         "text": "Reporting Officer 's request",
         "norm": "reporting officer 's request",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_reporting_investigators_(_reporting_investigators_)",
@@ -1349,7 +1517,8 @@
         "text": "Reporting Investigators ( Reporting Investigators )",
         "norm": "reporting investigators ( reporting investigators )",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11:18_a.m.",
@@ -1357,7 +1526,8 @@
         "text": "11:18 a.m.",
         "norm": "11:18 a.m.",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_no_signs_of_struggle_or_other_disturbance",
@@ -1365,7 +1535,8 @@
         "text": "No signs of struggle or other disturbance",
         "norm": "no signs of struggle or other disturbance",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_animal_control_officer_sanchez",
@@ -1373,7 +1544,8 @@
         "text": "Animal Control Officer Sanchez",
         "norm": "animal control officer sanchez",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_11:42_a.m.",
@@ -1381,7 +1553,8 @@
         "text": "11:42 a.m.",
         "norm": "11:42 a.m.",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.007764830554349523
     },
     {
         "id": "ENT_inspector_johnson",
@@ -1389,7 +1562,8 @@
         "text": "Inspector Johnson",
         "norm": "inspector johnson",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_deceased",
@@ -1397,7 +1571,35 @@
         "text": "Deceased",
         "norm": "deceased",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
+    },
+    {
+        "id": "ENT_willits_said",
+        "type": "Entity",
+        "text": "Willits said",
+        "norm": "willits said",
+        "label": null,
+        "case_id": "CASE123",
+        "pagerank_score": 0.00598092052413069
+    },
+    {
+        "id": "ENT_sanchez_reported",
+        "type": "Entity",
+        "text": "Sanchez reported",
+        "norm": "sanchez reported",
+        "label": null,
+        "case_id": "CASE123",
+        "pagerank_score": 0.00598092052413069
+    },
+    {
+        "id": "ENT_sanchez_said",
+        "type": "Entity",
+        "text": "Sanchez said",
+        "norm": "sanchez said",
+        "label": null,
+        "case_id": "CASE123",
+        "pagerank_score": 0.00598092052413069
     },
     {
         "id": "ENT_detectives_armstrong_and_murphy",
@@ -1405,7 +1607,8 @@
         "text": "Detectives Armstrong and Murphy",
         "norm": "detectives armstrong and murphy",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_you",
@@ -1413,7 +1616,8 @@
         "text": "you",
         "norm": "you",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.00865678556945894
     },
     {
         "id": "ENT_your_name_and_address",
@@ -1421,7 +1625,8 @@
         "text": "your name and address",
         "norm": "your name and address",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004866018145399876
     },
     {
         "id": "ENT_ms._pace",
@@ -1429,7 +1634,8 @@
         "text": "Ms. Pace",
         "norm": "ms. pace",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_i",
@@ -1437,7 +1643,8 @@
         "text": "I",
         "norm": "i",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_the_lucky_café_out_on_highway_6",
@@ -1445,7 +1652,8 @@
         "text": "The Lucky Café out on Highway 6",
         "norm": "the lucky café out on highway 6",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004642988001466565
     },
     {
         "id": "ENT_us",
@@ -1453,7 +1661,8 @@
         "text": "us",
         "norm": "us",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.008433838205837542
     },
     {
         "id": "ENT_we",
@@ -1461,7 +1670,8 @@
         "text": "We",
         "norm": "we",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004197010493911857
     },
     {
         "id": "ENT_it",
@@ -1469,7 +1679,8 @@
         "text": "It",
         "norm": "it",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.006039237691618033
     },
     {
         "id": "ENT_me",
@@ -1477,7 +1688,8 @@
         "text": "me",
         "norm": "me",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.009999934024266273
     },
     {
         "id": "ENT_anything",
@@ -1485,7 +1697,8 @@
         "text": "anything",
         "norm": "anything",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.005088965509021274
     },
     {
         "id": "ENT_1589_jackson_avenue_,_in_oxford",
@@ -1493,7 +1706,8 @@
         "text": "1589 Jackson Avenue , in Oxford",
         "norm": "1589 jackson avenue , in oxford",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004642988001466565
     },
     {
         "id": "ENT_it_all",
@@ -1501,7 +1715,8 @@
         "text": "it all",
         "norm": "it all",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.006039237691618033
     },
     {
         "id": "ENT_anyone_or_anything",
@@ -1509,7 +1724,8 @@
         "text": "anyone or anything",
         "norm": "anyone or anything",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004866018145399876
     },
     {
         "id": "ENT_timeouts",
@@ -1517,7 +1733,8 @@
         "text": "timeouts",
         "norm": "timeouts",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.008403049570065557
     },
     {
         "id": "ENT_home",
@@ -1525,7 +1742,8 @@
         "text": "home",
         "norm": "home",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004642988001466565
     },
     {
         "id": "ENT_812_south_5th",
@@ -1533,7 +1751,8 @@
         "text": "812 South 5th",
         "norm": "812 south 5th",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004642988001466565
     },
     {
         "id": "ENT_the_street",
@@ -1541,7 +1760,8 @@
         "text": "the street",
         "norm": "the street",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.006039237691618033
     },
     {
         "id": "ENT_turns",
@@ -1549,7 +1769,8 @@
         "text": "turns",
         "norm": "turns",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.005088965509021274
     },
     {
         "id": "ENT_your_sister_,_ms._pace",
@@ -1557,7 +1778,8 @@
         "text": "your sister , Ms. Pace",
         "norm": "your sister , ms. pace",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004866018145399876
     },
     {
         "id": "ENT_arthur_'s_last_name",
@@ -1565,10 +1787,11 @@
         "text": "Arthur 's last name",
         "norm": "arthur 's last name",
         "label": null,
-        "case_id": "CASE123"
+        "case_id": "CASE123",
+        "pagerank_score": 0.004866018145399876
     },
     {
-        "id": "unknown_doc_EV1",
+        "id": "BIO_Kimberley_Pace_EV1",
         "type": "Event",
         "description": "Kimberly Pace bio Kimberly Pace was born to Valerie and Robert Pace on June 24, 1987, in Oxford, Mississippi.",
         "subject": "Kimberly Pace bio Kimberly Pace",
@@ -1581,7 +1804,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV2",
+        "id": "BIO_Kimberley_Pace_EV2",
         "type": "Event",
         "description": "She graduated from Ole Miss in June 2009 after four years of going to school year-round.",
         "subject": "Robert",
@@ -1594,7 +1817,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV3",
+        "id": "BIO_Kimberley_Pace_EV3",
         "type": "Event",
         "description": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
         "subject": "University Elementary school",
@@ -1607,7 +1830,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV4",
+        "id": "BIO_Kimberley_Pace_EV4",
         "type": "Event",
         "description": "They discovered a mutual love for hand-worked art and began dating.",
         "subject": "University Elementary school",
@@ -1620,7 +1843,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV5",
+        "id": "BIO_Kimberley_Pace_EV5",
         "type": "Event",
         "description": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
         "subject": "Cheryl , Becky , and friend Jeremy Gladwell",
@@ -1633,7 +1856,72 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV6",
+        "id": "IncidentReport_RO_EV1",
+        "type": "Event",
+        "description": "Deputy Fred Willits) was immediately dispatched to the scene.",
+        "subject": "Deputy Fred Willits )",
+        "predicate": "dispatch",
+        "object": "the scene",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "IncidentReport_RO_EV2",
+        "type": "Event",
+        "description": "Inspector Luwinda Johnson was notified at Reporting Investigator's request to respond to the scene.",
+        "subject": "Inspector Luwinda Johnson",
+        "predicate": "notify",
+        "object": "Reporting Investigator 's request",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "IncidentReport_RO_EV3",
+        "type": "Event",
+        "description": "Reporting Officer (Reporting Officer) Willits arrived at the scene",
+        "subject": "Reporting Officer ( Reporting Officer ) Willits",
+        "predicate": "arrive",
+        "object": "the scene",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "IncidentReport_RO_EV4",
+        "type": "Event",
+        "description": "at 11:13 a.m. At Reporting Officer's request, Unit #224 (Officer Steve Harding) was dispatched to the scene to provide backup and assistance and arrived",
+        "subject": "Unit # 224 ( Officer Steve Harding )",
+        "predicate": "dispatch",
+        "object": "Reporting Officer 's request",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:13 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "IncidentReport_RO_EV5",
+        "type": "Event",
+        "description": "at 11:18 a.m. Reporting Investigators (Reporting Investigators) arrived at the scene",
+        "subject": "Reporting Investigators ( Reporting Investigators )",
+        "predicate": "arrive",
+        "object": "11:18 a.m.",
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative",
+        "case_id": "CASE123",
+        "time_raw": "11:18 a.m",
+        "time_resolved": null
+    },
+    {
+        "id": "IncidentReport_RO_EV6",
         "type": "Event",
         "description": "Reporting Officer Willits secured the scene, called for backup, and detained the witnesses.",
         "subject": "Reporting Officer Willits",
@@ -1646,7 +1934,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV7",
+        "id": "IncidentReport_RO_EV7",
         "type": "Event",
         "description": "Reporting Officer Willits observed a dog inhibiting access to the body, so he contacted Dispatch and requested that Yoknapatawpha County Animal Control respond to the scene to secure the animal.",
         "subject": "Willits",
@@ -1659,7 +1947,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV8",
+        "id": "IncidentReport_RO_EV8",
         "type": "Event",
         "description": "Animal Control arrived at the scene",
         "subject": "Animal Control",
@@ -1672,7 +1960,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV9",
+        "id": "IncidentReport_RO_EV9",
         "type": "Event",
         "description": "Reporting Investigator Murphy contacted Dispatch regarding the status of the Coroner's",
         "subject": "Reporting Investigator Murphy",
@@ -1685,7 +1973,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV10",
+        "id": "IncidentReport_RO_EV10",
         "type": "Event",
         "description": "In the bedroom located to the right of the front door, Reporting Investigators observed a woman's handbag on the neatly-made bed and noted that all lights and the radio in the bedroom were off.",
         "subject": "Reporting Investigators",
@@ -1698,7 +1986,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV11",
+        "id": "IncidentReport_RO_EV11",
         "type": "Event",
         "description": "No signs of struggle or other disturbance were observed, with the possible exception of the briefcase.",
         "subject": "No signs of struggle or other disturbance",
@@ -1711,7 +1999,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV12",
+        "id": "IncidentReport_RO_EV12",
         "type": "Event",
         "description": "At 11:42 a.m., Animal Control Officer Sanchez reported to Reporting Investigators that the dog had been removed from the vicinity and access to the body was clear.",
         "subject": "Animal Control Officer Sanchez",
@@ -1724,7 +2012,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV13",
+        "id": "IncidentReport_RO_EV13",
         "type": "Event",
         "description": "Inspector Johnson arrived at the scene at approximately 11:45 a.m. and joined Reporting Investigators at the body's location.",
         "subject": "Inspector Johnson",
@@ -1737,7 +2025,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV14",
+        "id": "IncidentReport_RO_EV14",
         "type": "Event",
         "description": "Inspector Johnson visually examined the underside of the body and observed trauma to the back of the head and neck.",
         "subject": "Inspector Johnson",
@@ -1750,7 +2038,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV15",
+        "id": "IncidentReport_RO_EV15",
         "type": "Event",
         "description": "Deceased was removed from the scene",
         "subject": "Deceased",
@@ -1763,7 +2051,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV16",
+        "id": "IncidentReport_RO_EV16",
         "type": "Event",
         "description": "Following preliminary inspection of the scene, Reporting Investigators interviewed witnesses Rebecca Pace, Cheryl Weston, and Jeremy Gladwell at the scene.",
         "subject": "Reporting Investigators",
@@ -1776,7 +2064,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV17",
+        "id": "IncidentReport_RO_EV17",
         "type": "Event",
         "description": "Crime Scene Unit to notify Reporting Investigators of progress by the end of this date.",
         "subject": "Crime Scene Unit",
@@ -1789,7 +2077,7 @@
         "time_resolved": null
     },
     {
-        "id": "unknown_doc_EV18",
+        "id": "IncidentReport_RO_EV18",
         "type": "Event",
         "description": "As of this filing, Crime Scene Unit is still actively processing at the scene.",
         "subject": "Crime Scene Unit",
@@ -1799,6 +2087,552 @@
         "doc_type": "narrative",
         "case_id": "CASE123",
         "time_raw": null,
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV1",
+        "type": "Event",
+        "description": "Detectives Armstrong and Murphy interviewed her outside the crime scene.",
+        "subject": "Detectives Armstrong and Murphy",
+        "predicate": "interview",
+        "object": "Cheryl Weston",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV2",
+        "type": "Event",
+        "description": "For the record, could you please state your name and address?",
+        "subject": "you",
+        "predicate": "state",
+        "object": "your name and address",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV3",
+        "type": "Event",
+        "description": "Ms. Pace worked for you?",
+        "subject": "Ms. Pace",
+        "predicate": "work",
+        "object": "you",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV4",
+        "type": "Event",
+        "description": "I own The Lucky Café out on Highway 6.",
+        "subject": "I",
+        "predicate": "own",
+        "object": "The Lucky Café out on Highway 6",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV5",
+        "type": "Event",
+        "description": "I can't believe she's gone.",
+        "subject": "I",
+        "predicate": "believe",
+        "object": "Cheryl Weston",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV6",
+        "type": "Event",
+        "description": "For the record, can you tell us the full names of the people you were with?",
+        "subject": "you",
+        "predicate": "tell",
+        "object": "us",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV7",
+        "type": "Event",
+        "description": "We called out to Kimberly, but she didn't answer.",
+        "subject": "We",
+        "predicate": "call",
+        "object": "Kimberly",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV8",
+        "type": "Event",
+        "description": "It gave me a weird feeling.",
+        "subject": "It",
+        "predicate": "give",
+        "object": "me",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV9",
+        "type": "Event",
+        "description": "I called 911, and y'all came.",
+        "subject": "I",
+        "predicate": "call",
+        "object": "911",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV10",
+        "type": "Event",
+        "description": "Do you know his name?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "Cheryl Weston : name ?",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV11",
+        "type": "Event",
+        "description": "We don't know anything for sure yet.",
+        "subject": "We",
+        "predicate": "know",
+        "object": "anything",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Friend_EV12",
+        "type": "Event",
+        "description": "If we have any further questions, we'll contact you.",
+        "subject": "we",
+        "predicate": "contact",
+        "object": "you",
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:44 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV1",
+        "type": "Event",
+        "description": "Detectives Armstrong and Murphy interviewed him at the crime scene.",
+        "subject": "Detectives Armstrong and Murphy",
+        "predicate": "interview",
+        "object": "Jeremy Gladwell",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV2",
+        "type": "Event",
+        "description": "For the record, could you please state your name and address?",
+        "subject": "you",
+        "predicate": "state",
+        "object": "your name and address",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV3",
+        "type": "Event",
+        "description": "I live at 1589 Jackson Avenue, in Oxford.",
+        "subject": "I",
+        "predicate": "live",
+        "object": "1589 Jackson Avenue , in Oxford",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV4",
+        "type": "Event",
+        "description": "Did you see his car or have any reason to think he was there at her house?",
+        "subject": "you",
+        "predicate": "see",
+        "object": "Jeremy Gladwell car",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV5",
+        "type": "Event",
+        "description": "No, I didn't see his car, but it's always breaking down anyway, so it didn't surprise me.",
+        "subject": "I",
+        "predicate": "see",
+        "object": "Jeremy Gladwell car",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV6",
+        "type": "Event",
+        "description": "Somewhere in there, Cheryl called 911, but I don't know when exactly.",
+        "subject": "Cheryl",
+        "predicate": "call",
+        "object": "911",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV7",
+        "type": "Event",
+        "description": "Besides, Thoreau told us everything we needed to know.",
+        "subject": "Thoreau",
+        "predicate": "tell",
+        "object": "us",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV8",
+        "type": "Event",
+        "description": "His behavior said it all.",
+        "subject": "Jeremy Gladwell behavior",
+        "predicate": "say",
+        "object": "it all",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV9",
+        "type": "Event",
+        "description": "When you went outside, did you see anyone or anything while you waited for the police to come?",
+        "subject": "you",
+        "predicate": "see",
+        "object": "anyone or anything",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV10",
+        "type": "Event",
+        "description": "Do you know the whereabouts of Ms. Pace's boyfriend, Paul?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "the whereabouts of Ms. Pace 's boyfriend , Paul",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV11",
+        "type": "Event",
+        "description": "Do you know Miguel's last name?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "Miguel 's last name",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV12",
+        "type": "Event",
+        "description": "Did Kimberly and Paul take timeouts frequently?",
+        "subject": "Kimberly and Paul",
+        "predicate": "take",
+        "object": "timeouts",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV13",
+        "type": "Event",
+        "description": "I work at home, and she often comes by, especially if she's out of coffee.",
+        "subject": "I",
+        "predicate": "work",
+        "object": "home",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV14",
+        "type": "Event",
+        "description": "Do you know the name of this student who was following her?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "the name of this student who was following Jeremy Gladwell",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV15",
+        "type": "Event",
+        "description": "They must have known about it.",
+        "subject": "Jeremy Gladwell",
+        "predicate": "know",
+        "object": "it",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Neighbor_EV16",
+        "type": "Event",
+        "description": "You call me anytime, day or night.",
+        "subject": "You",
+        "predicate": "call",
+        "object": "me",
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 1:36 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV1",
+        "type": "Event",
+        "description": "Detectives Armstrong and Murphy interviewed her just outside the crime scene.",
+        "subject": "Detectives Armstrong and Murphy",
+        "predicate": "interview",
+        "object": "Becky Pace",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV2",
+        "type": "Event",
+        "description": "For the record, could you please state your name and address?",
+        "subject": "you",
+        "predicate": "state",
+        "object": "your name and address",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV3",
+        "type": "Event",
+        "description": "I live at 812 South 5th.",
+        "subject": "I",
+        "predicate": "live",
+        "object": "812 South 5th",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV4",
+        "type": "Event",
+        "description": "Jeremy just lives across the street, so we got him first, then drove over here.",
+        "subject": "Jeremy",
+        "predicate": "live",
+        "object": "the street",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV5",
+        "type": "Event",
+        "description": "We took turns, and it was mine, so she knew we were coming.",
+        "subject": "We",
+        "predicate": "take",
+        "object": "turns",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV6",
+        "type": "Event",
+        "description": "I told them he wouldn't hurt nobody, but they said they had to take him down to have him checked and all.",
+        "subject": "I",
+        "predicate": "tell",
+        "object": "Kim Becky Pace",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV7",
+        "type": "Event",
+        "description": "How did you find your sister, Ms. Pace?",
+        "subject": "you",
+        "predicate": "find",
+        "object": "your sister , Ms. Pace",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV8",
+        "type": "Event",
+        "description": "The light didn't work, so I called out to him.",
+        "subject": "I",
+        "predicate": "call",
+        "object": "Becky Pace",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV9",
+        "type": "Event",
+        "description": "No, sir, I saw her face.",
+        "subject": "I",
+        "predicate": "see",
+        "object": "Becky Pace : face",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV10",
+        "type": "Event",
+        "description": "Do you know Arthur's last name?",
+        "subject": "you",
+        "predicate": "know",
+        "object": "Arthur 's last name",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV11",
+        "type": "Event",
+        "description": "So you saw her last at the gallery?",
+        "subject": "you",
+        "predicate": "see",
+        "object": "Becky Pace : last at the gallery",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV12",
+        "type": "Event",
+        "description": "I asked her if she wanted to go get a drink or something after we left the opening, but she was tired, and she said she just wanted to go home.",
+        "subject": "I",
+        "predicate": "ask",
+        "object": "Becky Pace",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV13",
+        "type": "Event",
+        "description": "If we have any more questions, we'll contact you.",
+        "subject": "we",
+        "predicate": "contact",
+        "object": "you",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
+        "time_resolved": null
+    },
+    {
+        "id": "Interview_Kimberley_Sister_EV14",
+        "type": "Event",
+        "description": "We really don't know anything for sure yet.",
+        "subject": "We",
+        "predicate": "know",
+        "object": "anything",
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview",
+        "case_id": "CASE123",
+        "time_raw": "Sunday, October 16, 2022 – 12:03 p.m.",
         "time_resolved": null
     },
     {

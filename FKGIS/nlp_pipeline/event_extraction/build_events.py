@@ -126,7 +126,7 @@ def _assign_event_ids(processed_doc: Dict[str, Any], doc_name: str) -> Dict[str,
     return processed_doc
 
 
-def build_events(processed_doc: Dict[str, Any]) -> Dict[str, Any]:
+def build_events(processed_doc: Dict[str, Any], doc_name: str) -> Dict[str, Any]:
     """Wrapper around the base event builder with case-specific enrichment.
 
     Steps:
@@ -138,6 +138,5 @@ def build_events(processed_doc: Dict[str, Any]) -> Dict[str, Any]:
     processed_doc = _base_build_events(processed_doc)
     processed_doc = _attach_participants_and_locations(processed_doc)
     # Pass doc_name to ensure unique event IDs across documents
-    doc_name = processed_doc.get("doc_name", "unknown_doc")
     processed_doc = _assign_event_ids(processed_doc, doc_name=doc_name)
     return processed_doc

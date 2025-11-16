@@ -14477,7 +14477,7 @@
                 "Robert Pace"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV1"
+            "event_id": "BIO_Kimberley_Pace_EV1"
         },
         {
             "description": "She graduated from Ole Miss in June 2009 after four years of going to school year-round.",
@@ -14491,7 +14491,7 @@
                 "Ole Miss"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV2"
+            "event_id": "BIO_Kimberley_Pace_EV2"
         },
         {
             "description": "They met at the 2019 County Arts and Crafts Fair, where Paul exhibited his wood sculptures.",
@@ -14505,7 +14505,7 @@
                 "Paul"
             ],
             "locations": [],
-            "event_id": "unknown_doc_EV3"
+            "event_id": "BIO_Kimberley_Pace_EV3"
         },
         {
             "description": "They discovered a mutual love for hand-worked art and began dating.",
@@ -14517,7 +14517,7 @@
             "time_resolved": null,
             "participants": [],
             "locations": [],
-            "event_id": "unknown_doc_EV4"
+            "event_id": "BIO_Kimberley_Pace_EV4"
         },
         {
             "description": "Cheryl, Becky, and friend Jeremy Gladwell found Kimberly dead in the basement of her home when they arrived to pick her up for brunch.",
@@ -14537,7 +14537,7 @@
                 "basement",
                 "home"
             ],
-            "event_id": "unknown_doc_EV5"
+            "event_id": "BIO_Kimberley_Pace_EV5"
         }
     ]
 }

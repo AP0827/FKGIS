@@ -135,3 +135,29 @@ python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline
 #   - *_enriched.json per doc    # enriched narrative/bio/interview docs
 full case pipeline:
 python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --step case
+
+
+cd FKGIS/nlp_pipeline && python3 visualizer.py --help
+usage: visualizer.py [-h] [--nodes NODES] [--edges EDGES]
+                     [--pagerank PAGERANK] [--output OUTPUT]
+                     [--node-types NODE_TYPES] [--top-nodes TOP_NODES]
+                     [--min-score MIN_SCORE] [--significant-only]
+                     [--labels LABELS]
+
+Visualize knowledge graph with filtering options
+
+options:
+  -h, --help            show this help message and exit
+  --nodes NODES         Path to nodes JSON file
+  --edges EDGES         Path to edges JSON file
+  --pagerank PAGERANK   Path to PageRank results JSON file
+  --output OUTPUT       Output image path
+  --node-types NODE_TYPES
+                        Comma-separated list of node types to include (e.g.,
+                        Entity,Event,Location)
+  --top-nodes TOP_NODES
+                        Show only top N PageRank nodes
+  --min-score MIN_SCORE
+                        Minimum PageRank score threshold
+  --significant-only    Show only significant nodes
+  --labels LABELS       Comma-separated list of node labels to include

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Dict, Any, List
 import spacy
-from spacy.language import Language # Correct import for Language type
+from spacy.language import Language
 from spacy.tokens import Doc, Span, Token
 from spacy.matcher import Matcher
 
@@ -90,7 +90,17 @@ def _normalize_predicate(pred: str) -> str:
 
 def _get_entity_text(token_or_span: Token | Span) -> str:
     """Helper to get text of a token or span, prioritizing entity text if available."""
-    return token_or_span.text
+    # If it's a Span, and it's an entity, use its text. Otherwise, just use the text.
+    if isinstance(token_or_span, Span):
+        if token_or_span.label_: # Use label_ for Span entity type
+            return token_or_span.text
+        return token_or_span.text
+    # If it's a Token, and it's part of an entity, use the entity text. Otherwise, just use the token text.
+    elif isinstance(token_or_span, Token):
+        if token_or_span.ent_type_: # Use ent_type_ for Token entity type
+            return token_or_span.ent_kb_id_ if token_or_span.ent_kb_id_ else token_or_span.text
+        return token_or_span.text
+    return str(token_or_span)
 
 
 def _extract_relations_with_matcher(doc: Doc, nlp: Language) -> List[Dict[str, Any]]:
@@ -135,6 +145,37 @@ def _extract_relations_with_matcher(doc: Doc, nlp: Language) -> List[Dict[str, A
         {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}},
         {"LEMMA": "be"},
         {"LOWER": "sister", "OP": "+"},
+    ]])
+
+    # --- INTERVIEWED patterns ---
+    # Pattern 1: [PERSON/ROLE] interviewed [PERSON/ROLE]
+    matcher.add("INTERVIEWED_PATTERN1", [[
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}}, # Interviewer (e.g., Detectives Armstrong and Murphy)
+        {"LEMMA": "interview"}, # predicate
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}, "OP": "+"}, # Interviewee (e.g., her, Cheryl Weston)
+    ]])
+
+    # --- ASKED patterns ---
+    # Pattern 1: [PERSON/ROLE] asked [PERSON/ROLE]
+    matcher.add("ASKED_PATTERN1", [[
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}}, # Asker
+        {"LEMMA": "ask"}, # predicate
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}, "OP": "?"}, # Asked person (optional)
+    ]])
+
+    # --- STATED/CLAIMED/REPORTED patterns ---
+    # Pattern 1: [PERSON/ROLE] said/stated/reported/claimed
+    matcher.add("STATED_PATTERN1", [[
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}}, # Speaker
+        {"LEMMA": {"IN": ["say", "state", "report", "claim"]}}, # predicate
+    ]])
+
+    # --- TOLD patterns ---
+    # Pattern 1: [PERSON/ROLE] told [PERSON/ROLE]
+    matcher.add("TOLD_PATTERN1", [[
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}}, # Teller
+        {"LEMMA": "tell"}, # predicate
+        {"ENT_TYPE": {"IN": ["PERSON", "ROLE"]}}, # Told person
     ]])
 
 
@@ -229,6 +270,64 @@ def _extract_relations_with_matcher(doc: Doc, nlp: Language) -> List[Dict[str, A
                     "object": subj_text,
                     "relation_type": "HAS_SIBLING",
                 })
+        
+        elif rule_id == "INTERVIEWED_PATTERN1":
+            # Example: "Detectives Armstrong and Murphy interviewed her"
+            # Subject: Interviewer(s)
+            # Predicate: "interviewed"
+            # Object: Interviewee(s)
+            interviewer_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "nsubj"]
+            interviewee_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "dobj"]
+            pred_token = [token for token in span if token.lemma_ == "interview"][0]
+
+            if interviewer_tokens and interviewee_tokens:
+                subj_text = " and ".join([_get_entity_text(t) for t in interviewer_tokens])
+                obj_text = " and ".join([_get_entity_text(t) for t in interviewee_tokens])
+                pred_text = pred_token.text
+                relation_type = "INTERVIEWED"
+
+        elif rule_id == "ASKED_PATTERN1":
+            # Example: "Detective Murphy: For the record, could you please state your name and address?"
+            # Subject: Asker
+            # Predicate: "asked"
+            # Object: Question (simplified to just the text for now)
+            asker_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "nsubj"]
+            pred_token = [token for token in span if token.lemma_ == "ask"][0]
+
+            if asker_tokens:
+                subj_text = " and ".join([_get_entity_text(t) for t in asker_tokens])
+                obj_text = span.text # The entire question as the object
+                pred_text = pred_token.text
+                relation_type = "ASKED"
+
+        elif rule_id == "STATED_PATTERN1":
+            # Example: "Cheryl Weston: My name is Cheryl Weston."
+            # Subject: Speaker
+            # Predicate: "stated"
+            # Object: Statement (simplified to just the text for now)
+            speaker_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "nsubj"]
+            pred_token = [token for token in span if token.lemma_ in ["say", "state", "report", "claim"]][0]
+
+            if speaker_tokens:
+                subj_text = " and ".join([_get_entity_text(t) for t in speaker_tokens])
+                obj_text = span.text # The entire statement as the object
+                pred_text = pred_token.text
+                relation_type = "STATED" # Can be refined to CLAIMED/REPORTED based on lemma
+
+        elif rule_id == "TOLD_PATTERN1":
+            # Example: "Jeremy Gladwell told me that Thoreau seemed a little low energy"
+            # Subject: Teller
+            # Predicate: "told"
+            # Object: Told person
+            teller_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "nsubj"]
+            told_person_tokens = [token for token in span if token.ent_type_ in ["PERSON", "ROLE"] and token.dep_ == "dobj"]
+            pred_token = [token for token in span if token.lemma_ == "tell"][0]
+
+            if teller_tokens and told_person_tokens:
+                subj_text = " and ".join([_get_entity_text(t) for t in teller_tokens])
+                obj_text = " and ".join([_get_entity_text(t) for t in told_person_tokens])
+                pred_text = pred_token.text
+                relation_type = "TOLD"
 
 
         if relation_type and subj_text and obj_text:
@@ -257,13 +356,8 @@ def refine_case_relations(processed_doc: Dict[str, Any], nlp: Language) -> Dict[
 
     This function overwrites processed_doc["relations"] with the refined list.
     """
-    # Ensure the spaCy Doc object is available
-    if "spacy_doc" not in processed_doc:
-        # This should ideally be handled upstream, but as a fallback
-        processed_doc["spacy_doc"] = nlp(processed_doc["raw_text"])
-
-    doc = processed_doc["spacy_doc"]
-    # nlp = doc.vocab.lang # This line is no longer needed as nlp is passed as an argument
+    # Create the spaCy Doc object locally within this function
+    doc = nlp(processed_doc["raw_text"])
 
     # 1) Get base relations
     processed_doc = _base_extract_relations(processed_doc)
@@ -325,9 +419,9 @@ def refine_case_relations(processed_doc: Dict[str, Any], nlp: Language) -> Dict[
         if "relation_type" in rel_out: # Only add if a relation_type is assigned
             refined.append(rel_out)
 
-    # Remove the temporary spacy_doc before returning
-    if "spacy_doc" in processed_doc:
-        del processed_doc["spacy_doc"]
+    # Remove the temporary spacy_doc before returning (no longer needed as it's local)
+    # if "spacy_doc" in processed_doc:
+    #     del processed_doc["spacy_doc"]
 
     processed_doc["relations"] = refined
     return processed_doc
