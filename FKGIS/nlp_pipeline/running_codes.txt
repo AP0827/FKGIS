@@ -161,3 +161,4 @@ options:
                         Minimum PageRank score threshold
   --significant-only    Show only significant nodes
   --labels LABELS       Comma-separated list of node labels to include
+  --entity-view entity_name

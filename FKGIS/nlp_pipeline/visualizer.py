@@ -87,6 +87,12 @@ def visualize_graph(
                 if node_entry.get("is_significant", False):
                     significant_nodes.add(node_entry["id"])
 
+    # First, identify connected nodes (nodes that have at least one edge)
+    connected_node_ids = set()
+    for edge in edges_data:
+        connected_node_ids.add(edge["source"])
+        connected_node_ids.add(edge["target"])
+
     # Apply filters to nodes
     filtered_nodes = []
     entity_view_ids = get_entity_neighborhood(entity_view, nodes_data, edges_data) if entity_view else None
@@ -96,6 +102,10 @@ def visualize_graph(
         node_type = node.get("type", "")
         node_label = node.get("label", "")
         pagerank_score = pagerank_scores.get(node_id, 0.0)
+
+        # Filter out isolated nodes (nodes with no connections)
+        if node_id not in connected_node_ids:
+            continue
 
         # Filter by entity view (predefined sets)
         if entity_view_ids is not None and node_id not in entity_view_ids:
