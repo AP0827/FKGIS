@@ -32,3 +32,6 @@ dist/
 # IDE/editor directories
 .vscode/
 .idea/
+
+# PDF files
+*.pdf
