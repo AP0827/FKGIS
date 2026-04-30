@@ -80,18 +80,22 @@ python3 FKGIS/nlp_pipeline/coreference/coref_global_pool.py --case CASE123 --ner
 
 
 # ============================================================
-# 5) HIGH-LEVEL PIPELINE (NARRATIVE ONLY, up to events)
+# 5) HIGH-LEVEL PIPELINES
 # ============================================================
+#
+# A) Narrative-only (up to events)
+# B) Full case pipeline (narrative + biography + interviews)
 
-# 5a) Only preprocessing via pipeline
+
+# 5a) Only preprocessing via pipeline (narrative)
 python3 -m FKGIS.nlp_pipeline.pipeline --input FKGIS/nlp_pipeline/sampleRO.txt --step preprocess
-
+ 
 # 5b) Only NER via pipeline (assumes narrative preprocessed JSON already exists)
 python3 -m FKGIS.nlp_pipeline.pipeline --input FKGIS/nlp_pipeline/sampleRO_ROnarrative_processed.json --step ner
-
+ 
 # 5c) Only coreference via pipeline (assumes narrative NER JSON already exists)
 python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline/sampleRO_ROnarrative_processed_ner.json --step coref
-
+ 
 # 5d) Full narrative pipeline:
 #     raw narrative text
 #       → preprocessed JSON
@@ -99,8 +103,8 @@ python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline
 #       → case-level global entity pool (CASE123_global_entities.json)
 #       → document-level coref_entities
 #       → pronoun substitution + mention unification (unified_sentences)
-#       → basic rule-based relations (relations)
-#       → basic events with time_raw/time_resolved (events)
+#       → rule-based relations (relations)
+#       → events with time_raw/time_resolved (events)
 #
 # Outputs:
 #   - FKGIS/nlp_pipeline/sampleRO_ROnarrative_processed.json
@@ -109,3 +113,52 @@ python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline
 #   - FKGIS/nlp_pipeline/sampleRO_ROnarrative_processed_ner_events.json
 full narrative pipeline (up to events):
 python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --input FKGIS/nlp_pipeline/sampleRO.txt --step full
+
+
+# 5e) Full multi-document case pipeline (narrative + bio + interviews):
+#     1) load_docs from nlp_pipeline/case_docs/
+#     2) preprocessing (type-specific)
+#     3) NER
+#     4) dependency parse
+#     5) coreference
+#     6) mention unification
+#     7) relation extraction (forensic, rule-based)
+#     8) event extraction (participants, locations, event_ids)
+#     9) timeline builder (time_resolved + BEFORE edges)
+#    10) KG builder (graph_nodes.json, graph_edges.json)
+#    11) verification (sanity checks)
+#
+# Outputs (under nlp_pipeline/output/):
+#   - case_output.json            # summary of documents, timeline, KG and verification
+#   - graph_nodes.json            # nodes ready for Neo4j ingestion
+#   - graph_edges.json            # edges ready for Neo4j ingestion
+#   - *_enriched.json per doc    # enriched narrative/bio/interview docs
+full case pipeline:
+python3 -m FKGIS.nlp_pipeline.pipeline --case CASE123 --step case
+
+
+cd FKGIS/nlp_pipeline && python3 visualizer.py --help
+usage: visualizer.py [-h] [--nodes NODES] [--edges EDGES]
+                     [--pagerank PAGERANK] [--output OUTPUT]
+                     [--node-types NODE_TYPES] [--top-nodes TOP_NODES]
+                     [--min-score MIN_SCORE] [--significant-only]
+                     [--labels LABELS]
+
+Visualize knowledge graph with filtering options
+
+options:
+  -h, --help            show this help message and exit
+  --nodes NODES         Path to nodes JSON file
+  --edges EDGES         Path to edges JSON file
+  --pagerank PAGERANK   Path to PageRank results JSON file
+  --output OUTPUT       Output image path
+  --node-types NODE_TYPES
+                        Comma-separated list of node types to include (e.g.,
+                        Entity,Event,Location)
+  --top-nodes TOP_NODES
+                        Show only top N PageRank nodes
+  --min-score MIN_SCORE
+                        Minimum PageRank score threshold
+  --significant-only    Show only significant nodes
+  --labels LABELS       Comma-separated list of node labels to include
+  --entity-view entity_name

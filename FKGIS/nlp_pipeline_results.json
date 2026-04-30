@@ -1,0 +1,300 @@
+{
+  "timestamp": "2025-11-15 23:00:52 UTC",
+  "pipeline_metrics": {
+    "total_pipeline_time_seconds": "72.32 seconds",
+    "document_discovery_time": "Not available",
+    "pipeline_setup_time": "Not available",
+    "document_processing_time": "Not available",
+    "timeline_building_time": "Not available",
+    "kg_creation_time": "Not available",
+    "verification_time": "Not available"
+  },
+  "graph_statistics": {
+    "total_nodes": 270,
+    "total_edges": 149,
+    "node_types": {
+      "Entity": 199,
+      "Event": 65,
+      "Location": 6
+    },
+    "entity_labels": {
+      "PERSON": 44,
+      "DATE": 30,
+      "GPE": 4,
+      "ORG": 20,
+      "LANGUAGE": 1,
+      "WORK_OF_ART": 2,
+      "CARDINAL": 8,
+      "EVENT": 1,
+      "EVIDENCE": 4,
+      "TIME": 29,
+      "LOC": 1,
+      "ROLE": 3,
+      "QUANTITY": 6,
+      "PERCENT": 2,
+      "null": 40,
+      "FAC": 2,
+      "ORDINAL": 1,
+      "PRODUCT": 1
+    }
+  },
+  "pagerank_analysis": {
+    "method_used": "standard pagerank",
+    "significant_nodes_count": 44,
+    "score_statistics": {
+      "min": 0.00299,
+      "max": 0.020556,
+      "mean": 0.003704,
+      "median": 0.00299
+    },
+    "top_10_entities": [
+      {
+        "name": "home",
+        "score": 0.020556
+      },
+      {
+        "name": "Unknown",
+        "score": 0.01119
+      },
+      {
+        "name": "Unknown",
+        "score": 0.009208
+      },
+      {
+        "name": "Unknown",
+        "score": 0.00901
+      },
+      {
+        "name": "Unknown",
+        "score": 0.008709
+      },
+      {
+        "name": "Unknown",
+        "score": 0.008437
+      },
+      {
+        "name": "bedroom",
+        "score": 0.008138
+      },
+      {
+        "name": "Becky Pace",
+        "score": 0.008033
+      },
+      {
+        "name": "Unknown",
+        "score": 0.007692
+      },
+      {
+        "name": "Unknown",
+        "score": 0.007692
+      }
+    ]
+  },
+  "relation_analysis": {
+    "total_relations": 149,
+    "unique_relation_types": 26,
+    "dominant_relations": {
+      "PARTICIPATED_IN": 68,
+      "STATED": 12,
+      "LOCATED_AT": 8,
+      "OBSERVED": 8,
+      "KNEW": 8,
+      "DISPATCHED": 7,
+      "ARRIVED_AT": 4,
+      "CONTACTED_ABOUT": 4,
+      "INTERVIEWED": 4,
+      "DISCOVERED": 3
+    },
+    "relation_distribution": {
+      "PARTICIPATED_IN": 68,
+      "LOCATED_AT": 8,
+      "HAS_PARENT": 2,
+      "STUDIES_AT": 1,
+      "MET": 1,
+      "DISCOVERED": 3,
+      "HAS_CHILD": 1,
+      "DISPATCHED": 7,
+      "NOTIFIED_ABOUT": 2,
+      "ARRIVED_AT": 4,
+      "SECURED": 1,
+      "CONTACTED_ABOUT": 4,
+      "OBSERVED": 8,
+      "CLAIMED": 2,
+      "EXAMINED": 1,
+      "INTERVIEWED": 4,
+      "PROCESSED": 1,
+      "STATED": 12,
+      "WORKS_AT": 2,
+      "OWNS_BUSINESS": 1,
+      "BELIEVED": 1,
+      "GAVE": 1,
+      "KNEW": 8,
+      "LIVES_AT": 3,
+      "TOOK": 2,
+      "ASKED": 1
+    }
+  },
+  "sample_extracted_entities": [
+    {
+      "id": "ENT_kimberly_pace",
+      "text": "Kimberly Pace",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_valerie",
+      "text": "Valerie",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_robert_pace",
+      "text": "Robert Pace",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_june_24_1987",
+      "text": "June 24, 1987",
+      "label": "DATE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_oxford",
+      "text": "Oxford",
+      "label": "GPE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_mississippi",
+      "text": "Mississippi",
+      "label": "GPE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_robert",
+      "text": "Robert",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_yokanapatawpha_high_school",
+      "text": "Yokanapatawpha High School",
+      "label": "ORG",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_university_elementary_school",
+      "text": "University Elementary school",
+      "label": "ORG",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_rebecca",
+      "text": "Rebecca",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_six_years_later",
+      "text": "six years later",
+      "label": "DATE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_kimberly",
+      "text": "Kimberly",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_becky",
+      "text": "Becky",
+      "label": "PERSON",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_junior_year",
+      "text": "junior year",
+      "label": "DATE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_the_next_year",
+      "text": "the next year",
+      "label": "DATE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_english",
+      "text": "English",
+      "label": "LANGUAGE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_the_university_of_mississippi",
+      "text": "the University of Mississippi",
+      "label": "ORG",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_ole_miss",
+      "text": "Ole Miss",
+      "label": "ORG",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_june_2009",
+      "text": "June 2009",
+      "label": "DATE",
+      "type": "Entity"
+    },
+    {
+      "id": "ENT_four_years",
+      "text": "four years",
+      "label": "DATE",
+      "type": "Entity"
+    }
+  ],
+  "case_information": {
+    "case_id": "CASE123",
+    "documents_processed": [
+      {
+        "doc_name": "BIO_Kimberley_Pace",
+        "doc_type": "biography"
+      },
+      {
+        "doc_name": "IncidentReport_RO",
+        "doc_type": "narrative"
+      },
+      {
+        "doc_name": "Interview_Kimberley_Friend",
+        "doc_type": "interview"
+      },
+      {
+        "doc_name": "Interview_Kimberley_Neighbor",
+        "doc_type": "interview"
+      },
+      {
+        "doc_name": "Interview_Kimberley_Sister",
+        "doc_type": "interview"
+      }
+    ],
+    "timeline_events": 0,
+    "verification_status": {
+      "case_id": "CASE123",
+      "passed": true,
+      "checks": {
+        "entities_non_empty": true,
+        "relations_count": 73,
+        "relations_count_ok": true,
+        "events_count": 65,
+        "events_with_subject_and_predicate": 65,
+        "timeline_has_before_after": false,
+        "graph_nodes_non_empty": true,
+        "graph_edges_non_empty": true,
+        "issues": []
+      }
+    }
+  }
+}

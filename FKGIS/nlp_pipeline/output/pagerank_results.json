@@ -1,0 +1,1907 @@
+{
+  "metadata": {
+    "total_nodes": 270,
+    "total_edges": 149,
+    "significant_nodes_count": 44,
+    "pagerank_method": "standard pagerank",
+    "threshold_used": 0.004557,
+    "score_statistics": {
+      "min": 0.00299,
+      "max": 0.020556,
+      "mean": 0.003704,
+      "median": 0.00299
+    }
+  },
+  "nodes": [
+    {
+      "id": "LOC_home",
+      "text": "home",
+      "label": "Unknown",
+      "score": 0.020556,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV7",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.01119,
+      "is_significant": true
+    },
+    {
+      "id": "BIO_Kimberley_Pace_EV1",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.009208,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV16",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00901,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV4",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.008709,
+      "is_significant": true
+    },
+    {
+      "id": "BIO_Kimberley_Pace_EV5",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.008437,
+      "is_significant": true
+    },
+    {
+      "id": "LOC_bedroom",
+      "text": "bedroom",
+      "label": "Unknown",
+      "score": 0.008138,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_becky_pace",
+      "text": "Becky Pace",
+      "label": "PERSON",
+      "score": 0.008033,
+      "is_significant": true
+    },
+    {
+      "id": "BIO_Kimberley_Pace_EV2",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.007692,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV11",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.007692,
+      "is_significant": true
+    },
+    {
+      "id": "LOC_the_lucky_caf\u00e9",
+      "text": "The Lucky Caf\u00e9",
+      "label": "Unknown",
+      "score": 0.007692,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_cheryl_weston",
+      "text": "Cheryl Weston",
+      "label": "PERSON",
+      "score": 0.007322,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV12",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.007265,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_kimberly_pace",
+      "text": "Kimberly Pace",
+      "label": "PERSON",
+      "score": 0.007027,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV1",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.006803,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV2",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.006803,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_me",
+      "text": "me",
+      "label": null,
+      "score": 0.006678,
+      "is_significant": true
+    },
+    {
+      "id": "LOC_basement",
+      "text": "basement",
+      "label": "Unknown",
+      "score": 0.006576,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV9",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.006472,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_you",
+      "text": "you",
+      "label": null,
+      "score": 0.006167,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV10",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.006056,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV13",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005783,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_ole_miss",
+      "text": "Ole Miss",
+      "label": "ORG",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_briefcase",
+      "text": "briefcase",
+      "label": "EVIDENCE",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_reporting_investigator_'s_request",
+      "text": "Reporting Investigator 's request",
+      "label": null,
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_reporting_officer_'s_request",
+      "text": "Reporting Officer 's request",
+      "label": null,
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_11:18_a.m.",
+      "text": "11:18 a.m.",
+      "label": null,
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_11:42_a.m.",
+      "text": "11:42 a.m.",
+      "label": null,
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV4",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV11",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV4",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV10",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "LOC_house",
+      "text": "house",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "LOC_gallery",
+      "text": "gallery",
+      "label": "Unknown",
+      "score": 0.005532,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_911",
+      "text": "911",
+      "label": "CARDINAL",
+      "score": 0.005382,
+      "is_significant": true
+    },
+    {
+      "id": "IncidentReport_RO_EV14",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.005166,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_valerie_and_robert_pace",
+      "text": "Valerie and Robert Pace",
+      "label": null,
+      "score": 0.004973,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_timeouts",
+      "text": "timeouts",
+      "label": null,
+      "score": 0.004973,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV10",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004832,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_paul_evans",
+      "text": "Paul Evans",
+      "label": "PERSON",
+      "score": 0.004737,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_us",
+      "text": "us",
+      "label": null,
+      "score": 0.004737,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV12",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004684,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_pace",
+      "text": "Pace",
+      "label": "PERSON",
+      "score": 0.004683,
+      "is_significant": true
+    },
+    {
+      "id": "ENT_jeremy_gladwell",
+      "text": "Jeremy Gladwell",
+      "label": "PERSON",
+      "score": 0.004632,
+      "is_significant": true
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV1",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004346,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV1",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004346,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV1",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004346,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_body",
+      "text": "body",
+      "label": "EVIDENCE",
+      "score": 0.004261,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_mutual_love_for_hand_-_worked_art",
+      "text": "a mutual love for hand - worked art",
+      "label": null,
+      "score": 0.004261,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV6",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004261,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV7",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004261,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV3",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004134,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV6",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.004134,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_dispatch",
+      "text": "Dispatch",
+      "label": "ORG",
+      "score": 0.004007,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_valerie",
+      "text": "Valerie",
+      "label": "PERSON",
+      "score": 0.003985,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV3",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003985,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV7",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003985,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_sanchez_reported",
+      "text": "Sanchez reported",
+      "label": null,
+      "score": 0.003837,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_sanchez_said",
+      "text": "Sanchez said",
+      "label": null,
+      "score": 0.003837,
+      "is_significant": false
+    },
+    {
+      "id": "BIO_Kimberley_Pace_EV3",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003837,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV7",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003837,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_it",
+      "text": "It",
+      "label": null,
+      "score": 0.003777,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_it_all",
+      "text": "it all",
+      "label": null,
+      "score": 0.003777,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_street",
+      "text": "the street",
+      "label": null,
+      "score": 0.003777,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_reporting_investigators",
+      "text": "Reporting Investigators",
+      "label": "ORG",
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_anything",
+      "text": "anything",
+      "label": null,
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_turns",
+      "text": "turns",
+      "label": null,
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV8",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV17",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV18",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.003625,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_handbag",
+      "text": "handbag",
+      "label": "EVIDENCE",
+      "score": 0.003606,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_willits_said",
+      "text": "Willits said",
+      "label": null,
+      "score": 0.003498,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_miguel_ochoa",
+      "text": "Miguel Ochoa",
+      "label": "PERSON",
+      "score": 0.003467,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_your_name_and_address",
+      "text": "your name and address",
+      "label": null,
+      "score": 0.003467,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_anyone_or_anything",
+      "text": "anyone or anything",
+      "label": null,
+      "score": 0.003467,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_your_sister_,_ms._pace",
+      "text": "your sister , Ms. Pace",
+      "label": null,
+      "score": 0.003467,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_arthur_'s_last_name",
+      "text": "Arthur 's last name",
+      "label": null,
+      "score": 0.003467,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_lucky_caf\u00e9_out_on_highway_6",
+      "text": "The Lucky Caf\u00e9 out on Highway 6",
+      "label": null,
+      "score": 0.003308,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_1589_jackson_avenue_,_in_oxford",
+      "text": "1589 Jackson Avenue , in Oxford",
+      "label": null,
+      "score": 0.003308,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_home",
+      "text": "home",
+      "label": null,
+      "score": 0.003308,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_812_south_5th",
+      "text": "812 South 5th",
+      "label": null,
+      "score": 0.003308,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_robert_pace",
+      "text": "Robert Pace",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_june_24_1987",
+      "text": "June 24, 1987",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_oxford",
+      "text": "Oxford",
+      "label": "GPE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_mississippi",
+      "text": "Mississippi",
+      "label": "GPE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_robert",
+      "text": "Robert",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_yokanapatawpha_high_school",
+      "text": "Yokanapatawpha High School",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_university_elementary_school",
+      "text": "University Elementary school",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_rebecca",
+      "text": "Rebecca",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_six_years_later",
+      "text": "six years later",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_kimberly",
+      "text": "Kimberly",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_becky",
+      "text": "Becky",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_junior_year",
+      "text": "junior year",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_next_year",
+      "text": "the next year",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_english",
+      "text": "English",
+      "label": "LANGUAGE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_university_of_mississippi",
+      "text": "the University of Mississippi",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_june_2009",
+      "text": "June 2009",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_four_years",
+      "text": "four years",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_ph_d",
+      "text": "Ph.D.",
+      "label": "WORK_OF_ART",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_her_college_years",
+      "text": "her college years",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_lucky_caf",
+      "text": "The Lucky Caf\u00e9",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_one",
+      "text": "one",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_three",
+      "text": "three",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_sunday",
+      "text": "Sunday",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_every_other_week",
+      "text": "every other week",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_cheryl",
+      "text": "Cheryl",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_library",
+      "text": "The Library",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_downtown_grill",
+      "text": "the Downtown Grill",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_2019",
+      "text": "2019",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_county_arts_and_crafts_fair",
+      "text": "County Arts and Crafts Fair",
+      "label": "EVENT",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_paul",
+      "text": "Paul",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_six_months_later",
+      "text": "About six months later",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_few_years_earlier",
+      "text": "a few years earlier",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_lane_properties",
+      "text": "Lane Properties",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_rreporting_officer_s_narrative",
+      "text": "RREPORTING OFFICER'S NARRATIVE",
+      "label": "WORK_OF_ART",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_06_a_m",
+      "text": "11:06 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_residence",
+      "text": "residence",
+      "label": "LOC",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_304",
+      "text": "#304",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_deputy",
+      "text": "Deputy",
+      "label": "ROLE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_fred_willits",
+      "text": "Fred Willits",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_armstrong",
+      "text": "Armstrong",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_murphy",
+      "text": "Murphy",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_luwinda_johnson",
+      "text": "Luwinda Johnson",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_reporting_investigator",
+      "text": "Reporting Investigator",
+      "label": "ROLE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_reporting_officer",
+      "text": "Reporting Officer",
+      "label": "ROLE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_willits",
+      "text": "Willits",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_13_a_m",
+      "text": "11:13 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_unit_224",
+      "text": "Unit #224",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_steve_harding",
+      "text": "Steve Harding",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_18_a_m",
+      "text": "11:18 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_27_a_m",
+      "text": "11:27 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_r_os_willits",
+      "text": "R / Os Willits",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_harding",
+      "text": "Harding",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_74_f_23_c",
+      "text": "74\u00b0 F / 23\u00b0 C",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_57",
+      "text": "57%",
+      "label": "PERCENT",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_68_f_20_c",
+      "text": "68\u00b0 F / 20\u00b0 C",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_53",
+      "text": "53%",
+      "label": "PERCENT",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_two",
+      "text": "two",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_rebecca_pace",
+      "text": "Rebecca Pace",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_dog",
+      "text": "dog",
+      "label": "EVIDENCE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_yoknapatawpha_county",
+      "text": "Yoknapatawpha County",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_animal_control",
+      "text": "Animal Control",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_24_a_m",
+      "text": "11:24 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_crime_scene_unit",
+      "text": "Crime Scene Unit",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_joanne_lukens",
+      "text": "Joanne Lukens",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_jaime_sanchez",
+      "text": "Jaime Sanchez",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_approximately_15_minutes",
+      "text": "approximately 15 minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_approximately_10_minutes",
+      "text": "approximately 10 minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_42_a_m",
+      "text": "11:42 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_sanchez",
+      "text": "Sanchez",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_mid",
+      "text": "mid",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_-",
+      "text": "-",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_thirties",
+      "text": "thirties",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_victim",
+      "text": "victim",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_45",
+      "text": "45\u00b0",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_30",
+      "text": "30\u00b0",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_115",
+      "text": "115\u00b0",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_johnson",
+      "text": "Johnson",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_approximately_11_45_a_m",
+      "text": "approximately 11:45 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_48_a_m",
+      "text": "11:48 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_approximately_10_to_12_hours",
+      "text": "approximately 10 to 12 hours",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_coroner_s",
+      "text": "Coroner's",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_12_53_p_m",
+      "text": "12:53 p.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_fourteen_days",
+      "text": "fourteen days",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_4_35_p_m",
+      "text": "4:35 p.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_day",
+      "text": "day",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_end_of_this_date",
+      "text": "the end of this date",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_t_r_douglas",
+      "text": "T. R. Douglas",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_unit_#224",
+      "text": "Unit #224",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_t_armstrong",
+      "text": "T. Armstrong",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_s_murphy",
+      "text": "S. Murphy",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_weston",
+      "text": "Weston",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_many_years",
+      "text": "many years",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_15_years_ago",
+      "text": "about 15 years ago",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_highway_6",
+      "text": "Highway 6",
+      "label": "FAC",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_yesterday",
+      "text": "yesterday",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_annie",
+      "text": "Annie",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_kim",
+      "text": "Kim",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_just_before_11_00_a_m",
+      "text": "just before 11:00 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_a_quarter",
+      "text": "about a quarter",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_twenty",
+      "text": "twenty",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_jeremy",
+      "text": "Jeremy",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_few_minutes_before_11_00_a_m",
+      "text": "a few minutes before 11:00 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_big_bad_breakfast",
+      "text": "Big Bad Breakfast",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_first",
+      "text": "first",
+      "label": "ORDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_thoreau",
+      "text": "Thoreau",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_maybe_ten_minutes",
+      "text": "maybe ten minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_arthur_beck",
+      "text": "Arthur Beck.",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_couple_years",
+      "text": "a couple years",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_few_weeks_ago",
+      "text": "a few weeks ago",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_abbeville",
+      "text": "Abbeville",
+      "label": "GPE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_friday",
+      "text": "Friday",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_night",
+      "text": "night",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_ajax_diner",
+      "text": "Ajax Diner",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_c_est_belle_gallery",
+      "text": "the C'est Belle Gallery",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_saturday",
+      "text": "Saturday",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_couple_days_ago",
+      "text": "a couple days ago",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_the_lucky_caf\u00e9",
+      "text": "The Lucky Caf\u00e9",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_gladwell",
+      "text": "Gladwell",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_three_years",
+      "text": "about three years",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_any_welcome_wagon",
+      "text": "any Welcome Wagon",
+      "label": "PRODUCT",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_11_00_a_m",
+      "text": "11:00 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_minute_or_two",
+      "text": "a minute or two",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_last_night",
+      "text": "last night",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_this_morning",
+      "text": "This morning",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_clapton",
+      "text": "Clapton",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_a_few_minutes",
+      "text": "A few minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_arthur",
+      "text": "Arthur",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_miguel",
+      "text": "Miguel",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_morning",
+      "text": "morning",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_a_half_hour",
+      "text": "about a half-hour",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_tupelo",
+      "text": "Tupelo",
+      "label": "GPE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_this_weekend",
+      "text": "this weekend",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_that_day",
+      "text": "that day",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_about_a_year_ago",
+      "text": "about a year ago",
+      "label": "DATE",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_02_p_m",
+      "text": "02 p.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_5th",
+      "text": "5th",
+      "label": "FAC",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_kimberly_pace_s",
+      "text": "Kimberly Pace's",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_close_to_11_00_a_m",
+      "text": "close to 11:00 a.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_jeremy_s",
+      "text": "Jeremy's",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_four",
+      "text": "four",
+      "label": "CARDINAL",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_90_pounds",
+      "text": "90 pounds",
+      "label": "QUANTITY",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_just_a_few_minutes",
+      "text": "Just a few minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_maybe_five_or_six_minutes",
+      "text": "maybe five or six minutes",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_beck",
+      "text": "Beck",
+      "label": "PERSON",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_c_est_belle",
+      "text": "C'est Belle",
+      "label": "ORG",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_9_30_p_m",
+      "text": "9:30 p.m.",
+      "label": "TIME",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_deputy_fred_willits_)",
+      "text": "Deputy Fred Willits )",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_inspector_luwinda_johnson",
+      "text": "Inspector Luwinda Johnson",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_unit_#_224_(_officer_steve_harding_)",
+      "text": "Unit # 224 ( Officer Steve Harding )",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_reporting_investigators_(_reporting_investigators_)",
+      "text": "Reporting Investigators ( Reporting Investigators )",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_no_signs_of_struggle_or_other_disturbance",
+      "text": "No signs of struggle or other disturbance",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_animal_control_officer_sanchez",
+      "text": "Animal Control Officer Sanchez",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_inspector_johnson",
+      "text": "Inspector Johnson",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_deceased",
+      "text": "Deceased",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_detectives_armstrong_and_murphy",
+      "text": "Detectives Armstrong and Murphy",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_ms._pace",
+      "text": "Ms. Pace",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_i",
+      "text": "I",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "ENT_we",
+      "text": "We",
+      "label": null,
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "BIO_Kimberley_Pace_EV4",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV5",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "IncidentReport_RO_EV15",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV2",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV5",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV6",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV8",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV9",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV10",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV11",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Friend_EV12",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV2",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV3",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV4",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV5",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV8",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV9",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV13",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV14",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV15",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Neighbor_EV16",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV2",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV3",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV5",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV6",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV8",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV9",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV11",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV12",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV13",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    },
+    {
+      "id": "Interview_Kimberley_Sister_EV14",
+      "text": "Unknown",
+      "label": "Unknown",
+      "score": 0.00299,
+      "is_significant": false
+    }
+  ]
+}
