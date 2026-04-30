@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-11-15 23:04:37 UTC",
+  "timestamp": "2025-11-15 23:00:52 UTC",
   "pipeline_metrics": {
-    "total_pipeline_time_seconds": "Not available",
+    "total_pipeline_time_seconds": "72.32 seconds",
     "document_discovery_time": "Not available",
     "pipeline_setup_time": "Not available",
     "document_processing_time": "Not available",
