@@ -56,8 +56,10 @@ class PipelineRunner:
         }
         if extra:
             status.update(extra)
-        with status_path.open("w", encoding="utf-8") as f:
+        tmp_path = status_path.with_suffix(".json.tmp")
+        with tmp_path.open("w", encoding="utf-8") as f:
             json.dump(status, f, indent=2, ensure_ascii=False)
+        tmp_path.replace(status_path)  # atomic, so readers never see a partial file
 
     def read_status(self, case_id: str) -> Dict[str, Any]:
         status_path = self.manager.status_path(case_id)
@@ -123,13 +125,14 @@ class PipelineRunner:
         Otherwise a cheap deterministic dedupe is applied so that the
         ``*_refined`` artifacts always exist and can be compared in the UI.
         """
+        from ..nlp_pipeline.output.refining import refine_edges_parallel, refine_nodes_parallel
+
         raw_nodes = output_dir / "graph_nodes.json"
         raw_edges = output_dir / "graph_edges.json"
         if not raw_nodes.exists() or not raw_edges.exists():
             return
 
         if self.use_llm and self.gemini_api_key:
-            from ..nlp_pipeline.output.refining import refine_edges_parallel, refine_nodes_parallel
 
             refine_nodes_parallel(
                 str(raw_nodes),

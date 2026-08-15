@@ -247,13 +247,24 @@ The simplest way to try FKGIS is the session-based web app. It needs no
 database: each case is a folder under `FKGIS/webapp/sessions/` with its own
 documents, work files and generated outputs.
 
+First, install dependencies once:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m spacy download en_core_web_trf   # only needed to Run Pipeline
+```
+
+Then start the app:
+
 ```bash
 ./run_webapp.sh
 # open http://127.0.0.1:8000
 ```
 
-The first run creates a `.venv`, installs `requirements.txt`, downloads the
-spaCy transformer model (`en_core_web_trf`) and starts the server. Then:
+The script uses `./.venv` when present (otherwise `python3`) and never
+installs/downloads anything. Then:
 
 1. Click **Load Sample Case** to seed a ready-made case from the bundled
    pre-generated outputs (no GPU/pipeline run needed to view the graph).

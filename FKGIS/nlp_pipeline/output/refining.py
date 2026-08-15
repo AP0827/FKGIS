@@ -3,7 +3,6 @@ import time
 import re
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from google import genai
 
 CHUNK_SIZE = 100
 # API key and model are read from the environment so secrets are never
@@ -28,6 +27,8 @@ def get_client():
             "enable LLM refinement."
         )
     if _client is None:
+        from google import genai  # imported lazily so the app works without the LLM SDK
+
         _client = genai.Client(api_key=GENAI_API_KEY)
     return _client
 

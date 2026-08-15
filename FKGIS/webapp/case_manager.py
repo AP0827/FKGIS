@@ -209,7 +209,12 @@ class CaseManager:
             if not src.exists():
                 continue
             doc_type = record.get("doc_type", "narrative")
-            target_name = f"{TYPE_PREFIX.get(doc_type, '')}{name}"
+            prefix = TYPE_PREFIX.get(doc_type, "")
+            # Avoid double-prefixing names that already carry their type prefix.
+            if prefix and name.lower().startswith(prefix.lower()):
+                target_name = name
+            else:
+                target_name = f"{prefix}{name}"
             shutil.copyfile(src, work_dir / target_name)
         return work_dir
 

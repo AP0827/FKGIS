@@ -175,6 +175,10 @@ def run_pipeline(case_id: str) -> Dict[str, Any]:
         def _work() -> None:
             try:
                 runner.run(case_id)
+            except Exception:
+                # The failure is already recorded in <case>/status.json and
+                # surfaced to the UI via /run/status; nothing else to do.
+                pass
             finally:
                 with _run_lock:
                     _run_threads.pop(case_id, None)

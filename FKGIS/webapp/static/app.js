@@ -263,6 +263,9 @@ function rebuildNetwork() {
       font: { color: "#93a0b8", size: 9, strokeWidth: 2, strokeColor: "#0b1019", background: "#161d2e" },
     },
     interaction: { hover: true, tooltipDelay: 150, dragView: true, zoomView: true },
+    layout: {
+      improvedLayout: false,
+    },
     physics: {
       enabled: true,
       solver: "forceAtlas2Based",
