@@ -6,12 +6,30 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from google import genai
 
 CHUNK_SIZE = 100
-GENAI_API_KEY = "AIzaSyAs7f38cjI-tsWYEhSVBlZFnmbdGLsFEQw"
+# API key and model are read from the environment so secrets are never
+# committed to the repository. Provide GEMINI_API_KEY and optionally
+# override the model with GEMINI_MODEL (defaults to the model used by the
+# current implementation, gemini-2.0-flash).
+GENAI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GENAI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 MAX_RETRIES = 3
 RETRY_DELAY = 2
 MAX_WORKERS = 3
 
-client = genai.Client(api_key=GENAI_API_KEY)
+_client = None
+
+
+def get_client():
+    """Return a lazily created Gemini client, raising if no API key is set."""
+    global _client
+    if not GENAI_API_KEY:
+        raise RuntimeError(
+            "GEMINI_API_KEY is not set. Set it in the environment (or .env) to "
+            "enable LLM refinement."
+        )
+    if _client is None:
+        _client = genai.Client(api_key=GENAI_API_KEY)
+    return _client
 
 def chunk_list(lst, chunk_size=100):
     for i in range(0, len(lst), chunk_size):
@@ -69,8 +87,8 @@ def extract_json_from_text(text):
 def call_gemini(prompt):
     for attempt in range(MAX_RETRIES):
         try:
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
+            response = get_client().models.generate_content(
+                model=GENAI_MODEL,
                 contents=prompt
             )
             return response.text

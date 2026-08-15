@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FKGIS — Forensic Knowledge Graph Intelligence</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">FKGIS</span>
+      <span class="subtitle">Forensic Knowledge Graph Intelligence</span>
+    </div>
+    <div class="health" id="health"></div>
+  </header>
+
+  <div class="layout">
+    <!-- ============================ Sidebar ============================ -->
+    <aside class="sidebar" id="sidebar">
+      <section class="panel">
+        <h3>New Case Session</h3>
+        <form id="new-case-form" class="row-form">
+          <input id="case-name" type="text" placeholder="Case name" autocomplete="off" />
+          <button type="submit" class="primary">Create</button>
+        </form>
+        <button id="load-sample" class="ghost">Load Sample Case</button>
+      </section>
+
+      <section class="panel">
+        <h3>Cases</h3>
+        <ul id="case-list" class="case-list"></ul>
+        <p id="case-list-empty" class="muted">No cases yet.</p>
+      </section>
+
+      <section class="panel" id="case-panel" hidden>
+        <h3 id="case-title">Case</h3>
+        <div class="case-meta">
+          <span id="case-id"></span>
+          <span id="case-status" class="status"></span>
+        </div>
+
+        <h4>Documents</h4>
+        <form id="upload-form" class="row-form">
+          <input id="doc-file" type="file" accept=".txt,.text,text/plain" />
+          <select id="doc-type">
+            <option value="narrative">Narrative</option>
+            <option value="biography">Biography</option>
+            <option value="interview">Interview</option>
+          </select>
+          <button type="submit" class="primary">Upload</button>
+        </form>
+        <ul id="doc-list" class="doc-list"></ul>
+
+        <button id="run-pipeline" class="run-btn" disabled>Run Pipeline</button>
+        <div id="run-progress" class="progress muted" hidden></div>
+      </section>
+    </aside>
+
+    <!-- ============================== Main ============================= -->
+    <main class="main">
+      <section class="panel graph-panel" id="graph-panel" hidden>
+        <div class="graph-toolbar">
+          <div class="toolbar-group">
+            <label>Variant</label>
+            <div class="segmented" id="variant-toggle">
+              <button data-variant="raw" class="active">Raw</button>
+              <button data-variant="refined">Refined</button>
+            </div>
+          </div>
+
+          <div class="toolbar-group" id="node-type-filters">
+            <label>Node types</label>
+          </div>
+
+          <div class="toolbar-group">
+            <label class="checkbox"><input type="checkbox" id="significant-only" /> Significant only</label>
+            <label class="checkbox"><input type="checkbox" id="edge-labels" checked /> Edge labels</label>
+          </div>
+
+          <div class="toolbar-group search">
+            <input id="entity-search" type="text" placeholder="Focus on entity..." autocomplete="off" />
+            <button id="focus-btn" class="ghost">Focus</button>
+            <button id="reset-view" class="ghost">Reset</button>
+          </div>
+
+          <div class="toolbar-group">
+            <label>Export figure</label>
+            <div class="export-row">
+              <a id="export-png" class="btn-link" target="_blank" rel="noopener">PNG</a>
+              <a id="export-svg" class="btn-link" target="_blank" rel="noopener">SVG</a>
+              <a id="export-pdf" class="btn-link" target="_blank" rel="noopener">PDF</a>
+              <a id="export-json" class="btn-link" target="_blank" rel="noopener">JSON</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-bar" id="stats-bar"></div>
+        <div id="graph-container"></div>
+        <div id="graph-empty" class="empty" hidden>
+          Run the pipeline to generate the knowledge graph for this case.
+        </div>
+      </section>
+
+      <section class="panel" id="results-panel" hidden>
+        <h3>Case Results</h3>
+        <div id="results-content"></div>
+      </section>
+
+      <section class="panel" id="welcome" >
+        <div class="welcome">
+          <h2>Welcome to FKGIS</h2>
+          <p>
+            Create a case session, upload plain-text evidence documents
+            (narrative, biography or interview), and run the pipeline to build a
+            forensic knowledge graph.
+          </p>
+          <button id="welcome-sample" class="primary">Load Sample Case</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

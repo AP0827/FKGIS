@@ -1,0 +1,404 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black,
+    citecolor=blue
+}
+\emergencystretch=3em
+\sloppy
+\graphicspath{{images/}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Multimodal NLP-Driven Knowledge Graph Construction for Forensic Investigations}
+
+\author{\uppercase{Chethana Murthy}\authorrefmark{1},
+\uppercase{Aayush Pandey}\authorrefmark{2},
+\uppercase{Monal Rai}\authorrefmark{2},
+\uppercase{Navya Madiraju}\authorrefmark{2}, and
+\uppercase{A. A. Siddeshwaran}\authorrefmark{2}}
+
+\address[1]{Assistant Professor, RV College of Engineering, Bengaluru, India (e-mail: chethanamurthy@rvce.edu.in)}
+\address[2]{Department of Computer Science Engineering, RV College of Engineering, Bengaluru, India \\ (e-mail: aayushpandey.is23@rvce.edu.in; monalrai.cs23@rvce.edu.in; navyamadiraju.cs23@rvce.edu.in; aasiddeshwaran.is23@rvce.edu.in)}
+
+\markboth{Murthy \headeretal: Multimodal NLP-Driven Knowledge Graph Construction}
+{Murthy \headeretal: Multimodal NLP-Driven Knowledge Graph Construction}
+
+% Fill the contents of these fields before final submission.
+\history{}
+\doi{}
+% \corresp{}
+% \tfootnote{}
+
+\begin{abstract}
+Digital investigations are increasingly overwhelmed by unstructured evidence, including PDF reports, scanned notes, and chat logs. Investigators often spend substantial time manually identifying key facts, aligning timelines, and reconstructing events. This process is not only slow but also inconsistent and prone to human bias. To address these challenges, we propose an AI-driven framework that automatically converts diverse textual evidence into a structured and verifiable knowledge graph. The system first applies natural language processing (NLP) to clean and normalize the data, then uses a large language model (LLM) to extract important entities, relationships, and events. A temporal reasoning module sequences events across multiple files, while a graph-based summarization component generates clear and consistent narratives suitable for forensic and legal review. We evaluated the system on five documents: a biography, an officer report, and three witness interviews. The results are promising: the system extracted 199 entities, constructed a 270-node knowledge graph, and identified 44 key nodes using the PageRank algorithm. The complete pipeline finished in just over 72 seconds, demonstrating its practicality for real-world use. These results show that the proposed framework can accelerate forensic analysis, improve consistency, and support the generation of more reliable case narratives.
+\end{abstract}
+
+\begin{keywords}
+Digital forensics, entity extraction, knowledge graphs, large language models, natural language processing, temporal reasoning.
+\end{keywords}
+
+\titlepgskip=-15pt
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+Investigators are often overwhelmed with huge amounts of diverse digital evidence. Modern cases involve a massive amount of unstructured data, from PDF reports and handwritten statements to endless communication logs. This material rarely follows any consistent format, which forces investigators to do the heavy lifting manually. They must read everything, figure out who is connected to whom, rebuild timelines from scratch, and then write a coherent case narrative. This manual effort is painfully slow and often leads to inconsistent results, especially on complex cases.
+
+This manual process is difficult for several key reasons. The evidence itself comes in many different formats. Key relationships, who knew whom, who was where, are often implied, not stated outright. Trying to build a single, correct timeline is complicated by conflicting time references. This often leads to the final case narratives varying among different investigators, making the findings hard to verify.
+
+As there has been promising advances in Natural Language Processing (NLP) and Large Language Models (LLMs) recently offer a way forward. We can use NLP to standardize all these different text sources. LLMs are very good at identifying people, places, and events, especially when guided by a forensic-specific setup. By combining these tools with temporal reasoning and knowledge graphs, we can finally create a structured map of the evidence. This map makes it easier to link facts, spot conflicts, and explain how a conclusion was reached.
+
+In this paper, we present a complete framework that turns messy text evidence into a structured forensic knowledge graph. Our system links NLP preprocessing, LLM extraction, temporal reasoning, and graph-based summarization. The result is a more transparent and reliable tool for digital investigations, one that supports faster analysis and makes the entire process more consistent and understandable.
+
+\section{Literature Review}
+
+In the domain of forensic sciences where there is a wide and scattered range of data and information, unstructured textual evidence increasingly shapes the way investigators approach modern cases, prompting researchers to focus on automated methods that extract, organize, and reason about forensic-relevant information. Four main areas have emerged in the literature: knowledge graph representation, NLP-driven extraction pipelines, interactive human involvement in forensic systems, and graph learning approaches for predictive analysis. The following review presents major contributions in each area and identifies gaps that motivate the development of a text-centric forensic knowledge graph framework.
+
+\subsection{Knowledge Graphs for Structuring Digital Forensic Evidence}
+
+Initial approaches to structuring digital evidence emphasize organizing diverse artifacts into connected semantic graphs. Xu and Xu propose a Digital Forensic Knowledge Graph (DFKG) which focused on presenting digital traces from logs, metadata, actors, and timestamps in a unified semantic representation. Their work shows that graph structures are effective for integrating evidence from multiple sources, supporting traceability and contextual reasoning. However, the framework relies primarily on already structured digital artifacts and does not directly address the extraction of facts from free-form textual evidence such as witness interviews, narratives, or mixed forensic documentation \cite{xu2018dfkg}.
+
+This limitation is important because a substantial portion of case material remains text-heavy and semantically implicit. While graph-based forensic representation provides a strong conceptual foundation, there is still a need for systems that can transform raw textual evidence into such graph structures in a scalable and explainable way.
+
+\subsection{NLP and Knowledge Graph Integration for Communication and Text Analysis}
+
+More recent research has explored the application of NLP techniques to extract entities and relations from communication-oriented evidence. Rossi \emph{et al.} demonstrate how multilingual chat logs in criminal investigations can be processed using NLP pipelines and represented as knowledge graphs for investigator use \cite{imchat2021}. Their work highlights the practical value of combining named entity recognition, relation extraction, and graph construction for large volumes of conversational data.
+
+Although effective for instant messaging evidence, the scope of such approaches is generally limited to chat-based communication and does not extend naturally to broader case materials such as formal incident reports, witness interviews, biographical documents, and OCR-derived text. This suggests the need for a more general text-driven framework capable of supporting multiple document genres within a single investigative pipeline.
+
+\subsection{Practical NLP Pipelines, spaCy, and Human-in-the-Loop Systems}
+
+For practical text processing, open NLP toolkits such as spaCy provide efficient pipelines for tokenization, dependency parsing, sentence segmentation, and entity recognition \cite{spacy2020,spacydocs}. These capabilities make spaCy attractive for forensic preprocessing, especially in settings where computational efficiency, reproducibility, and modularity are important.
+
+At the same time, Cruz \emph{et al.} present a human-in-the-loop NLP framework for forensic text analysis, emphasizing the importance of transparency, analyst oversight, and iterative refinement \cite{forensicpipeline2022}. Their work demonstrates that automated extraction systems in forensic environments should not operate as opaque black boxes; instead, they should preserve interpretability and allow investigators to inspect, validate, and correct outputs.
+
+Together, these studies suggest that a useful forensic text system should combine lightweight NLP preprocessing with mechanisms for explainable refinement and user-auditable outputs. However, most existing pipelines stop short of linking this extraction process to case-level knowledge graph construction and timeline reasoning.
+
+\subsection{Graph Neural Networks for Predictive Case Analysis}
+
+Graph neural networks (GNNs) have also been investigated for criminal intelligence and case analysis. Zhang \emph{et al.} show that graph-based learning can support predictive reasoning over structured case data by learning latent patterns in nodes and edges \cite{gnnforensics2021}. Such work points toward advanced reasoning over forensic graphs and suggests the long-term value of richer graph representations.
+
+Yet GNN-based approaches generally assume that a high-quality structured graph already exists. They do not solve the earlier and arguably more fundamental problem of how to construct such graphs reliably from raw, unstructured evidence. In low-resource forensic settings, building the graph itself remains the more urgent challenge.
+
+\subsection{NetworkX for Graph Construction and Analysis}
+
+From an implementation perspective, NetworkX provides a practical framework for graph creation, inspection, and analytics such as centrality and PageRank \cite{networkx2008,networkxdocs}. Its flexibility makes it well suited for prototyping knowledge graphs in forensic contexts, where analysts may need to incrementally add nodes, annotate edges, preserve provenance, and compute structural importance measures.
+
+While NetworkX is not a forensic methodology by itself, it enables experimental pipelines that combine extracted linguistic information with graph-based representations and graph analytics. This makes it a suitable foundation for a transparent, researcher-friendly forensic intelligence prototype.
+
+\subsection{Synthesis and Outstanding Challenges}
+
+Taken together, prior work demonstrates that the major ingredients of an automated forensic reasoning pipeline already exist in isolation: semantic graph representation \cite{xu2018dfkg}, NLP-based evidence extraction \cite{imchat2021,forensicpipeline2022}, robust language preprocessing \cite{spacy2020}, and graph analytics \cite{networkx2008}. Nevertheless, existing work remains fragmented.
+
+Three key gaps persist. First, there is limited support for converting diverse textual forensic evidence into a unified knowledge graph. Second, many approaches lack explicit temporal normalization and contradiction handling, which are essential for reconstructing reliable event timelines. Third, systems often provide extraction or visualization, but not an end-to-end auditable workflow that links preprocessing, extraction, graph construction, and graph-based summarization.
+
+Collectively, these gaps illustrate the need for a transparent, text-centered approach capable of transforming heterogeneous evidence into structured, auditable forensic intelligence, complete with integrated timeline reasoning and consistent reporting.
+
+\subsection{Positioning of the Present Work}
+
+In response to the limitations described above, this work presents a methodology that relies exclusively on textual input for forensic analysis. The system integrates advanced NLP preprocessing, extraction with large language models, temporal normalization, contradiction handling, and knowledge graph construction using tools like NetworkX to convert unstructured evidence into actionable intelligence. Additionally, graph-informed summarization links generated reports directly to extracted entities and events. This framework remains focused on end-to-end explainability and auditability, advancing automated reasoning in forensic investigations without requiring multimodal input.
+
+\section{Gap Analysis}
+The following table summarizes gaps in prior literature.
+
+\begin{center}
+\textbf{Table 1. Gap Analysis of Existing Works}\\[4pt]
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|p{3cm}|p{4cm}|p{5cm}|p{4cm}|}
+\hline
+\textbf{Work} & \textbf{Problem Addressed} & \textbf{Methods / Techniques} & \textbf{Limitations} \\
+\hline
+Digital Forensics KG (2022) &
+Difficulty structuring and presenting forensic evidence &
+Knowledge graphs; graph-based visualization &
+No automated NLP extraction or entity reasoning \\
+\hline
+NLP for IM Data (2025) &
+Overload of instant messaging evidence &
+NER; relation extraction; KG construction &
+Limited evaluation; focuses only on chat data \\
+\hline
+GNN-Enhanced KG (2023) &
+Need for advanced case reasoning &
+GNNs; KG feature fusion; inference models &
+Requires pre-structured data; not suited for raw text \\
+\hline
+AI Meets Criminology (2021) &
+Manual, inefficient text search in investigations &
+NER; sentiment analysis; topic modeling &
+No knowledge graph integration; no temporal reasoning \\
+\hline
+\end{tabular}
+}
+\end{center}
+
+\textbf{Gap Identified:} Existing works do not provide an end-to-end framework that integrates NLP, LLM-based reasoning, knowledge graph construction, and temporal analysis for forensic investigations using exclusively textual evidence.
+
+\section{Objectives}
+
+The primary aim of this research is to develop a transparent and accurate forensic intelligence framework capable of transforming diverse investigation documents into structured and interpretable knowledge graphs. This study pursues the following objectives:
+
+\begin{enumerate}
+    \item \textbf{Building a Unified NLP Pipeline for Forensic Texts} that standardizes and preprocesses a wide range of textual evidence including PDF reports, OCR outputs, communication logs, and narrative documents into a normalized representation suitable for professional forensic analysis.
+
+    \item \textbf{Designing an LLM-Driven Information Extraction Framework} that consistently and accurately identifies forensic entities, events, and inter-entity relationships, producing schema-aligned outputs that support structured reasoning, relation scoring, and graph construction across diverse evidence sources and entity types.
+
+    \item \textbf{Developing a Temporal Reasoning Mechanism for Forensic Timelines} with the capability to resolve incomplete, ambiguous, and conflicting timestamps through constraint-based alignment, temporal normalization, and cross-document reconciliation, thereby enhancing chronological accuracy and investigative coherence.
+
+    \item \textbf{Constructing a Scalable Forensic Knowledge Graph} that encodes extracted facts, relationships, temporal constraints, and contextual metadata, enabling interpretable querying, multi-document linkage, and cross-evidence correlation.
+
+    \item \textbf{Creating Graph-Based Forensic Summaries for Objective Analysis} that leverage structured graph representations to reduce investigator bias, enforce factual consistency, and generate reproducible narrative explanations suitable for both operational and legal contexts.
+\end{enumerate}
+
+Together, these objectives establish an end-to-end methodology that advances the state of digital forensics by integrating rigorous NLP preprocessing, LLM-driven extraction, temporal reasoning, and structured knowledge representation. The framework provides a technically grounded and explainable foundation for automating forensic analysis while preserving accountability and legal robustness.
+
+\section{Methodology}
+
+The proposed system follows an end-to-end pipeline for converting raw, multimodal, forensic evidence into a structured, queryable knowledge graph. The design integrates classical NLP, lightweight LLM refinement, temporal reasoning, and graph-based analytics within a single coherent workflow.
+
+\subsection{Multimodal Evidence Ingestion}
+All case-associated evidence is ingested through an investigator interface. Supported inputs include:
+\begin{itemize}
+    \item scanned or photographed documents,
+    \item audio interviews and recordings,
+    \item raw text documents.
+\end{itemize}
+
+OCR and speech-to-text components convert non-text media into textual form. Each artifact is assigned a case ID, timestamp, and source metadata to preserve chain-of-custody and ensure consistency.
+
+\subsection{Text Normalization and Preprocessing}
+The ingestion layer forwards all text to a preprocessing module that performs:
+\begin{itemize}
+    \item sentence segmentation,
+    \item text normalization and cleanup,
+    \item OCR correction,
+    \item speaker segmentation for interviews.
+\end{itemize}
+
+These steps improve downstream extraction by reducing noise and ensuring that language models operate on cleaner textual inputs.
+
+\subsection{NLP (spaCy Pipeline)}
+The normalized text is processed using a spaCy-based NLP pipeline. This stage performs:
+\begin{itemize}
+    \item tokenization,
+    \item sentence parsing,
+    \item part-of-speech tagging,
+    \item named entity recognition,
+    \item dependency-based pattern extraction.
+\end{itemize}
+
+The output provides an initial set of candidate entities, actions, temporal mentions, and semantic links. This rule-guided extraction step offers speed, reproducibility, and a transparent baseline before LLM refinement.
+
+\subsection{LLM-Based Refinement}
+The raw spaCy output is passed to a lightweight LLM refinement stage. Here, the model is used to:
+\begin{itemize}
+    \item normalize entity names,
+    \item disambiguate relations,
+    \item infer implicit links where evidence strongly suggests them,
+    \item generate structured JSON suitable for graph insertion.
+\end{itemize}
+
+This hybrid design balances the reliability of deterministic extraction with the contextual flexibility of generative models.
+
+\subsection{Cases Database (Evidence-Centric Storage)}
+All processed artifacts, extracted entities, relation triples, timestamps, and graph metadata are stored in a case-oriented database. This layer preserves:
+\begin{itemize}
+    \item source document identifiers,
+    \item extraction provenance,
+    \item confidence values,
+    \item normalized text spans,
+    \item processing timestamps.
+\end{itemize}
+
+Such storage enables traceability, repeatability, and later auditing of every graph element.
+
+\subsection{Knowledge Graph Construction}
+Using the refined structured outputs, the system constructs a forensic knowledge graph where:
+\begin{itemize}
+    \item nodes represent entities, events, locations, or temporal markers,
+    \item edges represent semantic or temporal relations,
+    \item provenance metadata is attached to both nodes and edges.
+\end{itemize}
+
+Rather than maintaining separate graphs, both relational and temporal information coexist in one ontology-driven graph schema. Entities, events, and timestamps share a common node and edge space, enabling cross-linking such as \textit{(Person $\rightarrow$ participated\allowbreak\_in $\rightarrow$ Event)} or \textit{(Event $\rightarrow$ precedes $\rightarrow$ Event)}.
+
+Each node and edge also stores provenance metadata (source document ID, span offsets, extraction confidence, and pipeline version), ensuring the entire graph is explainable, auditable, and traceable back to its evidentiary origins.
+
+\subsection{PageRank-Based Importance Analysis}
+Graph analytics such as PageRank run on the constructed knowledge graphs to surface high-priority entities, suspicious patterns, and structurally important events. This provides investigators with a fast way to identify central actors and recurring locations before performing deeper manual analysis.
+
+\subsection{Summarization Engine}
+A graph-aware summarization stage uses the structured graph to generate case narratives. Because the summary is conditioned on extracted entities, events, and relations, the resulting reports remain more consistent with the evidence than free-form summarization directly from raw documents.
+
+\subsection{Provenance and Audit Layer}
+For forensic usability, the system includes an audit layer that logs each processing step, records model versions, tracks source-to-graph mappings, and supports evidentiary review. This is important for legal defensibility because every output should be traceable to original input material.
+
+\subsection*{\textbf{Input and Ingestion}}
+The pipeline begins with case evidence collection. Documents may be uploaded as PDFs, scanned forms, plain text records, or transcribed interviews. Multimedia evidence is first converted to text through OCR and speech-to-text tools before entering the NLP pipeline.
+
+\subsection*{\textbf{Preprocessing (OCR \& Transcription)}}
+Preprocessing standardizes all textual evidence. This stage cleans noise from OCR outputs, removes formatting artifacts, performs sentence splitting, and preserves speaker turns for interview-style evidence.
+
+\subsection*{\textbf{Linguistic Analysis (spaCy NLP Pipeline)}}
+The spaCy layer extracts the first structured representation of the evidence. It identifies named entities, grammatical relations, and event-bearing phrases while retaining enough context to support later refinement. These outputs act as a transparent baseline and reduce the burden on the generative model.
+
+\subsection*{\textbf{LLM Refinement \& Summarization}}
+After initial extraction, the LLM improves the semantic quality of the data. It resolves inconsistencies in names, infers implicit but supported relations, and converts results into normalized JSON objects. The same model family can also assist with evidence-grounded summarization once the graph has been built.
+
+\subsection*{\textbf{Cases Database and Audit Layer}}
+All intermediate and final outputs are stored in a structured case database. This includes document metadata, extracted spans, normalized entities, relation confidence estimates, timestamps, and system logs. Maintaining this store is crucial for reproducibility, provenance tracking, and legal auditability.
+
+\subsection*{\textbf{Knowledge Graph Builder}}
+The graph builder converts refined entities and relations into a connected forensic knowledge graph. It supports both semantic links and temporal links so that people, places, objects, and events can be analyzed within the same structure. Provenance metadata is attached to graph elements to preserve explainability.
+
+\subsection*{\textbf{Analytics and Investigator Interface}}
+Graph analytics (for example PageRank) run on the constructed KGs to surface high-priority entities and suspicious patterns. The investigator dashboard visualizes relation graphs, timelines, raw-text provenance, summaries, and immutable logs, enabling a human-in-the-loop investigative workflow.
+
+\subsection*{\textbf{Design Rationale}}
+This arrangement emphasizes three priorities needed for forensic use: (1) \emph{traceability}, because every inference links to its origin; (2) \emph{modularity}, because components can be swapped or improved independently; and (3) \emph{explainability}, because the refiner and graph include provenance and confidence metadata. The architecture therefore supports rapid prototyping while remaining compatible with future upgrades such as full spaCy-LLM integration, chunked refinement, or multimodal embedding fusion.
+
+\begin{center}
+\includegraphics[width=\columnwidth]{architecture_diagram.png}\\[3pt]
+\textit{Fig. 1. Proposed system architecture for multimodal forensic evidence ingestion, extraction, refinement, storage, and graph analytics.}
+\end{center}
+
+\section{Results \& Evaluation}
+The proposed text-driven forensic intelligence framework was tested on a small but diverse collection of unstructured documents, which contained interview transcripts, incident narratives, and a biographical profile. These five documents follow different writing styles, an officer report, a biography, and three witness interviews, which makes them a reasonable sample for evaluating how well the system handles real investigative material. Our current evaluation focuses on four observable aspects of the system: extraction volume, the structure of the generated knowledge graph, PageRank-based importance analysis, and the overall runtime of the pipeline. Exact entity and relation precision, recall, and F1 are reserved for a separately annotated gold set and are described as a reproducible follow-up evaluation protocol rather than as reported headline numbers in this version of the manuscript.
+
+\subsection{Pipeline Performance and Extraction Reliability}
+
+The end-to-end pipeline covering rule-based spaCy extraction, LLM-based refinement, entity normalization, graph construction, and PageRank analysis took \textbf{72.32 seconds} to process the full case. This includes everything from initial parsing to graph generation and final ranking. The per-document latency stayed within a range that would be usable in practical settings, especially for early-stage triage or first-pass case analysis.
+
+The extraction pipeline produced strong coverage of people, dates, places, and interactions, but a small amount of noise remained in the form of duplicated labels, partially resolved entities, and some null-type outputs. These issues mainly emerged in passages with ambiguous referents or informal witness phrasing. Even so, the system retained enough structural quality to support downstream graph analytics and summary generation.
+
+\subsection{Entity Extraction and Distribution}
+Across the five documents, the system extracted \textbf{199 entity nodes} of various types. This included:
+\begin{itemize}
+\item \textbf{44 PERSON} entities,
+\item \textbf{30 DATE} expressions,
+\item \textbf{29 TIME} mentions,
+\item \textbf{20 ORG} references,
+\item smaller but meaningful occurrences of \textbf{CARDINAL}, \textbf{QUANTITY}, and other categories.
+\end{itemize}
+
+We also recorded around 40 ``null'' entities, which usually come from ambiguous phrases, noisy text, or cases where the rule-based extractor could not confidently assign a type. This distribution shows that while the system is able to capture a wide range of forensic-relevant entities, there is still room to improve the clarity and consistency of extraction.
+
+\subsection{Knowledge Graph Construction}
+The final case-level knowledge graph contains \textbf{270 nodes} connected by \textbf{149 edges}. Nodes fall into three broad groups:
+\begin{itemize}
+\item \textbf{Entity Nodes (199)} --- people, organizations, evidence items,
+\item \textbf{Event Nodes (65)} --- actions reconstructed from text (for example, ``visited,'' ``called,'' and ``met''),
+\item \textbf{Location Nodes (6)} --- addresses and places mentioned in statements.
+\end{itemize}
+
+This graph pulls together details scattered across the five documents and presents them in a single connected structure. Even with imperfect extraction, the resulting network provides a good overview of who appears where, what interactions occur, and which parts of the narrative connect across documents.
+
+\subsection{PageRank-Based Importance Analysis}
+To estimate which nodes carry the most weight in the case, we ran classical PageRank over the constructed graph. The algorithm identified \textbf{44 nodes} as structurally significant. The scores ranged from 0.00299 to 0.020556, with an average of 0.003704.
+
+In practice, nodes with higher PageRank tended to be:
+\begin{itemize}
+\item individuals who appeared in multiple interviews,
+\item locations mentioned repeatedly across narratives,
+\item events that connected several people or timelines.
+\end{itemize}
+
+This shows that simple graph-based measures can already surface useful investigative cues, even before applying more complex statistical or AI methods.
+
+\subsection{Graph Refinement Runtime}
+
+Beyond the initial extraction and graph construction stages, we also measured the time required for the LLM-based refinement of the raw nodes and edges of the knowledge graph. Refinement directly from JSON files containing \textbf{270 nodes} and \textbf{149 edges} took \textbf{68.42 seconds}. This includes entity cleanup, relation correction, normalization of node labels, checking for duplication, and structural consistency checks performed over the files.
+
+This refinement time indicates that even at the current prototype stage, the system can perform graph-level adjustments within practical limits, making it feasible for interactive or semi-automated forensic workflows.
+
+\subsection{Case-Level Evaluation}
+The evaluation dataset included:
+\begin{enumerate}
+\item \path{BIO_Kimberley_Pace} (biography),
+\item \path{IncidentReport_RO} (officer narrative),
+\item \path{Interview_Kimberley_Friend},
+\item \path{Interview_Kimberley_Neighbor},
+\item \path{Interview_Kimberley_Sister}.
+\end{enumerate}
+
+Despite the differences in writing style, the system was able to connect people, locations, and events across all five documents. The hybrid rule-based + LLM refinement pipeline produced a reasonably coherent knowledge graph and summaries, demonstrating that even without training data, the system can unify information across multiple sources.
+
+\subsection{Summary of Findings}
+
+Overall, the framework successfully:
+\begin{itemize}
+\item extracted dense and varied sets of entities from mixed forensic text,
+\item built a single case-level knowledge graph that preserved relational structure,
+\item used PageRank to highlight important people, places, and events,
+\item processed all documents within practical runtime limits for early-stage investigation.
+\end{itemize}
+
+These results show that even a lightweight, partially rule-based NLP system can help analysts make sense of multi-document forensic cases, and that hybrid refinement strategies offer a promising path for improving extraction in low-resource settings. Gold-labeled precision, recall, and F1 remain the next validation step for the same case corpus; the codebase now includes a reproducible evaluation harness for that purpose once a manual annotation set is finalized.
+
+\begin{center}
+\includegraphics[width=\columnwidth]{sampleROKG.png}\\[3pt]
+\textit{Fig. 2. Knowledge graph generated from the officer report and related case evidence.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.72\columnwidth]{sampleKG.png}\\[3pt]
+\textit{Fig. 3. Sample subgraph illustrating extracted entities and relations after refinement.}
+\end{center}
+
+\begin{thebibliography}{99}
+
+\bibitem{xu2018dfkg}
+H.~Xu and D.~Xu, ``Digital Forensic Knowledge Graph (DFKG): A Framework for Semantic Representation of Digital Evidence,'' \emph{IEEE Access}, vol.~6, pp.~56014--56027, 2018.
+
+\bibitem{imchat2021}
+A.~Rossi, M.~Magnani, and S.~Giordano, ``Leveraging NLP and Knowledge Graphs for Multilingual Chat Log Analysis in Criminal Investigations,'' in \emph{Proceedings of the 2021 ACM Conference on Information and Knowledge Management}, pp.~4125--4134, 2021.
+
+\bibitem{spacy2020}
+M.~Honnibal, I.~Montani, S.~Van Landeghem, and A.~Boyd, ``spaCy: Industrial-Strength Natural Language Processing in Python,'' \emph{Journal of Open Source Software}, vol.~5, no.~56, p.~1944, 2020.
+
+\bibitem{spacydocs}
+Explosion AI, ``spaCy Documentation,'' Version 3.7, 2023. [Online]. Available: \url{https://spacy.io}
+
+\bibitem{forensicpipeline2022}
+L.~Cruz, J.~Hernandez, and M.~Baker, ``A Human-in-the-Loop NLP Pipeline for Forensic Text Analysis,'' in \emph{2022 IEEE International Conference on Big Data}, pp.~3501--3510, 2022.
+
+\bibitem{gnnforensics2021}
+S.~Zhang, Y.~Chen, and K.~Li, ``Graph Neural Networks for Criminal Intelligence Analysis: A Case-Based Study,'' \emph{IEEE Transactions on Computational Social Systems}, vol.~8, no.~4, pp.~991--1003, 2021.
+
+\bibitem{networkx2008}
+A.~A.~Hagberg, D.~A.~Schult, and P.~J.~Swart, ``Exploring Network Structure, Dynamics, and Function Using NetworkX,'' in \emph{Proceedings of the 7th Python in Science Conference (SciPy)}, pp.~11--15, 2008.
+
+\bibitem{networkxdocs}
+NetworkX Developers, ``NetworkX Documentation,'' Version 3.4, 2024. [Online]. Available: \url{https://networkx.org}
+
+\bibitem{kgreview2020}
+X.~Wang, R.~Li, and M.~Zhou, ``A Survey on Knowledge Graph Reasoning: From Rule-Based to Neural Approaches,'' \emph{ACM Computing Surveys}, vol.~53, no.~4, pp.~1--37, 2020.
+
+\bibitem{temporalnlp2019}
+T.~Vashishtha and K.~Srikumar, ``Temporal Reasoning in Natural Language Texts,'' in \emph{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing}, pp.~5696--5706, 2019.
+
+\bibitem{ocrforensics2017}
+A.~Kumar and S.~Pande, ``OCR-Based Evidence Extraction for Digital Forensics,'' \emph{Digital Investigation}, vol.~22, pp.~S75--S83, 2017.
+
+\bibitem{kgforensics2019}
+J.~Lee and P.~Kim, ``Knowledge Graph Construction for Forensic Intelligence: Challenges and Opportunities,'' in \emph{2019 IEEE International Symposium on Technologies for Homeland Security}, pp.~1--7, 2019.
+
+\end{thebibliography}
+
+\EOD
+
+\end{document}

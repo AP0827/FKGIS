@@ -17,6 +17,10 @@ from collections import Counter
 from typing import Dict, Any, List
 
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+NLP_OUTPUT_DIR = SCRIPT_DIR / "nlp_pipeline" / "output"
+
+
 def load_json_file(file_path: Path) -> Dict[str, Any]:
     """Load JSON file safely."""
     try:
@@ -29,7 +33,10 @@ def load_json_file(file_path: Path) -> Dict[str, Any]:
 
 def analyze_relation_categories(edges: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Analyze dominant relation categories."""
-    relation_counts = Counter(edge.get('edge_type', 'unknown') for edge in edges)
+    relation_counts = Counter(
+        (edge.get("edge_type") or edge.get("relation") or edge.get("type") or "unknown")
+        for edge in edges
+    )
 
     return {
         "total_relations": len(edges),
@@ -45,11 +52,17 @@ def extract_sample_entities(nodes: List[Dict[str, Any]], limit: int = 20) -> Lis
     return entities[:limit]
 
 
+def _safe_density(node_count: int, edge_count: int) -> float:
+    if node_count < 2:
+        return 0.0
+    return (2.0 * edge_count) / (node_count * (node_count - 1))
+
+
 def generate_results_file(output_path: Path = Path("nlp_pipeline_results.json")) -> None:
     """Generate comprehensive results file with all pipeline metrics."""
 
     # Define paths
-    nlp_output_dir = Path("nlp_pipeline/output")
+    nlp_output_dir = NLP_OUTPUT_DIR
 
     # Load all relevant data files
     pagerank_results = load_json_file(nlp_output_dir / "pagerank_results.json")
@@ -83,6 +96,18 @@ def generate_results_file(output_path: Path = Path("nlp_pipeline_results.json"))
     # Analyze relation categories
     relation_analysis = analyze_relation_categories(graph_edges) if graph_edges else {}
 
+    node_type_counts = Counter(node.get('type', 'unknown') for node in graph_nodes)
+    entity_labels = Counter(
+        node.get('label', 'unknown')
+        for node in graph_nodes
+        if node.get('type') == 'Entity'
+    )
+    nullish_entities = sum(
+        1
+        for node in graph_nodes
+        if str(node.get('label', '')).strip().lower() in {'', 'none', 'null', 'unknown'}
+    )
+
     # Extract sample entities
     sample_entities = extract_sample_entities(graph_nodes)
 
@@ -101,8 +126,10 @@ def generate_results_file(output_path: Path = Path("nlp_pipeline_results.json"))
         "graph_statistics": {
             "total_nodes": len(graph_nodes),
             "total_edges": len(graph_edges),
-            "node_types": Counter(node.get('type', 'unknown') for node in graph_nodes),
-            "entity_labels": Counter(node.get('label', 'unknown') for node in graph_nodes if node.get('type') == 'Entity')
+            "density": _safe_density(len(graph_nodes), len(graph_edges)),
+            "node_types": node_type_counts,
+            "entity_labels": entity_labels,
+            "nullish_entities": nullish_entities,
         },
         "pagerank_analysis": {
             "method_used": pagerank_results.get("metadata", {}).get("pagerank_method", "Unknown"),

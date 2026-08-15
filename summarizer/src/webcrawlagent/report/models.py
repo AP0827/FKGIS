@@ -9,11 +9,15 @@ from webcrawlagent.crawler.analyzer import AnalysisSummary
 @dataclass(slots=True)
 class SiteSummary:
     overview: str
-    content_type: str
-    sections: dict[str, list[str]]  # Dynamic sections based on content type
+    content_type: str = "website"
+    sections: dict[str, list[str]] | list[str] = field(default_factory=dict)
     # Legacy fields for backward compatibility with website summaries
     highlights: list[str] | None = None
     recommendations: list[str] | None = None
+
+    def __post_init__(self) -> None:
+        if isinstance(self.sections, list):
+            self.sections = {"key_sections": self.sections}
 
     @classmethod
     def from_llm_payload(cls, payload: dict) -> SiteSummary:

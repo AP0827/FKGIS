@@ -57,6 +57,99 @@ FKGIS automates evidence processing through an intelligent pipeline that:
 - Hash-chained audit trails for evidence provenance
 - Tamper-proof documentation of analysis steps
 
+## Evaluation and Reproducibility
+
+The repository currently contains descriptive pipeline outputs and graph statistics, but a full gold-labeled evaluation harness is still needed for publication-grade claims. To make the system scientifically defensible, the following evaluation setup should be reported and/or added to the codebase.
+
+### Quantitative Metrics
+
+Report entity and relation extraction quality on a manually annotated gold set using:
+
+- Precision
+- Recall
+- F1 score
+- Exact-match and relaxed-match variants where appropriate
+
+For timeline reconstruction, report event ordering accuracy or another order-sensitive metric on the same held-out set.
+
+### Baselines
+
+Compare the full system against the following baselines to show the contribution of each modeling choice:
+
+| System | Description |
+|--------|-------------|
+| spaCy-only | Rule-based or classical spaCy pipeline without LLM refinement |
+| LLM-only | LLM-based extraction without the structured spaCy pipeline |
+| FKGIS full system | Hybrid pipeline with preprocessing, NLP, LLM refinement, timeline reasoning, and graph construction |
+
+Recommended reporting for each baseline:
+
+| Model | Entity P/R/F1 | Relation P/R/F1 | Timeline score | Notes |
+|-------|---------------|-----------------|----------------|-------|
+
+### Ablation Study
+
+To isolate the effect of each component, compare the full model with the following ablations:
+
+| Variant | Removed Component | Expected Observation |
+|---------|-------------------|----------------------|
+| Full system | None | Best overall performance |
+| No LLM refinement | Remove LLM post-processing and refinement | Lower relation quality and weaker entity normalization |
+| No temporal reasoning | Disable event ordering and timeline reconstruction | More inconsistent chronology |
+| No coreference resolution | Skip mention linking | More duplicate entities and fragmented graphs |
+| No graph filtering | Keep all nodes and edges | Noisier graph, weaker interpretability |
+
+### Error Analysis
+
+Document the main failure modes explicitly so that the limits of the system are visible:
+
+- Null or empty entities introduced by extraction or normalization
+- Wrong relation direction or overly generic relation labels
+- Ambiguous mentions that are linked to the wrong canonical entity
+- Duplicate entities that survive mention unification
+- Timeline ambiguities when the source text omits explicit dates or ordering cues
+- Hallucinated or over-confident LLM refinements when the input is underspecified
+
+### Graph Evaluation
+
+PageRank is useful for ranking salient nodes, but it should not be the only graph metric. The current implementation already computes PageRank and can be extended with:
+
+- Degree centrality for local connectivity
+- Betweenness centrality for bridge entities
+- Connected component coverage for graph cohesion
+- Clustering coefficient for local structure
+- Graph density for overall sparsity or saturation
+
+These metrics help explain whether the graph is informative, overly fragmented, or dominated by a few hubs.
+
+### LLM Configuration
+
+The current LLM prototype code uses spaCy-LLM with the OpenAI family of models:
+
+- NER: `spacy.NER.v1` with `spacy.GPT-3-5.v3` and `gpt-3.5-turbo`
+- Relation extraction: `spacy.REL.v1` with the same OpenAI-backed adapter
+- Coreference-style clustering: `spacy.Generic.v1` with a JSON-only prompt and `spacy.Json.v1` parser
+
+The coreference prompt is intentionally constrained to return only JSON with a fixed schema, which helps reduce hallucination and makes the output easier to validate. For formal experiments, also pin and document any decoding parameters you use, such as temperature, top-p, and max tokens, because they are not currently fixed in this repository snapshot.
+
+### Reproducibility Notes
+
+To make runs reproducible, document the following alongside each experiment:
+
+- Exact code revision or commit hash
+- Input document set and annotation version
+- Model name and provider adapter
+- Prompt template or prompt file version
+- Decoding parameters
+- Seed, if the runtime exposes one
+- Evaluation script and matching rules
+
+The pipeline itself can be summarized as:
+
+```text
+documents -> preprocessing -> NER/dependency parsing -> coreference -> relation extraction -> event construction -> timeline reasoning -> knowledge graph -> verification -> reporting
+```
+
 ## System Architecture
 
 ![FKGIS System Architecture Diagram](Architecture%20Diagram.png)
@@ -148,6 +241,36 @@ FKGIS/
 
 ## Quick Start
 
+### Quick Start (Web App — no database required)
+
+The simplest way to try FKGIS is the session-based web app. It needs no
+database: each case is a folder under `FKGIS/webapp/sessions/` with its own
+documents, work files and generated outputs.
+
+```bash
+./run_webapp.sh
+# open http://127.0.0.1:8000
+```
+
+The first run creates a `.venv`, installs `requirements.txt`, downloads the
+spaCy transformer model (`en_core_web_trf`) and starts the server. Then:
+
+1. Click **Load Sample Case** to seed a ready-made case from the bundled
+   pre-generated outputs (no GPU/pipeline run needed to view the graph).
+2. Or **Create** a case, upload plain-text documents (choose Narrative /
+   Biography / Interview type), then hit **Run Pipeline**.
+3. Explore the interactive graph (vis-network): toggle Raw/Refined variants,
+   filter node types, show only significant (PageRank) nodes, search/focus an
+   entity, and export a paper-quality figure as PNG/SVG/PDF.
+
+To enable Gemini refinement of the graph (the same model family the NLP
+pipeline uses), create a `.env`:
+
+```bash
+GEMINI_API_KEY=your_key
+FKGIS_USE_LLM=true
+```
+
 ### Prerequisites
 
 - Python 3.8 or higher
@@ -209,18 +332,36 @@ cd FKGIS
 python generate_incident_graph.py
 ```
 
-## Performance & Results
+## Current Run Statistics
 
-Based on testing with a forensic investigation dataset:
+These are descriptive outputs from the saved pipeline run, not a substitute for precision/recall/F1 evaluation.
 
 | Metric | Result |
 |--------|--------|
 | **Entities Extracted** | 199 |
 | **Knowledge Graph Nodes** | 270 |
-| **Relationships (Edges)** | 143 |
+| **Relationships (Edges)** | 149 |
 | **Significant Nodes (PageRank)** | 44 |
 | **Processing Time** | 72 seconds |
 | **Timeline Events** | Auto-sequenced |
+
+### Observed Comparison From Saved Outputs
+
+These measurements come from the saved raw and refined graph artifacts in the repository and are useful as implementation-level comparison parameters until a gold-labeled benchmark is added.
+
+| Metric | Raw Output | Refined Output |
+|--------|------------|----------------|
+| Total nodes | 270 | 287 |
+| Total edges | 149 | 134 |
+| Connected components | 157 | 198 |
+| Largest component | 99 | 81 |
+| Graph density | 0.004103 | 0.003265 |
+| Average degree | 1.015 | 0.934 |
+| Average clustering | 0.010979 | 0.000000 |
+| Nullish / unknown entities | 40 | 93 |
+| Unique relation types | 26 | 14 |
+
+The current outputs show that refinement reduces relation variety and graph density, but it also increases the number of nullish entities in the saved artifact. That is a useful signal for the error analysis section: the refinement step should be audited for entity normalization regressions before these numbers are presented as final results.
 
 ## Core Dependencies
 

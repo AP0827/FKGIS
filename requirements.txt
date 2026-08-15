@@ -1,19 +1,26 @@
-# Core NLP
-spacy
-spacy-transformers
-spacy-llm
-coreferee
+# =====================================================================
+# FKGIS runtime dependencies (web app + NLP pipeline)
+# No database drivers are required — sessions are stored as JSON on disk.
+# =====================================================================
 
-# Database drivers
-pymongo
-mongoengine
-psycopg2-binary
-sqlalchemy
-supabase
-neo4j
-neomodel
+# ---- Core NLP pipeline ----
+spacy>=3.7
+spacy-transformers          # transformer model (en_core_web_trf) for NER/deps
 
-# Utilities
-dateparser
-python-dateutil
-tqdm
+# ---- Graph construction & analytics ----
+networkx                    # knowledge graph construction / PageRank
+scipy                       # networkx.pagerank backend
+matplotlib                  # paper-quality static graph rendering
+
+# ---- LLM refinement (Gemini, same model family as current implementation) ----
+google-genai                # optional: only used when GEMINI_API_KEY is set
+
+# ---- Web application (session-based, no database) ----
+fastapi
+uvicorn[standard]
+python-multipart            # multipart file uploads
+python-dotenv               # load GEMINI_API_KEY / FKGIS_* from a local .env
+
+# ---- Testing ----
+pytest
+httpx                       # required by fastapi's TestClient

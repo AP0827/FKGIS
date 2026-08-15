@@ -35,3 +35,5 @@ dist/
 
 # PDF files
 *.pdf
+# Web app sessions (user workspaces)
+FKGIS/webapp/sessions/
