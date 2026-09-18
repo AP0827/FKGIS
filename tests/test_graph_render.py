@@ -55,13 +55,16 @@ def test_pagerank_metadata_reported() -> None:
 
 def test_render_static_png(tmp_path) -> None:
     nodes, edges, pagerank = _load()
-    out = Path(render_static(nodes, edges, pagerank, output_path=tmp_path / "kg.png"))
+    out_path, lead_signals = render_static(nodes, edges, pagerank, output_path=tmp_path / "kg.png")
+    out = Path(out_path)
     assert out.exists()
     assert out.stat().st_size > 50_000
+    assert isinstance(lead_signals, list)
 
 
 def test_render_static_svg(tmp_path) -> None:
     nodes, edges, pagerank = _load()
-    out = Path(render_static(nodes, edges, pagerank, output_path=tmp_path / "kg.svg"))
+    out_path, _ = render_static(nodes, edges, pagerank, output_path=tmp_path / "kg.svg")
+    out = Path(out_path)
     assert out.exists()
     assert out.stat().st_size > 10_000

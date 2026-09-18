@@ -9,45 +9,10 @@ from spacy.matcher import Matcher
 from .basic_rel_extractor import extract_relations as _base_extract_relations
 
 
-# Case-specific verb lexicon (lemmas) for high-precision relations in the
-# Kimberly Pace incident:
-#
-#   arrived, secured, observed, removed, pronounced, responded, identified,
-#   met, directed, interviewed, examined, reported, said, indicated, called,
-#   dispatched, found, saw, heard, told, asked, stated, believed, knew,
-#   witnessed, located, took, gave, received, provided, requested, confirmed,
-#   determined, investigated, documented, collected, seized, transported,
-#   processed, reviewed, noted, discovered, described, mentioned, claimed,
-#   reported, observed, found, saw, heard, told, asked, stated, believed, knew,
-#   witnessed, located, took, gave, received, provided, requested, confirmed,
-#   determined, investigated, documented, collected, seized, transported,
-#   processed, reviewed, noted, discovered, described, mentioned, born, sister,
-#   married, boyfriend, work, teach, graduate, own, live, socialize, notify,
-#   contact
-#
-CASE_VERB_LEXICON = {
-    "arrive", "secure", "observe", "remove", "pronounce", "respond", "identify",
-    "meet", "direct", "interview", "examine", "report", "say", "indicate",
-    "call", "dispatch", "find", "see", "hear", "tell", "ask", "state",
-    "believe", "know", "witness", "locate", "take", "give", "receive",
-    "provide", "request", "confirm", "determine", "investigate", "document",
-    "collect", "seize", "transport", "process", "review", "note", "discover",
-    "describe", "mention", "claim",
-    "bear", # for "born to"
-    "sister", # for "is my sister"
-    "marry", # for "married to"
-    "boyfriend", # for "is boyfriend of"
-    "work", # for "works at"
-    "teach", # for "teaches at"
-    "graduate", # for "graduated from"
-    "own", # for "owns" (business)
-    "live", # for "lives at"
-    "socialize", # for "frequents"
-    "notify", # for "notified"
-    "contact", # for "contacted"
-}
-
-
+# Verb lemma -> semantic relation_type, for verbs common in forensic case
+# narratives. This is used to give well-known verbs a readable relation_type;
+# it is NOT a filter. Any verb not listed here still produces a relation, with
+# its uppercased lemma used as the relation_type (see refine_case_relations).
 VERB_TO_RELATION_TYPE = {
     "arrive": "ARRIVED_AT", "secure": "SECURED", "observe": "OBSERVED",
     "remove": "REMOVED", "pronounce": "PRONOUNCED", "respond": "RESPONDED",
@@ -342,24 +307,26 @@ def _extract_relations_with_matcher(doc: Doc, nlp: Language) -> List[Dict[str, A
 
 
 def refine_case_relations(processed_doc: Dict[str, Any], nlp: Language) -> Dict[str, Any]:
-    """Refine relations for the Kimberly Pace case using a verb lexicon and spaCy Matcher patterns.
+    """Refine relations by combining the generic extractor with Matcher patterns.
 
     Steps:
       1) Call the generic basic_rel_extractor.extract_relations() to populate
-         processed_doc["relations"] with high-recall SPO triples.
+         processed_doc["relations"] with high-recall SPO triples. That
+         extractor already filters for entity overlap and argument length, so
+         its output is not re-filtered here.
       2) Extract additional relations using spaCy Matcher patterns.
-      3) Filter relations to keep only those whose predicate lemma is in the
-         case-specific verb lexicon, or whose subject/object clearly involve
-         core case actors (officers, witnesses, victim, dog, etc.).
-      4) For retained relations, attach a "relation_type" field using
-         VERB_TO_RELATION_TYPE, when known.
+      3) For every relation, attach a "relation_type": the semantic type from
+         VERB_TO_RELATION_TYPE when the verb is recognized, otherwise the
+         uppercased predicate lemma itself. Every relation keeps a
+         relation_type so it can still reach the knowledge graph even when the
+         verb isn't one we have a curated label for.
 
     This function overwrites processed_doc["relations"] with the refined list.
     """
     # Create the spaCy Doc object locally within this function
     doc = nlp(processed_doc["raw_text"])
 
-    # 1) Get base relations
+    # 1) Get base relations (already entity-overlap filtered)
     processed_doc = _base_extract_relations(processed_doc)
     raw_relations: List[Dict[str, Any]] = processed_doc.get("relations") or []
 
@@ -369,19 +336,6 @@ def refine_case_relations(processed_doc: Dict[str, Any], nlp: Language) -> Dict[
 
     refined: List[Dict[str, Any]] = []
 
-    # Key case actors / objects for backstop when predicate isn't in lexicon
-    KEY_ACTORS = {
-        "willits", "harding", "armstrong", "murphy", "johnson", "lukens",
-        "sanchez", "rebecca pace", "becky pace", "cheryl weston",
-        "jeremy gladwell", "kimberly pace", "kim", "thoreau", "dog", "body",
-        "victim", "reporting officer", "reporting investigator", "deputy",
-        "animal control", "crime scene unit", "coroner", "dispatch",
-        "valerie", "robert", "paul evans", "miguel ochoa",
-        "university of mississippi", "yokanapatawpha high school",
-        "university elementary school", "the lucky café", "lane properties",
-        "the library", "the downtown grill", "ajax diner", "c'est belle gallery",
-    }
-
     for rel in raw_relations:
         subj = (rel.get("subject") or "").strip()
         obj = (rel.get("object") or "").strip()
@@ -390,38 +344,15 @@ def refine_case_relations(processed_doc: Dict[str, Any], nlp: Language) -> Dict[
         if not subj or not obj or not pred:
             continue
 
-        pred_norm = _normalize_predicate(pred)
-
-        keep = False
-
-        # 1) Primary: verb in case lexicon or relation_type already assigned by matcher
-        if pred_norm in CASE_VERB_LEXICON or "relation_type" in rel:
-            keep = True
-        else:
-            # 2) Secondary: subject or object mention key case actors / objects
-            s_low = subj.lower()
-            o_low = obj.lower()
-            if any(name in s_low for name in KEY_ACTORS) or any(
-                name in o_low for name in KEY_ACTORS
-            ):
-                keep = True
-
-        if not keep:
-            continue
-
         rel_out = dict(rel)
-        if "relation_type" not in rel_out: # Only assign if not already set by matcher
-            rel_out["predicate"] = pred_norm  # store normalized predicate
-            rel_type = VERB_TO_RELATION_TYPE.get(pred_norm)
-            if rel_type:
-                rel_out["relation_type"] = rel_type
+        if "relation_type" not in rel_out:  # Matcher patterns already set this
+            pred_norm = _normalize_predicate(pred)
+            rel_out["predicate"] = pred_norm
+            rel_out["relation_type"] = VERB_TO_RELATION_TYPE.get(
+                pred_norm, pred_norm.upper().replace(" ", "_")
+            )
 
-        if "relation_type" in rel_out: # Only add if a relation_type is assigned
-            refined.append(rel_out)
-
-    # Remove the temporary spacy_doc before returning (no longer needed as it's local)
-    # if "spacy_doc" in processed_doc:
-    #     del processed_doc["spacy_doc"]
+        refined.append(rel_out)
 
     processed_doc["relations"] = refined
     return processed_doc

@@ -56,14 +56,28 @@ def _collect_sentence_entities(processed_doc: Dict[str, Any]) -> Dict[int, List[
     return by_sentence
 
 
+def _mentions_entity(field_text: str, entity_text: str) -> bool:
+    """True if `entity_text` is actually referenced by `field_text` (the event's
+    subject or object), as opposed to merely appearing somewhere in the same
+    sentence."""
+    if not field_text or not entity_text:
+        return False
+    field_low = field_text.lower()
+    entity_low = entity_text.lower()
+    return entity_low in field_low or field_low in entity_low
+
+
 def _attach_participants_and_locations(
     processed_doc: Dict[str, Any],
 ) -> Dict[str, Any]:
     """Enrich processed_doc['events'] with case-specific participants and locations.
 
     For each event:
-      - Determine which entities are involved based on subject/object/description.
-      - Mark 'participants' as a list of entity texts (PERSON/ROLE/ORG/EVIDENCE).
+      - Mark 'participants' as entities (PERSON/ROLE/ORG/EVIDENCE) that are
+        actually named in the event's subject or object, not just any entity
+        that happens to share the sentence — otherwise every entity mentioned
+        near an event gets wired into it, producing a dense hairball instead
+        of a graph that reflects who did what to whom.
       - Mark 'locations' as a list of location-like entity texts or keywords.
     """
     events: List[Dict[str, Any]] = processed_doc.get("events") or []
@@ -88,6 +102,9 @@ def _attach_participants_and_locations(
             if part
         ).lower()
 
+        subject_text = ev.get("subject") or ""
+        object_text = ev.get("object") or ""
+
         # Entity-based participants and locations
         if isinstance(sid, int) and 0 <= sid < len(sentences):
             ents_here = sentence_entities.get(sid, [])
@@ -97,7 +114,8 @@ def _attach_participants_and_locations(
                 if not text:
                     continue
                 low = text.lower()
-                if label in PARTICIPANT_LABELS and text not in participants:
+                is_referenced = _mentions_entity(subject_text, text) or _mentions_entity(object_text, text)
+                if label in PARTICIPANT_LABELS and is_referenced and text not in participants:
                     participants.append(text)
                 # Locations from LOC entities or ORG/ROLE that look like places
                 if label in {"LOC"} or any(kw in low for kw in LOCATION_KEYWORDS):

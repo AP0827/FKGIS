@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Any, List, Tuple, Set
+from typing import Dict, Any, List, Tuple, Set, Optional
 from pathlib import Path
 import json
 import networkx as nx # Import networkx
@@ -139,6 +139,76 @@ def _make_location_id(norm: str) -> str:
     return f"LOC_{norm.replace(' ', '_')}"
 
 
+def _build_mention_to_canonical(case_docs: List[Dict[str, Any]]) -> Dict[str, str]:
+    """Map every known mention text to its canonical name, using each document's
+    coref_entities (produced by GlobalEntityPool during coreference resolution).
+
+    This lets node identity be driven by the case's actual coreference/mention
+    unification output instead of a hardcoded, case-specific list of names.
+    """
+    mention_to_canonical: Dict[str, str] = {}
+    for entry in case_docs:
+        processed_doc = entry.get("processed_doc") or {}
+        for cluster in processed_doc.get("coref_entities") or []:
+            canonical = cluster.get("canonical_name")
+            if not canonical:
+                continue
+            canonical_norm = _normalize_name(canonical.replace("_", " "))
+            for m in cluster.get("mentions") or []:
+                mention_text = m if isinstance(m, str) else (m.get("text") if isinstance(m, dict) else "")
+                if mention_text:
+                    mention_to_canonical[_normalize_name(mention_text)] = canonical_norm
+    return mention_to_canonical
+
+
+def _canonical_id(norm: str, mention_to_canonical: Dict[str, str]) -> str:
+    """Resolve a normalized mention to its canonical entity id, falling back to
+    the mention itself when no coref cluster covers it."""
+    canonical_norm = mention_to_canonical.get(norm, norm)
+    return _make_entity_id(canonical_norm)
+
+
+def _build_mention_lookup(
+    entity_nodes: Dict[str, Dict[str, Any]],
+    mention_to_canonical: Dict[str, str],
+) -> List[Tuple[str, str]]:
+    """List of (mention_norm, canonical_norm), longest mention first.
+
+    A relation's subject/object is often a full dependency-parse subtree
+    ("Cheryl Weston regarding the whereabouts of Ms. Pace"), not a clean
+    entity string, so resolving it requires checking whether a known mention
+    is *contained in* the text -- not that the text *equals* a known mention.
+    Longest-first ensures "cheryl weston" matches before a shorter, looser
+    substring like "cheryl" would.
+    """
+    lookup: Dict[str, str] = dict(mention_to_canonical)
+    for node in entity_nodes.values():
+        norm = node.get("norm")
+        if norm and norm not in lookup:
+            lookup[norm] = norm
+    return sorted(lookup.items(), key=lambda kv: len(kv[0]), reverse=True)
+
+
+def _resolve_entity_mention(text_norm: str, mention_lookup: List[Tuple[str, str]]) -> Optional[str]:
+    """Return the canonical norm of the longest known entity mention contained
+    in text_norm, or None if text_norm doesn't reference any known entity."""
+    for mention_norm, canonical_norm in mention_lookup:
+        if mention_norm and mention_norm in text_norm:
+            return canonical_norm
+    return None
+
+
+def _resolve_location_alias(text_norm: str, canonical_locations: Dict[str, str]) -> Optional[str]:
+    """Return the location id for the longest known location alias contained
+    in text_norm, or None."""
+    best_alias: Optional[str] = None
+    best_id: Optional[str] = None
+    for alias, loc_id in canonical_locations.items():
+        if alias in text_norm and (best_alias is None or len(alias) > len(best_alias)):
+            best_alias, best_id = alias, loc_id
+    return best_id
+
+
 def build_nodes_and_edges_for_case(
     case_id: str,
     case_docs: List[Dict[str, Any]],
@@ -168,6 +238,8 @@ def build_nodes_and_edges_for_case(
     kg_start_time = time.time()
     timing_info = {}
 
+    mention_to_canonical = _build_mention_to_canonical(case_docs)
+
     # Maps for deduplication
     entity_nodes: Dict[str, Dict[str, Any]] = {}
     time_nodes: Dict[str, Dict[str, Any]] = {}
@@ -192,7 +264,7 @@ def build_nodes_and_edges_for_case(
             if not text:
                 continue
             norm = _normalize_name(ent.get("norm") or text)
-            ent_id = _make_entity_id(norm)
+            ent_id = _canonical_id(norm, mention_to_canonical)
             if ent_id not in entity_nodes:
                 entity_nodes[ent_id] = {
                     "id": ent_id,
@@ -228,7 +300,7 @@ def build_nodes_and_edges_for_case(
             participants: List[str] = ev.get("participants") or []
             for p in participants:
                 norm_p = _normalize_name(p)
-                ent_id = _make_entity_id(norm_p)
+                ent_id = _canonical_id(norm_p, mention_to_canonical)
                 if ent_id not in entity_nodes:
                     entity_nodes[ent_id] = {
                         "id": ent_id,
@@ -331,6 +403,18 @@ def build_nodes_and_edges_for_case(
         "the stairs": "LOC_stairs",
     }
 
+    # Only relations where BOTH sides reference a genuine, recognized entity
+    # or location become graph nodes/edges. A dependency-parsed relation's
+    # subject/object is often a full subtree phrase ("Cheryl Weston regarding
+    # the whereabouts of Ms. Pace"), not a clean entity string -- so resolution
+    # looks for a known mention *contained in* the text, not an exact match.
+    # A phrase with no such mention at all (e.g. "an approximate 30 degree
+    # angle to the body") is real narrative detail, but not a case actor, and
+    # promoting it to its own node would flood the graph with one-off junk.
+    # Such relations remain available in processed_doc["relations"]/events for
+    # narrative detail; they just don't get graph nodes.
+    mention_lookup = _build_mention_lookup(entity_nodes, mention_to_canonical)
+
     for entry in case_docs:
         doc_name = entry.get("doc_name") or entry.get("name") or "unknown_doc"
         doc_type = entry.get("doc_type") or "unknown"
@@ -349,154 +433,72 @@ def build_nodes_and_edges_for_case(
             subj_norm = _normalize_name(subj)
             obj_norm = _normalize_name(obj)
 
-            # --- Subject Node Creation/Normalization ---
-            # Attempt to find a canonical entity for the subject if it's a long phrase
-            canonical_subj_id = None
-            if subj_norm in CANONICAL_LOCATIONS:
-                canonical_subj_id = CANONICAL_LOCATIONS[subj_norm]
-            elif "reporting officer" in subj_norm or "reporting investigator" in subj_norm:
-                if "willits" in subj_norm:
-                    canonical_subj_id = _make_entity_id("fred willits")
-                elif "harding" in subj_norm:
-                    canonical_subj_id = _make_entity_id("steve harding")
-                elif "johnson" in subj_norm:
-                    canonical_subj_id = _make_entity_id("luwinda johnson")
-                elif "murphy" in subj_norm:
-                    canonical_subj_id = _make_entity_id("murphy")
-                elif "sanchez" in subj_norm:
-                    canonical_subj_id = _make_entity_id("jaime sanchez")
-                elif "armstrong" in subj_norm:
-                    canonical_subj_id = _make_entity_id("armstrong")
-                elif "douglas" in subj_norm:
-                    canonical_subj_id = _make_entity_id("t r douglas")
-            elif "kimberly pace" in subj_norm or "kimberly" in subj_norm:
-                canonical_subj_id = _make_entity_id("kimberly pace")
-            elif "becky pace" in subj_norm or "becky" in subj_norm:
-                canonical_subj_id = _make_entity_id("becky pace")
-            elif "cheryl weston" in subj_norm or "cheryl" in subj_norm:
-                canonical_subj_id = _make_entity_id("cheryl weston")
-            elif "jeremy gladwell" in subj_norm or "jeremy" in subj_norm:
-                canonical_subj_id = _make_entity_id("jeremy gladwell")
-            elif "paul evans" in subj_norm or "paul" in subj_norm:
-                canonical_subj_id = _make_entity_id("paul evans")
-            elif "miguel ochoa" in subj_norm or "miguel" in subj_norm:
-                canonical_subj_id = _make_entity_id("miguel ochoa")
-            elif "dog" in subj_norm or "thoreau" in subj_norm:
-                canonical_subj_id = _make_entity_id("thoreau") # Assuming Thoreau is the primary dog entity
+            # --- Subject: resolve to a location alias, else a known entity
+            # mention contained in the phrase. Drop the relation if neither
+            # side resolves -- it's not a grounded entity-to-entity fact. ---
+            subj_loc_id = _resolve_location_alias(subj_norm, CANONICAL_LOCATIONS)
+            subj_canonical = None if subj_loc_id else _resolve_entity_mention(subj_norm, mention_lookup)
+            if not subj_loc_id and not subj_canonical:
+                continue
 
-            if canonical_subj_id:
-                subj_id = canonical_subj_id
-                # Ensure the canonical entity node exists
-                if subj_id not in entity_nodes and subj_id.startswith("ENT_"):
-                    entity_nodes[subj_id] = {
-                        "id": subj_id,
-                        "type": NODE_TYPE_ENTITY,
-                        "text": subj, # Keep original text for display, but use canonical ID
-                        "norm": _normalize_name(subj),
-                        "label": None, # Label might be refined later
-                        "case_id": case_id,
-                    }
-                elif subj_id not in location_nodes and subj_id.startswith("LOC_"):
-                     location_nodes[subj_id] = {
+            obj_loc_id = _resolve_location_alias(obj_norm, CANONICAL_LOCATIONS)
+            obj_canonical = None if obj_loc_id else _resolve_entity_mention(obj_norm, mention_lookup)
+            if not obj_loc_id and not obj_canonical:
+                continue
+
+            if subj_loc_id:
+                subj_id = subj_loc_id
+                if subj_id not in location_nodes:
+                    location_nodes[subj_id] = {
                         "id": subj_id,
                         "type": NODE_TYPE_LOCATION,
                         "text": subj,
-                        "norm": _normalize_name(subj),
+                        "norm": subj_norm,
                         "case_id": case_id,
                     }
             else:
-                subj_id = _make_entity_id(subj_norm)
+                subj_id = _make_entity_id(subj_canonical)
                 if subj_id not in entity_nodes:
                     entity_nodes[subj_id] = {
                         "id": subj_id,
                         "type": NODE_TYPE_ENTITY,
                         "text": subj,
-                        "norm": subj_norm,
+                        "norm": subj_canonical,
                         "label": None,
                         "case_id": case_id,
                     }
 
-            # --- Object Node Creation/Normalization ---
-            # Attempt to find a canonical entity for the object if it's a long phrase
-            canonical_obj_id = None
-            if obj_norm in CANONICAL_LOCATIONS:
-                canonical_obj_id = CANONICAL_LOCATIONS[obj_norm]
-            elif "reporting officer" in obj_norm or "reporting investigator" in obj_norm:
-                if "willits" in obj_norm:
-                    canonical_obj_id = _make_entity_id("fred willits")
-                elif "harding" in obj_norm:
-                    canonical_obj_id = _make_entity_id("steve harding")
-                elif "johnson" in obj_norm:
-                    canonical_obj_id = _make_entity_id("luwinda johnson")
-                elif "murphy" in obj_norm:
-                    canonical_obj_id = _make_entity_id("murphy")
-                elif "sanchez" in obj_norm:
-                    canonical_obj_id = _make_entity_id("jaime sanchez")
-                elif "armstrong" in obj_norm:
-                    canonical_obj_id = _make_entity_id("armstrong")
-                elif "douglas" in obj_norm:
-                    canonical_obj_id = _make_entity_id("t r douglas")
-            elif "kimberly pace" in obj_norm or "kimberly" in obj_norm:
-                canonical_obj_id = _make_entity_id("kimberly pace")
-            elif "becky pace" in obj_norm or "becky" in obj_norm:
-                canonical_obj_id = _make_entity_id("becky pace")
-            elif "cheryl weston" in obj_norm or "cheryl" in obj_norm:
-                canonical_obj_id = _make_entity_id("cheryl weston")
-            elif "jeremy gladwell" in obj_norm or "jeremy" in obj_norm:
-                canonical_obj_id = _make_entity_id("jeremy gladwell")
-            elif "paul evans" in obj_norm or "paul" in obj_norm:
-                canonical_obj_id = _make_entity_id("paul evans")
-            elif "miguel ochoa" in obj_norm or "miguel" in obj_norm:
-                canonical_obj_id = _make_entity_id("miguel ochoa")
-            elif "dog" in obj_norm or "thoreau" in obj_norm:
-                canonical_obj_id = _make_entity_id("thoreau") # Assuming Thoreau is the primary dog entity
-            elif "body" in obj_norm:
-                canonical_obj_id = _make_entity_id("body")
-            elif "handbag" in obj_norm:
-                canonical_obj_id = _make_entity_id("handbag")
-            elif "briefcase" in obj_norm:
-                canonical_obj_id = _make_entity_id("briefcase")
-
-
-            if canonical_obj_id:
-                obj_id = canonical_obj_id
-                # Ensure the canonical entity node exists
-                if obj_id not in entity_nodes and obj_id.startswith("ENT_"):
-                    entity_nodes[obj_id] = {
-                        "id": obj_id,
-                        "type": NODE_TYPE_ENTITY,
-                        "text": obj,
-                        "norm": _normalize_name(obj),
-                        "label": None,
-                        "case_id": case_id,
-                    }
-                elif obj_id not in location_nodes and obj_id.startswith("LOC_"):
-                     location_nodes[obj_id] = {
+            if obj_loc_id:
+                obj_id = obj_loc_id
+                if obj_id not in location_nodes:
+                    location_nodes[obj_id] = {
                         "id": obj_id,
                         "type": NODE_TYPE_LOCATION,
                         "text": obj,
-                        "norm": _normalize_name(obj),
+                        "norm": obj_norm,
                         "case_id": case_id,
                     }
             else:
-                obj_id = _make_entity_id(obj_norm)
+                obj_id = _make_entity_id(obj_canonical)
                 if obj_id not in entity_nodes:
                     entity_nodes[obj_id] = {
                         "id": obj_id,
                         "type": NODE_TYPE_ENTITY,
                         "text": obj,
-                        "norm": obj_norm,
+                        "norm": obj_canonical,
                         "label": None,
                         "case_id": case_id,
                     }
 
             edge_type: str | None = None
 
-            # Primary: use explicit relation_type from the case-specific extractor
+            # Primary: map to a curated edge type when we have one; otherwise
+            # fall back to the relation_type itself (e.g. an uppercased verb
+            # lemma from the extractor) rather than dropping the edge.
             if rel_type:
-                edge_type = RELATION_TYPE_TO_EDGE.get(rel_type)
+                edge_type = RELATION_TYPE_TO_EDGE.get(rel_type, rel_type)
 
-            # Secondary: simple ownership heuristic when no explicit mapping
+            # Secondary: simple ownership heuristic when there's no relation_type at all
             if not edge_type and any(k in obj_norm for k in KEY_OBJECT_OWNERSHIP):
                 # subject OWNS object if object is in ownership set
                 edge_type = EDGE_TYPE_OWNS
